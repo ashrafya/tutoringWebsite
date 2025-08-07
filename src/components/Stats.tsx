@@ -71,7 +71,7 @@ const Stats: React.FC = () => {
 
   useEffect(() => {
     if (!visible) return;
-    const durations = [1500, 1800, 1500, 1500];
+    const durations = [1000, 1000, 1000, 1000];
     const intervals = stats.map((stat, i) => {
       const increment = Math.ceil(stat.value / (durations[i] / 16));
       return setInterval(() => {
