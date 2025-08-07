@@ -50,7 +50,7 @@ const Features: React.FC = () => (
         The best tutoring experience, designed for your success.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-        {features.map((feature, idx) => (
+        {features.map((feature) => (
           <div
             key={feature.title}
             className="flex items-center text-left gap-5"
