@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from 'react-scroll';
 
-const TailblocksNav = () => {
+const Navbar = () => {
   return (
     <header className="bg-white shadow sticky top-0 z-50 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +40,7 @@ const TailblocksNav = () => {
               duration={500}
               offset={-70}
               activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-xl"
+              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
             >
               Home
             </ScrollLink>
@@ -50,7 +50,7 @@ const TailblocksNav = () => {
               duration={500}
               offset={-70}
               activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-xl"
+              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
             >
               About
             </ScrollLink>
@@ -60,19 +60,9 @@ const TailblocksNav = () => {
               duration={500}
               offset={-70}
               activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-xl"
+              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
             >
               Features
-            </ScrollLink>
-            <ScrollLink 
-              to="pricing" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-xl"
-            >
-              Pricing
             </ScrollLink>
             <ScrollLink 
               to="how-it-works" 
@@ -80,17 +70,28 @@ const TailblocksNav = () => {
               duration={500}
               offset={-70}
               activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-xl"
+              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
             >
               How it Works
             </ScrollLink>
+            <ScrollLink 
+              to="pricing" 
+              smooth={true} 
+              duration={500}
+              offset={-70}
+              activeClass="text-indigo-600 font-medium"
+              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
+            >
+              Pricing
+            </ScrollLink>
+
             <ScrollLink 
               to="testimonials" 
               smooth={true} 
               duration={500}
               offset={-70}
               activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-xl"
+              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
             >
               Testimonials
             </ScrollLink>
@@ -100,7 +101,7 @@ const TailblocksNav = () => {
               duration={500}
               offset={-70}
               activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-xl"
+              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
             >
               FAQ
             </ScrollLink>
@@ -113,7 +114,7 @@ const TailblocksNav = () => {
               smooth={true} 
               duration={500}
               offset={-70}
-              className="rounded-xl text-lg bg-blue-700 px-10 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
+              className="rounded-xl text-lg bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
             >
               Get Started
             </ScrollLink>
@@ -124,4 +125,4 @@ const TailblocksNav = () => {
   );
 }
 
-export default TailblocksNav;
+export default Navbar;

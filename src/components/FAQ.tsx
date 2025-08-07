@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "How do I pay for lessons?",
     answer:
-      "Payments can be made securely online via credit card or PayPal after booking your session.",
+      "Payments can be made securely online via credit card or PayPal and are prepaid at a biweekly or monthly cadence.",
   },
 ];
 
@@ -39,7 +39,7 @@ const FAQ: React.FC = () => {
   return (
     <section className="w-full py-16 px-4 bg-gray-50 flex justify-center">
       <div className="w-full max-w-2xl">
-        <h2 className="text-4xl font-bold mb-10 text-gray-900 text-center">Frequently asked questions</h2>
+        <h2 className="text-5xl font-bold mb-10 text-gray-900 text-center">Frequently asked questions</h2>
         <div className="divide-y divide-gray-200">
           {faqs.map((faq, idx) => (
             <div key={faq.question}>

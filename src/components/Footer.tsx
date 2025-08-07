@@ -11,11 +11,11 @@ const footerLinks = [
 ];
 
 const Footer = () => (
-  <footer className="bg-[#181e29] rounded-xl mx-3 my-3">
+  <footer className="bg-blue-100 px-3 py-3">
     <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col items-center">
       {/* Navigation Links */}
       <nav className="mb-8">
-        <ul className="flex flex-wrap gap-x-8 gap-y-4 justify-center text-gray-400 text-lg font-medium">
+        <ul className="flex flex-wrap gap-x-8 gap-y-4 justify-center text-gray-900 text-lg font-medium">
           {footerLinks.map(link => (
             <li key={link.to}>
               <ScrollLink
@@ -23,7 +23,7 @@ const Footer = () => (
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="cursor-pointer hover:text-white transition-colors"
+                className="cursor-pointer hover:text-blue-700 transition-colors"
               >
                 {link.label}
               </ScrollLink>
@@ -36,7 +36,7 @@ const Footer = () => (
         {/* ...social icons as before... */}
       </div>
       {/* Copyright */}
-      <div className="text-gray-400 text-lg text-center">
+      <div className="text-gray-900 text-lg text-center">
         © {new Date().getFullYear()} Tutor Hero, Inc. All rights reserved.
       </div>
     </div>

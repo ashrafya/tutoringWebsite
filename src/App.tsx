@@ -1,13 +1,13 @@
 import './App.css'
 import { Element } from 'react-scroll'
 import TutoringHero from './components/TutoringHero'
-import TailblocksNav from './components/tailblocksNav'
+import TailblocksNav from './components/Navbar'
 import About from './components/About'
 import Features from './components/Features'
 import Pricing from './components/Pricing'
 import HowItWorks from './components/HowItWorks'
 import FAQ from './components/FAQ'
-import Testimonials from './components/Testimonials'
+import Stats from './components/Stats'
 import Hbreak from './components/Hbreak'
 import CTASection from './components/CTA'
 import Footer from './components/Footer'
@@ -50,7 +50,7 @@ function App() {
       <Hbreak />
       
       <Element name="testimonials">
-        <Testimonials />
+        <Stats />
       </Element>
 
       <Hbreak />
