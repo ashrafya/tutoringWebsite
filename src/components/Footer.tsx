@@ -11,7 +11,7 @@ const footerLinks = [
 ];
 
 const Footer = () => (
-  <footer className="bg-blue-100 px-3 py-3">
+  <footer className="bg-blue-200 px-3 py-3">
     <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col items-center">
       {/* Navigation Links */}
       <nav className="mb-8">

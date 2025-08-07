@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   // Sample data - replace with your actual information
   const tutorData = {

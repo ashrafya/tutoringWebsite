@@ -1,4 +1,5 @@
 import { Link as ScrollLink } from 'react-scroll';
+import { GOOGLE_FORM } from './Constants';
 
 const Navbar = () => {
   return (
@@ -109,7 +110,15 @@ const Navbar = () => {
 
           {/* Right: Button */}
           <div className="hidden md:block">
-            <ScrollLink 
+            <a 
+              href={GOOGLE_FORM} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="rounded-xl text-lg bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
+            >
+              Get Started
+            </a>
+            {/* <ScrollLink 
               to="contact" 
               smooth={true} 
               duration={500}
@@ -117,7 +126,7 @@ const Navbar = () => {
               className="rounded-xl text-lg bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
             >
               Get Started
-            </ScrollLink>
+            </ScrollLink> */}
           </div>
         </div>
       </div>

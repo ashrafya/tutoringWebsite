@@ -32,7 +32,7 @@ const plans = [
   {
     name: "Personal Tutoring",
     description: "Fully personalized 1-on-1 tutoring. Flexible scheduling and tailored lesson plans.",
-    biweekly: 300,
+    biweekly: 270,
     monthly: 560,
     features: [
       "3 hours/week 1-on-1",

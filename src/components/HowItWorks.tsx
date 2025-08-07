@@ -1,3 +1,5 @@
+import CTAbutton from "./Button";
+
 const steps = [
   {
     title: "Choose Your Plan",
@@ -13,7 +15,7 @@ const steps = [
     title: "Contact & Consultation",
     description: "Reach out to discuss your goals. We'll recommend the best tutoring plan for you.",
     icon: (
-      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
         <path d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7.5" />
         <path d="M21 10.5l-9 5-9-5" />
         <circle cx="18" cy="18" r="3" />
@@ -35,7 +37,7 @@ const steps = [
     title: "Start Learning",
     description: "Join your sessions online, get personalized help, and track your progress every week.",
     icon: (
-      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
         <rect x="2" y="7" width="20" height="15" rx="2" />
         <path d="M17 2v4M7 2v4" />
         <path d="M12 12v3" />
@@ -45,26 +47,26 @@ const steps = [
   },
 ];
 
-// SVG squiggly arrow component
 function SquigglyArrow() {
   return (
     <svg width="60" height="32" viewBox="0 0 60 32" fill="none" className="hidden md:block absolute top-1/2 right-[-30px] -translate-y-1/2">
       <path
-        d="M5 16 Q20 5 30 16 Q40 27 55 16"
+        d="M5 16 Q20 2 30 16 Q40 30 55 16"
+        stroke="#2563eb"
+        strokeWidth="3"
+        fill="none"
+        strokeLinecap="round"
+      />
+      {/* Even pointier arrowhead */}
+      <path
+        d="M55 16 L49 12"
         stroke="#2563eb"
         strokeWidth="3"
         fill="none"
         strokeLinecap="round"
       />
       <path
-        d="M55 16 Q53 13 50 15"
-        stroke="#2563eb"
-        strokeWidth="3"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M55 16 Q57 18 54 21"
+        d="M55 16 L52 25"
         stroke="#2563eb"
         strokeWidth="3"
         fill="none"
@@ -73,7 +75,6 @@ function SquigglyArrow() {
     </svg>
   );
 }
-
 const HowItWorks: React.FC = () => (
   <section className="bg-gray-50 py-20 px-4">
     <div className="max-w-5xl mx-auto text-center">
@@ -84,11 +85,14 @@ const HowItWorks: React.FC = () => (
       </p>
       <div className="relative flex flex-col md:flex-row items-start justify-center gap-6 md:gap-4">
         {steps.map((step, idx) => (
-          <div key={step.title} className="relative flex flex-col items-center bg-blue-50 rounded-xl shadow p-5 w-full md:w-56 min-h-[230px] mx-auto">
+          <div
+            key={step.title}
+            className="relative flex flex-col items-center bg-gray-50 rounded-xl shadow-lg p-5 w-full md:w-56 min-h-[270px] h-[270px] mx-auto"
+          >
             <div className="mb-3">{step.icon}</div>
             <h3 className="text-lg font-bold text-gray-900 mb-1">{step.title}</h3>
-            <p className="text-sm text-gray-600">{step.description}</p>
-            <span className="mt-4 text-blue-600 font-bold text-2xl opacity-20 select-none">{idx + 1}</span>
+            <p className="text-sm text-gray-600 flex-1">{step.description}</p>
+            <span className="mt-4 text-gray-900 font-bold text-2xl opacity-20 select-none">{idx + 1}</span>
             {/* Arrow except for last card */}
             {idx < steps.length - 1 && (
               <div className="hidden md:block">
@@ -98,6 +102,9 @@ const HowItWorks: React.FC = () => (
           </div>
         ))}
       </div>
+    </div>
+    <div className="text-center mt-12">
+      <CTAbutton />
     </div>
   </section>
 );
