@@ -12,24 +12,24 @@ const steps = [
     ),
   },
   {
-    title: "Contact & Consultation",
-    description: "Reach out to discuss your goals. We'll recommend the best tutoring plan for you.",
-    icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-        <path d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7.5" />
-        <path d="M21 10.5l-9 5-9-5" />
-        <circle cx="18" cy="18" r="3" />
-        <path d="M18 16v2l1 1" />
-      </svg>
-    ),
-  },
-  {
     title: "Register",
     description: "Sign up and reserve your spot in your chosen plan. We'll confirm your schedule and details.",
     icon: (
       <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
         <path d="M12 20h9" />
         <path d="M16.5 3.5a2.121 2.121 0 1 1 3 3L7 19.5 2 21l1.5-5L16.5 3.5z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Contact & Consultation",
+    description: "I will reach out to discuss your goals and provide you with a booking link and all the necessary information",
+    icon: (
+      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+        <path d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7.5" />
+        <path d="M21 10.5l-9 5-9-5" />
+        <circle cx="18" cy="18" r="3" />
+        <path d="M18 16v2l1 1" />
       </svg>
     ),
   },
