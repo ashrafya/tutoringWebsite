@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import CTAbutton from "./Button";
 
 const stats = [
   {
@@ -109,6 +110,9 @@ const Stats: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-12 flex justify-center">
+        <CTAbutton />
       </div>
     </section>
   );

@@ -1,7 +1,20 @@
+import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { GOOGLE_FORM } from './Constants';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = [
+    { to: 'home', label: 'Home' },
+    { to: 'about', label: 'About' },
+    { to: 'features', label: 'Features' },
+    { to: 'how-it-works', label: 'How it Works' },
+    { to: 'pricing', label: 'Pricing' },
+    { to: 'testimonials', label: 'Testimonials' },
+    { to: 'faq', label: 'FAQ' },
+  ];
+
   return (
     <header className="bg-white shadow sticky top-0 z-50 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,9 +36,9 @@ const Navbar = () => {
               <rect x="14" y="1" width="7" height="6" />
               <rect x="14" y="11" width="7" height="12" />
             </svg>
-            <ScrollLink 
-              to="home" 
-              smooth={true} 
+            <ScrollLink
+              to="home"
+              smooth={true}
               duration={500}
               className="ml-3 text-3xl font-bold text-gray-800 cursor-pointer"
             >
@@ -33,105 +46,89 @@ const Navbar = () => {
             </ScrollLink>
           </div>
 
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
+            <button
+              type="button"
+              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {menuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+
           {/* Center: Links */}
           <nav className="hidden md:flex space-x-6">
-            <ScrollLink 
-              to="home" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-            >
-              Home
-            </ScrollLink>
-            <ScrollLink 
-              to="about" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-            >
-              About
-            </ScrollLink>
-            <ScrollLink 
-              to="features" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-            >
-              Features
-            </ScrollLink>
-            <ScrollLink 
-              to="how-it-works" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-            >
-              How it Works
-            </ScrollLink>
-            <ScrollLink 
-              to="pricing" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-            >
-              Pricing
-            </ScrollLink>
-
-            <ScrollLink 
-              to="testimonials" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-            >
-              Testimonials
-            </ScrollLink>
-            <ScrollLink 
-              to="faq" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              activeClass="text-indigo-600 font-medium"
-              className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-            >
-              FAQ
-            </ScrollLink>
+            {navLinks.map(link => (
+              <ScrollLink
+                key={link.to}
+                to={link.to}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                activeClass="text-indigo-600 font-medium"
+                className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </ScrollLink>
+            ))}
           </nav>
 
           {/* Right: Button */}
           <div className="hidden md:block">
-            <a 
-              href={GOOGLE_FORM} 
-              target="_blank" 
+            <a
+              href={GOOGLE_FORM}
+              target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl text-lg bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
             >
-              Get Started
+              Register Now
             </a>
-            {/* <ScrollLink 
-              to="contact" 
-              smooth={true} 
-              duration={500}
-              offset={-70}
-              className="rounded-xl text-lg bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
-            >
-              Get Started
-            </ScrollLink> */}
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden text-center bg-white shadow-lg absolute top-full left-0 w-full z-40">
+          <nav className="flex flex-col space-y-2 px-6 py-4">
+            {navLinks.map(link => (
+              <ScrollLink
+                key={link.to}
+                to={link.to}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                activeClass="text-indigo-600 font-medium"
+                className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </ScrollLink>
+            ))}
+            <div className="flex justify-center">
+              <a
+              href={GOOGLE_FORM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl text-lg max-w-40 bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer mt-2"
+              >
+              Get Started
+              </a>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
-}
+};
 
 export default Navbar;

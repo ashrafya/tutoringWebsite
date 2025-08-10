@@ -9,7 +9,7 @@ const CTAbutton = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Get Started
+      Register Now
     </a>
   );
 }

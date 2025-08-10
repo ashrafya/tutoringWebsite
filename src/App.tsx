@@ -1,7 +1,7 @@
 import './App.css'
 import { Element } from 'react-scroll'
 import TutoringHero from './components/TutoringHero'
-import TailblocksNav from './components/Navbar'
+import Navbar from './components/Navbar'
 import About from './components/About'
 import Features from './components/Features'
 import Pricing from './components/Pricing'
@@ -11,23 +11,34 @@ import Stats from './components/Stats'
 import Hbreak from './components/Hbreak'
 import CTASection from './components/CTA'
 import Footer from './components/Footer'
+import Me from './components/Me'
+import EmailList from './components/EmailList'  
 
 
 function App() {
 
   return (
     <>
-      <TailblocksNav />
-      
+      <Navbar />
+
       <Element name="home">
         <TutoringHero />
       </Element>
 
       <Hbreak />
-      
+
+      <EmailList open={false} onClose={function (): void {
+        throw new Error('Function not implemented.')
+      } } />
+
+
       <Element name="about">
         <About />
       </Element>
+
+      <Hbreak />
+      <Element name="as"></Element>
+      <Me />
 
       <Hbreak />
       
