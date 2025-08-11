@@ -1,4 +1,4 @@
-import CTAbutton from "./Button";
+import RegisterButton from "./RegisterButton";
 
 const steps = [
   {
@@ -104,7 +104,7 @@ const HowItWorks: React.FC = () => (
       </div>
     </div>
     <div className="text-center mt-12">
-      <CTAbutton />
+      <RegisterButton />
     </div>
   </section>
 );

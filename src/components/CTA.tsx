@@ -1,4 +1,4 @@
-import CTAbutton from "./Button"; 
+import RegisterButton from "./RegisterButton"; 
 
 
 const CTASection = () => (
@@ -12,7 +12,7 @@ const CTASection = () => (
         Personalized tutoring for real results.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <CTAbutton />
+        <RegisterButton />
       </div>
     </div>
   </section>

@@ -8,11 +8,13 @@ const Navbar = () => {
   const navLinks = [
     { to: 'home', label: 'Home' },
     { to: 'about', label: 'About' },
-    { to: 'features', label: 'Features' },
+    // { to: 'features', label: 'Features' },
     { to: 'how-it-works', label: 'How it Works' },
     { to: 'pricing', label: 'Pricing' },
-    { to: 'testimonials', label: 'Testimonials' },
-    { to: 'faq', label: 'FAQ' },
+    // { to: 'testimonials', label: 'Testimonials' },
+    // { to: 'faq', label: 'FAQ' },
+    { to: '/notes-and-tests', label: 'Notes & Tests' }, // new page
+    { to: '/blog', label: 'Blog' }, // new page
   ];
 
   return (
@@ -88,7 +90,7 @@ const Navbar = () => {
               href={GOOGLE_FORM}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl text-lg bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
+              className="rounded-xl text-md bg-blue-700 px-6 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
             >
               Register Now
             </a>
@@ -122,6 +124,16 @@ const Navbar = () => {
               className="rounded-xl text-lg max-w-40 bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer mt-2"
               >
               Get Started
+              </a>
+            </div>
+            <div className="flex justify-center">
+              <a
+              href={GOOGLE_FORM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl text-lg max-w-40 bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer mt-2"
+              >
+              Register Now
               </a>
             </div>
           </nav>

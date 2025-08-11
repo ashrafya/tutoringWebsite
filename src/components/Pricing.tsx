@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CTAbutton from "./Button"
+import RegisterButton from "./RegisterButton"
 
 const plans = [
   {
@@ -140,7 +140,7 @@ const Pricing: React.FC = () => {
         ))}
       </div>
       <div className="text-center mt-10">
-        <CTAbutton />
+        <RegisterButton />
       </div>
     </section>
   );
