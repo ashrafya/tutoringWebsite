@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import RegisterButton from "./RegisterButton";
 
 const stats = [
   {
@@ -110,9 +109,6 @@ const Stats: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="mt-12 flex justify-center">
-        <RegisterButton />
       </div>
     </section>
   );

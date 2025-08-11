@@ -1,4 +1,5 @@
 import './App.css'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { Element } from 'react-scroll'
 import TutoringHero from './components/TutoringHero'
 import Navbar from './components/Navbar'
@@ -12,7 +13,10 @@ import Hbreak from './components/Hbreak'
 import CTASection from './components/CTA'
 import Footer from './components/Footer'
 import Me from './components/Me'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import Blog from './components/Blog'
+import NotesAndTests from './components/NotesTests'
+import BlogDetails from './components/BlogDetails';
+
 
 
 function App() {
@@ -34,8 +38,9 @@ function App() {
           <About />
           </Element>
           <Hbreak />
-          <Element name="as"></Element>
+          <Element name="me">
           <Me />
+          </Element>
           <Hbreak />
           <Element name="features">
           <Features />
@@ -45,12 +50,12 @@ function App() {
           <HowItWorks />
           </Element>
           <Hbreak />
-          <Element name="pricing">
-          <Pricing />
-          </Element>
-          <Hbreak />
           <Element name="testimonials">
           <Stats />
+          </Element>
+          <Hbreak />
+          <Element name="pricing">
+          <Pricing />
           </Element>
           <Hbreak />
           <Element name="faq">
@@ -65,9 +70,7 @@ function App() {
         path="/notes-and-tests"
         element={
         <>
-          {/* Add your NotesAndTests page content here */}
-          <h1>Notes and Tests</h1>
-          {/* ... */}
+          <NotesAndTests />
         </>
         }
       />
@@ -75,11 +78,12 @@ function App() {
         path="/blog"
         element={
         <>
-          {/* Add your Blog page content here */}
-          <h1>Blog</h1>
-          {/* ... */}
+          <Blog />
         </>
         }
+      />
+      <Route path="/blog/:id" 
+        element={<BlogDetails />} 
       />
       </Routes>
       <Footer />
