@@ -1,33 +1,4 @@
-import React from "react";
-
-import blogImg1 from "../assets/cartoon-made-with-love-by-neural-frames.png";
-import blogImg2 from "../assets/cartoon-made-with-love-by-neural-frames12.png";
-import blogImg3 from "../assets/yawar-turkey-boat-square.png";
-
-const notesTests = [
-  {
-    title: "Algebra Mastery Notes",
-    excerpt: "Concise, exam-focused notes for high school algebra. Perfect for quick revision and concept clarity.",
-    image: blogImg1,
-    badge: "New",
-    price: 15,
-    oldPrice: 20,
-  },
-  {
-    title: "Physics Mechanics Practice Test",
-    excerpt: "Challenging practice questions and solutions for mechanics. Boost your test scores with targeted prep.",
-    image: blogImg2,
-    price: 10,
-  },
-  {
-    title: "Motivation Guide for Students",
-    excerpt: "Actionable worksheets and tips to help students stay motivated and organized all year.",
-    image: blogImg3,
-    badge: "Hot",
-    price: 12,
-    oldPrice: 16,
-  }
-];
+import NotesDB from "../DB/NotesDB";
 
 const badgeColors: Record<string, string> = {
   New: "bg-green-500",
@@ -44,7 +15,7 @@ const NotesTests: React.FC = () => (
       </p>
     </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {notesTests.map((item, idx) => (
+      {NotesDB.map((item, idx) => (
         <div
           key={idx}
           className="bg-white rounded-2xl shadow border border-gray-200 flex flex-col overflow-hidden"
@@ -52,7 +23,7 @@ const NotesTests: React.FC = () => (
         >
           <div className="relative">
             <img
-              src={item.image}
+              src={item.coverImage}
               alt={item.title}
               className="w-full h-56 object-cover"
             />
@@ -64,7 +35,7 @@ const NotesTests: React.FC = () => (
           </div>
           <div className="p-6 flex-1 flex flex-col">
             <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-            <p className="text-gray-600 mb-4 text-sm">{item.excerpt}</p>
+            <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
             <div className="mt-auto flex items-center">
               {item.oldPrice && (
                 <span className="text-gray-400 line-through text-sm font-medium mr-2">

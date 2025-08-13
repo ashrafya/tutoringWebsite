@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BlogDB from "../Blogs/BlogDB";
+import BlogDB from "../DB/BlogDB";
 
 const Blog: React.FC = () => (
   <section className="mx-auto py-16 px-4 bg-gray-50">

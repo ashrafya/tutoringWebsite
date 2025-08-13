@@ -1,5 +1,6 @@
 import { FaUserGraduate, FaChalkboardTeacher, FaCalendarAlt, FaDollarSign , FaLaptop } from "react-icons/fa";
 import { GiProgression } from "react-icons/gi";
+import NotesButton from "./NotesButton";
 
 const features = [
   {
@@ -70,6 +71,9 @@ const Features: React.FC = () => (
           </div>
         ))}
       </div>
+    </div>
+    <div className="mt-12 flex justify-center">
+      <NotesButton />
     </div>
   </section>
 );

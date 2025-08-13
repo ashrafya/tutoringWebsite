@@ -1,7 +1,6 @@
 import React from "react";
 import yawarImg from "../assets/killarneyYawar.png";
 import RegisterButton from "./RegisterButton";
-import NotesButton from "./NotesButton";
 
 const Me: React.FC = () => {
   return (
@@ -22,9 +21,6 @@ const Me: React.FC = () => {
       </div>
       <div className="mt-12 flex justify-center">
         <RegisterButton />
-      </div>
-      <div className="mt-12 flex justify-center">
-        <NotesButton />
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import BlogDB from "./../Blogs/BlogDB";
+import BlogDB from "../DB/BlogDB";
 
 const BlogDetails: React.FC = () => {
   const { id } = useParams();

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link, useNavigate } from 'react-router-dom';
 import { GOOGLE_FORM } from './Constants';
+import NotesButton from './NotesButton'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -111,7 +112,8 @@ const Navbar = () => {
           </nav>
 
           {/* Right: Button */}
-          <div className="hidden md:block">
+            <div className="hidden md:flex items-center space-x-4">
+            <NotesButton onClick={() => navigate('/notes-and-tests')} />
             <a
               href={GOOGLE_FORM}
               target="_blank"
@@ -120,7 +122,7 @@ const Navbar = () => {
             >
               Register Now
             </a>
-          </div>
+            </div>
         </div>
       </div>
 
@@ -169,6 +171,7 @@ const Navbar = () => {
               >
                 Register Now
               </a>
+              <NotesButton />
             </div>
           </nav>
         </div>

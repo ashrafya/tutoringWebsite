@@ -6,13 +6,13 @@ interface NotesButtonProps {
 }
 
 const NotesButton: React.FC<NotesButtonProps> = ({ onClick, children }) => (
-  <button
+  <a
+    href="/#/notes-and-tests"
     onClick={onClick}
-    className="px-6 py-2 bg-[#EBAD25] hover:bg-[#0E4DA4] text-black font-semibold rounded-xl shadow transition-colors duration-200"
-    type="button"
+    className="px-6 py-2 bg-[#EBAD25] hover:bg-[#D99A22] text-black font-semibold rounded-xl shadow transition-colors duration-200 inline-block text-center"
   >
-    {children ?? 'Notes'}
-  </button>
+    {children ?? 'Notes Shop'}
+  </a>
 );
 
 export default NotesButton;

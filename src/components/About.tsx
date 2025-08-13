@@ -1,6 +1,7 @@
 import React from "react";
 import Xarrow from "react-xarrows";
 import { FaSuperscript, FaInfinity, FaDatabase, FaAtom, FaFlask, FaCalculator, FaMicroscope, FaUser, FaUsers } from "react-icons/fa";
+import NotesButton from "./NotesButton";
 
 // Custom hook to detect desktop
 function useIsDesktop() {
@@ -133,6 +134,9 @@ const About = () => {
             </>
           )}
         </div>
+      </div>
+      <div className="mt-12 flex justify-center">
+        <NotesButton />
       </div>
 
     </section>
