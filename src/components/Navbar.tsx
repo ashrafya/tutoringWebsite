@@ -1,8 +1,23 @@
 import { useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
 import { Link, useNavigate } from 'react-router-dom';
 import { GOOGLE_FORM } from './Constants';
 import NotesButton from './NotesButton'
+
+const scrollToSectionAfterNavigation = (sectionId: string) => {
+  let attempts = 0;
+  const maxAttempts = 20;
+  const interval = setInterval(() => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      const navbarHeight = document.querySelector('header')?.offsetHeight || 0;
+      const y = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      clearInterval(interval);
+    } else if (++attempts > maxAttempts) {
+      clearInterval(interval);
+    }
+  }, 50);
+};
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -78,26 +93,23 @@ const Navbar = () => {
           {/* Center: Links */}
           <nav className="hidden md:flex space-x-6">
             {sectionLinks.map(link => (
-              <ScrollLink
+              <span
                 key={link.to}
-                to={link.to}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                activeClass="text-indigo-600 font-medium"
                 className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
                 onClick={() => {
                   if (window.location.pathname !== '/') {
                     navigate('/');
                     setTimeout(() => {
-                      document.getElementById(link.to)?.scrollIntoView({ behavior: 'smooth' });
+                      scrollToSectionAfterNavigation(link.to);
                     }, 0);
+                  } else {
+                    scrollToSectionAfterNavigation(link.to);
                   }
                   setMenuOpen(false);
                 }}
               >
                 {link.label}
-              </ScrollLink>
+              </span>
             ))}
             {pageLinks.map(link => (
               <Link
@@ -131,26 +143,23 @@ const Navbar = () => {
         <div className="md:hidden text-center bg-white shadow-lg absolute top-full left-0 w-full z-40">
           <nav className="flex flex-col space-y-2 px-6 py-4">
             {sectionLinks.map(link => (
-              <ScrollLink
+              <span
                 key={link.to}
-                to={link.to}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                activeClass="text-indigo-600 font-medium"
                 className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg py-2"
                 onClick={() => {
                   if (window.location.pathname !== '/') {
                     navigate('/');
                     setTimeout(() => {
-                      document.getElementById(link.to)?.scrollIntoView({ behavior: 'smooth' });
+                      scrollToSectionAfterNavigation(link.to);
                     }, 0);
+                  } else {
+                    scrollToSectionAfterNavigation(link.to);
                   }
                   setMenuOpen(false);
                 }}
               >
                 {link.label}
-              </ScrollLink>
+              </span>
             ))}
             {pageLinks.map(link => (
               <Link
@@ -162,14 +171,14 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center space-y-3 mt-2">
               <a
-                href={GOOGLE_FORM}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl text-lg max-w-40 bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer mt-2"
+              href={GOOGLE_FORM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl text-lg w-full max-w-xs bg-blue-700 px-8 py-2.5 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 cursor-pointer"
               >
-                Register Now
+              Register Now
               </a>
               <NotesButton />
             </div>
