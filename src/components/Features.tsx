@@ -38,7 +38,7 @@ const features = [
 const blob = "M77.6,54.2Q68.7,68.4,54.2,75.7Q39.7,83,26.3,72.2Q12.9,61.4,18.2,44.7Q23.5,28,37.7,19.3Q51.9,10.6,65.2,22.1Q78.5,33.6,77.6,54.2Z";
 
 
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
   <path fill="#FF0066" d="M48.5,-70.9C62.6,-66.3,73.7,-52.5,80.5,-37C87.3,-21.4,89.8,-4.1,84.7,10.3C79.7,24.6,67.1,35.9,56,48.5C45,61.1,35.5,74.9,22.7,80C9.8,85.1,-6.5,81.3,-22,76.2C-37.5,71,-52.1,64.5,-64.6,53.9C-77.1,43.3,-87.5,28.7,-88.4,13.5C-89.3,-1.6,-80.8,-17.3,-70.7,-29.4C-60.7,-41.4,-49,-49.8,-37,-55.3C-24.9,-60.8,-12.5,-63.5,2.4,-67.2C17.2,-70.8,34.3,-75.5,48.5,-70.9Z" transform="translate(100 100)" />
 </svg>
 
@@ -57,7 +57,7 @@ const Features: React.FC = () => (
             className="flex items-center text-left gap-5"
           >
             <div className="relative flex-shrink-0 w-20 h-20">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full text-blue-100">
+              <svg viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full text-blue-100">
                 <path d={blob} fill="currentColor" />
               </svg>
               <span className="absolute inset-0 flex items-center justify-center">

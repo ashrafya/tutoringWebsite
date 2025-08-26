@@ -16,6 +16,7 @@ import Me from './components/Me'
 import Blog from './components/Blog'
 import NotesAndTests from './components/NotesTests'
 import BlogDetails from './components/BlogDetails';
+import Courses from './components/Courses';
 
 
 
@@ -45,6 +46,10 @@ function App() {
           <Hbreak />
           <Element name="features" id='features'>
           <Features />
+          </Element>
+          <Hbreak />
+          <Element name="courses" id='courses'>
+          <Courses />
           </Element>
           <Hbreak />
           <Element name="how-it-works" id='how-it-works'>

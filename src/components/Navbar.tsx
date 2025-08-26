@@ -27,6 +27,7 @@ const Navbar = () => {
   const sectionLinks = [
     { to: 'home', label: 'Home' },
     { to: 'me', label: 'About' },
+    { to: 'courses', label: 'Courses' },
     // { to: 'features', label: 'Features' },
     { to: 'how-it-works', label: 'How it Works' },
     { to: 'pricing', label: 'Pricing' },
