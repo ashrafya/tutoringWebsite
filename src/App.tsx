@@ -17,6 +17,7 @@ import Blog from './components/Blog'
 import NotesAndTests from './components/NotesTests'
 import BlogDetails from './components/BlogDetails';
 import Courses from './components/Courses';
+import CoursesPage from './components/CoursesPage';
 
 
 
@@ -77,6 +78,14 @@ function App() {
         element={
         <>
           <NotesAndTests />
+        </>
+        }
+      />
+      <Route
+        path="/courses"
+        element={
+        <>
+          <CoursesPage />
         </>
         }
       />

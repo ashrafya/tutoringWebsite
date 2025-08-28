@@ -4,19 +4,15 @@ import { GOOGLE_FORM } from './Constants';
 import NotesButton from './NotesButton'
 
 const scrollToSectionAfterNavigation = (sectionId: string) => {
-  let attempts = 0;
-  const maxAttempts = 20;
-  const interval = setInterval(() => {
+  // Wait for the page to be fully rendered
+  setTimeout(() => {
     const el = document.getElementById(sectionId);
     if (el) {
       const navbarHeight = document.querySelector('header')?.offsetHeight || 0;
       const y = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
       window.scrollTo({ top: y, behavior: 'smooth' });
-      clearInterval(interval);
-    } else if (++attempts > maxAttempts) {
-      clearInterval(interval);
     }
-  }, 50);
+  }, 300); // Increased delay to ensure page is fully loaded
 };
 
 const Navbar = () => {
@@ -27,16 +23,13 @@ const Navbar = () => {
   const sectionLinks = [
     { to: 'home', label: 'Home' },
     { to: 'me', label: 'About' },
-    { to: 'courses', label: 'Courses' },
-    // { to: 'features', label: 'Features' },
     { to: 'how-it-works', label: 'How it Works' },
     { to: 'pricing', label: 'Pricing' },
-    // { to: 'testimonials', label: 'Testimonials' },
-    // { to: 'faq', label: 'FAQ' },
   ];
 
   const pageLinks = [
-    { to: '/notes-and-tests', label: 'Notes & Tests' },
+    { to: '/courses', label: 'Courses' },
+    { to: '/notes-and-tests', label: 'Notes' },
     { to: '/blog', label: 'Blog' },
   ];
 
@@ -99,10 +92,12 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
                 onClick={() => {
                   if (window.location.pathname !== '/') {
+                    // First navigate to home page
                     navigate('/');
+                    // Then wait for navigation to complete before scrolling
                     setTimeout(() => {
                       scrollToSectionAfterNavigation(link.to);
-                    }, 0);
+                    }, 500); // Increased delay to ensure navigation is complete
                   } else {
                     scrollToSectionAfterNavigation(link.to);
                   }
@@ -149,10 +144,12 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg py-2"
                 onClick={() => {
                   if (window.location.pathname !== '/') {
+                    // First navigate to home page
                     navigate('/');
+                    // Then wait for navigation to complete before scrolling
                     setTimeout(() => {
                       scrollToSectionAfterNavigation(link.to);
-                    }, 0);
+                    }, 500); // Increased delay to ensure navigation is complete
                   } else {
                     scrollToSectionAfterNavigation(link.to);
                   }
