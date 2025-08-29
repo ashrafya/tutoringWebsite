@@ -5,8 +5,8 @@ const plans = [
   {
     name: "Group Tutoring",
     description: "3 hours/week in small groups (2 classes of 1.5 hours each). Collaborative and interactive learning.",
-    biweekly: 130,
-    monthly: 230,
+    threeWeek: 195,
+    sixWeek: 350, // Discounted from 390 (saves $40)
     features: [
       "2 group classes/week",
       "1.5 hours per class",
@@ -19,8 +19,8 @@ const plans = [
   {
     name: "Group + Personal",
     description: "All group benefits plus 1 hour/week of personal lessons. Our most popular plan for extra support.",
-    biweekly: 220,
-    monthly: 420,
+    threeWeek: 330,
+    sixWeek: 580, // Discounted from 660 (saves $80)
     features: [
       "Everything in Group Tutoring",
       "1 hour/week 1-on-1 session",
@@ -32,8 +32,8 @@ const plans = [
   {
     name: "Personal Tutoring",
     description: "Fully personalized 1-on-1 tutoring. Flexible scheduling and tailored lesson plans.",
-    biweekly: 270,
-    monthly: 560,
+    threeWeek: 405,
+    sixWeek: 780, // Discounted from 810 (saves $30)
     features: [
       "3 hours/week 1-on-1",
       "Custom lesson plans",
@@ -45,21 +45,22 @@ const plans = [
   },
   {
     name: "Custom Plan",
-    description: "Need something different? Contact us for a custom plan that fits your needs.",
-    biweekly: "--",
-    monthly: "--",
+    description: "Need something different? Use our registration form to tell us about your specific needs and we'll create a custom plan just for you.",
+    threeWeek: "Custom",
+    sixWeek: "Custom",
     features: [
       "Flexible hours",
       "Mix of group & personal",
       "Special subjects or requests",
-      "Contact for quote",
+      "Custom pricing based on needs",
+      "Personal consultation",
     ],
     popular: false,
   },
 ];
 
 const Pricing: React.FC = () => {
-  const [billing, setBilling] = useState<"biweekly" | "monthly">("biweekly");
+  const [billing, setBilling] = useState<"threeWeek" | "sixWeek">("threeWeek");
 
   return (
     <section className="px-4 py-16 mx-auto bg-gray-50 text-black">
@@ -75,23 +76,23 @@ const Pricing: React.FC = () => {
         <div className="inline-flex bg-gray-100 rounded-full p-1">
           <button
             className={`px-5 py-2 rounded-full text-sm font-semibold transition ${
-              billing === "biweekly"
+              billing === "threeWeek"
                 ? "bg-blue-600 text-white shadow"
                 : "text-gray-700"
             }`}
-            onClick={() => setBilling("biweekly")}
+            onClick={() => setBilling("threeWeek")}
           >
-            Biweekly
+            3 Weeks
           </button>
           <button
             className={`px-5 py-2 rounded-full text-sm font-semibold transition ${
-              billing === "monthly"
+              billing === "sixWeek"
                 ? "bg-blue-600 text-white shadow"
                 : "text-gray-700"
             }`}
-            onClick={() => setBilling("monthly")}
+            onClick={() => setBilling("sixWeek")}
           >
-            Monthly
+            6 Weeks
           </button>
         </div>
       </div>
@@ -113,16 +114,25 @@ const Pricing: React.FC = () => {
             <p className="text-gray-600 mb-6 text-center">{plan.description}</p>
             <div className="flex items-end mb-6">
               <span className="text-4xl font-extrabold text-gray-900">
-                {plan.biweekly === "--"
-                  ? "--"
-                  : `$${billing === "biweekly" ? plan.biweekly : plan.monthly}`}
+                {plan.threeWeek === "Custom"
+                  ? "Contact us"
+                  : `$${billing === "threeWeek" ? plan.threeWeek : plan.sixWeek}`}
               </span>
               <span className="text-gray-500 ml-2 mb-1 text-lg font-medium">
-                {plan.biweekly === "--"
+                {plan.threeWeek === "Custom"
                   ? ""
-                  : `/${billing === "biweekly" ? "biweekly" : "month"}`}
+                  : `/${billing === "threeWeek" ? "3 weeks" : "6 weeks"}`}
               </span>
             </div>
+            {/* Show discount badge for 6-week option */}
+            {billing === "sixWeek" && plan.threeWeek !== "Custom" && (
+              <div className="mb-4">
+                <span className="bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full">
+                  Save ${(Number(plan.threeWeek) * 2 - Number(plan.sixWeek)).toFixed(0)} with 6-week plan!
+                </span>
+              </div>
+            )}
+
             {/* <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg mb-6 transition">
               {plan.name === "Custom Plan" ? "Contact us" : "Get started"}
             </button> */}

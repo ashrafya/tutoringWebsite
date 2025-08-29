@@ -1,23 +1,17 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { GOOGLE_FORM } from './Constants';
 import NotesButton from './NotesButton'
-
-const scrollToSectionAfterNavigation = (sectionId: string) => {
-  // Wait for the page to be fully rendered
-  setTimeout(() => {
-    const el = document.getElementById(sectionId);
-    if (el) {
-      const navbarHeight = document.querySelector('header')?.offsetHeight || 0;
-      const y = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  }, 300); // Increased delay to ensure page is fully loaded
-};
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Scroll to top whenever route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   // Separate internal sections and href pages
   const sectionLinks = [
@@ -37,9 +31,25 @@ const Navbar = () => {
   const handleLogoClick = () => {
     navigate('/');
     setTimeout(() => {
-      // Scroll to top after navigation
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 0);
+    }, 100);
+  };
+
+  // Simple and direct section navigation
+  const handleSectionClick = (sectionId: string) => {
+    if (window.location.pathname !== '/') {
+      // Not on home page, navigate to home with hash
+      navigate(`/#${sectionId}`);
+    } else {
+      // On home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const navbarHeight = document.querySelector('header')?.offsetHeight || 0;
+        const y = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+    setMenuOpen(false);
   };
 
   return (
@@ -90,19 +100,7 @@ const Navbar = () => {
               <span
                 key={link.to}
                 className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg"
-                onClick={() => {
-                  if (window.location.pathname !== '/') {
-                    // First navigate to home page
-                    navigate('/');
-                    // Then wait for navigation to complete before scrolling
-                    setTimeout(() => {
-                      scrollToSectionAfterNavigation(link.to);
-                    }, 500); // Increased delay to ensure navigation is complete
-                  } else {
-                    scrollToSectionAfterNavigation(link.to);
-                  }
-                  setMenuOpen(false);
-                }}
+                onClick={() => handleSectionClick(link.to)}
               >
                 {link.label}
               </span>
@@ -142,19 +140,7 @@ const Navbar = () => {
               <span
                 key={link.to}
                 className="text-gray-700 hover:text-blue-600 cursor-pointer transition-colors text-lg py-2"
-                onClick={() => {
-                  if (window.location.pathname !== '/') {
-                    // First navigate to home page
-                    navigate('/');
-                    // Then wait for navigation to complete before scrolling
-                    setTimeout(() => {
-                      scrollToSectionAfterNavigation(link.to);
-                    }, 500); // Increased delay to ensure navigation is complete
-                  } else {
-                    scrollToSectionAfterNavigation(link.to);
-                  }
-                  setMenuOpen(false);
-                }}
+                onClick={() => handleSectionClick(link.to)}
               >
                 {link.label}
               </span>
