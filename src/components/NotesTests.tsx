@@ -1,4 +1,5 @@
-import NotesDB from "../DB/NotesDB";
+import { Link } from "react-router-dom";
+import { notesTestsData } from "../DB/NotesTestsDB";
 
 const badgeColors: Record<string, string> = {
   New: "bg-green-500",
@@ -14,38 +15,46 @@ const NotesTests: React.FC = () => (
         Modern, exam-ready notes and tests to help you succeed. Quick downloads, clear explanations, and proven results.
       </p>
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {NotesDB.map((item, idx) => (
-        <div
-          key={idx}
-          className="bg-white rounded-2xl shadow border border-gray-200 flex flex-col overflow-hidden"
-          style={{ maxWidth: 340, margin: "0 auto" }}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+      {notesTestsData.map((course) => (
+        <Link
+          key={course.id}
+          to={`/notes-and-tests/${course.id}`}
+          className="bg-white rounded-2xl shadow border border-gray-200 flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
         >
           <div className="relative">
             <img
-              src={item.coverImage}
-              alt={item.title}
-              className="w-full h-56 object-cover"
+              src={course.coverImage}
+              alt={course.title}
+              className="w-full h-48 object-cover"
             />
-            {item.badge && (
-              <span className={`absolute text-xs top-4 left-4 px-1.5 py-1 font-semibold text-white rounded-md ${badgeColors[item.badge]}`}>
-                {item.badge}
+            {course.badge && (
+              <span className={`absolute text-xs top-4 left-4 px-1.5 py-1 font-semibold text-white rounded-md ${badgeColors[course.badge]}`}>
+                {course.badge}
               </span>
             )}
           </div>
           <div className="p-6 flex-1 flex flex-col">
-            <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-            <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-            <div className="mt-auto flex items-center">
-              {item.oldPrice && (
-                <span className="text-gray-400 line-through text-sm font-medium mr-2">
-                  ${item.oldPrice.toFixed(2)}
-                </span>
-              )}
-              <span className="text-gray-900 text-sm font-bold">{item.price.toFixed(2)}</span>
+            <h3 className="text-lg font-bold text-gray-900 mb-2">{course.title}</h3>
+            <p className="text-gray-600 mb-4 text-sm line-clamp-3">{course.description}</p>
+            <div className="mt-auto">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-blue-600 font-semibold">Complete Package</span>
+                <div className="flex items-center">
+                  {course.oldPrice && (
+                    <span className="text-gray-400 line-through text-sm font-medium mr-2">
+                      ${course.oldPrice}
+                    </span>
+                  )}
+                  <span className="text-gray-900 text-lg font-bold">${course.price}</span>
+                </div>
+              </div>
+              <div className="text-sm text-gray-500">
+                Includes notes, tests & solutions • {course.pages} pages
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   </section>

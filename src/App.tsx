@@ -18,7 +18,7 @@ import NotesAndTests from './components/NotesTests'
 import BlogDetails from './components/BlogDetails';
 import Courses from './components/Courses';
 import CoursesPage from './components/CoursesPage';
-
+import CourseDetail from './components/CourseDetail';
 
 
 function App() {
@@ -80,6 +80,10 @@ function App() {
           <NotesAndTests />
         </>
         }
+      />
+      <Route
+        path="/notes-and-tests/:id"
+        element={<CourseDetail />}
       />
       <Route
         path="/courses"
