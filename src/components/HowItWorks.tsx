@@ -1,110 +1,113 @@
-import RegisterButton from "./RegisterButton";
+import { motion } from 'framer-motion';
+import RegisterButton from './RegisterButton';
 
 const steps = [
   {
-    title: "Choose Your Plan",
-    description: "Browse our tutoring options and select the plan that fits your needs and goals.",
+    number: '01',
+    title: 'Choose Your Plan',
+    description: 'Browse our tutoring options and select the plan that fits your needs and goals.',
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-        <rect x="3" y="7" width="18" height="13" rx="2" />
-        <path d="M16 3v4M8 3v4" />
+      <svg className="w-6 h-6 text-[#F97316]" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="18" rx="2" />
+        <path strokeLinecap="round" d="M16 2v4M8 2v4M3 10h18" />
       </svg>
     ),
   },
   {
-    title: "Register",
-    description: "Sign up and reserve your spot in your chosen plan. We'll confirm your schedule and details.",
+    number: '02',
+    title: 'Register',
+    description: 'Sign up and reserve your spot. We\'ll confirm your schedule and send all details.',
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-        <path d="M12 20h9" />
-        <path d="M16.5 3.5a2.121 2.121 0 1 1 3 3L7 19.5 2 21l1.5-5L16.5 3.5z" />
+      <svg className="w-6 h-6 text-[#F97316]" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19.5 2 21l1.5-5L16.5 3.5z" />
       </svg>
     ),
   },
   {
-    title: "Contact & Consultation",
-    description: "I will reach out to discuss your goals and provide you with a booking link and all the necessary information",
+    number: '03',
+    title: 'Contact & Consultation',
+    description: 'I\'ll reach out to discuss your goals and provide a booking link with all necessary info.',
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-        <path d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7.5" />
-        <path d="M21 10.5l-9 5-9-5" />
-        <circle cx="18" cy="18" r="3" />
-        <path d="M18 16v2l1 1" />
+      <svg className="w-6 h-6 text-[#F97316]" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
   },
   {
-    title: "Start Learning",
-    description: "Join your sessions online, get personalized help, and track your progress every week.",
+    number: '04',
+    title: 'Start Learning',
+    description: 'Join your sessions online, get personalized help, and track your progress every week.',
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-        <rect x="2" y="7" width="20" height="15" rx="2" />
-        <path d="M17 2v4M7 2v4" />
-        <path d="M12 12v3" />
-        <circle cx="12" cy="15" r="1" />
+      <svg className="w-6 h-6 text-[#F97316]" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
       </svg>
     ),
   },
 ];
 
-function SquigglyArrow() {
-  return (
-    <svg width="60" height="32" viewBox="0 0 60 32" fill="none" className="hidden md:block absolute top-1/2 right-[-30px] -translate-y-1/2">
-      <path
-        d="M5 16 Q20 2 30 16 Q40 30 55 16"
-        stroke="#2563eb"
-        strokeWidth="3"
-        fill="none"
-        strokeLinecap="round"
-      />
-      {/* Even pointier arrowhead */}
-      <path
-        d="M55 16 L49 12"
-        stroke="#2563eb"
-        strokeWidth="3"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M55 16 L52 25"
-        stroke="#2563eb"
-        strokeWidth="3"
-        fill="none"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
 const HowItWorks: React.FC = () => (
-  <section className="bg-gray-50 py-20 px-4">
+  <section className="bg-[#0F172A] py-20 px-4" id="how-it-works">
     <div className="max-w-5xl mx-auto text-center">
-      <p className="text-blue-600 font-semibold text-lg mb-2">How It Works</p>
-      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Getting Started is Easy</h2>
-      <p className="text-lg text-gray-600 mb-14">
-        Just follow these simple steps to begin your tutoring journey.
-      </p>
-      <div className="relative flex flex-col md:flex-row items-start justify-center gap-6 md:gap-4">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <p className="text-[#F97316] font-semibold text-base uppercase tracking-wider mb-2">Process</p>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Getting Started is Easy</h2>
+        <p className="text-lg text-gray-400 mb-14">
+          Four simple steps to begin your tutoring journey.
+        </p>
+      </motion.div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {steps.map((step, idx) => (
-          <div
+          <motion.div
             key={step.title}
-            className="relative flex flex-col items-center bg-gray-50 rounded-xl shadow-lg p-5 w-full md:w-56 min-h-[270px] h-[270px] mx-auto"
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.45, delay: idx * 0.1, ease: 'easeOut' }}
+            className="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-left hover:bg-white/10 transition-colors duration-300"
           >
-            <div className="mb-3">{step.icon}</div>
-            <h3 className="text-lg font-bold text-gray-900 mb-1">{step.title}</h3>
-            <p className="text-sm text-gray-600 flex-1">{step.description}</p>
-            <span className="mt-4 text-gray-900 font-bold text-2xl opacity-20 select-none">{idx + 1}</span>
-            {/* Arrow except for last card */}
+            {/* Step number */}
+            <span
+              className="text-6xl font-bold text-white/5 absolute top-4 right-4 select-none leading-none"
+              style={{ fontFamily: "'Crimson Pro', Georgia, serif" }}
+            >
+              {step.number}
+            </span>
+
+            {/* Icon */}
+            <div className="w-12 h-12 bg-[#F97316]/15 rounded-xl flex items-center justify-center mb-4">
+              {step.icon}
+            </div>
+
+            <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
+
+            {/* Connector dot for desktop */}
             {idx < steps.length - 1 && (
-              <div className="hidden md:block">
-                <SquigglyArrow />
+              <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-full bg-[#F97316] items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth={3} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             )}
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
-    <div className="text-center mt-12">
-      <RegisterButton />
+
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.45, delay: 0.45 }}
+        className="mt-12"
+      >
+        <RegisterButton />
+      </motion.div>
     </div>
   </section>
 );

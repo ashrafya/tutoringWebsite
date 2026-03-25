@@ -1,17 +1,20 @@
-const GoogleForm = "https://docs.google.com/forms/d/e/1FAIpQLSdp3QsBcOuG4CPZO6kQnOvkjkrdFAabIpSyIyNBjDoR0uJIYw/viewform?usp=dialog"
+import React from 'react';
+import { GOOGLE_FORM } from './Constants';
 
-const RegisterButton = () => {
-  return ( 
-    <a
-      href={GoogleForm}
-      title=""
-      className="rounded-xl bg-blue-700 px-6 py-2 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600 text-lg"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Register Now
-    </a>
-  );
+interface RegisterButtonProps {
+  className?: string;
+  label?: string;
 }
+
+const RegisterButton: React.FC<RegisterButtonProps> = ({ className = '', label = 'Register Now' }) => (
+  <a
+    href={GOOGLE_FORM}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`inline-block rounded-xl bg-[#F97316] hover:bg-[#EA6C00] px-7 py-3 font-semibold text-white text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#F97316] focus:ring-offset-2 cursor-pointer shadow-md hover:shadow-lg ${className}`}
+  >
+    {label}
+  </a>
+);
 
 export default RegisterButton;
