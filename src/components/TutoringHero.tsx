@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import RegisterButton from './RegisterButton';
-import { GOOGLE_FORM } from './Constants';
 
 const stats = [
   { value: '65+',   label: 'Students Helped' },

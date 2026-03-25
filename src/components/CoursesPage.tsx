@@ -27,7 +27,7 @@ const CoursesPage: React.FC = () => (
               key={course.title}
               className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden group hover:-translate-y-1"
             >
-              <div className={`bg-gradient-to-r ${course.color} p-4 text-white`}>
+              <div className={`bg-gradient-to-r ${course.accentBg} p-4 text-white`}>
                 <div className="flex items-center justify-between mb-3">
                   <div className="bg-white/20 rounded-full p-2">
                     {course.icon}

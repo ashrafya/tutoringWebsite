@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { GOOGLE_FORM } from './Constants';
 
 const footerSections = [
