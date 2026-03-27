@@ -1,0 +1,316 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{One-Variable Statistics}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Data Management \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round to 2 decimal places unless stated otherwise.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Which measure of central tendency is most affected by extreme values (outliers)?
+\begin{choices}
+    \correctchoice Mean
+    \choice Median
+    \choice Mode
+    \choice Range
+\end{choices}
+
+\question[1] The median of the data set $\{3, 7, 7, 8, 12, 15\}$ is:
+\begin{choices}
+    \choice $7$
+    \correctchoice $7.5$
+    \choice $8$
+    \choice $8.67$
+\end{choices}
+
+\question[1] For a right-skewed distribution, the typical order of measures is:
+\begin{choices}
+    \choice mean $<$ median $<$ mode
+    \correctchoice mode $<$ median $<$ mean
+    \choice median $<$ mode $<$ mean
+    \choice mean $=$ median $=$ mode
+\end{choices}
+
+\question[1] The first quartile $Q_1$ is:
+\begin{choices}
+    \choice The 25th data value
+    \correctchoice The median of the lower half of the data
+    \choice The average of the smallest and largest values
+    \choice Equal to the 75th percentile
+\end{choices}
+
+\question[1] For the data $\{4, 6, 8, 10, 12, 14, 16, 18\}$, the interquartile range is:
+\begin{choices}
+    \choice $7$
+    \choice $8$
+    \correctchoice $8$
+    \choice $14$
+\end{choices}
+
+\question[1] The population variance of $\{2, 4, 6, 8, 10\}$ is:
+\begin{choices}
+    \choice $4$
+    \choice $6$
+    \correctchoice $8$
+    \choice $10$
+\end{choices}
+
+\question[1] Standard deviation is:
+\begin{choices}
+    \choice Always equal to the variance
+    \correctchoice The square root of the variance
+    \choice The square of the variance
+    \choice Always greater than the mean
+\end{choices}
+
+\question[1] A data value is considered an outlier using the $1.5 \times \text{IQR}$ rule if it is:
+\begin{choices}
+    \choice More than 2 standard deviations from the mean
+    \correctchoice Below $Q_1 - 1.5 \cdot \text{IQR}$ or above $Q_3 + 1.5 \cdot \text{IQR}$
+    \choice Below $Q_1$ or above $Q_3$
+    \choice More than 3 standard deviations from the mean
+\end{choices}
+
+\question[1] A student scores at the 80th percentile on a test. This means:
+\begin{choices}
+    \choice They scored 80\% on the test.
+    \correctchoice 80\% of students scored at or below this score.
+    \choice They answered 80 questions correctly.
+    \choice Their score is 80.
+\end{choices}
+
+\question[1] If every value in a data set is multiplied by 3, then the standard deviation:
+\begin{choices}
+    \choice Stays the same
+    \choice Increases by 3
+    \correctchoice Is multiplied by 3
+    \choice Is multiplied by 9
+\end{choices}
+
+\question[1] If a constant $k$ is added to every data value, then the mean:
+\begin{choices}
+    \choice Stays the same
+    \correctchoice Increases by $k$
+    \choice Is multiplied by $k$
+    \choice Decreases by $k$
+\end{choices}
+
+\question[1] A box-and-whisker plot displays:
+\begin{choices}
+    \choice Mean, median, and mode only
+    \correctchoice Minimum, $Q_1$, median, $Q_3$, and maximum
+    \choice Only outliers
+    \choice Individual data values
+\end{choices}
+
+\question[1] Which of the following represents the most spread out data set?
+\begin{choices}
+    \choice $\sigma = 0.5$
+    \choice $\sigma = 1.2$
+    \correctchoice $\sigma = 4.8$
+    \choice $\sigma = 2.1$
+\end{choices}
+
+\question[1] If a data set has a standard deviation of 0, then:
+\begin{choices}
+    \choice The mean is 0
+    \correctchoice All values in the data set are equal
+    \choice The data set has only one value
+    \choice The data set is symmetric
+\end{choices}
+
+\question[1] The range of a data set is:
+\begin{choices}
+    \choice The most frequently occurring value
+    \correctchoice The difference between the maximum and minimum values
+    \choice $Q_3 - Q_1$
+    \choice The middle value when sorted
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question The following data represents the number of goals scored per game by a hockey team
+over 12 games:
+\[3,\; 1,\; 4,\; 2,\; 6,\; 3,\; 5,\; 3,\; 2,\; 8,\; 1,\; 4\]
+\begin{parts}
+    \part[2] Find the mean, median, and mode.
+    \part[2] Find $Q_1$, $Q_3$, and the IQR.
+    \part[3] Calculate the population standard deviation. Show all steps.
+    \part[2] Using the $1.5 \times \text{IQR}$ rule, identify any outliers.
+\end{parts}
+\begin{solution}[11cm]
+Sorted data: $1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 6, 8$
+
+\textbf{(a)}
+$\bar{x} = \dfrac{1+1+2+2+3+3+3+4+4+5+6+8}{12} = \dfrac{42}{12} = \mathbf{3.5}$
+
+Median: average of 6th and 7th values $= \dfrac{3+3}{2} = \mathbf{3}$\quad Mode: $\mathbf{3}$
+
+\textbf{(b)} Lower half: $1,1,2,2,3,3$ $\Rightarrow$ $Q_1 = \dfrac{2+2}{2} = \mathbf{2}$
+
+Upper half: $3,4,4,5,6,8$ $\Rightarrow$ $Q_3 = \dfrac{4+5}{2} = \mathbf{4.5}$
+
+$\text{IQR} = 4.5 - 2 = \mathbf{2.5}$
+
+\textbf{(c)} $\mu = 3.5$.
+\[
+\sigma^2 = \frac{1}{12}\sum(x_i - 3.5)^2
+= \frac{(1-3.5)^2\times2 + (2-3.5)^2\times2 + (3-3.5)^2\times3 + (4-3.5)^2\times2 + (5-3.5)^2 + (6-3.5)^2 + (8-3.5)^2}{12}
+\]
+\[
+= \frac{12.5 + 4.5 + 0.75 + 0.5 + 2.25 + 6.25 + 20.25}{12}
+= \frac{47}{12} \approx 3.917
+\]
+\[
+\sigma \approx \mathbf{1.979}
+\]
+
+\textbf{(d)} Lower fence: $Q_1 - 1.5\,\text{IQR} = 2 - 3.75 = -1.75$.
+Upper fence: $Q_3 + 1.5\,\text{IQR} = 4.5 + 3.75 = 8.25$.\\
+All data values lie within $[-1.75,\; 8.25]$, so there are \textbf{no outliers}.
+\end{solution}
+
+\question Two students each wrote 8 assignments. Their scores are:
+
+\begin{center}
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Student A} & 55 & 62 & 68 & 70 & 72 & 75 & 80 & 82 \\
+\textbf{Student B} & 40 & 58 & 65 & 72 & 74 & 78 & 85 & 92 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+    \part[2] Calculate the mean for each student.
+    \part[3] Calculate the population standard deviation for each student.
+    \part[3] Compare the two students' performances using mean and standard deviation.
+    Who is more consistent? Who performed better overall?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\bar{A} = \dfrac{55+62+68+70+72+75+80+82}{8} = \dfrac{564}{8} = \mathbf{70.5}$
+
+$\bar{B} = \dfrac{40+58+65+72+74+78+85+92}{8} = \dfrac{564}{8} = \mathbf{70.5}$
+
+\textbf{(b)} For A: deviations from 70.5: $-15.5, -8.5, -2.5, -0.5, 1.5, 4.5, 9.5, 11.5$
+\[
+\sigma_A^2 = \frac{240.25 + 72.25 + 6.25 + 0.25 + 2.25 + 20.25 + 90.25 + 132.25}{8}
+= \frac{564}{8} = 70.5
+\]
+$\sigma_A = \sqrt{70.5} \approx \mathbf{8.40}$
+
+For B: deviations from 70.5: $-30.5, -12.5, -5.5, 1.5, 3.5, 7.5, 14.5, 21.5$
+\[
+\sigma_B^2 = \frac{930.25+156.25+30.25+2.25+12.25+56.25+210.25+462.25}{8}
+= \frac{1860}{8} = 232.5
+\]
+$\sigma_B = \sqrt{232.5} \approx \mathbf{15.25}$
+
+\textbf{(c)} Both students have the same mean ($\bar{x} = 70.5$), so their overall performance is
+equal. However, Student A is more consistent ($\sigma_A \approx 8.40$ vs $\sigma_B \approx 15.25$),
+meaning Student B's scores are much more variable.
+\end{solution}
+
+\question The ages of patients in a clinic on a given day are:
+\[22,\; 25,\; 31,\; 35,\; 38,\; 42,\; 45,\; 48,\; 52,\; 67\]
+\begin{parts}
+    \part[2] Find the five-number summary: Min, $Q_1$, Median, $Q_3$, Max.
+    \part[2] Sketch a clearly labelled box-and-whisker plot.
+    \part[2] A new patient aged 85 arrives. Recalculate the five-number summary and
+    state whether 85 is an outlier.
+\end{parts}
+\begin{solution}[9cm]
+Sorted (already sorted). $n = 10$.
+
+\textbf{(a)} Min $= 22$, Max $= 67$.\\
+Median $= \dfrac{38+42}{2} = 40$.\\
+$Q_1 = \dfrac{25+31}{2} = 28$. \quad $Q_3 = \dfrac{48+52}{2} = 50$.\\
+\textbf{Five-number summary: $\{22,\; 28,\; 40,\; 50,\; 67\}$}
+
+\textbf{(b)} Box from 28 to 50, median line at 40, whiskers to 22 and 67.
+
+\textbf{(c)} $n=11$: Median $= 42$. Lower 5: $22,25,31,35,38\Rightarrow Q_1=31$.
+Upper 5: $45,48,52,67,85\Rightarrow Q_3=52$. IQR $= 21$.\\
+Upper fence: $52 + 1.5(21) = 52 + 31.5 = 83.5$.\\
+Since $85 > 83.5$, \textbf{85 is an outlier}.
+\end{solution}
+
+\question A teacher records the following test scores (out of 100) for her class of 10 students:
+\[55,\; 60,\; 65,\; 70,\; 72,\; 75,\; 80,\; 85,\; 90,\; 98\]
+\begin{parts}
+    \part[2] What score corresponds to the 70th percentile?
+    \part[2] What is the percentile rank of a student who scored 72?
+    \part[2] The teacher decides to curve all marks by multiplying by 1.1.
+    What are the new mean and standard deviation?
+\end{parts}
+\begin{solution}[7cm]
+\textbf{(a)} 70th percentile: position $= 0.70 \times 10 = 7$. Since this is a whole number,
+average the 7th and 8th values: $\dfrac{80+85}{2} = \mathbf{82.5}$
+
+\textbf{(b)} Scores at or below 72: $\{55, 60, 65, 70, 72\}$ = 5 values.
+\[
+\text{Percentile rank} = \frac{5}{10} \times 100 = \mathbf{50\text{th percentile}}
+\]
+
+\textbf{(c)} Original mean: $\bar{x} = \dfrac{750}{10} = 75$.\\
+Original $\sigma = \sqrt{\dfrac{\sum(x_i-75)^2}{10}}$. Deviations: $-20,-15,-10,-5,-3,0,5,10,15,23$.
+$\sum d^2 = 400+225+100+25+9+0+25+100+225+529 = 1638$.
+$\sigma = \sqrt{163.8} \approx 12.80$.
+
+After multiplying by 1.1: new mean $= 75 \times 1.1 = \mathbf{82.5}$;
+new $\sigma = 12.80 \times 1.1 \approx \mathbf{14.08}$.
+\end{solution}
+
+\end{questions}
+\end{document}

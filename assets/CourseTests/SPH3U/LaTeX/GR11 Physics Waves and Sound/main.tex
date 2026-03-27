@@ -1,0 +1,298 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Waves \& Sound}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Physics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units. Speed of sound in air $= \SI{343}{m/s}$ at \SI{20}{\celsius}.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] A transverse wave is one in which:
+\begin{choices}
+    \choice Particles vibrate parallel to the direction of wave travel
+    \correctchoice Particles vibrate perpendicular to the direction of wave travel
+    \choice Energy does not travel through the medium
+    \choice The medium moves with the wave
+\end{choices}
+
+\question[1] Sound waves in air are:
+\begin{choices}
+    \choice Transverse waves
+    \correctchoice Longitudinal waves
+    \choice Electromagnetic waves
+    \choice Surface waves
+\end{choices}
+
+\question[1] The period of a wave with frequency \SI{200}{Hz} is:
+\begin{choices}
+    \choice \SI{200}{s}
+    \choice \SI{0.2}{s}
+    \correctchoice \SI{0.005}{s}
+    \choice \SI{2.0}{s}
+\end{choices}
+
+\question[1] A wave has a wavelength of \SI{0.80}{m} and a frequency of \SI{440}{Hz}.
+Its speed is:
+\begin{choices}
+    \choice \SI{0.80}{m/s}
+    \choice \SI{440}{m/s}
+    \correctchoice \SI{352}{m/s}
+    \choice \SI{550}{m/s}
+\end{choices}
+
+\question[1] The amplitude of a wave is related to its:
+\begin{choices}
+    \choice Frequency
+    \choice Speed
+    \correctchoice Energy (loudness for sound)
+    \choice Wavelength
+\end{choices}
+
+\question[1] When a wave passes from a less dense medium to a more dense medium,
+its speed:
+\begin{choices}
+    \choice Increases
+    \correctchoice Decreases
+    \choice Stays the same
+    \choice Becomes zero
+\end{choices}
+
+\question[1] The fundamental frequency of a \textbf{closed} air column of length $L$ is:
+\begin{choices}
+    \choice $f = \dfrac{v}{2L}$
+    \correctchoice $f = \dfrac{v}{4L}$
+    \choice $f = \dfrac{2v}{L}$
+    \choice $f = \dfrac{v}{L}$
+\end{choices}
+
+\question[1] An open air column of length \SI{0.50}{m} resonates at its fundamental
+frequency. The wavelength of this fundamental is:
+\begin{choices}
+    \choice \SI{0.25}{m}
+    \choice \SI{0.50}{m}
+    \correctchoice \SI{1.0}{m}
+    \choice \SI{2.0}{m}
+\end{choices}
+
+\question[1] Two waves undergo \textbf{destructive interference} when:
+\begin{choices}
+    \choice Their crests align
+    \correctchoice The crest of one aligns with the trough of the other
+    \choice They have the same amplitude
+    \choice They travel in the same direction
+\end{choices}
+
+\question[1] The Doppler effect describes:
+\begin{choices}
+    \choice The change in wave speed due to the medium
+    \correctchoice The apparent change in frequency due to relative motion between source and observer
+    \choice The reflection of sound off surfaces
+    \choice The bending of waves around corners
+\end{choices}
+
+\question[1] An ambulance siren emits sound at \SI{800}{Hz}. As it approaches a
+stationary observer, the observer hears:
+\begin{choices}
+    \choice Exactly \SI{800}{Hz}
+    \correctchoice A frequency higher than \SI{800}{Hz}
+    \choice A frequency lower than \SI{800}{Hz}
+    \choice No sound
+\end{choices}
+
+\question[1] The speed of sound \textbf{increases} with:
+\begin{choices}
+    \choice Lower air temperature
+    \choice Lower air pressure
+    \correctchoice Higher air temperature
+    \choice Lower humidity
+\end{choices}
+
+\question[1] A closed organ pipe produces resonance when the pipe length is:
+\begin{choices}
+    \choice $\lambda,\; 2\lambda,\; 3\lambda,\ldots$
+    \choice $\lambda/2,\; \lambda,\; 3\lambda/2,\ldots$
+    \correctchoice $\lambda/4,\; 3\lambda/4,\; 5\lambda/4,\ldots$
+    \choice $2\lambda,\; 4\lambda,\; 6\lambda,\ldots$
+\end{choices}
+
+\question[1] The phenomenon of diffraction refers to:
+\begin{choices}
+    \choice The change in wave direction at a boundary
+    \correctchoice The bending and spreading of waves around obstacles or through openings
+    \choice The bouncing of waves off surfaces
+    \choice The overlapping of two waves
+\end{choices}
+
+\question[1] Beats are produced when two sound waves of slightly different frequencies
+interfere. If two tuning forks produce \SI{440}{Hz} and \SI{444}{Hz}, the beat frequency is:
+\begin{choices}
+    \choice \SI{440}{Hz}
+    \choice \SI{442}{Hz}
+    \correctchoice \SI{4}{Hz}
+    \choice \SI{884}{Hz}
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question A wave on a string has a frequency of \SI{5.0}{Hz} and a wavelength of
+\SI{0.60}{m}.
+\begin{parts}
+    \part[2] Calculate the speed of the wave.
+    \part[1] Calculate the period of the wave.
+    \part[2] The wave enters a new medium and slows to \SI{2.0}{m/s}. What is the
+    new wavelength? (Frequency does not change at a boundary.)
+    \part[2] How many complete wavelengths fit in a \SI{4.5}{m} string vibrating at
+    the original conditions?
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $v = f\lambda = 5.0 \times 0.60 = \mathbf{\SI{3.0}{m/s}}$
+
+\textbf{(b)} $T = \dfrac{1}{f} = \dfrac{1}{5.0} = \mathbf{\SI{0.20}{s}}$
+
+\textbf{(c)} $\lambda' = \dfrac{v'}{f} = \dfrac{2.0}{5.0} = \mathbf{\SI{0.40}{m}}$
+
+\textbf{(d)} $n = \dfrac{L}{\lambda} = \dfrac{4.5}{0.60} = \mathbf{7.5}$ wavelengths
+\end{solution}
+
+\question Resonance in air columns. The speed of sound is \SI{343}{m/s}.
+\begin{parts}
+    \part[3] An \textbf{open} air column (open at both ends) resonates at its fundamental
+    frequency with a length of \SI{0.65}{m}. Find the fundamental frequency.
+    \part[3] A \textbf{closed} air column (closed at one end) has a length of
+    \SI{0.45}{m}. Find its fundamental frequency and its first overtone frequency.
+    \part[2] A closed pipe resonates at \SI{572}{Hz}. What is its length?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Open column, fundamental: $L = \dfrac{\lambda}{2} \Rightarrow \lambda = 2L = \SI{1.30}{m}$
+\[
+f = \frac{v}{\lambda} = \frac{343}{1.30} = \mathbf{\SI{264}{Hz}}
+\]
+
+\textbf{(b)} Closed column, fundamental: $L = \dfrac{\lambda}{4} \Rightarrow \lambda = 4L = \SI{1.80}{m}$
+\[
+f_1 = \frac{343}{1.80} = \mathbf{\SI{190.6}{Hz}}
+\]
+Closed columns support only odd harmonics; first overtone = 3rd harmonic:
+\[
+f_3 = 3 f_1 = 3 \times 190.6 = \mathbf{\SI{571.8}{Hz} \approx \SI{572}{Hz}}
+\]
+
+\textbf{(c)} Closed column fundamental: $L = \dfrac{v}{4f} = \dfrac{343}{4 \times 572}
+= \dfrac{343}{2288} = \mathbf{\SI{0.150}{m}}$
+\end{solution}
+
+\question The Doppler Effect.
+An ambulance emits a siren at \SI{900}{Hz}. The speed of sound is \SI{343}{m/s}.
+\begin{parts}
+    \part[2] The ambulance approaches a stationary observer at \SI{30}{m/s}. What
+    frequency does the observer hear?
+    \part[2] The ambulance moves away from the observer at \SI{30}{m/s}. What frequency
+    is heard?
+    \part[3] The observer is now in a car moving \textbf{toward} the stationary ambulance
+    at \SI{20}{m/s}. What frequency does the observer hear?
+\end{parts}
+\begin{solution}[9cm]
+Doppler formula: $f' = f_s \cdot \dfrac{v \pm v_o}{v \mp v_s}$
+(upper signs when approaching, lower when receding)
+
+\textbf{(a)} Source approaching, observer stationary ($v_o = 0$):
+\[
+f' = 900 \times \frac{343}{343 - 30} = 900 \times \frac{343}{313} = \mathbf{\SI{986}{Hz}}
+\]
+
+\textbf{(b)} Source receding:
+\[
+f' = 900 \times \frac{343}{343 + 30} = 900 \times \frac{343}{373} = \mathbf{\SI{827}{Hz}}
+\]
+
+\textbf{(c)} Observer approaching stationary source ($v_s = 0$):
+\[
+f' = 900 \times \frac{343 + 20}{343} = 900 \times \frac{363}{343} = \mathbf{\SI{953}{Hz}}
+\]
+\end{solution}
+
+\question Interference and standing waves.
+\begin{parts}
+    \part[2] Explain the difference between constructive and destructive interference.
+    Under what conditions does each occur?
+    \part[3] A guitar string of length \SI{0.65}{m} vibrates in its third harmonic.
+    Draw the standing wave pattern, state the wavelength, and find the frequency
+    if the wave speed on the string is \SI{400}{m/s}.
+    \part[2] Two speakers emit the same frequency. A listener stands \SI{3.0}{m}
+    from one speaker and \SI{3.5}{m} from the other. If the speed of sound is
+    \SI{343}{m/s} and they hear a minimum (destructive interference), find the
+    lowest frequency that produces this minimum.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} \textbf{Constructive interference} occurs when two waves meet in phase
+(path difference $= n\lambda$, $n = 0,1,2,\ldots$); their amplitudes add. \textbf{Destructive
+interference} occurs when they meet out of phase (path difference $= (n+\tfrac{1}{2})\lambda$);
+their amplitudes cancel.
+
+\textbf{(b)} A string fixed at both ends: $n$th harmonic has $n$ antinodes.
+3rd harmonic: 3 loops, $L = \tfrac{3\lambda}{2} \Rightarrow \lambda = \dfrac{2L}{3}
+= \dfrac{2(0.65)}{3} = \mathbf{\SI{0.433}{m}}$
+\[
+f = \frac{v}{\lambda} = \frac{400}{0.433} = \mathbf{\SI{923}{Hz}}
+\]
+
+\textbf{(c)} Path difference $= 3.5 - 3.0 = \SI{0.5}{m}$.
+First minimum: path difference $= \dfrac{\lambda}{2} \Rightarrow \lambda = \SI{1.0}{m}$
+\[
+f = \frac{v}{\lambda} = \frac{343}{1.0} = \mathbf{\SI{343}{Hz}}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

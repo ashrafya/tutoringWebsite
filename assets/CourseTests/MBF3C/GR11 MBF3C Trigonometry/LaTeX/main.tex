@@ -1,0 +1,327 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Trigonometry}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+% Q1
+\question[1]
+In a right triangle with legs 3 and 4 and hypotenuse 5, $\sin\theta$ for the angle opposite the side of length 3 is:
+\begin{choices}
+    \choice $\dfrac{4}{5}$
+    \correctchoice $\dfrac{3}{5}$
+    \choice $\dfrac{3}{4}$
+    \choice $\dfrac{5}{3}$
+\end{choices}
+
+% Q2
+\question[1]
+SOH-CAH-TOA defines $\tan\theta$ as:
+\begin{choices}
+    \choice $\dfrac{\text{hypotenuse}}{\text{adjacent}}$
+    \choice $\dfrac{\text{adjacent}}{\text{opposite}}$
+    \correctchoice $\dfrac{\text{opposite}}{\text{adjacent}}$
+    \choice $\dfrac{\text{opposite}}{\text{hypotenuse}}$
+\end{choices}
+
+% Q3
+\question[1]
+In a right triangle, the side adjacent to a \ang{35} angle is \SI{10}{cm}. The hypotenuse is closest to:
+\begin{choices}
+    \choice \SI{8.19}{cm}
+    \correctchoice \SI{12.21}{cm}
+    \choice \SI{7.00}{cm}
+    \choice \SI{14.28}{cm}
+\end{choices}
+
+% Q4
+\question[1]
+An angle of elevation is measured:
+\begin{choices}
+    \choice Below the horizontal.
+    \correctchoice Above the horizontal.
+    \choice From the vertical downward.
+    \choice From the vertical upward.
+\end{choices}
+
+% Q5
+\question[1]
+A person standing \SI{50}{m} from the base of a tree looks up at an angle of elevation of \ang{40}. What is the approximate height of the tree?
+\begin{choices}
+    \choice \SI{32.14}{m}
+    \correctchoice \SI{41.95}{m}
+    \choice \SI{65.27}{m}
+    \choice \SI{59.81}{m}
+\end{choices}
+
+% Q6
+\question[1]
+The Sine Law states:
+\begin{choices}
+    \choice $\dfrac{a}{\sin A} = \dfrac{b}{\cos B}$
+    \correctchoice $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$
+    \choice $a^2 = b^2 + c^2 - 2bc\cos A$
+    \choice $\sin A = \sin B + \sin C$
+\end{choices}
+
+% Q7
+\question[1]
+The Cosine Law is used when you have:
+\begin{choices}
+    \choice Two angles and one side (AAS).
+    \choice Two angles and the included side (ASA).
+    \correctchoice Two sides and the included angle (SAS), or three sides (SSS).
+    \choice One angle and its opposite side.
+\end{choices}
+
+% Q8
+\question[1]
+In triangle $ABC$, $a = 7$, $b = 9$, $\angle A = 35°$. Using the Sine Law, $\sin B$ equals:
+\begin{choices}
+    \choice $\dfrac{7\sin 35°}{9}$
+    \correctchoice $\dfrac{9\sin 35°}{7}$
+    \choice $\dfrac{9}{7\sin 35°}$
+    \choice $\dfrac{7}{9\sin 35°}$
+\end{choices}
+
+% Q9
+\question[1]
+In $\triangle PQR$, $p = 8$, $q = 6$, $r = 5$. To find $\angle P$ using the Cosine Law:
+\begin{choices}
+    \correctchoice $\cos P = \dfrac{q^2 + r^2 - p^2}{2qr}$
+    \choice $\cos P = \dfrac{p^2 + r^2 - q^2}{2pr}$
+    \choice $\cos P = \dfrac{p^2 + q^2 - r^2}{2pq}$
+    \choice $\cos P = \dfrac{q^2 - r^2 - p^2}{2qr}$
+\end{choices}
+
+% Q10
+\question[1]
+Which of these is the Cosine Law formula for side $c$?
+\begin{choices}
+    \choice $c = a + b - 2ab\cos C$
+    \correctchoice $c^2 = a^2 + b^2 - 2ab\cos C$
+    \choice $c^2 = a^2 - b^2 + 2ab\cos C$
+    \choice $c^2 = a^2 + b^2 + 2ab\cos C$
+\end{choices}
+
+% Q11
+\question[1]
+A ladder leans against a wall. The ladder is \SI{6}{m} long and makes a \ang{70} angle with the ground. How high up the wall does it reach?
+\begin{choices}
+    \choice \SI{2.05}{m}
+    \correctchoice \SI{5.64}{m}
+    \choice \SI{6.38}{m}
+    \choice \SI{4.10}{m}
+\end{choices}
+
+% Q12
+\question[1]
+An angle of depression of \ang{25} is observed from the top of a cliff to a boat. If the cliff is \SI{80}{m} tall, the horizontal distance to the boat is approximately:
+\begin{choices}
+    \choice \SI{37.32}{m}
+    \correctchoice \SI{171.56}{m}
+    \choice \SI{88.28}{m}
+    \choice \SI{190.01}{m}
+\end{choices}
+
+% Q13
+\question[1]
+In $\triangle ABC$, $\angle A = 50°$, $\angle B = 70°$, and $a = 10$. Find $b$ using the Sine Law. (Round to 1 decimal place.)
+\begin{choices}
+    \choice 7.7
+    \correctchoice 12.3
+    \choice 10.0
+    \choice 9.4
+\end{choices}
+
+% Q14
+\question[1]
+$\triangle XYZ$ has $x = 5$, $y = 7$, $\angle Z = 60°$. Using the Cosine Law, $z^2$ equals:
+\begin{choices}
+    \choice $25 + 49 + 35$
+    \choice $25 + 49$
+    \correctchoice $25 + 49 - 35$
+    \choice $25 - 49 + 35$
+\end{choices}
+
+% Q15
+\question[1]
+In which situation must the Cosine Law be used (Sine Law alone is insufficient)?
+\begin{choices}
+    \choice AAS — two angles and a non-included side.
+    \choice ASA — two angles and the included side.
+    \correctchoice SSS — all three sides known, find an angle.
+    \choice SAA — one side and two non-adjacent angles.
+\end{choices}
+
+\section*{Part B --- Short Answer (33 marks)}
+
+% Q16
+\question[6]
+\textbf{Right Triangle Trigonometry.} Solve each of the following. Round lengths to one decimal place and angles to the nearest degree.
+
+\begin{parts}
+    \part[2] In right $\triangle ABC$ ($\angle C = 90°$), $\angle A = 38°$ and $c = 15$ cm. Find side $a$ (opposite $\angle A$).
+    \begin{solution}
+        $\sin A = \dfrac{a}{c} \Rightarrow a = c\sin A = 15\sin 38°$\\
+        $a = 15 \times 0.6157 \approx \SI{9.2}{cm}$
+    \end{solution}
+
+    \part[2] In right $\triangle DEF$ ($\angle F = 90°$), $d = 8$ cm (side opposite $\angle D$) and $e = 11$ cm (side opposite $\angle E$). Find $\angle D$.
+    \begin{solution}
+        $\tan D = \dfrac{\text{opposite}}{\text{adjacent}} = \dfrac{d}{e} = \dfrac{8}{11}$\\
+        $\angle D = \arctan\!\left(\dfrac{8}{11}\right) \approx \arctan(0.7273) \approx 36°$
+    \end{solution}
+
+    \part[2] In right $\triangle PQR$ ($\angle R = 90°$), $\angle Q = 55°$ and $p = 20$ cm (the leg adjacent to $\angle Q$). Find the hypotenuse $q$.
+    \begin{solution}
+        $\cos Q = \dfrac{p}{q} \Rightarrow q = \dfrac{p}{\cos Q} = \dfrac{20}{\cos 55°}$\\
+        $q = \dfrac{20}{0.5736} \approx \SI{34.9}{cm}$
+    \end{solution}
+\end{parts}
+
+% Q17
+\question[5]
+\textbf{Angles of Elevation and Depression.}
+
+\begin{parts}
+    \part[2] A flagpole casts a shadow \SI{12}{m} long when the angle of elevation of the sun is \ang{48}. How tall is the flagpole? Round to one decimal place.
+    \begin{solution}
+        $\tan 48° = \dfrac{h}{12}$\\
+        $h = 12\tan 48° = 12 \times 1.1106 \approx \SI{13.3}{m}$
+    \end{solution}
+
+    \part[3] An airplane is flying at an altitude of \SI{3500}{m}. From a point on the ground directly below the plane's previous position, the angle of elevation to the plane is \ang{22}. How far has the plane flown horizontally from that point? Round to the nearest metre.
+    \begin{solution}
+        $\tan 22° = \dfrac{3500}{d}$\\
+        $d = \dfrac{3500}{\tan 22°} = \dfrac{3500}{0.4040} \approx \SI{8663}{m}$
+    \end{solution}
+\end{parts}
+
+% Q18
+\question[6]
+\textbf{The Sine Law.}
+
+\begin{parts}
+    \part[3] In $\triangle ABC$, $\angle A = 42°$, $\angle B = 73°$, and $a = 14$ cm. Find side $b$. Round to one decimal place.
+    \begin{solution}
+        $\dfrac{b}{\sin B} = \dfrac{a}{\sin A}$\\
+        $b = \dfrac{a \sin B}{\sin A} = \dfrac{14 \sin 73°}{\sin 42°}$\\
+        $b = \dfrac{14 \times 0.9563}{0.6691} \approx \dfrac{13.388}{0.6691} \approx \SI{20.0}{cm}$
+    \end{solution}
+
+    \part[3] In $\triangle PQR$, $p = 10$ cm, $r = 7$ cm, and $\angle R = 30°$. Find $\angle P$ to the nearest degree.
+    \begin{solution}
+        $\dfrac{\sin P}{p} = \dfrac{\sin R}{r}$\\
+        $\sin P = \dfrac{p \sin R}{r} = \dfrac{10 \sin 30°}{7} = \dfrac{10 \times 0.5}{7} = \dfrac{5}{7} \approx 0.7143$\\
+        $\angle P = \arcsin(0.7143) \approx 46°$
+    \end{solution}
+\end{parts}
+
+% Q19
+\question[8]
+\textbf{The Cosine Law.}
+
+\begin{parts}
+    \part[4] In $\triangle DEF$, $d = 9$ cm, $e = 12$ cm, and $\angle F = 65°$. Find side $f$. Round to one decimal place.
+    \begin{solution}
+        $f^2 = d^2 + e^2 - 2de\cos F$\\
+        $f^2 = 81 + 144 - 2(9)(12)\cos 65°$\\
+        $f^2 = 225 - 216 \times 0.4226$\\
+        $f^2 = 225 - 91.28 = 133.72$\\
+        $f = \sqrt{133.72} \approx \SI{11.6}{cm}$
+    \end{solution}
+
+    \part[4] In $\triangle XYZ$, $x = 6$ cm, $y = 8$ cm, $z = 10$ cm. Find $\angle Z$ to the nearest degree.
+    \begin{solution}
+        $\cos Z = \dfrac{x^2 + y^2 - z^2}{2xy} = \dfrac{36 + 64 - 100}{2(6)(8)} = \dfrac{0}{96} = 0$\\
+        $\angle Z = \arccos(0) = 90°$\\
+        (This is a right triangle with hypotenuse $z = 10$.)
+    \end{solution}
+\end{parts}
+
+% Q20
+\question[8]
+\textbf{Practical Application: Width of a Lake.} A surveyor wants to find the width $AB$ of a lake. She stands at point $C$ on one shore and measures $CA = \SI{85}{m}$ and $CB = \SI{110}{m}$. She also measures the angle between the two lines: $\angle ACB = 52°$.
+
+\begin{parts}
+    \part[4] Use the Cosine Law to find the width $AB$ of the lake. Round to the nearest metre.
+    \begin{solution}
+        Let $a = CB = 110$, $b = CA = 85$, $\angle C = 52°$, and $c = AB$.\\
+        $c^2 = a^2 + b^2 - 2ab\cos C$\\
+        $c^2 = 110^2 + 85^2 - 2(110)(85)\cos 52°$\\
+        $c^2 = 12100 + 7225 - 18700 \times 0.6157$\\
+        $c^2 = 19325 - 11513.59 = 7811.41$\\
+        $c = \sqrt{7811.41} \approx \SI{88}{m}$\\
+        The width of the lake is approximately \SI{88}{m}.
+    \end{solution}
+
+    \part[2] The surveyor also wants to find $\angle CAB$. Use the Sine Law to find this angle.
+    \begin{solution}
+        $\dfrac{\sin(\angle CAB)}{CB} = \dfrac{\sin C}{AB}$\\
+        $\sin(\angle CAB) = \dfrac{CB \cdot \sin C}{AB} = \dfrac{110 \sin 52°}{88}$\\
+        $\sin(\angle CAB) = \dfrac{110 \times 0.7880}{88} \approx \dfrac{86.68}{88} \approx 0.9850$\\
+        $\angle CAB = \arcsin(0.9850) \approx 80°$
+    \end{solution}
+
+    \part[2] Using the angles of the triangle, find $\angle ABC$.
+    \begin{solution}
+        Sum of angles in a triangle $= 180°$.\\
+        $\angle ABC = 180° - 52° - 80° = 48°$
+    \end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

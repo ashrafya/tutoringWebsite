@@ -1,0 +1,511 @@
+
+\documentclass[addpoints]{exam}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}  % Replace with class name, date, or course code
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Chemistry \\ \event
+    \ifprintanswers
+     \space Key
+    \else
+     \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else
+        \underline{\hspace{10cm}}\\ \vspace{5mm}
+    \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Please do not write any answers on this paper. \fi
+    \item This exam covers all five units of Grade 12 Chemistry (SCH4U).
+    \item Show all work for full marks on short answer questions.
+    \item $K_w = 1.0\times10^{-14}$ at \SI{25}{\celsius};
+          $F = \SI{9.65e4}{C/mol}$;
+          $R = \SI{8.314}{J\,mol^{-1}K^{-1}}$.
+    \item The exam is designed to be completed in 120 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{2}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{3mm}
+\noindent\textit{Questions 1--4: Structure and Properties of Matter}
+\vspace{3mm}
+
+\question[1] Which of the following is the correct ground-state electron configuration of
+\ce{Cu} ($Z = 29$)?
+\begin{choices}
+    \choice $[\text{Ar}]3d^9 4s^2$
+    \correctchoice $[\text{Ar}]3d^{10} 4s^1$
+    \choice $[\text{Ar}]3d^8 4s^2$
+    \choice $[\text{Ar}]3d^{10} 4s^2$
+\end{choices}
+
+\question[1] Which of the following molecules has a \textit{bent} molecular geometry?
+\begin{choices}
+    \choice \ce{CO2}
+    \choice \ce{BeCl2}
+    \correctchoice \ce{SO2}
+    \choice \ce{CS2}
+\end{choices}
+
+\question[1] Which substance has the highest boiling point?
+\begin{choices}
+    \choice \ce{CH3OCH3} (dimethyl ether, $M = \SI{46}{g/mol}$)
+    \correctchoice \ce{CH3CH2OH} (ethanol, $M = \SI{46}{g/mol}$)
+    \choice \ce{C3H8} (propane, $M = \SI{44}{g/mol}$)
+    \choice \ce{N2} ($M = \SI{28}{g/mol}$)
+\end{choices}
+
+\question[1] Which of the following best describes a metallic bond?
+\begin{choices}
+    \choice Electrostatic attraction between oppositely charged ions.
+    \choice Covalent sharing of electrons between two non-metal atoms.
+    \correctchoice Attraction between positive metal ions and a sea of delocalized electrons.
+    \choice Hydrogen bonding between metal atoms.
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 5--8: Organic Chemistry}
+\vspace{3mm}
+
+\question[1] What is the IUPAC name of the compound with the formula
+\ce{CH3CH2CH(OH)CH3}?
+\begin{choices}
+    \choice Butan-1-ol
+    \correctchoice Butan-2-ol
+    \choice 2-butanol (not IUPAC)
+    \choice Propan-2-ol
+\end{choices}
+
+\question[1] Which reaction type converts a carboxylic acid and an alcohol into an ester
+and water?
+\begin{choices}
+    \choice Addition
+    \choice Elimination
+    \choice Substitution
+    \correctchoice Condensation (esterification)
+\end{choices}
+
+\question[1] Which of the following polymers is formed by condensation polymerization?
+\begin{choices}
+    \choice Polyethylene
+    \choice Polystyrene
+    \correctchoice Nylon-6,6
+    \choice Poly(tetrafluoroethylene) (PTFE)
+\end{choices}
+
+\question[1] An unknown compound reacts with \ce{Na} metal to produce \ce{H2} gas and gives
+a positive Tollens' test (silver mirror). The compound is most likely a(n):
+\begin{choices}
+    \choice Ketone
+    \correctchoice Hydroxy aldehyde (aldehyde with an OH group)
+    \choice Ester
+    \choice Alkene
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 9--12: Energy Changes and Rates of Reaction}
+\vspace{3mm}
+
+\question[1] The combustion of propane is highly exothermic. Which statement is true?
+\begin{choices}
+    \correctchoice The total bond energy of the products is greater than the total bond
+    energy of the reactants.
+    \choice The total bond energy of the reactants is greater than the total bond energy
+    of the products.
+    \choice $\Delta H_{comb} > 0$.
+    \choice The activation energy equals $\Delta H$.
+\end{choices}
+
+\question[1] The rate law for a reaction is rate $= k[\text{A}]^2$. If $[\text{A}]$ is
+tripled, the rate will:
+\begin{choices}
+    \choice Triple.
+    \choice Double.
+    \correctchoice Increase by a factor of 9.
+    \choice Increase by a factor of 6.
+\end{choices}
+
+\question[1] Which of the following changes \textit{does not} alter the value of the rate
+constant $k$?
+\begin{choices}
+    \choice Increasing the temperature.
+    \choice Adding a catalyst.
+    \correctchoice Increasing the concentration of a reactant.
+    \choice Changing the solvent.
+\end{choices}
+
+\question[1] For the following reactions, which can be used with Hess's Law to find
+$\Delta H$ for \ce{C(s) + O2(g) -> CO2(g)}?
+\begin{choices}
+    \choice Only reactions with positive $\Delta H$.
+    \choice Only reactions with the same number of moles of gas.
+    \correctchoice Any combination of reactions that sums to the target equation.
+    \choice Only reactions at the same temperature.
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 13--16: Chemical Systems and Equilibrium}
+\vspace{3mm}
+
+\question[1] For the equilibrium \ce{2NO2(g) <=> N2O4(g)}, if $Q > K_{eq}$, the system will:
+\begin{choices}
+    \choice Produce more \ce{NO2}.
+    \correctchoice Convert \ce{N2O4} to \ce{NO2} until equilibrium is re-established.
+    \choice Remain unchanged.
+    \choice Increase $K_{eq}$.
+\end{choices}
+
+\question[1] For the reaction \ce{PCl5(g) <=> PCl3(g) + Cl2(g)}, $\Delta H > 0$.
+Increasing temperature will:
+\begin{choices}
+    \correctchoice Shift equilibrium right and increase $K_{eq}$.
+    \choice Shift equilibrium left and decrease $K_{eq}$.
+    \choice Shift equilibrium right and decrease $K_{eq}$.
+    \choice Have no effect because $K_{eq}$ does not depend on temperature.
+\end{choices}
+
+\question[1] What is the pH of a \SI{0.050}{mol/L} solution of \ce{Ba(OH)2}, a strong base
+that fully dissociates to give 2 \ce{OH-} per formula unit?
+\begin{choices}
+    \choice 12.3
+    \correctchoice 13.0
+    \choice 11.7
+    \choice 1.0
+\end{choices}
+
+\question[1] Which of the following will \textit{increase} the molar solubility of \ce{BaSO4}
+($K_{sp} = 1.1\times10^{-10}$)?
+\begin{choices}
+    \choice Adding more \ce{BaSO4(s)} to the solution.
+    \choice Adding \ce{Na2SO4(aq)}.
+    \choice Decreasing the temperature (assuming $K_{sp}$ decreases).
+    \correctchoice Adding \ce{HCl(aq)} (which reacts with \ce{SO4^{2-}}).
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 17--20: Electrochemistry}
+\vspace{3mm}
+
+\question[1] In an electrolytic cell, which statement is correct?
+\begin{choices}
+    \choice Oxidation occurs at the cathode.
+    \choice The reaction is spontaneous.
+    \correctchoice An external power source drives a non-spontaneous reaction.
+    \choice Electrons flow from cathode to anode through the external circuit.
+\end{choices}
+
+\question[1] Given $E^\circ(\ce{Al^{3+}/Al}) = -\SI{1.66}{V}$ and
+$E^\circ(\ce{Sn^{2+}/Sn}) = -\SI{0.14}{V}$, the standard cell potential for an
+Al--Sn galvanic cell is:
+\begin{choices}
+    \choice $-\SI{1.52}{V}$
+    \correctchoice $+\SI{1.52}{V}$
+    \choice $+\SI{1.80}{V}$
+    \choice $-\SI{1.80}{V}$
+\end{choices}
+
+\question[1] How many moles of electrons are required to deposit \SI{1.00}{mol} of
+\ce{Al} from \ce{Al^{3+}}?
+\begin{choices}
+    \choice 1
+    \choice 2
+    \correctchoice 3
+    \choice 6
+\end{choices}
+
+\question[1] In the reaction \ce{Sn^{2+}(aq) + 2Fe^{3+}(aq) -> Sn^{4+}(aq) + 2Fe^{2+}(aq)},
+which species is oxidized?
+\begin{choices}
+    \choice \ce{Fe^{3+}}
+    \choice \ce{Fe^{2+}}
+    \correctchoice \ce{Sn^{2+}}
+    \choice \ce{Sn^{4+}}
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+\vspace{3mm}
+\noindent\textit{Answer all five questions.}
+\vspace{3mm}
+
+\question \textbf{(Structure and Properties of Matter)}
+\begin{parts}
+    \part[3] Phosphorus pentachloride (\ce{PCl5}) reacts with water to form phosphoric acid and
+    hydrogen chloride gas:
+    \[
+    \ce{PCl5(g) + 4H2O(l) -> H3PO4(aq) + 5HCl(g)}
+    \]
+    For the \ce{PCl5} molecule, determine: (i) the hybridization of P, (ii) the molecular
+    geometry, and (iii) whether the molecule is polar or nonpolar.
+    \part[3] Compare the following three substances in terms of their dominant intermolecular
+    forces and predict their relative boiling points, ranking from lowest to highest:
+    \ce{F2}, \ce{HF}, \ce{NaF}.
+    \part[2] The ionic compound \ce{MgO} has a much higher melting point (\SI{2852}{\celsius})
+    than \ce{NaCl} (\SI{801}{\celsius}). Explain this difference using Coulomb's law and
+    lattice energy.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} \ce{PCl5}: (i) \textbf{$sp^3d$} hybridization (5 bonding pairs, expanded octet).
+(ii) Molecular geometry: \textbf{trigonal bipyramidal}. (iii) \textbf{Nonpolar} --- the five
+P--Cl bond dipoles are arranged symmetrically and cancel completely.
+
+\textbf{(b)}
+\begin{itemize}
+    \item \ce{F2}: \textbf{London dispersion} only (nonpolar, diatomic). Very low boiling point
+    (\SI{-188}{\celsius}).
+    \item \ce{HF}: \textbf{London dispersion, dipole--dipole, hydrogen bonding} (strong H-bond).
+    Higher boiling point (\SI{19}{\celsius}).
+    \item \ce{NaF}: \textbf{Ionic bonding} (not an intermolecular force but an ionic lattice).
+    Highest melting/boiling point (\SI{993}{\celsius}).
+\end{itemize}
+Ranking: \ce{F2} $<$ \ce{HF} $<$ \ce{NaF}.
+
+\textbf{(c)} Lattice energy $\propto \dfrac{q_+\,q_-}{r}$. In \ce{MgO}: $q_+ = +2$,
+$q_- = -2$, $r(\ce{MgO}) < r(\ce{NaCl})$ (smaller ions). In \ce{NaCl}: $q_+ = +1$,
+$q_- = -1$. The product of charges in \ce{MgO} is $2\times2 = 4$ vs.\ $1\times1 = 1$ for
+\ce{NaCl}. The much larger charges (and smaller ionic radius) give \ce{MgO} a far greater
+lattice energy, requiring much more energy to melt.
+\end{solution}
+
+\question \textbf{(Organic Chemistry)}
+
+An organic compound A has the molecular formula \ce{C4H8O2}.
+\begin{itemize}
+    \item It has a pleasant fruity odour.
+    \item It does not react with \ce{Na} metal.
+    \item It can be hydrolysed in aqueous \ce{NaOH} to produce an alcohol and a carboxylate
+    salt.
+\end{itemize}
+\begin{parts}
+    \part[2] Identify the functional group and class of compound A. Name compound A if it is
+    ethyl ethanoate.
+    \part[3] Write the equation for the hydrolysis of ethyl ethanoate (\ce{CH3COOC2H5}) in
+    aqueous \ce{NaOH}. Identify the products and name the reaction type.
+    \part[3] Starting from ethanol and ethanoic acid, describe in words the steps and
+    conditions required to synthesize ethyl ethanoate. Write the balanced equation and explain
+    the role of the \ce{H2SO4} catalyst.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Functional group: \textbf{ester} (\ce{-COO-}). Does not react with Na (no OH),
+pleasant fruity odour and hydrolysable confirm it is an ester. Compound A is
+\textbf{ethyl ethanoate} (\ce{CH3COOC2H5}).
+
+\textbf{(b)} Saponification (base hydrolysis):
+\[
+\ce{CH3COOC2H5(l) + NaOH(aq) -> CH3COO-Na+(aq) + C2H5OH(aq)}
+\]
+Products: \textbf{sodium ethanoate} (carboxylate salt) and \textbf{ethanol} (alcohol).
+Reaction type: \textbf{saponification (hydrolysis / condensation reverse)}.
+
+\textbf{(c)} Esterification conditions: mix ethanol and ethanoic acid with a few drops of
+concentrated \ce{H2SO4} catalyst; heat gently under reflux.
+\[
+\ce{CH3COOH(l) + C2H5OH(l) <=>[H2SO4][\Delta] CH3COOC2H5(l) + H2O(l)}
+\]
+The \ce{H2SO4} catalyst protonates the carbonyl oxygen of the carboxylic acid, activating it
+toward nucleophilic attack by the alcohol. It lowers the activation energy and speeds up the
+reaction without shifting the equilibrium position (does not change yield). The reaction is
+reversible, so excess of one reactant or removal of water improves yield.
+\end{solution}
+
+\question \textbf{(Energy Changes and Rates of Reaction)}
+\begin{parts}
+    \part[4] \SI{50.0}{mL} of \SI{1.00}{mol/L} \ce{HCl} is mixed with \SI{50.0}{mL} of
+    \SI{1.00}{mol/L} \ce{NaOH} in a coffee-cup calorimeter. The temperature rises from
+    \SI{21.5}{\celsius} to \SI{28.3}{\celsius}. Assume the solution density is
+    \SI{1.00}{g/mL} and $c = \SI{4.18}{J\,g^{-1}\,\celsius^{-1}}$.
+    Calculate $\Delta H_{neutralization}$ in kJ per mole of water formed.
+    \part[4] Using Hess's Law, calculate $\Delta H$ for the reaction:
+    \[
+    \ce{2C(s) + H2(g) -> C2H2(g)} \quad \Delta H = \, ?
+    \]
+    given:
+    \begin{align*}
+    \text{(1)}\; & \ce{C2H2(g) + 5/2 O2(g) -> 2CO2(g) + H2O(l)} \; \Delta H_1 = -\SI{1300}{kJ}\\
+    \text{(2)}\; & \ce{C(s) + O2(g) -> CO2(g)} \; \Delta H_2 = -\SI{394}{kJ}\\
+    \text{(3)}\; & \ce{H2(g) + 1/2 O2(g) -> H2O(l)} \; \Delta H_3 = -\SI{286}{kJ}
+    \end{align*}
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Total volume $= \SI{100.0}{mL}$; total mass $= \SI{100.0}{g}$.
+\[
+q_{soln} = mc\Delta T = (100.0)(4.18)(28.3 - 21.5) = (100.0)(4.18)(6.8) = \SI{2842}{J}
+\]
+$q_{rxn} = -q_{soln} = \SI{-2842}{J} = \SI{-2.842}{kJ}$ (exothermic).
+
+Moles of \ce{HCl} = moles of \ce{NaOH} = $(0.0500\ \text{L})(1.00\ \text{mol/L}) =
+\SI{0.0500}{mol}$. One mole of \ce{H2O} is formed per mole of acid.
+\[
+\Delta H_{neutralization} = \frac{-2.842}{0.0500} = \mathbf{-56.8\ kJ/mol}
+\]
+
+\textbf{(b)} To obtain \ce{2C(s) + H2(g) -> C2H2(g)}, manipulate the given equations:
+\begin{itemize}
+    \item Reverse (1): \ce{2CO2(g) + H2O(l) -> C2H2(g) + 5/2 O2(g)}; $\Delta H = +1300\ \text{kJ}$
+    \item Keep (2) $\times$ 2: $2 \times (-394) = -788\ \text{kJ}$
+    \item Keep (3): $\Delta H_3 = -286\ \text{kJ}$
+\end{itemize}
+Adding and cancelling (\ce{2CO2}, \ce{H2O}, \ce{O2}):
+\[
+\Delta H = +1300 + (-788) + (-286) = \mathbf{+226\ kJ}
+\]
+(Endothermic, consistent with the formation of an unstable triple-bonded molecule.)
+\end{solution}
+
+\question \textbf{(Chemical Systems and Equilibrium)}
+
+Nitrous acid (\ce{HNO2}) is a weak acid with $K_a = 4.5\times10^{-4}$ at \SI{25}{\celsius}.
+\begin{parts}
+    \part[4] Calculate the pH and percent dissociation of a \SI{0.200}{mol/L} \ce{HNO2}
+    solution. Construct a complete ICE table.
+    \part[4] A buffer solution is prepared by mixing \SI{0.200}{mol/L} \ce{HNO2} and
+    \SI{0.150}{mol/L} \ce{NaNO2}.
+    \begin{itemize}
+        \item[(i)] Calculate the pH of this buffer using the Henderson--Hasselbalch equation:
+        $\text{pH} = pK_a + \log\dfrac{[\text{A}^-]}{[\text{HA}]}$
+        \item[(ii)] Explain qualitatively what happens to the pH when a small amount of
+        \ce{HCl} is added to this buffer. Write the equation for the reaction that occurs.
+    \end{itemize}
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} ICE table for \ce{HNO2(aq) <=> H+(aq) + NO2-(aq)}:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+ & \ce{HNO2} & \ce{H+} & \ce{NO2-} \\
+\midrule
+I & 0.200 & 0 & 0 \\
+C & $-x$ & $+x$ & $+x$ \\
+E & $0.200-x$ & $x$ & $x$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\[
+K_a = \frac{x^2}{0.200 - x} = 4.5\times10^{-4}
+\]
+Assume $x \ll 0.200$:
+\[
+x^2 = (4.5\times10^{-4})(0.200) = 9.0\times10^{-5} \implies x = 9.49\times10^{-3}\ \text{mol/L}
+\]
+\[
+\text{pH} = -\log(9.49\times10^{-3}) = \mathbf{2.02}
+\]
+\[
+\text{\% dissociation} = \frac{9.49\times10^{-3}}{0.200}\times100\% = \mathbf{4.7\%}
+\]
+(Check: $4.7\% < 5\%$, assumption valid.)
+
+\textbf{(b)(i)}
+\[
+pK_a = -\log(4.5\times10^{-4}) = 3.35
+\]
+\[
+\text{pH} = 3.35 + \log\frac{0.150}{0.200} = 3.35 + \log(0.750) = 3.35 + (-0.125) = \mathbf{3.22}
+\]
+
+\textbf{(b)(ii)} When \ce{HCl} is added, \ce{H+} ions are introduced. The conjugate base
+\ce{NO2-} in the buffer reacts with the added \ce{H+}:
+\[
+\ce{NO2-(aq) + H+(aq) -> HNO2(aq)}
+\]
+This consumes most of the added acid and converts it to the weak acid, so the pH decreases
+only slightly. Without the buffer, the same amount of \ce{HCl} would cause a large drop in pH.
+\end{solution}
+
+\question \textbf{(Electrochemistry)}
+
+Consider the following standard reduction potentials:
+\[
+E^\circ(\ce{Cu^{2+}/Cu}) = +\SI{0.34}{V}, \quad E^\circ(\ce{Fe^{2+}/Fe}) = -\SI{0.44}{V}
+\]
+\begin{parts}
+    \part[2] Write the spontaneous overall cell reaction and calculate $E^\circ_{cell}$.
+    \part[2] Calculate $\Delta G^\circ$ for the cell reaction.
+    ($F = \SI{9.65e4}{C/mol}$)
+    \part[4] Copper metal is to be electroplated from a \ce{CuSO4(aq)} solution onto an iron
+    object.
+    \begin{itemize}
+        \item[(i)] In the electrolytic cell for this process, identify which electrode is the
+        anode and which is the cathode.
+        \item[(ii)] Write the half-reaction at the cathode.
+        \item[(iii)] Calculate the mass of Cu deposited if a current of \SI{3.00}{A} flows
+        for \SI{30.0}{min}. ($M_{\ce{Cu}} = \SI{63.55}{g/mol}$)
+    \end{itemize}
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Lower reduction potential = anode (Fe is oxidized):
+\begin{align*}
+\text{Anode (ox):}\  & \ce{Fe(s) -> Fe^{2+}(aq) + 2e-} \\
+\text{Cathode (red):}\  & \ce{Cu^{2+}(aq) + 2e- -> Cu(s)}
+\end{align*}
+Overall: $\ce{Fe(s) + Cu^{2+}(aq) -> Fe^{2+}(aq) + Cu(s)}$
+\[
+E^\circ_{cell} = E^\circ_{cathode} - E^\circ_{anode} = (+0.34) - (-0.44) = \mathbf{+0.78\ V}
+\]
+
+\textbf{(b)} $n = 2$ electrons transferred.
+\[
+\Delta G^\circ = -nFE^\circ_{cell} = -(2)(9.65\times10^4)(0.78) = \mathbf{-1.51\times10^5\ J
+= -151\ kJ}
+\]
+Reaction is spontaneous ($\Delta G^\circ < 0$, $E^\circ_{cell} > 0$).
+
+\textbf{(c)}
+\begin{itemize}
+    \item[(i)] In the electroplating cell: the \textbf{iron object is the cathode} (copper
+    is deposited on it); the \textbf{copper electrode or inert anode} is the anode.
+    \item[(ii)] Cathode: \ce{Cu^{2+}(aq) + 2e- -> Cu(s)}
+    \item[(iii)] $Q = It = (3.00)(30.0 \times 60) = (3.00)(1800) = \SI{5400}{C}$
+    \[
+    n_{e^-} = \frac{5400}{9.65\times10^4} = 5.596\times10^{-2}\ \text{mol}
+    \]
+    \[
+    n_{\ce{Cu}} = \frac{5.596\times10^{-2}}{2} = 2.798\times10^{-2}\ \text{mol}
+    \]
+    \[
+    m_{\ce{Cu}} = (2.798\times10^{-2})(63.55) = \mathbf{1.78\ g}
+    \]
+\end{itemize}
+\end{solution}
+
+\end{questions}
+\end{document}

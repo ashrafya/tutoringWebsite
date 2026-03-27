@@ -1,0 +1,306 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Forces \& Newton's Laws}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Physics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units and free body diagrams where required.
+    Use $g = \SI{9.8}{m/s^2}$.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Newton's First Law states that an object at rest will remain at rest unless:
+\begin{choices}
+    \choice It has zero mass
+    \correctchoice A net external force acts on it
+    \choice It is moving at constant velocity
+    \choice Gravity is absent
+\end{choices}
+
+\question[1] A \SI{5.0}{kg} object accelerates at \SI{3.0}{m/s^2}. The net force on it is:
+\begin{choices}
+    \choice \SI{1.7}{N}
+    \correctchoice \SI{15}{N}
+    \choice \SI{8.0}{N}
+    \choice \SI{45}{N}
+\end{choices}
+
+\question[1] Newton's Third Law states that:
+\begin{choices}
+    \choice Action and reaction forces act on the same object
+    \correctchoice For every action force, there is an equal and opposite reaction force on a different object
+    \choice Forces always cancel in pairs
+    \choice Heavier objects exert greater reaction forces
+\end{choices}
+
+\question[1] The weight of a \SI{60}{kg} person on Earth is:
+\begin{choices}
+    \choice \SI{60}{N}
+    \choice \SI{6.1}{N}
+    \correctchoice \SI{588}{N}
+    \choice \SI{600}{kg}
+\end{choices}
+
+\question[1] An object is in equilibrium. Which statement must be true?
+\begin{choices}
+    \choice It is at rest
+    \choice It is moving at constant speed
+    \correctchoice The net force on it is zero
+    \choice No forces act on it
+\end{choices}
+
+\question[1] A \SI{10}{kg} box sits on a surface with $\mu_k = 0.30$. The kinetic friction
+force is:
+\begin{choices}
+    \choice \SI{3.0}{N}
+    \correctchoice \SI{29.4}{N}
+    \choice \SI{98}{N}
+    \choice \SI{0.30}{N}
+\end{choices}
+
+\question[1] Static friction is \textbf{greater than} kinetic friction because:
+\begin{choices}
+    \choice Objects at rest have more inertia
+    \correctchoice More force is needed to start motion than to maintain it
+    \choice $\mu_s < \mu_k$ always
+    \choice Static friction depends on velocity
+\end{choices}
+
+\question[1] A block is on a frictionless inclined plane at angle $\theta$. The component
+of gravity along the incline (down the slope) is:
+\begin{choices}
+    \choice $mg\cos\theta$
+    \correctchoice $mg\sin\theta$
+    \choice $mg\tan\theta$
+    \choice $mg$
+\end{choices}
+
+\question[1] A spring with $k = \SI{200}{N/m}$ is stretched \SI{0.15}{m}. The restoring
+force is:
+\begin{choices}
+    \choice \SI{0.75}{N}
+    \choice \SI{200}{N}
+    \correctchoice \SI{30}{N}
+    \choice \SI{1333}{N}
+\end{choices}
+
+\question[1] An elevator accelerates upward. The normal force on a passenger inside is:
+\begin{choices}
+    \choice Equal to their weight
+    \correctchoice Greater than their weight
+    \choice Less than their weight
+    \choice Zero
+\end{choices}
+
+\question[1] Two blocks of mass \SI{3.0}{kg} and \SI{5.0}{kg} are connected by a rope
+and pulled by a force of \SI{24}{N} (frictionless surface). The acceleration of the system is:
+\begin{choices}
+    \choice \SI{3.0}{m/s^2}
+    \correctchoice \SI{3.0}{m/s^2}
+    \choice \SI{8.0}{m/s^2}
+    \choice \SI{4.8}{m/s^2}
+\end{choices}
+
+\question[1] The normal force on a box resting on a horizontal surface equals its weight
+when:
+\begin{choices}
+    \choice The box is moving
+    \correctchoice The surface is horizontal and no vertical forces other than gravity act
+    \choice The coefficient of friction is zero
+    \choice The box is accelerating horizontally
+\end{choices}
+
+\question[1] A \SI{2.0}{kg} object hangs from two ropes, each making \ang{30} with the
+ceiling. The tension in each rope is:
+\begin{choices}
+    \choice \SI{9.8}{N}
+    \correctchoice \SI{11.3}{N}
+    \choice \SI{19.6}{N}
+    \choice \SI{5.0}{N}
+\end{choices}
+
+\question[1] A net force of \SI{0}{N} means:
+\begin{choices}
+    \choice No forces act on the object
+    \correctchoice All forces on the object are balanced
+    \choice The object must be at rest
+    \choice The object is decelerating
+\end{choices}
+
+\question[1] Hooke's Law states:
+\begin{choices}
+    \choice $F = ma$
+    \correctchoice $F = -kx$
+    \choice $F = \mu mg$
+    \choice $F = mg\sin\theta$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question A \SI{12}{kg} box is pushed across a horizontal floor by a horizontal force of
+\SI{60}{N}. The coefficient of kinetic friction is $\mu_k = 0.25$.
+\begin{parts}
+    \part[2] Draw a free body diagram showing all forces on the box.
+    \part[2] Calculate the normal force and the friction force.
+    \part[3] Calculate the acceleration of the box.
+    \part[2] If the pushing force is removed, how far does the box slide before stopping,
+    given it was moving at \SI{4.0}{m/s} when the force was removed?
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} FBD: weight $mg$ down, normal force $F_N$ up, applied force \SI{60}{N} right,
+friction $f_k$ left.
+
+\textbf{(b)} Vertical equilibrium: $F_N = mg = 12 \times 9.8 = \SI{117.6}{N}$
+
+$f_k = \mu_k F_N = 0.25 \times 117.6 = \mathbf{\SI{29.4}{N}}$
+
+\textbf{(c)} $F_\text{net} = F_\text{app} - f_k = 60 - 29.4 = \SI{30.6}{N}$
+\[
+a = \frac{F_\text{net}}{m} = \frac{30.6}{12} = \mathbf{\SI{2.55}{m/s^2}}$
+\]
+
+\textbf{(d)} After force removed: $F_\text{net} = -f_k = -29.4\,\text{N}$;\quad
+$a = \dfrac{-29.4}{12} = \SI{-2.45}{m/s^2}$
+
+$v^2 = v_0^2 + 2a\Delta d \Rightarrow 0 = 16 + 2(-2.45)\Delta d$
+\[
+\Delta d = \frac{16}{4.90} = \mathbf{\SI{3.27}{m}}
+\]
+\end{solution}
+
+\question A \SI{5.0}{kg} block rests on a frictionless inclined plane at \ang{35} to
+the horizontal.
+\begin{parts}
+    \part[2] Draw a free body diagram with all forces resolved along and perpendicular
+    to the incline.
+    \part[2] Calculate the component of gravity along the incline (parallel to slope).
+    \part[2] Calculate the normal force.
+    \part[3] If the incline has $\mu_k = 0.20$ (block is sliding down), find the net
+    force and acceleration of the block.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} FBD: weight $mg$ down (components: $mg\sin\theta$ down the slope,
+$mg\cos\theta$ into the slope); normal $F_N$ perpendicular out of slope;
+friction $f_k$ up the slope (opposing motion).
+
+\textbf{(b)} $F_\parallel = mg\sin\theta = 5.0 \times 9.8 \times \sin\ang{35}
+= 49 \times 0.574 = \mathbf{\SI{28.1}{N}}$ down the slope
+
+\textbf{(c)} $F_N = mg\cos\theta = 49 \times \cos\ang{35} = 49 \times 0.819
+= \mathbf{\SI{40.1}{N}}$
+
+\textbf{(d)} $f_k = \mu_k F_N = 0.20 \times 40.1 = \SI{8.02}{N}$ (up slope)
+\[
+F_\text{net} = F_\parallel - f_k = 28.1 - 8.02 = \mathbf{\SI{20.1}{N} \text{ down slope}}
+\]
+\[
+a = \frac{F_\text{net}}{m} = \frac{20.1}{5.0} = \mathbf{\SI{4.02}{m/s^2} \text{ down slope}}
+\]
+\end{solution}
+
+\question In an Atwood machine, a \SI{4.0}{kg} mass ($m_1$) and a \SI{6.0}{kg} mass ($m_2$)
+hang on either side of a frictionless, massless pulley.
+\begin{parts}
+    \part[3] Draw the free body diagrams for both masses. Write Newton's second law for
+    each.
+    \part[3] Find the acceleration of the system.
+    \part[2] Find the tension in the rope.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} For $m_1$ (lighter, accelerates up): $T - m_1 g = m_1 a$
+
+For $m_2$ (heavier, accelerates down): $m_2 g - T = m_2 a$
+
+\textbf{(b)} Add the two equations:
+\[
+m_2 g - m_1 g = (m_1 + m_2)a \implies a = \frac{(m_2 - m_1)g}{m_1+m_2}
+= \frac{(6.0-4.0)(9.8)}{10.0} = \frac{19.6}{10.0} = \mathbf{\SI{1.96}{m/s^2}}
+\]
+
+\textbf{(c)} From $m_1$'s equation:
+\[
+T = m_1(g + a) = 4.0(9.8 + 1.96) = 4.0 \times 11.76 = \mathbf{\SI{47.0}{N}}
+\]
+\end{solution}
+
+\question A spring scale in an elevator reads \SI{650}{N} for a person whose true weight is
+\SI{588}{N} (mass = \SI{60}{kg}).
+\begin{parts}
+    \part[2] Draw the FBD of the person and write Newton's second law.
+    \part[2] Find the acceleration of the elevator. State its direction.
+    \part[2] What would the scale read if the elevator were in free fall?
+    \part[2] A spring with $k = \SI{500}{N/m}$ hangs from the elevator ceiling with a
+    \SI{2.0}{kg} mass. How much does the spring stretch when the elevator accelerates
+    upward at \SI{1.07}{m/s^2}$?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} FBD: weight \SI{588}{N} down, normal (scale reading) \SI{650}{N} up.
+$F_N - mg = ma$
+
+\textbf{(b)} $a = \dfrac{F_N - mg}{m} = \dfrac{650 - 588}{60} = \dfrac{62}{60}
+= \mathbf{\SI{1.03}{m/s^2} \text{ upward}}$
+
+\textbf{(c)} In free fall, $a = g$ downward $\Rightarrow F_N = m(g - g) = \mathbf{\SI{0}{N}}$
+(apparent weightlessness)
+
+\textbf{(d)} Net upward force on mass: $F_\text{spring} - mg = ma$
+\[
+F_\text{spring} = m(g+a) = 2.0(9.8 + 1.07) = 2.0 \times 10.87 = \SI{21.74}{N}
+\]
+\[
+x = \frac{F}{k} = \frac{21.74}{500} = \mathbf{\SI{0.0435}{m} \approx \SI{4.35}{cm}}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

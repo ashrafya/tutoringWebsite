@@ -1,0 +1,425 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Financial Mathematics}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+% Q1
+\question[1]
+A principal of \$5{,}000 is invested at 4\% per year compounded annually for 3 years. The future value is closest to:
+\begin{choices}
+    \choice \$5{,}600.00
+    \correctchoice \$5{,}624.32
+    \choice \$5{,}612.00
+    \choice \$5{,}648.00
+\end{choices}
+\vspace{3mm}
+
+% Q2
+\question[1]
+Which formula correctly gives the future value $A$ of a principal $P$ compounded $n$ times per year at annual rate $r$ for $t$ years?
+\begin{choices}
+    \choice $A = P(1 + rt)$
+    \correctchoice $A = P\!\left(1 + \dfrac{r}{n}\right)^{nt}$
+    \choice $A = P\!\left(1 + \dfrac{r}{t}\right)^{n}$
+    \choice $A = P e^{rt}$
+\end{choices}
+\vspace{3mm}
+
+% Q3
+\question[1]
+An annuity pays \$500 at the end of each month for 10 years at 6\%/year compounded monthly. The interest rate per period $i$ is:
+\begin{choices}
+    \choice 6\%
+    \choice 0.6\%
+    \correctchoice 0.5\%
+    \choice 1\%
+\end{choices}
+\vspace{3mm}
+
+% Q4
+\question[1]
+The future value of an ordinary annuity formula is:
+\begin{choices}
+    \correctchoice $\displaystyle FV = PMT \times \frac{(1+i)^n - 1}{i}$
+    \choice $\displaystyle FV = PMT \times \frac{1-(1+i)^{-n}}{i}$
+    \choice $\displaystyle FV = PMT \times \frac{i}{(1+i)^n - 1}$
+    \choice $\displaystyle FV = PMT \times (1+i)^n$
+\end{choices}
+\vspace{3mm}
+
+% Q5
+\question[1]
+The present value of an ordinary annuity formula is:
+\begin{choices}
+    \choice $\displaystyle PV = PMT \times \frac{(1+i)^n - 1}{i}$
+    \correctchoice $\displaystyle PV = PMT \times \frac{1-(1+i)^{-n}}{i}$
+    \choice $\displaystyle PV = PMT \times i \cdot (1+i)^n$
+    \choice $\displaystyle PV = \frac{PMT}{(1+i)^n}$
+\end{choices}
+\vspace{3mm}
+
+% Q6
+\question[1]
+A lump sum of \$10{,}000 is invested at 5\% compounded semi-annually. The effective annual interest rate (EAR) is:
+\begin{choices}
+    \choice 5.00\%
+    \correctchoice 5.0625\%
+    \choice 5.125\%
+    \choice 4.975\%
+\end{choices}
+\vspace{3mm}
+
+% Q7
+\question[1]
+Which of the following describes an \textit{ordinary annuity}?
+\begin{choices}
+    \choice Payments made at the beginning of each period
+    \correctchoice Payments made at the end of each period
+    \choice A single lump-sum payment
+    \choice Payments that grow by a fixed percentage each period
+\end{choices}
+\vspace{3mm}
+
+% Q8
+\question[1]
+A mortgage has a principal of \$200{,}000 at 4\%/year compounded semi-annually. When calculating monthly payments, the equivalent monthly interest rate $i$ satisfies:
+\begin{choices}
+    \choice $i = 0.04/12$
+    \correctchoice $i = (1.02)^{1/6} - 1$
+    \choice $i = (1.04)^{1/12} - 1$
+    \choice $i = 0.04/2$
+\end{choices}
+\vspace{3mm}
+
+% Q9
+\question[1]
+A car loan of \$15{,}000 is taken at 6\%/year compounded monthly for 4 years. The number of payment periods $n$ is:
+\begin{choices}
+    \choice 4
+    \choice 6
+    \choice 36
+    \correctchoice 48
+\end{choices}
+\vspace{3mm}
+
+% Q10
+\question[1]
+Which financial goal is \textit{best} modelled by the present value of an annuity formula?
+\begin{choices}
+    \choice Saving a fixed amount each month to reach a target balance
+    \correctchoice Determining how large a fund must be to support regular withdrawals
+    \choice Calculating how much a savings account grows over time
+    \choice Finding the compound interest on a single deposit
+\end{choices}
+\vspace{3mm}
+
+% Q11
+\question[1]
+Total interest paid on a loan equals:
+\begin{choices}
+    \correctchoice Total of all payments minus the original principal
+    \choice Original principal minus total of all payments
+    \choice Monthly payment times annual rate
+    \choice Principal times the number of years
+\end{choices}
+\vspace{3mm}
+
+% Q12
+\question[1]
+An RRSP contribution of \$200/month is made for 30 years at 5\% compounded monthly. The total amount \textit{contributed} (not including interest) is:
+\begin{choices}
+    \choice \$60{,}000
+    \correctchoice \$72{,}000
+    \choice \$80{,}000
+    \choice \$84{,}000
+\end{choices}
+\vspace{3mm}
+
+% Q13
+\question[1]
+If you double the amortization period on a mortgage while keeping the interest rate and principal fixed, the monthly payment will:
+\begin{choices}
+    \choice Exactly halve
+    \correctchoice Decrease, but not by exactly half
+    \choice Stay the same
+    \choice Increase
+\end{choices}
+\vspace{3mm}
+
+% Q14
+\question[1]
+A \$1{,}000 bond pays 3\% simple interest per year for 5 years. The total amount received at maturity is:
+\begin{choices}
+    \choice \$1{,}159.27
+    \choice \$1{,}030.00
+    \correctchoice \$1{,}150.00
+    \choice \$1{,}159.00
+\end{choices}
+\vspace{3mm}
+
+% Q15
+\question[1]
+Two options for a \$25{,}000 loan: Option X charges 4\% compounded monthly over 5 years; Option Y charges 4\% compounded annually over 5 years. Which statement is true?
+\begin{choices}
+    \choice Option X and Option Y cost the same in total
+    \correctchoice Option X costs more in total interest than Option Y
+    \choice Option Y costs more in total interest than Option X
+    \choice It depends on the monthly payment amount
+\end{choices}
+\vspace{3mm}
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\vspace{5mm}
+
+%% Q16 --- FV annuity / RRSP
+\question[6]
+\textbf{RRSP Savings Plan.}
+Maya contributes \$300 at the end of each month into an RRSP that earns 6\%/year compounded monthly for 25 years.
+
+\begin{parts}
+\part[2] State the values of $PMT$, $i$, and $n$.
+\part[2] Calculate the future value of Maya's RRSP at the end of 25 years.
+\part[2] How much of that total is interest earned (not contributions)?
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} $PMT = \$300$; \quad $i = \dfrac{0.06}{12} = 0.005$; \quad $n = 25 \times 12 = 300$.
+
+\textbf{(b)}
+\[
+FV = PMT \times \frac{(1+i)^n - 1}{i}
+   = 300 \times \frac{(1.005)^{300} - 1}{0.005}
+\]
+$(1.005)^{300} = e^{300\ln(1.005)} \approx e^{300 \times 0.0049875} \approx e^{1.49625} \approx 4.4650$
+\[
+FV = 300 \times \frac{4.4650 - 1}{0.005}
+   = 300 \times \frac{3.4650}{0.005}
+   = 300 \times 693.00
+   \approx \$207{,}900.94
+\]
+(Using a more precise value: $(1.005)^{300} \approx 4.46540$, giving $FV \approx \$207{,}924.07$.)
+
+\textbf{(c)}
+Total contributions $= 300 \times 300 = \$90{,}000$.\\
+Interest earned $= \$207{,}924.07 - \$90{,}000 = \$117{,}924.07$.
+\end{solution}
+
+\vspace{5mm}
+
+%% Q17 --- PV annuity / retirement fund
+\question[6]
+\textbf{Retirement Fund.}
+Carlos wants to withdraw \$2{,}000 at the end of each month for 20 years from a retirement fund that earns 5\%/year compounded monthly.
+
+\begin{parts}
+\part[2] State the values of $PMT$, $i$, and $n$.
+\part[2] Calculate the present value of the fund required.
+\part[2] How much more than the total withdrawals is the required present value? (i.e., what is the interest portion working in Carlos's favour?)
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} $PMT = \$2{,}000$; \quad $i = \dfrac{0.05}{12} \approx 0.004\overline{16}$; \quad $n = 20 \times 12 = 240$.
+
+\textbf{(b)}
+\[
+PV = PMT \times \frac{1-(1+i)^{-n}}{i}
+   = 2000 \times \frac{1-(1.004\overline{16})^{-240}}{0.004\overline{16}}
+\]
+$(1.004\overline{16})^{240} \approx 2.7126$, so $(1.004\overline{16})^{-240} \approx 0.36861$.
+\[
+PV = 2000 \times \frac{1 - 0.36861}{0.004\overline{16}}
+   = 2000 \times \frac{0.63139}{0.004\overline{16}}
+   \approx 2000 \times 151.525
+   \approx \$303{,}049.
+\]
+
+\textbf{(c)}
+Total withdrawals $= 2000 \times 240 = \$480{,}000$.\\
+Difference $= \$480{,}000 - \$303{,}049 = \$176{,}951$.\\
+The fund earns approximately \$176{,}951 in interest over 20 years, which is what allows Carlos to withdraw more than he started with.
+\end{solution}
+
+\vspace{5mm}
+
+%% Q18 --- Mortgage
+\question[5]
+\textbf{Mortgage Payment.}
+A homebuyer takes a \$350{,}000 mortgage at 4.8\%/year compounded semi-annually, amortized over 25 years with monthly payments.
+
+\begin{parts}
+\part[2] Convert the semi-annual rate to an equivalent monthly rate $i$.
+\part[1] State the number of payment periods $n$.
+\part[2] Find the monthly payment and the total interest paid over 25 years.
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} The nominal rate is 4.8\%/year compounded semi-annually, so the semi-annual rate is $\dfrac{0.048}{2} = 0.024$.
+
+Equivalent monthly rate:
+\[
+(1+i)^{12} = (1.024)^{2} \implies i = (1.024)^{2/12} - 1 = (1.024)^{1/6} - 1
+\]
+\[
+i = (1.024)^{0.1\overline{6}} - 1 \approx 1.003965 - 1 = 0.003965 \quad (0.3965\%/\text{month})
+\]
+
+\textbf{(b)} $n = 25 \times 12 = 300$ monthly payments.
+
+\textbf{(c)} Using the PV annuity formula rearranged for PMT:
+\[
+PMT = PV \times \frac{i}{1-(1+i)^{-n}}
+    = 350{,}000 \times \frac{0.003965}{1-(1.003965)^{-300}}
+\]
+$(1.003965)^{300} \approx e^{300 \times 0.003957} \approx e^{1.1871} \approx 3.2779$, so $(1.003965)^{-300} \approx 0.30507$.
+\[
+PMT = 350{,}000 \times \frac{0.003965}{1 - 0.30507}
+    = 350{,}000 \times \frac{0.003965}{0.69493}
+    \approx 350{,}000 \times 0.005705
+    \approx \$1{,}996.63
+\]
+Total paid $= 1{,}996.63 \times 300 \approx \$598{,}989$.\\
+Total interest $= \$598{,}989 - \$350{,}000 = \$248{,}989$.
+\end{solution}
+
+\vspace{5mm}
+
+%% Q19 --- Loan comparison
+\question[8]
+\textbf{Car Loan Comparison.}
+Priya needs to borrow \$20{,}000 to buy a car and is comparing two financing options:
+\begin{itemize}
+    \item \textbf{Option A:} 5\%/year compounded monthly, repaid over 5 years
+    \item \textbf{Option B:} 7\%/year compounded monthly, repaid over 4 years
+\end{itemize}
+
+\begin{parts}
+\part[2] Find the monthly payment for Option A.
+\part[2] Find the monthly payment for Option B.
+\part[2] Find the total amount paid under each option.
+\part[2] Which option do you recommend, and why? Consider both the monthly payment and the total cost.
+\end{parts}
+
+\begin{solution}
+\textbf{(a) Option A:} $PV = 20{,}000$, $i = 0.05/12 \approx 0.004167$, $n = 60$.
+\[
+PMT_A = 20{,}000 \times \frac{0.004167}{1-(1.004167)^{-60}}
+\]
+$(1.004167)^{60} \approx 1.28336$, so $(1.004167)^{-60} \approx 0.77921$.
+\[
+PMT_A = 20{,}000 \times \frac{0.004167}{0.22079} \approx 20{,}000 \times 0.018871 \approx \$377.42
+\]
+
+\textbf{(b) Option B:} $PV = 20{,}000$, $i = 0.07/12 \approx 0.005833$, $n = 48$.
+\[
+PMT_B = 20{,}000 \times \frac{0.005833}{1-(1.005833)^{-48}}
+\]
+$(1.005833)^{48} \approx 1.32290$, so $(1.005833)^{-48} \approx 0.75590$.
+\[
+PMT_B = 20{,}000 \times \frac{0.005833}{0.24410} \approx 20{,}000 \times 0.023893 \approx \$477.86
+\]
+
+\textbf{(c)}
+Total A $= 377.42 \times 60 = \$22{,}645.20$; \quad interest A $= \$2{,}645.20$.\\
+Total B $= 477.86 \times 48 = \$22{,}937.28$; \quad interest B $= \$2{,}937.28$.
+
+\textbf{(d)} Option A is recommended if the higher total cost of Option B matters more. Option A has a lower monthly payment (\$377 vs \$478) and a lower total cost (\$22{,}645 vs \$22{,}937). Option B finishes one year sooner but costs more overall. For most budgets, Option A is preferable.
+\end{solution}
+
+\vspace{5mm}
+
+%% Q20 --- Retirement planning (FV + withdrawal)
+\question[8]
+\textbf{Retirement Planning.}
+At age 30, Dani begins investing \$500 at the end of each month into a retirement account that earns 7\%/year compounded monthly. She plans to retire at age 65.
+
+\begin{parts}
+\part[2] How many payments does Dani make?
+\part[3] Calculate the future value of her account at retirement.
+\part[3] After retirement, Dani wants equal monthly withdrawals over 25 years from the same account (still earning 7\%/year compounded monthly). Find the monthly withdrawal amount.
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} Number of payments: $n = (65 - 30) \times 12 = 35 \times 12 = 420$.
+
+\textbf{(b)}
+$PMT = 500$, $i = 0.07/12 \approx 0.005833$, $n = 420$.
+\[
+FV = 500 \times \frac{(1.005833)^{420} - 1}{0.005833}
+\]
+$(1.005833)^{420} = e^{420 \times \ln(1.005833)} \approx e^{420 \times 0.005817} \approx e^{2.4431} \approx 11.509$.
+\[
+FV = 500 \times \frac{11.509 - 1}{0.005833}
+   = 500 \times \frac{10.509}{0.005833}
+   \approx 500 \times 1{,}801.7
+   \approx \$900{,}854
+\]
+
+\textbf{(c)}
+Now $PV = \$900{,}854$ (the retirement balance), $i = 0.005833$, $n = 25 \times 12 = 300$.
+\[
+PMT = 900{,}854 \times \frac{0.005833}{1-(1.005833)^{-300}}
+\]
+$(1.005833)^{300} \approx e^{300 \times 0.005817} \approx e^{1.7451} \approx 5.727$, so $(1.005833)^{-300} \approx 0.17461$.
+\[
+PMT = 900{,}854 \times \frac{0.005833}{0.82539}
+    \approx 900{,}854 \times 0.007067
+    \approx \$6{,}367\ \text{per month}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

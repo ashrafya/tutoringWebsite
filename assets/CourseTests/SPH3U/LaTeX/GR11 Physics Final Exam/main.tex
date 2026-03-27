@@ -1,0 +1,375 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{SPH3U \event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Physics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.20\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \item Show all work with units. FBDs required where applicable.
+    \item $g = \SI{9.8}{m/s^2}$;\quad $v_\text{sound} = \SI{343}{m/s}$;\quad
+    $k = \SI{8.99e9}{N\cdot m^2/C^2}$;\quad $e = \SI{1.60e-19}{C}$.
+    \item This exam covers all units of SPH3U. Designed for 2 hours.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{2}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{3mm}
+\noindent\textit{Unit 1: Kinematics}
+\vspace{3mm}
+
+\question[1] A car slows from \SI{25}{m/s} to \SI{10}{m/s} in \SI{3.0}{s}. Its acceleration is:
+\begin{choices}
+    \choice \SI{5.0}{m/s^2} forward
+    \correctchoice \SI{-5.0}{m/s^2} (deceleration)
+    \choice \SI{8.3}{m/s^2}
+    \choice \SI{11.7}{m/s^2}
+\end{choices}
+
+\question[1] A ball is thrown horizontally at \SI{10}{m/s} from a \SI{80}{m} cliff.
+The time to land is:
+\begin{choices}
+    \choice \SI{2.0}{s}
+    \correctchoice \SI{4.04}{s}
+    \choice \SI{8.0}{s}
+    \choice \SI{16}{s}
+\end{choices}
+
+\question[1] The range of the ball in the previous question is:
+\begin{choices}
+    \choice \SI{20}{m}
+    \correctchoice \SI{40.4}{m}
+    \choice \SI{80}{m}
+    \choice \SI{160}{m}
+\end{choices}
+
+\question[1] Which graph shows uniform acceleration from rest?
+\begin{choices}
+    \choice A horizontal line on a $d$--$t$ graph
+    \correctchoice A straight line with positive slope on a $v$--$t$ graph
+    \choice A curved line on a $v$--$t$ graph
+    \choice A horizontal line on a $v$--$t$ graph
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 2: Forces}
+\vspace{3mm}
+
+\question[1] A \SI{8.0}{kg} box is pushed along a floor with a net force of \SI{20}{N}.
+Its acceleration is:
+\begin{choices}
+    \choice \SI{0.4}{m/s^2}
+    \correctchoice \SI{2.5}{m/s^2}
+    \choice \SI{160}{m/s^2}
+    \choice \SI{12}{m/s^2}
+\end{choices}
+
+\question[1] A block on a frictionless surface is pulled by a \SI{30}{N} force at
+\ang{30} above horizontal. The horizontal component of this force is:
+\begin{choices}
+    \choice \SI{15}{N}
+    \correctchoice \SI{26}{N}
+    \choice \SI{30}{N}
+    \choice \SI{17.3}{N}
+\end{choices}
+
+\question[1] A spring extends \SI{8.0}{cm} when a \SI{4.0}{N} force is applied.
+Its spring constant is:
+\begin{choices}
+    \choice \SI{0.50}{N/m}
+    \choice \SI{32}{N/m}
+    \correctchoice \SI{50}{N/m}
+    \choice \SI{200}{N/m}
+\end{choices}
+
+\question[1] Newton's Third Law: a book rests on a table. The reaction force to the
+book's weight is:
+\begin{choices}
+    \choice The normal force from the table on the book
+    \correctchoice The gravitational force the book exerts on Earth
+    \choice The friction between table and floor
+    \choice The normal force the book exerts on the table
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 3: Energy}
+\vspace{3mm}
+
+\question[1] A \SI{2.0}{kg} object falls \SI{10}{m} from rest (no air resistance).
+Its speed just before impact is:
+\begin{choices}
+    \choice \SI{10}{m/s}
+    \correctchoice \SI{14}{m/s}
+    \choice \SI{20}{m/s}
+    \choice \SI{196}{m/s}
+\end{choices}
+
+\question[1] A force of \SI{40}{N} acts at \ang{90} to displacement. The work done is:
+\begin{choices}
+    \choice \SI{40}{J}
+    \correctchoice \SI{0}{J}
+    \choice \SI{-40}{J}
+    \choice Depends on displacement
+\end{choices}
+
+\question[1] An engine does \SI{12\,000}{J} of work in \SI{60}{s}. Its power output is:
+\begin{choices}
+    \choice \SI{12\,000}{W}
+    \correctchoice \SI{200}{W}
+    \choice \SI{720\,000}{W}
+    \choice \SI{20}{W}
+\end{choices}
+
+\question[1] A machine has an efficiency of 75\%. If the useful output is \SI{300}{J},
+the energy input was:
+\begin{choices}
+    \choice \SI{225}{J}
+    \correctchoice \SI{400}{J}
+    \choice \SI{375}{J}
+    \choice \SI{300}{J}
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 4: Waves \& Sound}
+\vspace{3mm}
+
+\question[1] A closed air column resonates at \SI{85}{Hz} (fundamental). Its first
+overtone is at:
+\begin{choices}
+    \choice \SI{170}{Hz}
+    \correctchoice \SI{255}{Hz}
+    \choice \SI{340}{Hz}
+    \choice \SI{85}{Hz}
+\end{choices}
+
+\question[1] A wave travels at \SI{6.0}{m/s} with a period of \SI{0.25}{s}.
+Its wavelength is:
+\begin{choices}
+    \choice \SI{0.25}{m}
+    \correctchoice \SI{1.5}{m}
+    \choice \SI{24}{m}
+    \choice \SI{6.0}{m}
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 5: Electricity}
+\vspace{3mm}
+
+\question[1] Three \SI{9}{\ohm} resistors are connected in series to a \SI{27}{V} source.
+The current through the circuit is:
+\begin{choices}
+    \choice \SI{9.0}{A}
+    \correctchoice \SI{1.0}{A}
+    \choice \SI{3.0}{A}
+    \choice \SI{0.33}{A}
+\end{choices}
+
+\question[1] The equivalent resistance of \SI{4}{\ohm} and \SI{12}{\ohm} in parallel is:
+\begin{choices}
+    \choice \SI{16}{\ohm}
+    \choice \SI{8}{\ohm}
+    \correctchoice \SI{3}{\ohm}
+    \choice \SI{6}{\ohm}
+\end{choices}
+
+\question[1] Doubling the voltage across a resistor (constant $R$):
+\begin{choices}
+    \choice Doubles the current but halves the power
+    \correctchoice Doubles the current and quadruples the power
+    \choice Quadruples the current and doubles the power
+    \choice Halves the current
+\end{choices}
+
+\question[1] According to Coulomb's Law, if both charges are doubled and the distance
+is also doubled, the force:
+\begin{choices}
+    \choice Stays the same
+    \correctchoice Stays the same
+    \choice Doubles
+    \choice Quadruples
+\end{choices}
+
+\question[1] A proton moves parallel to a magnetic field. The magnetic force on it is:
+\begin{choices}
+    \choice Maximum
+    \choice Perpendicular to its velocity
+    \correctchoice Zero
+    \choice In the direction of motion
+\end{choices}
+
+\question[1] The energy stored in a spring compressed \SI{0.10}{m} with $k = \SI{800}{N/m}$ is:
+\begin{choices}
+    \choice \SI{80}{J}
+    \choice \SI{8.0}{J}
+    \correctchoice \SI{4.0}{J}
+    \choice \SI{40}{J}
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+
+\question \textbf{(Kinematics)} A stone is thrown from a cliff \SI{60}{m} above the
+ocean at \SI{15}{m/s} horizontally.
+\begin{parts}
+    \part[2] Find the time to reach the water.
+    \part[2] Find the horizontal distance from the base of the cliff.
+    \part[3] Find the speed and direction of the stone just before it hits the water.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\Delta y = \tfrac{1}{2}gt^2$:\quad
+$t = \sqrt{\dfrac{2(60)}{9.8}} = \sqrt{12.24} = \mathbf{\SI{3.50}{s}}$
+
+\textbf{(b)} $\Delta x = v_x t = 15 \times 3.50 = \mathbf{\SI{52.5}{m}}$
+
+\textbf{(c)} $v_y = gt = 9.8 \times 3.50 = \SI{34.3}{m/s}$ down;\quad $v_x = \SI{15}{m/s}$
+\[
+v = \sqrt{15^2 + 34.3^2} = \sqrt{225 + 1176.5} = \sqrt{1401.5} \approx \mathbf{\SI{37.4}{m/s}}
+\]
+\[
+\theta = \arctan\!\left(\frac{34.3}{15}\right) \approx \mathbf{\ang{66} \text{ below horizontal}}
+\]
+\end{solution}
+
+\question \textbf{(Forces)} A \SI{15}{kg} box sits on a ramp inclined at \ang{25}.
+The coefficient of static friction is $\mu_s = 0.45$.
+\begin{parts}
+    \part[2] Calculate the component of gravity parallel to the ramp (tending to slide
+    the box down).
+    \part[2] Calculate the maximum static friction force.
+    \part[2] Will the box slide? Justify quantitatively.
+    \part[2] If the box is given a push and begins to slide ($\mu_k = 0.30$), find its
+    acceleration down the ramp.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $F_\parallel = mg\sin\ang{25} = 15(9.8)(0.4226) = \mathbf{\SI{62.1}{N}}$
+
+\textbf{(b)} $F_N = mg\cos\ang{25} = 15(9.8)(0.9063) = \SI{133.2}{N}$;\quad
+$f_{s,\max} = \mu_s F_N = 0.45 \times 133.2 = \mathbf{\SI{59.9}{N}}$
+
+\textbf{(c)} $F_\parallel = \SI{62.1}{N} > f_{s,\max} = \SI{59.9}{N}$. The gravitational
+component exceeds maximum static friction, so the box \textbf{will slide}.
+
+\textbf{(d)} $f_k = 0.30 \times 133.2 = \SI{39.96}{N}$;\quad
+$F_\text{net} = 62.1 - 39.96 = \SI{22.1}{N}$ down slope
+\[
+a = \frac{22.1}{15} = \mathbf{\SI{1.48}{m/s^2} \text{ down the ramp}}
+\]
+\end{solution}
+
+\question \textbf{(Energy)} A \SI{500}{kg} roller coaster car starts from rest at the
+top of a \SI{40}{m} hill (point A). It rolls down to point B at the bottom
+(\SI{0}{m}), then up to point C at height \SI{25}{m}.
+Ignore friction.
+\begin{parts}
+    \part[2] Find the speed of the car at point B.
+    \part[2] Find the speed of the car at point C.
+    \part[3] In reality, the car reaches point B at only \SI{24}{m/s} due to friction.
+    Find the energy lost to friction between A and B, and the average friction force
+    over the \SI{60}{m} slope from A to B.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $mgh_A = \tfrac{1}{2}mv_B^2$:\quad
+$v_B = \sqrt{2gh_A} = \sqrt{2(9.8)(40)} = \sqrt{784} = \mathbf{\SI{28.0}{m/s}}$
+
+\textbf{(b)} $\tfrac{1}{2}mv_B^2 = \tfrac{1}{2}mv_C^2 + mgh_C$:\quad
+$v_C = \sqrt{v_B^2 - 2gh_C} = \sqrt{784 - 2(9.8)(25)} = \sqrt{784-490} = \sqrt{294}
+= \mathbf{\SI{17.1}{m/s}}$
+
+\textbf{(c)} Actual $E_k$ at B: $\tfrac{1}{2}(500)(24)^2 = \SI{144\,000}{J}$
+
+Initial PE: $mgh_A = 500(9.8)(40) = \SI{196\,000}{J}$
+
+Energy lost: $196\,000 - 144\,000 = \mathbf{\SI{52\,000}{J}}$
+
+$W_\text{friction} = f_k \cdot d \Rightarrow f_k = \dfrac{52\,000}{60} = \mathbf{\SI{867}{N}}$
+\end{solution}
+
+\question \textbf{(Waves)} An open air column has a fundamental frequency of
+\SI{220}{Hz} at \SI{20}{\celsius} (speed of sound = \SI{343}{m/s}).
+\begin{parts}
+    \part[2] Find the length of the air column.
+    \part[2] Find the frequency of the second harmonic (first overtone).
+    \part[3] A source moving toward this pipe at \SI{25}{m/s} emits sound at \SI{220}{Hz}.
+    What frequency does a stationary listener near the pipe hear?
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} Open column: $f_1 = \dfrac{v}{2L} \Rightarrow L = \dfrac{v}{2f_1}
+= \dfrac{343}{2 \times 220} = \dfrac{343}{440} = \mathbf{\SI{0.780}{m}}$
+
+\textbf{(b)} Open columns support all harmonics; second harmonic $= 2f_1 = \mathbf{\SI{440}{Hz}}$
+
+\textbf{(c)} Source approaching, observer stationary:
+\[
+f' = f_s \cdot \frac{v}{v - v_s} = 220 \times \frac{343}{343-25}
+= 220 \times \frac{343}{318} = \mathbf{\SI{237}{Hz}}
+\]
+\end{solution}
+
+\question \textbf{(Electricity)} A circuit has a \SI{24}{V} battery connected to $R_1 =
+\SI{6.0}{\ohm}$ in series with a parallel combination of $R_2 = \SI{4.0}{\ohm}$ and
+$R_3 = \SI{12}{\ohm}$.
+\begin{parts}
+    \part[2] Find the equivalent resistance of $R_2$ and $R_3$ in parallel.
+    \part[2] Find the total circuit resistance and total current from the battery.
+    \part[2] Find the voltage drop across $R_1$ and across the parallel combination.
+    \part[2] Find the current through $R_2$ and $R_3$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\dfrac{1}{R_{23}} = \dfrac{1}{4.0} + \dfrac{1}{12} = \dfrac{3}{12} + \dfrac{1}{12}
+= \dfrac{4}{12} = \dfrac{1}{3}$;\quad $R_{23} = \mathbf{\SI{3.0}{\ohm}}$
+
+\textbf{(b)} $R_T = R_1 + R_{23} = 6.0 + 3.0 = \SI{9.0}{\ohm}$;\quad
+$I_T = \dfrac{V}{R_T} = \dfrac{24}{9.0} = \mathbf{\SI{2.67}{A}}$
+
+\textbf{(c)} $V_1 = I_T R_1 = 2.67 \times 6.0 = \mathbf{\SI{16.0}{V}}$;\quad
+$V_{23} = 24 - 16.0 = \mathbf{\SI{8.0}{V}}$ (or $= I_T \times R_{23} = 2.67 \times 3.0 = \SI{8.0}{V}$)
+
+\textbf{(d)} $I_2 = \dfrac{V_{23}}{R_2} = \dfrac{8.0}{4.0} = \mathbf{\SI{2.0}{A}}$;\quad
+$I_3 = \dfrac{8.0}{12} = \mathbf{\SI{0.667}{A}}$
+
+Check: $I_2 + I_3 = 2.0 + 0.667 = \SI{2.67}{A} = I_T$ \checkmark
+\end{solution}
+
+\end{questions}
+\end{document}

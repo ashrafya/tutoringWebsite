@@ -1,0 +1,383 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Analytic Geometry}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 10 Principles of Mathematics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Leave answers in exact form where appropriate.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] What is the distance between the points $A(1, 2)$ and $B(4, 6)$?
+\begin{choices}
+    \choice $3$
+    \choice $4$
+    \correctchoice $5$
+    \choice $\sqrt{7}$
+\end{choices}
+\vspace{3mm}
+
+\question[1] What is the midpoint of the segment joining $P(-2, 4)$ and $Q(6, -2)$?
+\begin{choices}
+    \choice $(4, 2)$
+    \correctchoice $(2, 1)$
+    \choice $(1, 2)$
+    \choice $(-4, 6)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] What is the slope of the line passing through $(3, -1)$ and $(-1, 7)$?
+\begin{choices}
+    \choice $2$
+    \correctchoice $-2$
+    \choice $\tfrac{1}{2}$
+    \choice $-\tfrac{1}{2}$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which equation represents a line with slope $3$ and $y$-intercept $-4$?
+\begin{choices}
+    \choice $3x + y = 4$
+    \correctchoice $y = 3x - 4$
+    \choice $y = -4x + 3$
+    \choice $3y = x - 4$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Line $\ell_1$ has slope $\dfrac{2}{3}$. A line perpendicular to $\ell_1$ has slope:
+\begin{choices}
+    \choice $\dfrac{2}{3}$
+    \choice $-\dfrac{2}{3}$
+    \correctchoice $-\dfrac{3}{2}$
+    \choice $\dfrac{3}{2}$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which pair of lines is \textbf{parallel}?
+\begin{choices}
+    \choice $y = 2x + 1$ and $y = -2x + 1$
+    \correctchoice $y = 3x - 5$ and $6x - 2y = 8$
+    \choice $y = x + 4$ and $y = -x + 4$
+    \choice $2x + 3y = 6$ and $3x + 2y = 6$
+\end{choices}
+\vspace{3mm}
+
+\question[1] The point $(3, -4)$ lies on a circle centred at the origin. What is the radius?
+\begin{choices}
+    \choice $1$
+    \choice $\sqrt{7}$
+    \choice $4$
+    \correctchoice $5$
+\end{choices}
+\vspace{3mm}
+
+\question[1] What is the equation of the circle centred at the origin with radius $\sqrt{13}$?
+\begin{choices}
+    \choice $x^2 + y^2 = \sqrt{13}$
+    \correctchoice $x^2 + y^2 = 13$
+    \choice $(x-\sqrt{13})^2 + y^2 = 0$
+    \choice $x^2 + y^2 = 169$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Triangle $ABC$ has vertices $A(0,0)$, $B(6,0)$, $C(6,8)$. What type of triangle is it?
+\begin{choices}
+    \choice Equilateral
+    \choice Isosceles and acute
+    \correctchoice Right triangle
+    \choice Scalene acute
+\end{choices}
+\vspace{3mm}
+
+\question[1] The median from vertex $A(2, 4)$ to side $BC$ where $B(0,0)$ and $C(4, 2)$ goes to midpoint:
+\begin{choices}
+    \choice $(2, 1)$
+    \correctchoice $(2, 1)$
+    \choice $(1, 2)$
+    \choice $(3, 2)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] An altitude of a triangle is:
+\begin{choices}
+    \choice A segment from a vertex to the midpoint of the opposite side.
+    \correctchoice A segment from a vertex perpendicular to the opposite side (or its extension).
+    \choice The perpendicular bisector of a side.
+    \choice A segment connecting the midpoints of two sides.
+\end{choices}
+\vspace{3mm}
+
+\question[1] What is the slope of a line parallel to $4x - 2y + 7 = 0$?
+\begin{choices}
+    \choice $-2$
+    \choice $4$
+    \correctchoice $2$
+    \choice $-4$
+\end{choices}
+\vspace{3mm}
+
+\question[1] The perpendicular bisector of segment $PQ$ passes through:
+\begin{choices}
+    \choice Both $P$ and $Q$
+    \choice Only the midpoint of $PQ$, not necessarily perpendicular
+    \correctchoice The midpoint of $PQ$ at a right angle to $PQ$
+    \choice One of the endpoints only
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which point lies on the circle $x^2 + y^2 = 25$?
+\begin{choices}
+    \choice $(3, 5)$
+    \correctchoice $(4, -3)$
+    \choice $(-5, 5)$
+    \choice $(2, \sqrt{3})$
+\end{choices}
+\vspace{3mm}
+
+\question[1] The equation of a line through $(1, 5)$ with slope $-2$ in standard form is:
+\begin{choices}
+    \choice $2x + y = 7$
+    \choice $y = -2x + 7$
+    \correctchoice $2x + y - 7 = 0$
+    \choice $-2x + y + 3 = 0$
+\end{choices}
+\vspace{5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Part B --- Short Answer (33 marks)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\question \textbf{Triangle Side Lengths. (6 marks)}\\
+Triangle $PQR$ has vertices $P(1, 2)$, $Q(7, 2)$, and $R(4, 6)$.
+
+\begin{parts}
+\part[3] Find the length of each side $PQ$, $QR$, and $PR$. Leave answers in exact (surd) form.
+
+\begin{solution}[7cm]
+\[
+PQ = \sqrt{(7-1)^2 + (2-2)^2} = \sqrt{36} = 6
+\]
+\[
+QR = \sqrt{(4-7)^2 + (6-2)^2} = \sqrt{9+16} = \sqrt{25} = 5
+\]
+\[
+PR = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9+16} = \sqrt{25} = 5
+\]
+\end{solution}
+
+\part[2] Classify the triangle as equilateral, isosceles, or scalene. Justify your answer.
+
+\begin{solution}[3cm]
+Since $QR = PR = 5$ but $PQ = 6$, the triangle is \textbf{isosceles}.
+\end{solution}
+
+\part[1] Is the triangle right-angled? Justify.
+
+\begin{solution}[3cm]
+Check with Pythagorean theorem (longest side is $PQ = 6$):
+$5^2 + 5^2 = 50 \neq 36 = 6^2$. \textbf{Not a right triangle.}
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Triangle Line Segments. (6 marks)}\\
+Triangle $ABC$ has vertices $A(0, 6)$, $B(-4, 0)$, and $C(4, 0)$.
+
+\begin{parts}
+\part[2] Find the equation of the \textbf{median} from $A$ to side $BC$.
+
+\begin{solution}[5cm]
+Midpoint of $BC$: $M = \left(\dfrac{-4+4}{2},\ \dfrac{0+0}{2}\right) = (0, 0)$.\\
+Slope of $AM$: $m = \dfrac{0 - 6}{0 - 0}$ --- this is undefined (vertical line $x = 0$).\\
+Equation of median: $\boxed{x = 0}$ (the $y$-axis).
+\end{solution}
+
+\part[2] Find the equation of the \textbf{altitude} from $B$ to side $AC$.
+
+\begin{solution}[5cm]
+Slope of $AC$: $m_{AC} = \dfrac{0 - 6}{4 - 0} = \dfrac{-6}{4} = -\dfrac{3}{2}$.\\
+Slope of altitude (perpendicular to $AC$): $m = \dfrac{2}{3}$.\\
+Altitude passes through $B(-4, 0)$:
+\[
+y - 0 = \frac{2}{3}(x + 4) \implies y = \frac{2}{3}x + \frac{8}{3}
+\]
+Or in standard form: $2x - 3y + 8 = 0$.
+\end{solution}
+
+\part[2] Find the equation of the \textbf{perpendicular bisector} of $AC$.
+
+\begin{solution}[5cm]
+Midpoint of $AC$: $N = \left(\dfrac{0+4}{2},\ \dfrac{6+0}{2}\right) = (2, 3)$.\\
+Slope of $AC = -\dfrac{3}{2}$, so slope of perpendicular bisector $= \dfrac{2}{3}$.\\
+Through $(2, 3)$:
+\[
+y - 3 = \frac{2}{3}(x - 2) \implies y = \frac{2}{3}x + \frac{5}{3}
+\]
+Or: $2x - 3y + 5 = 0$.
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Parallel, Perpendicular, or Neither. (5 marks)}
+
+\begin{parts}
+\part[3] Determine whether each pair of lines is parallel, perpendicular, or neither.
+\begin{enumerate}[(i)]
+    \item $y = \dfrac{3}{4}x - 1$ \quad and \quad $4x - 3y + 6 = 0$
+    \item $2x + 5y = 10$ \quad and \quad $5x - 2y = 4$
+    \item $y = -3x + 2$ \quad and \quad $y = -3x - 7$
+\end{enumerate}
+
+\begin{solution}[6cm]
+\begin{enumerate}[(i)]
+    \item Rewrite $4x - 3y + 6 = 0 \Rightarrow y = \tfrac{4}{3}x + 2$, slope $= \tfrac{4}{3}$.\\
+    First line slope $= \tfrac{3}{4}$. Product $= \tfrac{3}{4} \cdot \tfrac{4}{3} = 1 \neq -1$; not equal. \textbf{Neither.}
+    \item Slope of $2x + 5y = 10$: $m_1 = -\tfrac{2}{5}$.\\
+    Slope of $5x - 2y = 4$: $m_2 = \tfrac{5}{2}$.\\
+    $m_1 \cdot m_2 = -\tfrac{2}{5} \cdot \tfrac{5}{2} = -1$. \textbf{Perpendicular.}
+    \item Both have slope $-3$. \textbf{Parallel.}
+\end{enumerate}
+\end{solution}
+
+\part[2] Find the equation of the line through $(3, -1)$ that is perpendicular to $y = \dfrac{3}{2}x + 4$.
+
+\begin{solution}[4cm]
+Slope of given line $= \dfrac{3}{2}$. Perpendicular slope $= -\dfrac{2}{3}$.\\
+Through $(3, -1)$:
+\[
+y + 1 = -\frac{2}{3}(x - 3) \implies y = -\frac{2}{3}x + 1
+\]
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Circle Problems. (8 marks)}
+
+\begin{parts}
+\part[2] Determine whether each point lies on, inside, or outside the circle $x^2 + y^2 = 50$.
+\begin{enumerate}[(i)]
+    \item $A(5, 5)$
+    \item $B(6, 4)$
+\end{enumerate}
+
+\begin{solution}[4cm]
+\begin{enumerate}[(i)]
+    \item $5^2 + 5^2 = 25 + 25 = 50$. Point $A$ lies \textbf{on} the circle.
+    \item $6^2 + 4^2 = 36 + 16 = 52 > 50$. Point $B$ lies \textbf{outside} the circle.
+\end{enumerate}
+\end{solution}
+
+\part[3] Find the points of intersection of the line $y = x + 2$ and the circle $x^2 + y^2 = 10$.
+
+\begin{solution}[7cm]
+Substitute $y = x + 2$ into $x^2 + y^2 = 10$:
+\[
+x^2 + (x+2)^2 = 10
+\]
+\[
+x^2 + x^2 + 4x + 4 = 10
+\]
+\[
+2x^2 + 4x - 6 = 0 \implies x^2 + 2x - 3 = 0
+\]
+\[
+(x+3)(x-1) = 0 \implies x = -3 \text{ or } x = 1
+\]
+When $x = -3$: $y = -3 + 2 = -1$.\\
+When $x = 1$: $y = 1 + 2 = 3$.\\
+Intersection points: $\mathbf{(-3, -1)}$ and $\mathbf{(1, 3)}$.
+\end{solution}
+
+\part[3] A circle centred at the origin passes through $(-3, 4)$. Write its equation and determine whether $(5, 0)$ is on the circle.
+
+\begin{solution}[5cm]
+Radius $r = \sqrt{(-3)^2 + 4^2} = \sqrt{9 + 16} = 5$.\\
+Equation: $x^2 + y^2 = 25$.\\
+Check $(5, 0)$: $5^2 + 0^2 = 25$. Yes, $(5, 0)$ \textbf{lies on} the circle.
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Coordinate Geometry Proof. (8 marks)}\\
+Quadrilateral $ABCD$ has vertices $A(-3, 1)$, $B(1, 4)$, $C(5, 1)$, $D(1, -2)$.
+
+\begin{parts}
+\part[2] Find the midpoint of diagonal $AC$ and the midpoint of diagonal $BD$.
+
+\begin{solution}[4cm]
+Midpoint of $AC$: $\left(\dfrac{-3+5}{2},\ \dfrac{1+1}{2}\right) = (1, 1)$.\\
+Midpoint of $BD$: $\left(\dfrac{1+1}{2},\ \dfrac{4+(-2)}{2}\right) = (1, 1)$.
+\end{solution}
+
+\part[2] What do your results from part (a) tell you about the diagonals?
+
+\begin{solution}[3cm]
+Both diagonals have the same midpoint $(1, 1)$, which means they \textbf{bisect each other}. Therefore $ABCD$ is a parallelogram.
+\end{solution}
+
+\part[2] Find the lengths of $AB$, $BC$, $CD$, and $DA$.
+
+\begin{solution}[5cm]
+$AB = \sqrt{(1+3)^2+(4-1)^2} = \sqrt{16+9} = 5$\\
+$BC = \sqrt{(5-1)^2+(1-4)^2} = \sqrt{16+9} = 5$\\
+$CD = \sqrt{(1-5)^2+(-2-1)^2} = \sqrt{16+9} = 5$\\
+$DA = \sqrt{(-3-1)^2+(1+2)^2} = \sqrt{16+9} = 5$
+\end{solution}
+
+\part[2] Use your side lengths to prove that $ABCD$ is a rhombus.
+
+\begin{solution}[3cm]
+All four sides have equal length ($AB = BC = CD = DA = 5$). Since $ABCD$ is a parallelogram (diagonals bisect each other) with all sides equal, it is a \textbf{rhombus}.
+\end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

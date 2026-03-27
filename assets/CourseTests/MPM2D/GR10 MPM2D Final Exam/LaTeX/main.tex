@@ -1,0 +1,343 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 10 Principles of Mathematics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Leave answers in exact form where appropriate.
+    \item The exam is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{5mm}
+
+%--- Linear Systems (4) ---
+\question[1] The solution to the system $y = 2x + 1$ and $y = -x + 7$ is:
+\begin{choices}
+    \choice $(2, 5)$
+    \correctchoice $(2, 5)$
+    \choice $(3, 4)$
+    \choice $(1, 6)$
+\end{choices}
+
+\question[1] Which system has \textbf{no solution}?
+\begin{choices}
+    \correctchoice $y = 3x + 1$ and $y = 3x - 4$
+    \choice $y = 2x + 1$ and $y = -2x + 1$
+    \choice $x + y = 5$ and $2x + 2y = 10$
+    \choice $y = x$ and $y = -x$
+\end{choices}
+
+\question[1] A system is solved by elimination. Adding the equations $2x + 3y = 11$ and
+$-2x + y = 1$ gives:
+\begin{choices}
+    \choice $4y = 12$
+    \correctchoice $4y = 12$
+    \choice $2y = 10$
+    \choice $4x = 10$
+\end{choices}
+
+\question[1] Two numbers have a sum of 40 and a difference of 8. The larger number is:
+\begin{choices}
+    \choice $16$
+    \choice $20$
+    \correctchoice $24$
+    \choice $32$
+\end{choices}
+
+%--- Analytic Geometry (4) ---
+\question[1] The midpoint of the segment joining $(-2, 4)$ and $(6, -2)$ is:
+\begin{choices}
+    \choice $(4, 1)$
+    \correctchoice $(2, 1)$
+    \choice $(2, 3)$
+    \choice $(4, 2)$
+\end{choices}
+
+\question[1] The distance between $(1, -3)$ and $(5, 0)$ is:
+\begin{choices}
+    \choice $3$
+    \choice $4$
+    \correctchoice $5$
+    \choice $7$
+\end{choices}
+
+\question[1] The slope of a line perpendicular to $y = \dfrac{2}{3}x - 4$ is:
+\begin{choices}
+    \choice $\dfrac{2}{3}$
+    \choice $-\dfrac{2}{3}$
+    \correctchoice $-\dfrac{3}{2}$
+    \choice $\dfrac{3}{2}$
+\end{choices}
+
+\question[1] Which point lies on the circle $x^2 + y^2 = 25$?
+\begin{choices}
+    \choice $(2, 4)$
+    \correctchoice $(3, 4)$
+    \choice $(4, 4)$
+    \choice $(5, 1)$
+\end{choices}
+
+%--- Quadratic Expressions (4) ---
+\question[1] Expand and simplify: $(x + 3)(x - 5)$
+\begin{choices}
+    \choice $x^2 - 2x - 15$
+    \correctchoice $x^2 - 2x - 15$
+    \choice $x^2 + 2x - 15$
+    \choice $x^2 - 8x - 15$
+\end{choices}
+
+\question[1] Factor completely: $2x^2 - 8$
+\begin{choices}
+    \choice $2(x^2 - 8)$
+    \choice $(2x - 4)(x + 2)$
+    \correctchoice $2(x-2)(x+2)$
+    \choice $2(x-4)(x+1)$
+\end{choices}
+
+\question[1] Factor: $6x^2 + 7x - 3$
+\begin{choices}
+    \choice $(6x - 1)(x + 3)$
+    \correctchoice $(3x - 1)(2x + 3)$
+    \choice $(2x - 1)(3x + 3)$
+    \choice $(3x + 1)(2x - 3)$
+\end{choices}
+
+\question[1] The expression $x^2 - 10x + 25$ factors as:
+\begin{choices}
+    \choice $(x-5)(x+5)$
+    \choice $(x-5)(x-4)$
+    \correctchoice $(x-5)^2$
+    \choice $(x+5)^2$
+\end{choices}
+
+%--- Quadratic Functions (4) ---
+\question[1] The vertex of $y = 2(x - 3)^2 + 1$ is:
+\begin{choices}
+    \choice $(-3, 1)$
+    \correctchoice $(3, 1)$
+    \choice $(3, -1)$
+    \choice $(-3, -1)$
+\end{choices}
+
+\question[1] The parabola $y = -x^2 + 4x - 3$ opens:
+\begin{choices}
+    \correctchoice Downward, with a maximum value
+    \choice Upward, with a minimum value
+    \choice Downward, with a minimum value
+    \choice Upward, with a maximum value
+\end{choices}
+
+\question[1] A ball follows $h(t) = -5t^2 + 20t + 1$. Its maximum height occurs at $t =$:
+\begin{choices}
+    \choice $1$ s
+    \choice $3$ s
+    \correctchoice $2$ s
+    \choice $4$ s
+\end{choices}
+
+\question[1] The discriminant of $2x^2 - 3x + 5 = 0$ is:
+\begin{choices}
+    \choice $49$
+    \choice $-31$
+    \correctchoice $-31$
+    \choice $31$
+\end{choices}
+
+%--- Quadratic Equations & Trig (4) ---
+\question[1] Solve $x^2 - 5x + 6 = 0$. The solutions are:
+\begin{choices}
+    \choice $x = 1$ or $x = 6$
+    \choice $x = -2$ or $x = -3$
+    \correctchoice $x = 2$ or $x = 3$
+    \choice $x = -1$ or $x = 6$
+\end{choices}
+
+\question[1] In a right triangle with opposite $= 7$ and hypotenuse $= 25$, $\sin\theta =$:
+\begin{choices}
+    \choice $\dfrac{25}{7}$
+    \correctchoice $\dfrac{7}{25}$
+    \choice $\dfrac{24}{25}$
+    \choice $\dfrac{7}{24}$
+\end{choices}
+
+\question[1] A ladder 10 m long leans against a wall at an angle of $65^\circ$ to the ground.
+The height it reaches is approximately:
+\begin{choices}
+    \choice $4.2$ m
+    \choice $7.7$ m
+    \correctchoice $9.1$ m
+    \choice $10.6$ m
+\end{choices}
+
+\question[1] Using the quadratic formula on $x^2 + 2x - 8 = 0$, the solutions are:
+\begin{choices}
+    \choice $x = 1$ or $x = -8$
+    \correctchoice $x = 2$ or $x = -4$
+    \choice $x = -2$ or $x = 4$
+    \choice $x = 4$ or $x = -1$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+
+\question[8] \textbf{Linear Systems.} Solve the system using elimination and verify your solution.
+Then set up and solve a system for the following problem: two numbers have a sum of 54 and the
+larger is 12 more than twice the smaller. Find both numbers.
+\begin{parts}
+    \part[4] Solve by elimination: $3x + 2y = 16$ and $5x - 2y = 8$.
+    \part[4] Word problem: set up and solve.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Adding: $8x = 24 \Rightarrow x = 3$
+
+Substituting: $3(3) + 2y = 16 \Rightarrow 2y = 7 \Rightarrow y = 3.5$
+
+\textbf{Solution: $(3, 3.5)$}
+
+Verify: $5(3) - 2(3.5) = 15 - 7 = 8$ \checkmark
+
+\textbf{(b)} Let $x$ = smaller, $y$ = larger.
+\[x + y = 54 \quad \text{and} \quad y = 2x + 12\]
+Substituting: $x + 2x + 12 = 54 \Rightarrow 3x = 42 \Rightarrow x = 14$, $y = 40$
+
+\textbf{The numbers are 14 and 40.}
+\end{solution}
+
+\question[8] \textbf{Analytic Geometry.} The vertices of triangle $ABC$ are $A(0, 6)$, $B(-4, 0)$, and $C(4, 0)$.
+\begin{parts}
+    \part[3] Find the length of each side and classify the triangle.
+    \part[3] Find the equation of the median from $A$ to the midpoint of $BC$.
+    \part[2] Find the equation of the altitude from $B$ to side $AC$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+\[AB = \sqrt{(-4-0)^2+(0-6)^2} = \sqrt{16+36} = \sqrt{52} = 2\sqrt{13}\]
+\[AC = \sqrt{(4-0)^2+(0-6)^2} = \sqrt{16+36} = 2\sqrt{13}\]
+\[BC = \sqrt{(4-(-4))^2+0} = 8\]
+
+$AB = AC$, so the triangle is \textbf{isosceles}.
+
+\textbf{(b)} Midpoint of $BC$: $M = \left(\dfrac{-4+4}{2}, \dfrac{0+0}{2}\right) = (0, 0)$
+
+Slope $AM = \dfrac{6-0}{0-0}$ is undefined — $AM$ is the $y$-axis.
+
+Equation of median: $\mathbf{x = 0}$
+
+\textbf{(c)} Slope of $AC = \dfrac{0-6}{4-0} = -\dfrac{3}{2}$
+
+Slope of altitude from $B \perp AC$: $m = \dfrac{2}{3}$
+
+Through $B(-4, 0)$: $y - 0 = \dfrac{2}{3}(x + 4)$
+\[\mathbf{y = \dfrac{2}{3}x + \dfrac{8}{3}}\]
+\end{solution}
+
+\question[8] \textbf{Quadratic Expressions.} Factor each expression completely.
+\begin{parts}
+    \part[2] $4x^2 - 36y^2$
+    \part[2] $3x^2 + 9x - 30$
+    \part[2] $6x^2 - x - 12$
+    \part[2] $2x^3 - 8x^2 + 6x$
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $4(x^2 - 9y^2) = \mathbf{4(x-3y)(x+3y)}$
+
+\textbf{(b)} $3(x^2 + 3x - 10) = \mathbf{3(x+5)(x-2)}$
+
+\textbf{(c)} Product $= 6 \times (-12) = -72$; need factors of $-72$ that add to $-1$: $8$ and $-9$.
+\[6x^2 + 8x - 9x - 12 = 2x(3x+4) - 3(3x+4) = \mathbf{(2x-3)(3x+4)}\]
+
+\textbf{(d)} $2x(x^2 - 4x + 3) = 2x(x-1)(x-3) = \mathbf{2x(x-1)(x-3)}$
+\end{solution}
+
+\question[8] \textbf{Quadratic Functions.} A ball is thrown upward from a height of 1 m.
+Its height is given by $h(t) = -5t^2 + 30t + 1$, where $h$ is in metres and $t$ in seconds.
+\begin{parts}
+    \part[3] Complete the square to write $h(t)$ in vertex form.
+    \part[2] State the maximum height and when it occurs.
+    \part[3] Find when the ball hits the ground (to 2 decimal places).
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $h(t) = -5(t^2 - 6t) + 1 = -5(t^2 - 6t + 9 - 9) + 1$
+\[= -5(t-3)^2 + 45 + 1 = \mathbf{-5(t-3)^2 + 46}\]
+
+\textbf{(b)} Vertex $(3, 46)$: maximum height is $\mathbf{46}$ \textbf{m} at $\mathbf{t = 3}$ \textbf{s}.
+
+\textbf{(c)} Set $h(t) = 0$: $-5t^2 + 30t + 1 = 0 \Rightarrow 5t^2 - 30t - 1 = 0$
+\[t = \frac{30 \pm \sqrt{900 + 20}}{10} = \frac{30 \pm \sqrt{920}}{10}\]
+$\sqrt{920} \approx 30.33$, so $t = \dfrac{30 + 30.33}{10} \approx \mathbf{6.03}$ \textbf{s}
+
+(negative root rejected since $t \geq 0$)
+\end{solution}
+
+\question[8] \textbf{Trigonometry.} A surveyor at point $A$ observes the top of a building at an angle of
+elevation of $38^\circ$. She walks 50 m closer to the base of the building to point $B$ and observes the
+top at an angle of elevation of $62^\circ$. Both points $A$ and $B$ are on level ground.
+\begin{parts}
+    \part[4] Let $d$ be the distance from $B$ to the base of the building and $h$ be the height.
+    Write two equations relating $h$ and $d$.
+    \part[4] Solve for $h$ (the height of the building) to the nearest metre.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} From $B$: $\tan 62^\circ = \dfrac{h}{d} \Rightarrow h = d\tan 62^\circ$
+
+From $A$: $\tan 38^\circ = \dfrac{h}{d + 50} \Rightarrow h = (d+50)\tan 38^\circ$
+
+\textbf{(b)} Setting equal:
+\[d\tan 62^\circ = (d+50)\tan 38^\circ\]
+\[d(1.8807) = (d+50)(0.7813)\]
+\[1.8807d = 0.7813d + 39.065\]
+\[1.0994d = 39.065 \Rightarrow d = 35.53 \text{ m}\]
+
+$h = 35.53 \times \tan 62^\circ = 35.53 \times 1.8807 \approx \mathbf{66.8 \text{ m}}$
+
+\textbf{The building is approximately 67 m tall.}
+\end{solution}
+
+\end{questions}
+\end{document}

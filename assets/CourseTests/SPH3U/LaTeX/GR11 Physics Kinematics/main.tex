@@ -1,0 +1,284 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Kinematics}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Physics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units. Use $g = \SI{9.8}{m/s^2}$ downward.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Which of the following is a \textbf{vector} quantity?
+\begin{choices}
+    \choice Speed
+    \choice Distance
+    \correctchoice Velocity
+    \choice Time
+\end{choices}
+
+\question[1] A car travels \SI{100}{m} east then \SI{40}{m} west. Its displacement is:
+\begin{choices}
+    \choice \SI{140}{m}
+    \correctchoice \SI{60}{m} east
+    \choice \SI{60}{m} west
+    \choice \SI{100}{m} east
+\end{choices}
+
+\question[1] A cyclist travels \SI{120}{km} in \SI{3.0}{h}. Their average speed is:
+\begin{choices}
+    \choice \SI{30}{km/h}
+    \correctchoice \SI{40}{km/h}
+    \choice \SI{360}{km/h}
+    \choice \SI{0.025}{km/h}
+\end{choices}
+
+\question[1] An object starts from rest and accelerates at \SI{3.0}{m/s^2}. After
+\SI{4.0}{s}, its speed is:
+\begin{choices}
+    \choice \SI{3.0}{m/s}
+    \choice \SI{4.0}{m/s}
+    \correctchoice \SI{12}{m/s}
+    \choice \SI{24}{m/s}
+\end{choices}
+
+\question[1] The slope of a velocity--time graph represents:
+\begin{choices}
+    \choice Speed
+    \choice Displacement
+    \correctchoice Acceleration
+    \choice Distance
+\end{choices}
+
+\question[1] The area under a velocity--time graph represents:
+\begin{choices}
+    \choice Acceleration
+    \choice Speed
+    \choice Force
+    \correctchoice Displacement
+\end{choices}
+
+\question[1] A ball is dropped from rest. How far does it fall in \SI{2.0}{s}?
+(Use $g = \SI{9.8}{m/s^2}$)
+\begin{choices}
+    \choice \SI{9.8}{m}
+    \choice \SI{16}{m}
+    \correctchoice \SI{19.6}{m}
+    \choice \SI{39.2}{m}
+\end{choices}
+
+\question[1] An object is thrown upward at \SI{20}{m/s}. At the highest point, its
+acceleration is:
+\begin{choices}
+    \choice \SI{0}{m/s^2}
+    \choice \SI{20}{m/s^2} upward
+    \correctchoice \SI{9.8}{m/s^2} downward
+    \choice \SI{9.8}{m/s^2} upward
+\end{choices}
+
+\question[1] A projectile is launched horizontally from a cliff. Which statement is true?
+\begin{choices}
+    \choice Horizontal velocity increases during flight
+    \correctchoice Vertical acceleration is $g$ downward throughout flight
+    \choice The projectile falls faster than a dropped object
+    \choice Horizontal and vertical motions affect each other
+\end{choices}
+
+\question[1] A ball is launched horizontally at \SI{15}{m/s} from a height of
+\SI{20}{m}. How long does it take to reach the ground?
+\begin{choices}
+    \choice \SI{1.0}{s}
+    \correctchoice \SI{2.0}{s}
+    \choice \SI{3.0}{s}
+    \choice \SI{4.1}{s}
+\end{choices}
+
+\question[1] In the previous question, how far horizontally does the ball travel?
+\begin{choices}
+    \choice \SI{15}{m}
+    \choice \SI{20}{m}
+    \correctchoice \SI{30}{m}
+    \choice \SI{45}{m}
+\end{choices}
+
+\question[1] A car decelerates uniformly from \SI{30}{m/s} to rest in \SI{6.0}{s}.
+Its acceleration is:
+\begin{choices}
+    \choice \SI{5.0}{m/s^2} forward
+    \correctchoice \SI{-5.0}{m/s^2} (deceleration)
+    \choice \SI{30}{m/s^2}
+    \choice \SI{180}{m/s^2}
+\end{choices}
+
+\question[1] Which kinematic equation relates displacement, initial velocity, and
+time with constant acceleration (no final velocity)?
+\begin{choices}
+    \choice $v = v_0 + at$
+    \correctchoice $\Delta d = v_0 t + \tfrac{1}{2}at^2$
+    \choice $v^2 = v_0^2 + 2a\Delta d$
+    \choice $\Delta d = \tfrac{v+v_0}{2}\,t$
+\end{choices}
+
+\question[1] A stone is thrown upward at \SI{14.7}{m/s}. The time to reach the maximum
+height is approximately:
+\begin{choices}
+    \choice \SI{0.67}{s}
+    \correctchoice \SI{1.5}{s}
+    \choice \SI{3.0}{s}
+    \choice \SI{2.0}{s}
+\end{choices}
+
+\question[1] A projectile is launched at \SI{30}{m/s} at \ang{37} above the horizontal.
+The initial vertical component of velocity is approximately:
+\begin{choices}
+    \choice \SI{24}{m/s}
+    \correctchoice \SI{18}{m/s}
+    \choice \SI{30}{m/s}
+    \choice \SI{15}{m/s}
+\end{choices}
+
+
+\section*{Part B --- Short Answer (35 marks)}
+
+\question A train starts from rest and accelerates uniformly, reaching \SI{72}{km/h}
+in \SI{20}{s}.
+\begin{parts}
+    \part[2] Convert \SI{72}{km/h} to \si{m/s}.
+    \part[2] Calculate the acceleration of the train.
+    \part[3] How far does the train travel during this \SI{20}{s} interval?
+    \part[2] How long after the train starts will it have travelled \SI{200}{m}?
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $v = 72 \times \dfrac{1000}{3600} = \mathbf{\SI{20}{m/s}}$
+
+\textbf{(b)} $a = \dfrac{\Delta v}{\Delta t} = \dfrac{20 - 0}{20} = \mathbf{\SI{1.0}{m/s^2}}$
+
+\textbf{(c)} $\Delta d = v_0 t + \tfrac{1}{2}at^2 = 0 + \tfrac{1}{2}(1.0)(20)^2
+= \mathbf{\SI{200}{m}}$
+
+\textbf{(d)} $\Delta d = \tfrac{1}{2}at^2 \Rightarrow t = \sqrt{\dfrac{2\Delta d}{a}}
+= \sqrt{\dfrac{400}{1.0}} = \mathbf{\SI{20}{s}}$
+(Same answer as (c), as expected.)
+\end{solution}
+
+\question A rock is thrown straight upward from the ground at \SI{24.5}{m/s}.
+\begin{parts}
+    \part[2] How long does it take to reach its maximum height?
+    \part[2] What is the maximum height reached?
+    \part[2] How long is the rock in the air before returning to the ground?
+    \part[2] What is the rock's speed when it returns to the launch height?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} At max height, $v = 0$:\quad
+$t = \dfrac{v - v_0}{a} = \dfrac{0 - 24.5}{-9.8} = \mathbf{\SI{2.5}{s}}$
+
+\textbf{(b)} $\Delta d = v_0 t + \tfrac{1}{2}at^2 = 24.5(2.5) + \tfrac{1}{2}(-9.8)(2.5)^2
+= 61.25 - 30.625 = \mathbf{\SI{30.6}{m}}$
+
+(Or: $v^2 = v_0^2 + 2a\Delta d \Rightarrow \Delta d = \dfrac{-v_0^2}{2a} = \dfrac{-(24.5)^2}{2(-9.8)} = \SI{30.6}{m}$)
+
+\textbf{(c)} By symmetry, total time $= 2 \times 2.5 = \mathbf{\SI{5.0}{s}}$
+
+\textbf{(d)} By symmetry, returns at same speed: $\mathbf{\SI{24.5}{m/s}}$ downward.
+\end{solution}
+
+\question A ball is launched horizontally at \SI{12.0}{m/s} from the top of a cliff that is
+\SI{45}{m} above the ground.
+\begin{parts}
+    \part[2] How long does it take to hit the ground?
+    \part[2] How far horizontally from the base of the cliff does it land?
+    \part[3] Find the ball's velocity (magnitude and direction) just before it hits the ground.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Vertical: $\Delta y = \tfrac{1}{2}gt^2$ (taking down as positive):
+\[
+t = \sqrt{\frac{2\Delta y}{g}} = \sqrt{\frac{2(45)}{9.8}} = \sqrt{9.184} = \mathbf{\SI{3.03}{s}}
+\]
+
+\textbf{(b)} $\Delta x = v_x \cdot t = 12.0 \times 3.03 = \mathbf{\SI{36.4}{m}}$
+
+\textbf{(c)} $v_x = \SI{12.0}{m/s}$ (unchanged);\quad
+$v_y = gt = 9.8 \times 3.03 = \SI{29.7}{m/s}$ (downward)
+\[
+v = \sqrt{v_x^2 + v_y^2} = \sqrt{144 + 882} = \sqrt{1026} \approx \mathbf{\SI{32.0}{m/s}}
+\]
+\[
+\theta = \arctan\!\left(\frac{v_y}{v_x}\right) = \arctan\!\left(\frac{29.7}{12.0}\right)
+\approx \mathbf{\ang{68} \text{ below the horizontal}}
+\]
+\end{solution}
+
+\question A soccer ball is kicked at \SI{25}{m/s} at an angle of \ang{40} above the
+horizontal.
+\begin{parts}
+    \part[2] Find the initial horizontal and vertical components of velocity.
+    \part[3] Find the maximum height reached by the ball.
+    \part[3] Find the total horizontal range of the ball (assuming level ground).
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $v_x = 25\cos\ang{40} = 25(0.766) = \mathbf{\SI{19.2}{m/s}}$;\quad
+$v_{y0} = 25\sin\ang{40} = 25(0.643) = \mathbf{\SI{16.1}{m/s}}$
+
+\textbf{(b)} At max height, $v_y = 0$:
+\[
+\Delta y = \frac{v_y^2 - v_{y0}^2}{2(-g)} = \frac{0 - (16.1)^2}{2(-9.8)}
+= \frac{-259.2}{-19.6} = \mathbf{\SI{13.2}{m}}
+\]
+
+\textbf{(c)} Time of flight: $t_\text{up} = \dfrac{v_{y0}}{g} = \dfrac{16.1}{9.8} = \SI{1.643}{s}$;\quad
+$t_\text{total} = 2 \times 1.643 = \SI{3.286}{s}$
+\[
+R = v_x \cdot t_\text{total} = 19.2 \times 3.286 = \mathbf{\SI{63.1}{m}}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

@@ -1,0 +1,358 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The exam is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{5mm}
+
+%--- Personal Finance (4) ---
+\question[1] Simple interest on \$4\,000 at 5\% per year for 3 years is:
+\begin{choices}
+    \choice \$200
+    \choice \$400
+    \correctchoice \$600
+    \choice \$4\,600
+\end{choices}
+
+\question[1] \$2\,000 is invested at 6\% compounded annually for 2 years. The amount is:
+\begin{choices}
+    \choice \$2\,240.00
+    \correctchoice \$2\,247.20
+    \choice \$2\,120.00
+    \choice \$2\,480.00
+\end{choices}
+
+\question[1] The present value formula $P = \dfrac{A}{(1+i)^n}$ is used to find:
+\begin{choices}
+    \correctchoice How much to invest today to reach a future goal
+    \choice Total interest earned
+    \choice Monthly payment on a loan
+    \choice The amount after several periods
+\end{choices}
+
+\question[1] A credit card charges 19.99\% per year. The monthly rate is approximately:
+\begin{choices}
+    \choice $1.67\%$
+    \correctchoice $1.67\%$
+    \choice $2.00\%$
+    \choice $0.19\%$
+\end{choices}
+
+%--- Exponential Functions (4) ---
+\question[1] Which function represents exponential \textbf{growth}?
+\begin{choices}
+    \choice $y = 3\left(\tfrac{1}{2}\right)^x$
+    \correctchoice $y = 500(1.03)^x$
+    \choice $y = 100(0.75)^x$
+    \choice $y = 5x^2$
+\end{choices}
+
+\question[1] The horizontal asymptote of $y = 4(2)^x + 1$ is:
+\begin{choices}
+    \choice $y = 4$
+    \choice $y = 0$
+    \correctchoice $y = 1$
+    \choice $y = 2$
+\end{choices}
+
+\question[1] A substance has a half-life of 8 years. After 24 years, the fraction remaining is:
+\begin{choices}
+    \choice $\dfrac{1}{2}$
+    \choice $\dfrac{1}{4}$
+    \correctchoice $\dfrac{1}{8}$
+    \choice $\dfrac{1}{16}$
+\end{choices}
+
+\question[1] Solve $4^x = 64$:
+\begin{choices}
+    \choice $x = 2$
+    \correctchoice $x = 3$
+    \choice $x = 4$
+    \choice $x = 16$
+\end{choices}
+
+%--- Trigonometry (4) ---
+\question[1] In a right triangle with adjacent $= 5$ and hypotenuse $= 13$, $\cos\theta =$:
+\begin{choices}
+    \choice $\dfrac{12}{13}$
+    \correctchoice $\dfrac{5}{13}$
+    \choice $\dfrac{12}{5}$
+    \choice $\dfrac{5}{12}$
+\end{choices}
+
+\question[1] The Sine Law is used when you know:
+\begin{choices}
+    \choice Three sides (SSS)
+    \correctchoice Two angles and one side (AAS or ASA), or two sides and an angle (SSA)
+    \choice Two sides and the included angle (SAS)
+    \choice Only one angle
+\end{choices}
+
+\question[1] In $\triangle ABC$, $a = 8$, $b = 10$, $C = \ang{40}$. Find $c$ using the Cosine Law.
+$c \approx$:
+\begin{choices}
+    \choice $5.1$
+    \correctchoice $6.5$
+    \choice $7.8$
+    \choice $9.4$
+\end{choices}
+
+\question[1] An observer looks up at a \ang{35} angle of elevation to a treetop. If the observer
+is 20 m from the base of the tree, the tree's height is approximately:
+\begin{choices}
+    \choice $11.5$ m
+    \correctchoice $14.0$ m
+    \choice $16.4$ m
+    \choice $24.4$ m
+\end{choices}
+
+%--- Geometry (2) ---
+\question[1] The volume of a sphere with radius 3 cm is:
+\begin{choices}
+    \choice $12\pi$ cm$^3$
+    \correctchoice $36\pi$ cm$^3$
+    \choice $108\pi$ cm$^3$
+    \choice $27\pi$ cm$^3$
+\end{choices}
+
+\question[1] Two similar triangles have a scale factor of $2:5$. The ratio of their areas is:
+\begin{choices}
+    \choice $2:5$
+    \choice $4:10$
+    \correctchoice $4:25$
+    \choice $8:125$
+\end{choices}
+
+%--- Statistics (2) ---
+\question[1] A scatter plot shows $r = 0.95$. This indicates:
+\begin{choices}
+    \choice Weak positive correlation
+    \choice No correlation
+    \correctchoice Strong positive correlation
+    \choice Strong negative correlation
+\end{choices}
+
+\question[1] The IQR of $\{2, 5, 7, 9, 11, 14, 18\}$ is:
+\begin{choices}
+    \choice $7$
+    \correctchoice $9$
+    \choice $11$
+    \choice $16$
+\end{choices}
+
+\question[1] A fair coin is flipped twice. $P(\text{exactly one head})$ is:
+\begin{choices}
+    \choice $\dfrac{1}{4}$
+    \correctchoice $\dfrac{1}{2}$
+    \choice $\dfrac{3}{4}$
+    \choice $1$
+\end{choices}
+
+\question[1] The standard deviation is \textbf{small} when:
+\begin{choices}
+    \choice The data values are widely spread
+    \correctchoice The data values are clustered close to the mean
+    \choice The mean is small
+    \choice There are many outliers
+\end{choices}
+
+\question[1] A population of 5\,000 is sampled using every 10th name from a list. This is:
+\begin{choices}
+    \choice Random sampling
+    \choice Stratified sampling
+    \correctchoice Systematic sampling
+    \choice Convenience sampling
+\end{choices}
+
+\question[1] Which is an example of \textbf{experimental probability}?
+\begin{choices}
+    \choice $P(\text{heads}) = \tfrac{1}{2}$ because a coin has two sides
+    \correctchoice Rolling a die 100 times and getting a 3 exactly 18 times, so $P(3) = \tfrac{18}{100}$
+    \choice There are 6 outcomes so each has probability $\tfrac{1}{6}$
+    \choice Using a formula to compute probability
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+
+\question[8] \textbf{Personal Finance.}
+\begin{parts}
+    \part[4] Invest \$6\,000 at 5\% compounded quarterly for 8 years. Find the final amount and the
+    total interest earned. Compare to simple interest at 5\% for the same period.
+    \part[4] Find the present value needed today at 4\% compounded annually to have \$15\,000 in
+    10 years. How much interest will be \textit{earned} on this investment?
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $i = \dfrac{0.05}{4} = 0.0125$, $n = 8 \times 4 = 32$ periods
+\[A = 6000(1.0125)^{32} = 6000(1.4881) \approx \mathbf{\$8\,928.60}\]
+Interest earned $= 8\,928.60 - 6\,000 = \mathbf{\$2\,928.60}$
+
+Simple interest: $I = Prt = 6000 \times 0.05 \times 8 = \$2\,400$; $A = \$8\,400$.
+
+Compound interest earns \$528.60 more than simple interest.
+
+\textbf{(b)} $P = \dfrac{A}{(1+i)^n} = \dfrac{15\,000}{(1.04)^{10}} = \dfrac{15\,000}{1.4802} \approx \mathbf{\$10\,135.35}$
+
+Interest earned $= 15\,000 - 10\,135.35 = \mathbf{\$4\,864.65}$
+\end{solution}
+
+\question[8] \textbf{Exponential Functions.}
+A bacterial colony starts with 1\,000 bacteria and doubles every 4 hours.
+\begin{parts}
+    \part[2] Write an equation $N(t)$ for the number of bacteria after $t$ hours.
+    \part[2] Find the number of bacteria after 24 hours.
+    \part[4] After how many hours will there be 512\,000 bacteria? (Solve using equal bases.)
+    Verify your answer.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $N(t) = 1000 \cdot 2^{t/4}$
+
+\textbf{(b)} $N(24) = 1000 \cdot 2^{24/4} = 1000 \cdot 2^6 = 1000 \times 64 = \mathbf{64\,000}$
+
+\textbf{(c)} $1000 \cdot 2^{t/4} = 512\,000$
+\[2^{t/4} = 512 = 2^9 \Rightarrow \frac{t}{4} = 9 \Rightarrow \mathbf{t = 36 \text{ hours}}\]
+
+Verify: $N(36) = 1000 \cdot 2^9 = 1000 \times 512 = 512\,000$ \checkmark
+\end{solution}
+
+\question[8] \textbf{Trigonometry.}
+A ranger at tower $A$ spots a fire at an angle of $\ang{42}$ from north. A second ranger at tower $B$,
+which is \SI{6.0}{km} due east of $A$, spots the same fire at an angle of $\ang{65}$ west of north.
+The angle at the fire between the two lines of sight to the towers is therefore
+$180^\circ - 42^\circ - 65^\circ = 73^\circ$.
+\begin{parts}
+    \part[4] Use the Sine Law to find the distance from tower $A$ to the fire.
+    \part[4] Find the distance from tower $B$ to the fire and use it to find the perpendicular
+    distance from the fire to line $AB$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} In triangle $ABF$: $AB = 6.0$ km, $\angle A = \ang{42}$, $\angle B = \ang{65}$, $\angle F = \ang{73}$.
+\[
+\frac{AF}{\sin B} = \frac{AB}{\sin F} \Rightarrow AF = \frac{6.0 \sin\ang{65}}{\sin\ang{73}}
+= \frac{6.0(0.9063)}{0.9563} \approx \mathbf{\SI{5.69}{km}}
+\]
+
+\textbf{(b)} $\dfrac{BF}{\sin A} = \dfrac{AB}{\sin F} \Rightarrow BF = \dfrac{6.0\sin\ang{42}}{\sin\ang{73}}
+= \dfrac{6.0(0.6691)}{0.9563} \approx \SI{4.20}{km}$
+
+Perpendicular distance $= AF \cdot \sin(\angle A) = 5.69 \times \sin\ang{42} = 5.69 \times 0.6691 \approx \mathbf{\SI{3.81}{km}}$
+\end{solution}
+
+\question[8] \textbf{Geometry \& Measurement.}
+A storage silo is shaped like a cylinder with a hemisphere on top. The cylinder has radius
+$r = \SI{3}{m}$ and height $h = \SI{10}{m}$.
+\begin{parts}
+    \part[4] Find the total surface area (the flat circular base plus the curved cylinder surface
+    plus the curved hemisphere surface). Give an exact answer in terms of $\pi$.
+    \part[4] Find the total volume. Give an exact answer in terms of $\pi$.
+    A scale model is built with a scale factor of $1:50$. Find the volume of the model in cm$^3$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+\begin{align*}
+\text{Circular base} &= \pi r^2 = 9\pi\\
+\text{Cylinder lateral SA} &= 2\pi r h = 2\pi(3)(10) = 60\pi\\
+\text{Hemisphere curved SA} &= 2\pi r^2 = 2\pi(9) = 18\pi\\
+\text{Total SA} &= 9\pi + 60\pi + 18\pi = \mathbf{87\pi \approx 273.3 \text{ m}^2}
+\end{align*}
+
+\textbf{(b)}
+\begin{align*}
+V_{\text{cylinder}} &= \pi r^2 h = \pi(9)(10) = 90\pi\\
+V_{\text{hemisphere}} &= \tfrac{2}{3}\pi r^3 = \tfrac{2}{3}\pi(27) = 18\pi\\
+V_{\text{total}} &= 90\pi + 18\pi = \mathbf{108\pi \approx 339.3 \text{ m}^3}
+\end{align*}
+
+Scale model: linear scale $1:50$, so volume scale $= 1:50^3 = 1:125\,000$.
+
+$V_{\text{model}} = \dfrac{108\pi \text{ m}^3}{125\,000}$. Converting: $1 \text{ m}^3 = 10^6 \text{ cm}^3$.
+
+$V_{\text{model}} = \dfrac{108\pi \times 10^6}{125\,000} = \dfrac{108\pi \times 8}{1} = 864\pi \approx \mathbf{2\,714 \text{ cm}^3}$
+\end{solution}
+
+\question[8] \textbf{Statistics \& Probability.}
+A class of 8 students received the following marks on a quiz: $70,\; 75,\; 78,\; 80,\; 82,\; 85,\; 90,\; 92$.
+\begin{parts}
+    \part[2] Find the mean and population standard deviation (you may use $\sigma \approx 7.35$).
+    \part[3] What percentage of scores fall within one standard deviation of the mean?
+    What percentage fall within two standard deviations?
+    \part[3] A student is chosen at random from the class. Find:
+    (i) $P(\text{score} \geq 80)$;\quad
+    (ii) $P(\text{score is even})$;\quad
+    (iii) $P(\text{score} < 75 \text{ or score} \geq 90)$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $\bar{x} = \dfrac{70+75+78+80+82+85+90+92}{8} = \dfrac{652}{8} = \mathbf{81.5}$
+
+$\sigma \approx \mathbf{7.35}$ (given)
+
+\textbf{(b)} One std dev: $81.5 \pm 7.35 \Rightarrow [74.15,\; 88.85]$
+
+Scores in range: $75, 78, 80, 82, 85$ $= 5$ out of $8 = \mathbf{62.5\%}$
+
+Two std devs: $81.5 \pm 14.7 \Rightarrow [66.8,\; 96.2]$ — all 8 scores fall in range $= \mathbf{100\%}$
+
+\textbf{(c)}
+(i) Scores $\geq 80$: $80, 82, 85, 90, 92$ $\Rightarrow P = \dfrac{5}{8}$
+
+(ii) Even scores: $70, 78, 80, 82, 90, 92$ $\Rightarrow P = \dfrac{6}{8} = \dfrac{3}{4}$
+
+(iii) Score $< 75$: $\{70\}$; score $\geq 90$: $\{90, 92\}$. Total: 3 scores.
+$P = \dfrac{3}{8}$
+\end{solution}
+
+\end{questions}
+\end{document}

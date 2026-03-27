@@ -1,0 +1,342 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Personal Finance}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+% Q1
+\question[1]
+Simple interest is calculated using the formula $I = Prt$. If $P = \$1{,}200$, $r = 0.05$, and $t = 3$ years, what is the interest earned?
+\begin{choices}
+    \choice \$60.00
+    \correctchoice \$180.00
+    \choice \$216.00
+    \choice \$1{,}380.00
+\end{choices}
+
+% Q2
+\question[1]
+Which formula gives the accumulated amount $A$ for compound interest?
+\begin{choices}
+    \choice $A = P + Prt$
+    \correctchoice $A = P(1+i)^n$
+    \choice $A = P \cdot r \cdot t$
+    \choice $A = P(1-i)^n$
+\end{choices}
+
+% Q3
+\question[1]
+\$500 is invested at 6\% per year compounded annually for 2 years. What is the accumulated amount?
+\begin{choices}
+    \choice \$560.00
+    \correctchoice \$561.80
+    \choice \$600.00
+    \choice \$530.00
+\end{choices}
+
+% Q4
+\question[1]
+The nominal annual interest rate is 8\% compounded quarterly. What is the interest rate per compounding period?
+\begin{choices}
+    \choice 8\%
+    \choice 4\%
+    \correctchoice 2\%
+    \choice 1\%
+\end{choices}
+
+% Q5
+\question[1]
+An investment compounds semi-annually. If the annual rate is 6\%, how many compounding periods are there in 3 years?
+\begin{choices}
+    \choice 3
+    \choice 4
+    \correctchoice 6
+    \choice 12
+\end{choices}
+
+% Q6
+\question[1]
+Which statement correctly compares simple and compound interest over time?
+\begin{choices}
+    \choice Simple interest always earns more than compound interest.
+    \correctchoice Compound interest earns more than simple interest over the same period at the same rate.
+    \choice They always produce the same final amount.
+    \choice Simple interest is better for long-term investments.
+\end{choices}
+
+% Q7
+\question[1]
+Present value is best described as:
+\begin{choices}
+    \choice The interest earned on an investment.
+    \choice The future accumulated amount.
+    \correctchoice The amount that must be invested today to reach a desired future value.
+    \choice The nominal interest rate.
+\end{choices}
+
+% Q8
+\question[1]
+How much must you invest today at 5\% compounded annually to have \$1{,}050 in one year?
+\begin{choices}
+    \correctchoice \$1{,}000.00
+    \choice \$997.62
+    \choice \$1{,}050.00
+    \choice \$952.38
+\end{choices}
+
+% Q9
+\question[1]
+A credit card charges 19.99\% per year compounded daily. What is the approximate daily interest rate?
+\begin{choices}
+    \choice 0.1999\%
+    \correctchoice 0.0548\%
+    \choice 1.666\%
+    \choice 0.5479\%
+\end{choices}
+
+% Q10
+\question[1]
+Which of the following describes a GIC?
+\begin{choices}
+    \choice A loan product with variable interest.
+    \correctchoice A deposit investment that earns a guaranteed fixed interest rate for a set term.
+    \choice A type of mutual fund.
+    \choice A government-issued bond with no fixed return.
+\end{choices}
+
+% Q11
+\question[1]
+A mortgage is best described as:
+\begin{choices}
+    \choice A short-term personal loan.
+    \correctchoice A long-term loan secured by real estate, repaid in regular installments.
+    \choice A credit card with a high limit.
+    \choice An investment account.
+\end{choices}
+
+% Q12
+\question[1]
+\$2{,}000 is owed on a credit card at 20\% per year compounded monthly. If no payment is made, approximately how much interest accrues in one month?
+\begin{choices}
+    \choice \$40.00
+    \correctchoice \$33.33
+    \choice \$400.00
+    \choice \$3.33
+\end{choices}
+
+% Q13
+\question[1]
+An investment of \$1{,}000 at 4\% compounded annually for 10 years gives approximately:
+\begin{choices}
+    \choice \$1{,}400.00
+    \correctchoice \$1{,}480.24
+    \choice \$1{,}040.00
+    \choice \$1{,}500.00
+\end{choices}
+
+% Q14
+\question[1]
+If you make only the minimum payment on a credit card balance each month, what happens over time?
+\begin{choices}
+    \choice The balance decreases quickly.
+    \choice The balance stays the same.
+    \correctchoice The balance decreases very slowly and you pay a lot of interest.
+    \choice The interest rate decreases.
+\end{choices}
+
+% Q15
+\question[1]
+Which compounding frequency results in the highest accumulated value for the same principal, rate, and time?
+\begin{choices}
+    \choice Annually
+    \choice Semi-annually
+    \choice Monthly
+    \correctchoice Daily
+\end{choices}
+
+\section*{Part B --- Short Answer (33 marks)}
+
+% Q16
+\question[6]
+\textbf{Simple Interest.} Use the formula $I = Prt$ and $A = P + I$.
+
+\begin{parts}
+    \part[2] Kenji invests \$3{,}500 at a simple interest rate of 4.5\% per year for 2 years. How much interest does he earn, and what is the accumulated amount?
+    \begin{solution}
+        $I = Prt = 3500 \times 0.045 \times 2 = \$315.00$\\
+        $A = P + I = 3500 + 315 = \$3{,}815.00$
+    \end{solution}
+
+    \part[2] Maria needs \$1{,}218.75 and invests \$1{,}125 at a simple interest rate of $r$ per year for 3 years. Find the annual interest rate.
+    \begin{solution}
+        $I = A - P = 1218.75 - 1125 = \$93.75$\\
+        $I = Prt \Rightarrow 93.75 = 1125 \times r \times 3$\\
+        $r = \dfrac{93.75}{3375} = 0.0278 = 2.78\%$
+    \end{solution}
+
+    \part[2] An investment of \$2{,}000 at 6\% simple interest earns \$480. For how many years was the money invested?
+    \begin{solution}
+        $I = Prt \Rightarrow 480 = 2000 \times 0.06 \times t$\\
+        $480 = 120t$\\
+        $t = 4 \text{ years}$
+    \end{solution}
+\end{parts}
+
+% Q17
+\question[6]
+\textbf{Compound Interest.}
+
+\begin{parts}
+    \part[2] Find the accumulated amount if \$4{,}000 is invested at 6\% per year compounded quarterly for 5 years.
+    \begin{solution}
+        $i = \dfrac{0.06}{4} = 0.015$, \quad $n = 5 \times 4 = 20$\\
+        $A = P(1+i)^n = 4000(1.015)^{20}$\\
+        $(1.015)^{20} \approx 1.34686$\\
+        $A \approx 4000 \times 1.34686 = \$5{,}387.42$
+    \end{solution}
+
+    \part[2] The same \$4{,}000 is invested at 6\% per year compounded semi-annually for 5 years. Find the accumulated amount.
+    \begin{solution}
+        $i = \dfrac{0.06}{2} = 0.03$, \quad $n = 5 \times 2 = 10$\\
+        $A = 4000(1.03)^{10}$\\
+        $(1.03)^{10} \approx 1.34392$\\
+        $A \approx 4000 \times 1.34392 = \$5{,}375.67$
+    \end{solution}
+
+    \part[2] How does each compound interest result in parts (a) and (b) compare to simple interest at 6\% per year for 5 years on the same \$4{,}000? Which compounding option is best?
+    \begin{solution}
+        Simple interest: $I = 4000 \times 0.06 \times 5 = \$1{,}200$, so $A = \$5{,}200.00$\\
+        Quarterly compounding gives \$5{,}387.42 --- highest.\\
+        Semi-annual compounding gives \$5{,}375.67.\\
+        Both compound options outperform simple interest. Quarterly compounding is best because the interest is added to the principal more frequently.
+    \end{solution}
+\end{parts}
+
+% Q18
+\question[5]
+\textbf{Present Value.} How much money must be invested today at 4\% per year compounded annually in order to have \$10{,}000 in 5 years? Round to the nearest cent.
+\begin{solution}
+    Use $A = P(1+i)^n$ and solve for $P$:
+    \[P = \frac{A}{(1+i)^n} = \frac{10000}{(1.04)^5}\]
+    $(1.04)^5 \approx 1.21665$
+    \[P = \frac{10000}{1.21665} \approx \$8{,}219.27\]
+    You must invest \$8{,}219.27 today.
+\end{solution}
+
+% Q19
+\question[8]
+\textbf{Credit Card Interest.} Samantha has a credit card balance of \$2{,}000. The card charges 19.99\% per year compounded daily. Assume 1 month = 30 days.
+
+\begin{parts}
+    \part[3] Find the balance after 30 days if no payment is made.
+    \begin{solution}
+        Daily rate: $i = \dfrac{0.1999}{365} \approx 0.00054767$\\
+        Number of periods: $n = 30$\\
+        $A = 2000(1 + 0.00054767)^{30}$\\
+        $(1.00054767)^{30} \approx 1.01649$\\
+        $A \approx 2000 \times 1.01649 = \$2{,}032.98$\\
+        Interest charged: $\$2{,}032.98 - \$2{,}000.00 = \$32.98$
+    \end{solution}
+
+    \part[3] If instead Samantha pays off the full \$2{,}000 balance immediately (before any interest accrues), how much does she save compared to making no payment?
+    \begin{solution}
+        If she pays in full immediately, she owes exactly \$2{,}000 --- no interest.\\
+        By not paying, she owes \$2{,}032.98 after 30 days.\\
+        Savings $= \$2{,}032.98 - \$2{,}000.00 = \$32.98$\\
+        She saves \$32.98 by paying in full right away.
+    \end{solution}
+
+    \part[2] Explain in 2--3 sentences why making only the minimum monthly payment on a credit card is financially costly over the long term.
+    \begin{solution}
+        When only the minimum payment is made, the remaining balance continues to accumulate interest at a high rate (nearly 20\% per year). Over time the total interest paid can far exceed the original purchase price. This means it can take many years and hundreds of extra dollars to pay off a relatively small balance.
+    \end{solution}
+\end{parts}
+
+% Q20
+\question[8]
+\textbf{GIC Investment Comparison.} David has \$5{,}000 to invest for 3 years. He is comparing two options:
+\begin{itemize}
+    \item \textbf{Option A:} A 3-year GIC at 3.5\% per year compounded semi-annually.
+    \item \textbf{Option B:} A savings account at 3.2\% per year compounded monthly.
+\end{itemize}
+
+\begin{parts}
+    \part[3] Find the accumulated amount for Option A after 3 years.
+    \begin{solution}
+        $i = \dfrac{0.035}{2} = 0.0175$, \quad $n = 3 \times 2 = 6$\\
+        $A = 5000(1.0175)^{6}$\\
+        $(1.0175)^{6} \approx 1.10969$\\
+        $A \approx 5000 \times 1.10969 = \$5{,}548.44$
+    \end{solution}
+
+    \part[3] Find the accumulated amount for Option B after 3 years.
+    \begin{solution}
+        $i = \dfrac{0.032}{12} \approx 0.0026\overline{6}$, \quad $n = 3 \times 12 = 36$\\
+        $A = 5000(1.002\overline{6})^{36}$\\
+        $(1.002\overline{6})^{36} \approx 1.10023$\\
+        $A \approx 5000 \times 1.10023 = \$5{,}501.17$
+    \end{solution}
+
+    \part[2] Which option should David choose, and why? Mention at least one advantage and one disadvantage of the GIC compared to the savings account.
+    \begin{solution}
+        Option A (GIC) gives \$5{,}548.44 vs.\ Option B (savings) \$5{,}501.17, so the GIC earns \$47.27 more.\\
+        \textbf{Advantage of GIC:} Guaranteed, locked-in rate --- David knows exactly what he will earn.\\
+        \textbf{Disadvantage of GIC:} The money is locked in for 3 years; early withdrawal may result in a penalty or loss of interest.\\
+        David should choose the GIC if he does not need access to the funds during the 3-year term.
+    \end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

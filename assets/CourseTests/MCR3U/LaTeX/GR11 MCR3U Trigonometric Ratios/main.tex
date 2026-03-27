@@ -1,0 +1,288 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Trigonometric Ratios}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Functions \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Give exact values where possible.
+    Diagrams required for ambiguous case.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] The exact value of $\sin\ang{45}$ is:
+\begin{choices}
+    \choice $\dfrac{1}{2}$
+    \choice $\dfrac{\sqrt{3}}{2}$
+    \correctchoice $\dfrac{\sqrt{2}}{2}$
+    \choice $1$
+\end{choices}
+
+\question[1] The exact value of $\cos\ang{30}$ is:
+\begin{choices}
+    \choice $\dfrac{1}{2}$
+    \correctchoice $\dfrac{\sqrt{3}}{2}$
+    \choice $\dfrac{\sqrt{2}}{2}$
+    \choice $\sqrt{3}$
+\end{choices}
+
+\question[1] In which quadrant is $\theta = \ang{250}$ located?
+\begin{choices}
+    \choice Quadrant I
+    \choice Quadrant II
+    \correctchoice Quadrant III
+    \choice Quadrant IV
+\end{choices}
+
+\question[1] If $\sin\theta < 0$ and $\cos\theta > 0$, then $\theta$ is in:
+\begin{choices}
+    \choice Quadrant I
+    \choice Quadrant II
+    \choice Quadrant III
+    \correctchoice Quadrant IV
+\end{choices}
+
+\question[1] The reference angle for $\theta = \ang{210}$ is:
+\begin{choices}
+    \choice \ang{70}
+    \choice \ang{60}
+    \correctchoice \ang{30}
+    \choice \ang{150}
+\end{choices}
+
+\question[1] $\cos\ang{120}$ equals:
+\begin{choices}
+    \choice $\dfrac{\sqrt{3}}{2}$
+    \correctchoice $-\dfrac{1}{2}$
+    \choice $\dfrac{1}{2}$
+    \choice $-\dfrac{\sqrt{3}}{2}$
+\end{choices}
+
+\question[1] $\sin^2\theta + \cos^2\theta =$
+\begin{choices}
+    \choice $0$
+    \choice $\sin\theta\cos\theta$
+    \correctchoice $1$
+    \choice $2$
+\end{choices}
+
+\question[1] If $\cos\theta = -\dfrac{3}{5}$ and $\theta$ is in Quadrant III, then
+$\sin\theta =$
+\begin{choices}
+    \choice $\dfrac{4}{5}$
+    \correctchoice $-\dfrac{4}{5}$
+    \choice $\dfrac{3}{4}$
+    \choice $-\dfrac{3}{4}$
+\end{choices}
+
+\question[1] The Sine Law states:
+\begin{choices}
+    \choice $c^2 = a^2 + b^2 - 2ab\cos C$
+    \correctchoice $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$
+    \choice $\sin A = \dfrac{a}{c}$ only for right triangles
+    \choice $a^2 = b^2 + c^2$
+\end{choices}
+
+\question[1] The Cosine Law $c^2 = a^2 + b^2 - 2ab\cos C$ reduces to the Pythagorean
+theorem when:
+\begin{choices}
+    \choice $C = \ang{60}$
+    \choice $a = b$
+    \correctchoice $C = \ang{90}$
+    \choice $\cos C = 1$
+\end{choices}
+
+\question[1] In $\triangle ABC$, $A = \ang{30}$, $a = 5$, $b = 8$. The ambiguous case arises
+because:
+\begin{choices}
+    \choice $a > b$
+    \correctchoice $b\sin A < a < b$, so two triangles may exist
+    \choice $A > \ang{90}$
+    \choice $a < b\sin A$, so no triangle exists
+\end{choices}
+
+\question[1] $\tan\ang{135}$ equals:
+\begin{choices}
+    \choice $1$
+    \correctchoice $-1$
+    \choice $\sqrt{3}$
+    \choice $-\sqrt{3}$
+\end{choices}
+
+\question[1] In a triangle with sides $a = 7$, $b = 9$, $c = 5$, which formula
+should be used to find angle $B$?
+\begin{choices}
+    \choice Sine Law — two sides and the included angle are known
+    \correctchoice Cosine Law — all three sides are known
+    \choice Pythagorean theorem
+    \choice Sine Law — two angles are known
+\end{choices}
+
+\question[1] Two angles in $[0^\circ, 360^\circ]$ have $\sin\theta = \dfrac{\sqrt{3}}{2}$.
+They are:
+\begin{choices}
+    \choice \ang{30} and \ang{150}
+    \correctchoice \ang{60} and \ang{120}
+    \choice \ang{30} and \ang{330}
+    \choice \ang{60} and \ang{300}
+\end{choices}
+
+\question[1] $\sec\theta$ is defined as:
+\begin{choices}
+    \choice $\dfrac{1}{\sin\theta}$
+    \correctchoice $\dfrac{1}{\cos\theta}$
+    \choice $\dfrac{\cos\theta}{\sin\theta}$
+    \choice $\dfrac{\sin\theta}{\cos\theta}$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Angles in standard position and exact values.
+\begin{parts}
+    \part[3] For $\theta = \ang{315}$, find $\sin\theta$, $\cos\theta$, and $\tan\theta$
+    using the reference angle. State the quadrant.
+    \part[3] If $\sin\theta = \dfrac{5}{13}$ and $\theta$ is in Quadrant II, find
+    $\cos\theta$ and $\tan\theta$ exactly.
+    \part[2] Find all angles $\theta \in [0^\circ, 360^\circ]$ where
+    $\cos\theta = -\dfrac{\sqrt{2}}{2}$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $\theta = \ang{315}$ is in Quadrant IV (reference angle $\ang{45}$).
+\[
+\sin\ang{315} = -\frac{\sqrt{2}}{2};\quad \cos\ang{315} = \frac{\sqrt{2}}{2};\quad
+\tan\ang{315} = -1
+\]
+
+\textbf{(b)} $\sin\theta = \dfrac{5}{13}$, Quadrant II.
+Using $\sin^2\theta + \cos^2\theta = 1$:
+$\cos^2\theta = 1 - \dfrac{25}{169} = \dfrac{144}{169}$, so $\cos\theta = -\dfrac{12}{13}$
+(negative in QII).
+\[
+\tan\theta = \frac{\sin\theta}{\cos\theta} = \frac{5/13}{-12/13} = -\frac{5}{12}
+\]
+
+\textbf{(c)} Reference angle: $\cos^{-1}\!\left(\dfrac{\sqrt{2}}{2}\right) = \ang{45}$.
+Cosine is negative in QII and QIII.
+$\theta = \ang{135}$ or $\theta = \ang{225}$
+\end{solution}
+
+\question Apply the Sine Law to find the unknown sides/angles. Round to one decimal place.
+\begin{parts}
+    \part[3] In $\triangle ABC$: $A = \ang{42}$, $B = \ang{75}$, $a = 15$ cm.
+    Find side $b$.
+    \part[4] \textbf{Ambiguous case:} In $\triangle ABC$: $A = \ang{35}$, $a = 9$ cm,
+    $b = 14$ cm. Determine whether 0, 1, or 2 triangles exist. Solve all possible
+    triangles.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $\dfrac{b}{\sin B} = \dfrac{a}{\sin A}$:\quad
+$b = \dfrac{a\sin B}{\sin A} = \dfrac{15\sin\ang{75}}{\sin\ang{42}}
+= \dfrac{15 \times 0.9659}{0.6691} = \mathbf{\SI{21.7}{cm}}$
+
+\textbf{(b)} Check: $b\sin A = 14\sin\ang{35} = 14(0.5736) = 8.03$.
+Since $b\sin A < a < b$ ($8.03 < 9 < 14$), \textbf{two triangles exist}.
+
+$\dfrac{\sin B}{b} = \dfrac{\sin A}{a}$:\quad
+$\sin B = \dfrac{b\sin A}{a} = \dfrac{14\sin\ang{35}}{9} = \dfrac{8.030}{9} = 0.8923$
+
+$B_1 = \ang{63.2}$, so $C_1 = 180 - 35 - 63.2 = \ang{81.8}$.
+$c_1 = \dfrac{9\sin\ang{81.8}}{\sin\ang{35}} = \dfrac{9(0.9898)}{0.5736} \approx \mathbf{\SI{15.5}{cm}}$
+
+$B_2 = 180 - 63.2 = \ang{116.8}$, so $C_2 = 180 - 35 - 116.8 = \ang{28.2}$.
+$c_2 = \dfrac{9\sin\ang{28.2}}{\sin\ang{35}} \approx \dfrac{9(0.4726)}{0.5736}
+\approx \mathbf{\SI{7.42}{cm}}$
+\end{solution}
+
+\question Apply the Cosine Law.
+\begin{parts}
+    \part[3] In $\triangle PQR$: $p = 8$, $q = 11$, $R = \ang{62}$.
+    Find side $r$.
+    \part[3] In $\triangle XYZ$: $x = 5$, $y = 7$, $z = 9$. Find angle $Z$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $r^2 = p^2 + q^2 - 2pq\cos R = 64 + 121 - 2(8)(11)\cos\ang{62}$
+$= 185 - 176(0.4695) = 185 - 82.63 = 102.37$
+\[
+r = \sqrt{102.37} \approx \mathbf{\SI{10.1}{cm}}
+\]
+
+\textbf{(b)} $\cos Z = \dfrac{x^2 + y^2 - z^2}{2xy} = \dfrac{25 + 49 - 81}{2(5)(7)}
+= \dfrac{-7}{70} = -0.1$
+\[
+Z = \cos^{-1}(-0.1) \approx \mathbf{\ang{95.7}}
+\]
+\end{solution}
+
+\question A surveyor needs to find the width of a river. From point $A$ on one bank,
+she measures \ang{65} to a tree $C$ on the opposite bank. She walks 80 m along the
+bank to point $B$ and measures \ang{52} to the same tree. The angle at $C$ is
+therefore $\angle ACB = 180^\circ - 65^\circ - 52^\circ = 63^\circ$.
+\begin{parts}
+    \part[3] Find the distance $AC$ using the Sine Law.
+    \part[2] Find the perpendicular width of the river (the distance from $C$
+    perpendicular to $AB$).
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} In $\triangle ABC$: $AB = 80$ m, $\angle A = \ang{65}$,
+$\angle B = \ang{52}$, $\angle C = \ang{63}$.
+\[
+\frac{AC}{\sin B} = \frac{AB}{\sin C} \implies
+AC = \frac{80\sin\ang{52}}{\sin\ang{63}} = \frac{80(0.7880)}{0.8910}
+\approx \mathbf{\SI{70.7}{m}}
+\]
+
+\textbf{(b)} Width $= AC \cdot \sin(\angle A) = 70.7 \times \sin\ang{65}
+= 70.7 \times 0.9063 \approx \mathbf{\SI{64.1}{m}}$
+\end{solution}
+
+\end{questions}
+\end{document}

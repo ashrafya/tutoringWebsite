@@ -1,0 +1,321 @@
+
+\documentclass[addpoints]{exam}
+% Used to insert images
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, positioning, arrows.meta}
+\usepackage{amsmath} 
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+% Adds a line to the top of the page
+\runningheadrule
+% The three braces correspond to the different parts of the header: the left is the top left text, middle is top middle, and right is top right.
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi }
+% Adds a line to the bottom of the page
+\runningfootrule
+% The three braces correspond to the different parts of the footer: the left is the bottom left text, middle is bottom middle, and right is bottom right.
+% Doesn't include the title page in the page count 
+% \runningfooter{}{Page \the\numexpr\thepage-1\   of \the\numexpr\numpages-1}{}
+% Uncomment the line below if you want to include the title page in the page count 
+\runningfooter{}{Page \thepage\   of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Physics \\ \event
+    % Writes key if the answers are shown, otherwise writes test
+    \ifprintanswers 
+     \space Key
+    \else 
+     \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+% Change to any picture or just some \vspace{.3\textheight} to leave it blank. [h] ensures that the image is placed in the same place in the document as in the code
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=.3\textheight, width=.6\textwidth, keepaspectratio]{}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{love-physics.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{figure}
+
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else
+        \underline{\hspace{10cm}}\\ \vspace{5mm}
+    \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+
+\end{center}
+
+% Change the list below to reflect the instructions for your test
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    % If the test is a class set, an instruction will appear to not write on the test paper.
+    \ifnum\type=1 \item \textbf{This test is a class set.} Please do not write any answers on this paper. \fi
+    % Adds an instruction 
+    \item Please answer to 2 decimal points
+    \item The test is designed to be completed in 75 minutes
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+% The gradetable has a number of rows that automatically updates. This is not very accurate because of the variance in question size, but it can serve as a starting point. You will probably need to manually update the number of rows of the gradetable (change '\the\numexpr\numpages/13+1' to the desired number of rows).
+\multirowgradetable{1}[pages]   
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+
+\section*{Multiple Choice (10 marks)}
+\vspace{5mm}
+
+\question[1] A projectile launched at \ang{30} has range R. If launched at \ang{60} with same speed, its range will be:
+    \begin{choices}
+        \choice \( \frac{R}{2} \)
+        \correctchoice \( R \)
+        \choice \( \frac{2R}{3} \)
+        \choice \( 2R \)
+    \end{choices}
+    
+\question[1] The work done by conservative forces equals:
+\begin{choices}
+    \correctchoice Negative change in potential energy
+    \choice Total mechanical energy
+    \choice Change in kinetic energy
+    \choice Power multiplied by time
+\end{choices}
+
+
+\question[1] A projectile is launched at \SI{50}{m/s} at \ang{60}. Its maximum height is:
+\begin{choices}
+    \correctchoice \SI{96}{m}
+    \choice \SI{100}{m}
+    \choice \SI{125}{m}
+    \choice \SI{150}{m}
+\end{choices}
+
+\question[1] The area under an acceleration-time graph represents:
+\begin{choices}
+    \choice Displacement
+    \correctchoice Change in velocity
+    \choice Total distance
+    \choice Kinetic energy
+\end{choices}
+
+\question[1] When a ball hits a wall and bounces back, the forces involved:
+\begin{choices}
+    \choice Depend on the ball's material
+    \choice Are greater on the wall
+    \choice Cancel each other completely
+    \correctchoice Are equal in magnitude and opposite in direction
+\end{choices}
+
+\question[1] A car rounds a curve with radius r at speed v. If speed doubles, required centripetal force becomes:
+\begin{choices}
+    \choice 2F
+    \correctchoice 4F
+    \choice F/2
+    \choice F/4
+\end{choices}
+
+\question[1] A \SI{10}{kg} box slides \SI{5}{m} with μ=0.4. Work done by friction is:
+\begin{choices}
+    \choice \SI{200}{J}
+    \choice \SI{0}{J}
+    \correctchoice \SI{-196}{J}
+    \choice \SI{392}{J}
+\end{choices}
+
+\question[1] Mechanical energy is conserved in:
+\begin{choices}
+    \choice A swinging pendulum with air resistance
+    \correctchoice A roller coaster descending a frictionless track
+    \choice A car braking to stop
+    \choice A bouncing ball
+\end{choices}
+
+\question[1] A \SI{5}{kg} object changes velocity from \SI{-5}{m/s} to \SI{10}{m/s}. Impulse is:
+\begin{choices}
+    \correctchoice \SI{75}{Ns}
+    \choice \SI{25}{Ns}
+    \choice \SI{-25}{Ns}
+    \choice \SI{50}{Ns}
+\end{choices}
+
+\question[1] A \SI{2000}{kg} truck (\SI{20}{m/s}) collides with \SI{1500}{kg} car at rest. Final speed if they stick:
+\begin{choices}
+    \choice \SI{20}{m/s}
+    \choice \SI{15}{m/s}
+    \choice \SI{8.6}{m/s}
+    \correctchoice \SI{11.4}{m/s}
+\end{choices}
+
+\question[1] Gravitational field strength on planet with 2M and 2R compared to Earth:
+\begin{choices}
+    \choice 2g
+    \choice g
+    \choice 0.25g
+    \correctchoice 0.5g
+\end{choices}
+
+\question[1] A \SI{4}{\micro C} charge moves \SI{2}{m} in \SI{300}{N/C} field. Work done by field:
+\begin{choices}
+    \choice \SI{2.4e-3}{J}
+    \correctchoice \SI{2.4e-3}{J}
+    \choice \SI{-2.4e-3}{J}
+    \choice \SI{4.8e-3}{J}
+\end{choices}
+
+\question[1] Light enters water (n=1.33) from air at \ang{30}. Refracted angle:
+\begin{choices}
+    \choice \ang{22}
+    \choice \ang{30}
+    \correctchoice \ang{22}
+    \choice \ang{48.6}
+\end{choices}
+
+\question[1] A diffraction grating with \SI{1000}{lines/mm} shows 2nd order for \SI{500}{nm} at:
+\begin{choices}
+    \correctchoice No solution
+    \choice \ang{30}
+    \choice \ang{60}
+    \choice \ang{90}
+\end{choices}
+
+\question[1] A spaceship moving at 0.8c experiences 10 years. Earth observers measure:
+\begin{choices}
+    \correctchoice 16.7 years
+    \choice 6 years
+    \choice 10 years
+    \choice 8 years
+\end{choices}
+
+\question[1] Metal with work function \SI{4.0}{eV} has threshold wavelength:
+\begin{choices}
+    \choice \SI{300}{nm}
+    \choice \SI{400}{nm}
+    \correctchoice \SI{310}{nm}
+    \choice \SI{620}{nm}
+\end{choices}
+
+\question[1] Plane flies \SI{250}{m/s} north with \SI{50}{m/s} west wind. Ground speed:
+\begin{choices}
+    \choice \SI{200}{m/s}
+    \correctchoice \SI{255}{m/s}
+    \choice \SI{250}{m/s}
+    \choice \SI{245}{m/s}
+\end{choices}
+
+\question[1] Equal masses in Atwood machine. Tension is:
+\begin{choices}
+    \choice Zero
+    \choice mg
+    \choice 2mg
+    \correctchoice mg
+\end{choices}
+
+\question[1] \SI{60}{kg} student climbs \SI{5}{m} in \SI{10}{s}. Average power:
+\begin{choices}
+    \choice \SI{300}{W}
+    \choice \SI{150}{W}
+    \correctchoice \SI{294}{W}
+    \choice \SI{600}{W}
+\end{choices}
+
+\question[1] \SI{0.5}{kg} east at \SI{10}{m/s} + \SI{0.8}{kg} north at \SI{8}{m/s}. Final speed if stuck:
+\begin{choices}
+    \choice \SI{9.0}{m/s}
+    \correctchoice \SI{8.1}{m/s}
+    \choice \SI{12.4}{m/s}
+    \choice \SI{6.5}{m/s}
+\end{choices}
+
+\section*{Short Answer (35 marks)}
+
+\question \textbf{Football Field Goal Attempt:} During a crucial game, the kicker launches the football at \SI{40}{m/s} from ground level at a \ang{60} angle. The crossbar is \SI{3}{m} high and \SI{45}{m} horizontally from the kick point.
+\begin{parts}
+    \part[3] Calculate the maximum height reached by the football
+    \part[2] Determine if this kick would result in a successful field goal
+\end{parts}
+\begin{solution}[8cm]
+    
+\end{solution}
+
+
+\question \textbf{Mountain Rescue:} A \SI{1200}{kg} rescue helicopter hovers stationary while lowering a paramedic package using a cable. The package (\SI{85}{kg}) accelerates downward at \SI{2}{m/s^2}.
+    \begin{parts}
+        \part[3] Calculate the tension in the cable during descent
+        \part[2] Determine the upward force the helicopter must maintain
+    \end{parts}
+\begin{solution}[8cm]
+    
+\end{solution}
+
+\question \textbf{Warehouse Loading Ramp Safety:} Workers need to push a \SI{8}{kg} package up a \ang{35} loading ramp with coefficient of friction μ=0.3. The safety pusher applies a \SI{60}{N} force parallel to the ramp surface.
+\begin{parts}
+    \part[3] Calculate the package's acceleration to ensure safe handling
+    \part[2] Verify the normal force stays within ramp's \SI{100}{N} safety limit
+\end{parts}
+\begin{solution}[8cm][8cm]
+    
+\end{solution}
+
+\question \textbf{Playground Swing Physics:} A child (\SI{2}{kg} mass) on a \SI{1.5}{m} long swing is pushed to \SI{1.5}{m} height relative to the lowest point.
+\begin{parts}
+    \part[2] Calculate maximum speed at the swing's lowest point
+    \part[3] Determine the rope tension at this point (safety threshold: \SI{60}{N})
+\end{parts}
+\begin{solution}[8cm]
+    
+\end{solution}
+
+\question \textbf{Traffic Accident Investigation:} A compact car (\SI{1200}{kg}) traveling at \SI{90}{km/h} (\SI{25}{m/s}) collides with a stationary delivery truck (\SI{1800}{kg}) at an intersection.
+\begin{parts}
+    \part[3] Calculate their combined speed after collision if locked together
+    \part[2] Determine the energy converted to damage and heat
+\end{parts}
+\begin{solution}[8cm]
+    
+\end{solution}
+
+\question \textbf{Satellite Deployment:} Engineers are positioning a weather satellite \SI{500}{km} above Earth's surface.
+\begin{parts}
+    \part[3] Calculate the gravitational acceleration at this altitude
+    \part[2] Compare to Earth's surface gravity
+\end{parts}
+\begin{solution}[8cm]
+    
+\end{solution}
+
+
+\question \textbf{Aquarium Light Guide:} An underwater camera system uses glass (n=1.52) to water (n=1.33) light transmission at \ang{40} entry angle.
+\begin{parts}
+    \part[3] Calculate the light's path angle in water
+    \part[2] Determine the critical angle for total internal reflection
+\end{parts}
+\begin{solution}[8cm]
+    
+\end{solution}
+
+
+\end{questions}
+
+\end{document}

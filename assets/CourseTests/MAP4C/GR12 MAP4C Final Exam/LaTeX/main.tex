@@ -1,0 +1,422 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The exam is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{5mm}
+
+%--- Financial Mathematics (4) ---
+\question[1] The future value of an annuity formula $FV = PMT \cdot \dfrac{(1+i)^n - 1}{i}$ is used when:
+\begin{choices}
+    \choice Finding the present lump sum needed now
+    \correctchoice Finding the accumulated value of regular deposits
+    \choice Calculating simple interest
+    \choice Finding the monthly payment on a loan
+\end{choices}
+
+\question[1] \$500 is deposited monthly into an account at 6\% per year compounded monthly
+for 10 years. The number of compounding periods is:
+\begin{choices}
+    \choice $10$
+    \choice $60$
+    \correctchoice $120$
+    \choice $72$
+\end{choices}
+
+\question[1] Which formula gives the monthly mortgage payment?
+\begin{choices}
+    \choice $FV = PMT \cdot \dfrac{(1+i)^n - 1}{i}$
+    \correctchoice $PV = PMT \cdot \dfrac{1-(1+i)^{-n}}{i}$, solved for $PMT$
+    \choice $A = P(1+i)^n$
+    \choice $I = Prt$
+\end{choices}
+
+\question[1] A \$200\,000 mortgage at 5\% per year compounded semi-annually, 25 years,
+monthly payments — the effective monthly rate is:
+\begin{choices}
+    \choice $\dfrac{0.05}{12}$
+    \correctchoice $(1 + 0.025)^{1/6} - 1$
+    \choice $\dfrac{0.05}{2}$
+    \choice $0.05 \div 25$
+\end{choices}
+
+%--- Modelling (4) ---
+\question[1] A data set is best modelled by a quadratic function when:
+\begin{choices}
+    \choice The data increases by a constant amount each period
+    \correctchoice The data increases then decreases (or vice versa), forming a curve
+    \choice The data doubles each period
+    \choice The data oscillates regularly
+\end{choices}
+
+\question[1] The correlation coefficient $r = -0.88$ indicates:
+\begin{choices}
+    \choice Weak positive correlation
+    \choice No correlation
+    \correctchoice Strong negative correlation
+    \choice Weak negative correlation
+\end{choices}
+
+\question[1] For the exponential model $y = 3(2)^x$, the doubling time is:
+\begin{choices}
+    \choice $2$
+    \correctchoice $1$
+    \choice $3$
+    \choice $0.5$
+\end{choices}
+
+\question[1] The sinusoidal model $y = 4\sin(2x) + 3$ has amplitude:
+\begin{choices}
+    \choice $2$
+    \correctchoice $4$
+    \choice $3$
+    \choice $7$
+\end{choices}
+
+%--- Trigonometry and Geometry (4) ---
+\question[1] The Cosine Law is used when you know:
+\begin{choices}
+    \choice Two angles and a side
+    \choice One side and all angles
+    \correctchoice Two sides and the included angle (SAS) or all three sides (SSS)
+    \choice Two sides and a non-included angle
+\end{choices}
+
+\question[1] A cylinder with $r = 2$ m and $h = 5$ m has total surface area:
+\begin{choices}
+    \choice $14\pi$ m$^2$
+    \choice $20\pi$ m$^2$
+    \correctchoice $28\pi$ m$^2$
+    \choice $40\pi$ m$^2$
+\end{choices}
+
+\question[1] Two similar cones have linear scale factor $1:3$. Their volume ratio is:
+\begin{choices}
+    \choice $1:3$
+    \choice $1:6$
+    \correctchoice $1:27$
+    \choice $1:9$
+\end{choices}
+
+\question[1] A ship sails on bearing S\ang{70}W for \SI{40}{km}. Its southward displacement is:
+\begin{choices}
+    \choice $40\cos\ang{70}$
+    \correctchoice $40\cos\ang{70}$ south (approximately \SI{13.7}{km})
+    \choice $40\sin\ang{70}$ south
+    \choice $40$ km south
+\end{choices}
+
+%--- Statistics (4) ---
+\question[1] For a normal distribution with $\mu = 80$ and $\sigma = 10$, the $z$-score for
+$x = 95$ is:
+\begin{choices}
+    \choice $0.5$
+    \choice $1.0$
+    \correctchoice $1.5$
+    \choice $2.0$
+\end{choices}
+
+\question[1] About 95\% of data in a normal distribution lies within:
+\begin{choices}
+    \choice $\mu \pm \sigma$
+    \correctchoice $\mu \pm 2\sigma$
+    \choice $\mu \pm 3\sigma$
+    \choice $\mu \pm 0.5\sigma$
+\end{choices}
+
+\question[1] A survey of 900 people has a margin of error of $\pm 3.3\%$ at 95\% confidence.
+To get a margin of error of $\pm 1.65\%$, the sample size needed is:
+\begin{choices}
+    \choice $1\,800$
+    \choice $2\,700$
+    \correctchoice $3\,600$
+    \choice $450$
+\end{choices}
+
+%--- Applications of Geometry (4) ---
+\question[1] The magnitude of vector $\vec{v} = (-5, 12)$ is:
+\begin{choices}
+    \choice $7$
+    \choice $10$
+    \correctchoice $13$
+    \choice $17$
+\end{choices}
+
+\question[1] The perpendicular bisector of segment $AB$ is the locus of points:
+\begin{choices}
+    \choice On line $AB$
+    \correctchoice Equidistant from $A$ and $B$
+    \choice Equidistant from $A$ and a fixed line
+    \choice Within a fixed distance from $A$
+\end{choices}
+
+\question[1] An inscribed angle of \ang{55} subtends an arc. The central angle subtending
+the same arc is:
+\begin{choices}
+    \choice \ang{27.5}
+    \correctchoice \ang{110}
+    \choice \ang{55}
+    \choice \ang{125}
+\end{choices}
+
+\question[1] To prove $PQRS$ is a parallelogram using midpoints of diagonals, you verify:
+\begin{choices}
+    \choice All sides are equal
+    \choice The diagonals are perpendicular
+    \correctchoice The midpoints of both diagonals are the same point
+    \choice All angles are \ang{90}
+\end{choices}
+
+\question[1] The shoelace formula gives the:
+\begin{choices}
+    \choice Perimeter of a polygon
+    \correctchoice Area of a polygon given its vertices
+    \choice Length of the diagonals
+    \choice Number of sides
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+
+\question[8] \textbf{Financial Mathematics.}
+\begin{parts}
+    \part[4] Mei contributes \$400 per month to an RRSP at 6\% per year compounded monthly
+    for 30 years. Find the total value at retirement and the total amount she contributed.
+    How much is interest?
+    \[(FV = PMT \cdot \tfrac{(1+i)^n-1}{i})\]
+    \part[4] Mei then uses the RRSP to fund a monthly pension. She needs \$2\,500 per month
+    for 20 years at 4\% per year compounded monthly. Find the present value required at
+    retirement. Does her RRSP cover it?
+    \[(PV = PMT \cdot \tfrac{1-(1+i)^{-n}}{i})\]
+\end{parts}
+\begin{solution}[11cm]
+\textbf{(a)} $i = \dfrac{0.06}{12} = 0.005$, $n = 30 \times 12 = 360$
+\[FV = 400 \cdot \frac{(1.005)^{360}-1}{0.005} = 400 \cdot \frac{6.0226 - 1}{0.005}
+= 400 \cdot \frac{5.0226}{0.005} = 400 \times 1004.52 \approx \mathbf{\$401\,808}\]
+Total contributed: $400 \times 360 = \$144\,000$
+
+Interest earned: $\$401\,808 - \$144\,000 = \mathbf{\$257\,808}$
+
+\textbf{(b)} $i = \dfrac{0.04}{12} \approx 0.003\overline{3}$, $n = 20 \times 12 = 240$
+\[PV = 2500 \cdot \frac{1-(1.003\overline{3})^{-240}}{0.003\overline{3}}
+= 2500 \cdot \frac{1-0.4493}{0.003\overline{3}} = 2500 \cdot \frac{0.5507}{0.003\overline{3}}
+\approx 2500 \times 165.02 \approx \mathbf{\$412\,550}\]
+
+Her RRSP of \$401,808 does \textbf{not quite cover} the required \$412,550 — she is short by about \$10,742.
+\end{solution}
+
+\question[8] \textbf{Modelling with Functions.}
+The monthly average temperature (°C) for a city is given below:
+
+\begin{center}
+\begin{tabular}{@{}lrrrrrrrrrrrr@{}}
+\toprule
+Month & J & F & M & A & M & J & J & A & S & O & N & D \\
+\midrule
+Temp (°C) & $-8$ & $-6$ & $0$ & 8 & 15 & 20 & 23 & 22 & 16 & 9 & 1 & $-5$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\begin{parts}
+    \part[2] Identify the maximum and minimum temperatures. Find the amplitude and
+    vertical shift of a sinusoidal model.
+    \part[3] The period is 12 months. Find $k$ in $y = a\sin(k(x-d)) + c$. Write a complete
+    sinusoidal equation for the temperature, using a sine function with phase shift
+    $d = 4$ (April as the starting rise). Use $x = 1$ for January.
+    \part[3] Use your model to predict the temperature in month 8 (August) and month 3 (March).
+    Compare to the actual values and comment.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Max $= 23$°C (July), Min $= -8$°C (January).
+
+Amplitude: $a = \dfrac{23-(-8)}{2} = \dfrac{31}{2} = \mathbf{15.5}$°C
+
+Vertical shift: $c = \dfrac{23+(-8)}{2} = \dfrac{15}{2} = \mathbf{7.5}$°C
+
+\textbf{(b)} $k = \dfrac{2\pi}{12} = \dfrac{\pi}{6}$
+
+Model (using sine with $d = 4$, since the temperature is near the midline rising around April):
+\[y = 15.5\sin\!\left(\dfrac{\pi}{6}(x - 4)\right) + 7.5\]
+
+\textbf{(c)} August: $x = 8$:\quad $y = 15.5\sin\!\left(\dfrac{\pi}{6}(4)\right) + 7.5 = 15.5\sin\!\left(\dfrac{2\pi}{3}\right) + 7.5 = 15.5(0.866) + 7.5 \approx \mathbf{20.9}$°C
+
+Actual: 22°C. Difference: 1.1°C — close.
+
+March: $x = 3$:\quad $y = 15.5\sin\!\left(\dfrac{\pi}{6}(-1)\right) + 7.5 = 15.5(-0.5) + 7.5 = -7.75 + 7.5 \approx \mathbf{-0.25}$°C
+
+Actual: 0°C. Difference: 0.25°C — very close.
+
+The sinusoidal model fits the data well. Slight discrepancies occur because real temperature patterns are not perfectly sinusoidal.
+\end{solution}
+
+\question[8] \textbf{Trigonometry \& Geometry.}
+\begin{parts}
+    \part[4] From the roof of a building (height $h$), a surveyor measures the angle of
+    elevation to the top of a taller building as \ang{22} and the angle of depression to
+    the base of that building as \ang{35}. The horizontal distance between the buildings
+    is \SI{80}{m}. Find $h$ (the height of the first building) and $H$ (the total height of
+    the second building).
+    \part[4] A storage tank is a cylinder with a cone on top. The cylinder has radius \SI{4}{m}
+    and height \SI{6}{m}. The cone has the same base radius and slant height \SI{5}{m}.
+    Find the total surface area and total volume.
+\end{parts}
+\begin{solution}[11cm]
+\textbf{(a)} Let $d = 80$ m (horizontal distance), $h$ = height of first building.
+
+From angle of depression to the base: $\tan\ang{35} = \dfrac{h}{80}$
+\[h = 80\tan\ang{35} = 80(0.7002) \approx \mathbf{\SI{56.0}{m}}\]
+
+From angle of elevation to the top of second building:
+Let $x$ = height of second building above the surveyor's level.
+$\tan\ang{22} = \dfrac{x}{80} \Rightarrow x = 80\tan\ang{22} = 80(0.4040) \approx \SI{32.3}{m}$
+
+Total height of second building: $H = h + x = 56.0 + 32.3 \approx \mathbf{\SI{88.3}{m}}$
+
+\textbf{(b)} Cone: $r = 4$ m, slant height $l = 5$ m, so cone height $= \sqrt{5^2-4^2} = 3$ m.
+
+\textit{Total Surface Area:}
+\begin{itemize}
+\item Circular base of cylinder: $\pi(4)^2 = 16\pi$
+\item Lateral surface of cylinder: $2\pi(4)(6) = 48\pi$
+\item Lateral surface of cone: $\pi r l = \pi(4)(5) = 20\pi$
+\item (No circular top on cylinder — the cone sits there)
+\end{itemize}
+$SA = 16\pi + 48\pi + 20\pi = 84\pi \approx \mathbf{263.9 \text{ m}^2}$
+
+\textit{Total Volume:}
+$V_{\text{cyl}} = \pi(4)^2(6) = 96\pi$;\quad $V_{\text{cone}} = \tfrac{1}{3}\pi(4)^2(3) = 16\pi$
+
+$V = 96\pi + 16\pi = 112\pi \approx \mathbf{351.9 \text{ m}^3}$
+\end{solution}
+
+\question[8] \textbf{Statistics.}
+The lifespans (years) of a species of parrot are normally distributed with $\mu = 35$ and $\sigma = 6$.
+\begin{parts}
+    \part[3] Find the percentage of parrots that live:
+    (i) between 29 and 41 years;\quad
+    (ii) more than 47 years;\quad
+    (iii) less than 23 years.
+    \part[3] Find the lifespan at the 75th percentile ($z_{0.75} = 0.674$) and the lifespan
+    below which 10\% of parrots fall ($z_{0.10} = -1.282$).
+    \part[2] A wildlife researcher surveys 100 parrots and finds a mean lifespan of 36.2 years.
+    The margin of error at 95\% confidence is $\pm \dfrac{1.96 \times 6}{\sqrt{100}}$.
+    Find the confidence interval and interpret it.
+\end{parts}
+\begin{solution}[11cm]
+\textbf{(a)}
+(i) $29 = 35 - 6 = \mu - \sigma$ and $41 = 35 + 6 = \mu + \sigma$. By the 68-95-99.7 rule: $\mathbf{68\%}$
+
+(ii) $47 = 35 + 2(6) = \mu + 2\sigma$. Above $\mu + 2\sigma$: $\dfrac{100-95}{2} = \mathbf{2.5\%}$
+
+(iii) $23 = 35 - 2(6) = \mu - 2\sigma$. Below $\mu - 2\sigma$: $\mathbf{2.5\%}$
+
+\textbf{(b)} 75th percentile: $x = \mu + z\sigma = 35 + 0.674(6) = 35 + 4.04 = \mathbf{39.0}$ years
+
+10th percentile: $x = 35 + (-1.282)(6) = 35 - 7.69 = \mathbf{27.3}$ years
+
+\textbf{(c)} $ME = \dfrac{1.96 \times 6}{\sqrt{100}} = \dfrac{11.76}{10} = 1.176$
+
+Confidence interval: $36.2 \pm 1.176 \Rightarrow \mathbf{(35.02,\; 37.38)}$ years
+
+Interpretation: We are 95\% confident that the true mean lifespan of all parrots of this species is between 35.0 and 37.4 years.
+\end{solution}
+
+\question[8] \textbf{Applications of Geometry.}
+\begin{parts}
+    \part[4] A ship leaves port $O$ and sails on bearing N\ang{50}E for \SI{120}{km} to point $A$.
+    It then sails on bearing S\ang{30}E for \SI{90}{km} to point $B$.
+    Find the distance $OB$ and the bearing from $O$ to $B$.
+    \part[4] The vertices of quadrilateral $PQRS$ are $P(0,1)$, $Q(4,3)$, $R(6,0)$, $S(2,-2)$.
+    Use midpoints of diagonals to prove $PQRS$ is a parallelogram. Then find its area using the
+    shoelace formula.
+\end{parts}
+\begin{solution}[11cm]
+\textbf{(a)} The angle at $A$ between the two legs:
+
+Bearing N\ang{50}E (first leg) and S\ang{30}E (second leg):
+
+The first leg arrives at $A$ from the direction S\ang{50}W.
+The second leg departs on S\ang{30}E.
+The angle between these two directions at $A$:
+$\angle OAB = 180^\circ - 50^\circ - 30^\circ = \ang{100}$
+
+By Cosine Law:
+\[OB^2 = 120^2 + 90^2 - 2(120)(90)\cos\ang{100}\]
+\[= 14\,400 + 8\,100 - 21\,600(-0.1736) = 22\,500 + 3\,750 = 26\,250\]
+\[OB = \sqrt{26\,250} \approx \mathbf{\SI{162.0}{km}}\]
+
+For bearing: $\dfrac{\sin(\angle AOB)}{90} = \dfrac{\sin\ang{100}}{162.0}$
+
+$\sin(\angle AOB) = \dfrac{90 \times 0.9848}{162.0} = 0.5463 \Rightarrow \angle AOB \approx \ang{33.1}$
+
+Bearing from $O$ to $B$: N\ang{50}E rotated \ang{33.1} clockwise $=$ N\ang{83}E (approximately).
+
+\textbf{(b)} Midpoint of $PR$: $\left(\dfrac{0+6}{2}, \dfrac{1+0}{2}\right) = (3, 0.5)$
+
+Midpoint of $QS$: $\left(\dfrac{4+2}{2}, \dfrac{3+(-2)}{2}\right) = (3, 0.5)$ \checkmark
+
+Diagonals bisect each other, so $PQRS$ is a parallelogram.
+
+Shoelace formula:
+\[
+\text{Area} = \tfrac{1}{2}|x_P(y_Q - y_S) + x_Q(y_R - y_P) + x_R(y_S - y_Q) + x_S(y_P - y_R)|
+\]
+\[= \tfrac{1}{2}|0(3-(-2)) + 4(0-1) + 6((-2)-3) + 2(1-0)|\]
+\[= \tfrac{1}{2}|0 + (-4) + (-30) + 2| = \tfrac{1}{2}|-32| = \mathbf{16 \text{ square units}}\]
+\end{solution}
+
+\end{questions}
+\end{document}

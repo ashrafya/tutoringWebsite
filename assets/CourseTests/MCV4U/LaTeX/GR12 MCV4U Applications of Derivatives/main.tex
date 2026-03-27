@@ -1,0 +1,301 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Applications of Derivatives}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Calculus \& Vectors \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work. Justify all conclusions with calculus (sign charts or derivative tests).
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] A critical point of $f$ occurs where:
+\begin{choices}
+    \choice $f(x) = 0$
+    \correctchoice $f'(x) = 0$ or $f'(x)$ is undefined
+    \choice $f''(x) = 0$
+    \choice $f(x)$ reaches its maximum value
+\end{choices}
+
+\question[1] If $f'(x) > 0$ on an interval, then $f$ is:
+\begin{choices}
+    \choice Concave up
+    \choice Decreasing
+    \correctchoice Increasing
+    \choice At a maximum
+\end{choices}
+
+\question[1] If $f''(x) > 0$ on an interval, the curve is:
+\begin{choices}
+    \choice Increasing
+    \choice Decreasing
+    \correctchoice Concave up
+    \choice Concave down
+\end{choices}
+
+\question[1] An inflection point of $f$ occurs where:
+\begin{choices}
+    \choice $f'(x) = 0$
+    \correctchoice $f''(x) = 0$ and $f''$ changes sign
+    \choice $f(x) = 0$
+    \choice $f''(x) > 0$
+\end{choices}
+
+\question[1] If $f'(x)$ changes from positive to negative at $x = c$, then $f$ has a:
+\begin{choices}
+    \choice Local minimum at $x = c$
+    \choice Inflection point at $x = c$
+    \correctchoice Local maximum at $x = c$
+    \choice Vertical asymptote at $x = c$
+\end{choices}
+
+\question[1] The second derivative test: if $f'(c) = 0$ and $f''(c) > 0$, then $x = c$ is a:
+\begin{choices}
+    \choice Local maximum
+    \choice Inflection point
+    \correctchoice Local minimum
+    \choice The test is inconclusive
+\end{choices}
+
+\question[1] A farmer has 100 m of fencing to enclose a rectangular pen. What dimensions
+maximize the area?
+\begin{choices}
+    \choice $20 \text{ m} \times 30 \text{ m}$
+    \correctchoice $25 \text{ m} \times 25 \text{ m}$
+    \choice $10 \text{ m} \times 40 \text{ m}$
+    \choice $15 \text{ m} \times 35 \text{ m}$
+\end{choices}
+
+\question[1] The absolute maximum of $f(x) = x^3 - 3x$ on $[-2,\, 2]$ is:
+\begin{choices}
+    \choice $-2$
+    \choice $0$
+    \correctchoice $2$
+    \choice $4$
+\end{choices}
+
+\question[1] The Mean Value Theorem guarantees the existence of $c \in (a, b)$ such that:
+\begin{choices}
+    \choice $f(c) = 0$
+    \choice $f'(c) = 0$
+    \correctchoice $f'(c) = \dfrac{f(b) - f(a)}{b - a}$
+    \choice $f(c) = \dfrac{f(a) + f(b)}{2}$
+\end{choices}
+
+\question[1] For the function $f(x) = x^{1/3}$, which is true at $x = 0$?
+\begin{choices}
+    \choice $f$ has a local minimum at $x = 0$.
+    \correctchoice $f$ has an inflection point at $x = 0$.
+    \choice $f$ has a local maximum at $x = 0$.
+    \choice $f$ is not defined at $x = 0$.
+\end{choices}
+
+\question[1] $f(x) = x^2 - 4x + 3$ has its minimum value at $x = $
+\begin{choices}
+    \choice $-2$
+    \choice $0$
+    \correctchoice $2$
+    \choice $4$
+\end{choices}
+
+\question[1] The graph of $f$ has $f'(x) > 0$ for $x < 2$ and $f'(x) < 0$ for $x > 2$.
+At $x = 2$, $f$ has a:
+\begin{choices}
+    \choice Local minimum
+    \choice Inflection point
+    \correctchoice Local maximum
+    \choice Vertical asymptote
+\end{choices}
+
+\question[1] Which of the following is NOT necessarily true at a critical point $x = c$?
+\begin{choices}
+    \choice $f'(c) = 0$ or $f'(c)$ is undefined
+    \correctchoice $f$ has a local extremum at $x = c$
+    \choice $x = c$ could be an inflection point
+    \choice Further testing is required to classify $x = c$
+\end{choices}
+
+\question[1] At an inflection point of $f$:
+\begin{choices}
+    \choice $f$ must have a local extremum
+    \choice $f'$ must equal zero
+    \correctchoice $f''$ changes sign
+    \choice $f$ is discontinuous
+\end{choices}
+
+\question[1] For $f(x) = x^4$, the point $x = 0$ is a:
+\begin{choices}
+    \choice Local maximum
+    \choice Inflection point
+    \correctchoice Local (and absolute) minimum
+    \choice The second derivative test is inconclusive, so nothing can be said
+\end{choices}
+
+
+\section*{Part B --- Short Answer (35 marks)}
+
+\question Let $f(x) = x^3 - 3x^2 - 9x + 5$.
+\begin{parts}
+    \part[2] Find all critical points of $f$.
+    \part[2] Use the first derivative test to classify each critical point as a local max,
+    local min, or neither.
+    \part[2] Find all inflection points.
+    \part[2] State the intervals on which $f$ is increasing, decreasing, concave up,
+    and concave down.
+    \part[2] Sketch the curve, labelling all critical points, inflection points, and the
+    $y$-intercept.
+\end{parts}
+\begin{solution}[11cm]
+\textbf{(a)} $f'(x) = 3x^2 - 6x - 9 = 3(x-3)(x+1) = 0 \implies \mathbf{x = -1,\ x = 3}$
+
+$f(-1) = -1 - 3 + 9 + 5 = 10$;\quad $f(3) = 27 - 27 - 27 + 5 = -22$.
+Critical points: $(-1,\,10)$ and $(3,\,-22)$.
+
+\textbf{(b)} Sign chart of $f'$:
+\begin{itemize}
+    \item $x < -1$: $f' > 0$ (increasing);\quad $x \in (-1,3)$: $f' < 0$ (decreasing);\quad $x > 3$: $f' > 0$ (increasing).
+    \item $f'$ changes $+\to-$ at $x=-1$: \textbf{local max} at $(-1,\,10)$.
+    \item $f'$ changes $-\to+$ at $x=3$: \textbf{local min} at $(3,\,-22)$.
+\end{itemize}
+
+\textbf{(c)} $f''(x) = 6x - 6 = 0 \implies x = 1$;\quad $f(1) = 1-3-9+5 = -6$.
+$f''$ changes sign at $x=1$ (neg to pos). \textbf{Inflection point at $(1,\,-6)$}.
+
+\textbf{(d)} Increasing: $(-\infty,-1)\cup(3,\infty)$;\quad Decreasing: $(-1,3)$.
+Concave down: $(-\infty,1)$;\quad Concave up: $(1,\infty)$.
+
+\textbf{(e)} Sketch: local max $(-1,10)$, inflection $(1,-6)$, local min $(3,-22)$, $y$-intercept $(0,5)$.
+\end{solution}
+
+\question An open-top box is to be made by cutting equal squares of side $x$ from the
+corners of a $24\;\text{cm} \times 24\;\text{cm}$ piece of cardboard and folding up the sides.
+\begin{parts}
+    \part[2] Write a function $V(x)$ for the volume of the box. State its domain.
+    \part[3] Find the value of $x$ that maximizes the volume. Justify using a derivative test.
+    \part[2] State the maximum volume and the dimensions of the resulting box.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $V(x) = x(24 - 2x)^2$. Domain: $0 < x < 12$.
+
+\textbf{(b)}
+\[
+V'(x) = (24-2x)^2 + x \cdot 2(24-2x)(-2) = (24-2x)\bigl[(24-2x) - 4x\bigr]
+= (24-2x)(24-6x)
+\]
+$V'(x) = 0$: $x = 12$ (endpoint) or $x = 4$.
+
+$V''(x) = -2(24-6x) + (24-2x)(-6) = -12(24-2x) + (24-6x)(-2)$... or simply check signs:
+$V' > 0$ for $x < 4$, $V' < 0$ for $4 < x < 12$ $\implies$ \textbf{local max at $x = 4$}.
+
+\textbf{(c)} $V(4) = 4(24-8)^2 = 4(256) = \mathbf{1024 \text{ cm}^3}$.
+Dimensions: $\mathbf{16 \text{ cm} \times 16 \text{ cm} \times 4 \text{ cm}}$.
+\end{solution}
+
+\question A company manufactures cylindrical cans with volume $500\;\text{cm}^3$.
+The cost per unit area of the circular top and bottom is twice that of the curved side.
+Let $k$ be the cost per cm$^2$ of the side.
+\begin{parts}
+    \part[2] Write the total cost $C$ as a function of $r$ only.
+    (Hint: $V = \pi r^2 h$; side area $= 2\pi r h$; top/bottom area $= 2\pi r^2$.)
+    \part[3] Find the value of $r$ that minimizes cost. Verify it is a minimum.
+    \part[2] Find the corresponding height $h$ and the ratio $h\!:\!r$.
+    \part[1] Interpret the ratio $h\!:\!r$ geometrically.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $h = \dfrac{500}{\pi r^2}$.\quad
+Side cost: $k \cdot 2\pi r h$;\quad Top/bottom cost: $2k \cdot 2\pi r^2$.
+\[
+C(r) = k \cdot 2\pi r \cdot \frac{500}{\pi r^2} + 4k\pi r^2 = \frac{1000k}{r} + 4k\pi r^2
+\]
+
+\textbf{(b)}
+\[
+C'(r) = -\frac{1000k}{r^2} + 8k\pi r = 0 \implies 8\pi r^3 = 1000
+\implies r^3 = \frac{125}{\pi} \implies r = \frac{5}{\pi^{1/3}} \approx 3.41 \text{ cm}
+\]
+$C''(r) = \dfrac{2000k}{r^3} + 8k\pi > 0$ for all $r > 0$ $\implies$ \textbf{minimum confirmed}.
+
+\textbf{(c)} $h = \dfrac{500}{\pi r^2}$. From $r^3 = 125/\pi$: $\pi r^3 = 125$, so
+$\pi r^2 = 125/r$.
+\[
+h = \frac{500}{\pi r^2} = \frac{500r}{125} = 4r \approx 13.6 \text{ cm}
+\]
+$h\!:\!r = 4\!:\!1$.
+
+\textbf{(d)} The optimal can has a height equal to four times its radius (i.e.\ $h = 2d$
+where $d$ is the diameter). This reflects the higher cost of the circular faces.
+\end{solution}
+
+\question \textbf{Mean Value Theorem.}
+\begin{parts}
+    \part[2] State the Mean Value Theorem precisely, including all hypotheses.
+    \part[4] For $f(x) = x^3 - x$ on $[0,\,2]$, find all values of $c$ in $(0,2)$
+    guaranteed by the MVT.
+    \part[2] Explain geometrically what the MVT guarantees in terms of secant and tangent lines.
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} If $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then there
+exists at least one $c \in (a,b)$ such that
+\[f'(c) = \frac{f(b) - f(a)}{b - a}.\]
+
+\textbf{(b)} $f(0) = 0$,\quad $f(2) = 8 - 2 = 6$.\quad Average slope $= \dfrac{6}{2} = 3$.
+
+Set $f'(c) = 3$: $\quad 3c^2 - 1 = 3 \implies c^2 = \dfrac{4}{3} \implies c = \dfrac{2}{\sqrt{3}}
+= \dfrac{2\sqrt{3}}{3} \approx 1.15$.
+
+Since $\dfrac{2\sqrt{3}}{3} \in (0,2)$, this is the required value: $\boxed{c = \dfrac{2\sqrt{3}}{3}}$.
+
+\textbf{(c)} The MVT guarantees at least one point on the curve where the \textbf{tangent line}
+is parallel to (has the same slope as) the \textbf{secant line} joining $(a, f(a))$ to
+$(b, f(b))$.
+\end{solution}
+
+\end{questions}
+\end{document}

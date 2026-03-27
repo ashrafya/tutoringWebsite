@@ -1,0 +1,320 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Discrete Probability Distributions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Data Management \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round decimals to 4 significant figures where needed.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] A discrete random variable $X$ can take values $\{1, 2, 3\}$ with probabilities
+$0.2, 0.5, 0.3$. Which statement is true?
+\begin{choices}
+    \choice The distribution is invalid because probabilities are not equal.
+    \correctchoice The distribution is valid because the probabilities sum to 1.
+    \choice $P(X=2)$ must equal $0.333$.
+    \choice $X$ is a continuous variable.
+\end{choices}
+
+\question[1] If $X$ has the distribution $P(X=0)=0.3$, $P(X=1)=0.5$, $P(X=2)=0.2$,
+then $E[X] =$
+\begin{choices}
+    \choice $1$
+    \correctchoice $0.9$
+    \choice $1.5$
+    \choice $0.5$
+\end{choices}
+
+\question[1] For a random variable $X$ with $E[X]=3$ and $E[X^2]=11$, then $\text{Var}(X) =$
+\begin{choices}
+    \choice $11$
+    \choice $8$
+    \correctchoice $2$
+    \choice $4$
+\end{choices}
+
+\question[1] The binomial distribution $B(n,p)$ applies when:
+\begin{choices}
+    \choice Trials are dependent
+    \correctchoice There are $n$ independent trials each with probability $p$ of success
+    \choice Sampling is done without replacement
+    \choice The number of trials is unknown
+\end{choices}
+
+\question[1] For $X \sim B(10, 0.3)$, $P(X = 3) =$
+\begin{choices}
+    \choice $\dbinom{10}{3}(0.3)^3$
+    \correctchoice $\dbinom{10}{3}(0.3)^3(0.7)^7$
+    \choice $(0.3)^3(0.7)^7$
+    \choice $\dbinom{10}{3}(0.7)^3(0.3)^7$
+\end{choices}
+
+\question[1] For $X \sim B(20, 0.4)$, the mean $\mu$ equals:
+\begin{choices}
+    \choice $0.4$
+    \choice $4$
+    \correctchoice $8$
+    \choice $12$
+\end{choices}
+
+\question[1] For $X \sim B(n, p)$, the variance equals:
+\begin{choices}
+    \choice $np$
+    \choice $np^2$
+    \correctchoice $np(1-p)$
+    \choice $n^2p(1-p)$
+\end{choices}
+
+\question[1] The hypergeometric distribution is used when:
+\begin{choices}
+    \choice Sampling is done with replacement
+    \correctchoice A sample of size $n$ is drawn without replacement from a finite population
+    \choice Trials are independent
+    \choice The population is infinite
+\end{choices}
+
+\question[1] A box has 5 red and 7 blue balls. Three are chosen without replacement.
+The number of red balls chosen follows a:
+\begin{choices}
+    \choice Binomial distribution
+    \correctchoice Hypergeometric distribution
+    \choice Geometric distribution
+    \choice Normal distribution
+\end{choices}
+
+\question[1] For the geometric distribution with success probability $p$,
+$P(X = k) =$
+\begin{choices}
+    \choice $p^k$
+    \choice $(1-p)^k$
+    \correctchoice $(1-p)^{k-1}p$
+    \choice $\dbinom{k}{1}p(1-p)^{k-1}$
+\end{choices}
+
+\question[1] For a geometric distribution with $p = 0.25$, the expected number of
+trials until the first success is:
+\begin{choices}
+    \choice $0.25$
+    \choice $2$
+    \correctchoice $4$
+    \choice $0.75$
+\end{choices}
+
+\question[1] A fair coin is flipped repeatedly until the first head appears.
+This situation is modelled by a:
+\begin{choices}
+    \choice Binomial distribution
+    \choice Hypergeometric distribution
+    \correctchoice Geometric distribution
+    \choice Uniform distribution
+\end{choices}
+
+\question[1] For $X \sim B(8, 0.5)$, $P(X \geq 1) =$
+\begin{choices}
+    \choice $0.5$
+    \choice $\dbinom{8}{1}(0.5)^8$
+    \correctchoice $1 - (0.5)^8$
+    \choice $8(0.5)^8$
+\end{choices}
+
+\question[1] A fair die is rolled until a 6 appears. The probability the first 6 occurs
+on the 3rd roll is:
+\begin{choices}
+    \choice $\left(\dfrac{1}{6}\right)^3$
+    \correctchoice $\left(\dfrac{5}{6}\right)^2\!\left(\dfrac{1}{6}\right)$
+    \choice $\left(\dfrac{5}{6}\right)^3$
+    \choice $3\left(\dfrac{1}{6}\right)\!\left(\dfrac{5}{6}\right)^2$
+\end{choices}
+
+\question[1] For $X \sim B(n,p)$, the distribution is symmetric when:
+\begin{choices}
+    \choice $n$ is large
+    \correctchoice $p = 0.5$
+    \choice $np > 5$
+    \choice $p < 0.5$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question A game is played by spinning a wheel that lands on \$0, \$2, \$5, or \$10
+with probabilities 0.40, 0.30, 0.20, and 0.10 respectively. It costs \$2 to play.
+\begin{parts}
+    \part[2] Construct the probability distribution table for winnings $W$ (prize minus cost).
+    \part[3] Calculate $E[W]$ and $\text{Var}(W)$.
+    \part[2] Is the game fair? What is the expected gain/loss per game?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $W = \text{prize} - 2$:
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+$w$ & $-2$ & $0$ & $3$ & $8$ \\
+\midrule
+$P(W=w)$ & $0.40$ & $0.30$ & $0.20$ & $0.10$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{(b)}
+\[
+E[W] = (-2)(0.40) + (0)(0.30) + (3)(0.20) + (8)(0.10)
+= -0.8 + 0 + 0.6 + 0.8 = \mathbf{0.60}
+\]
+\[
+E[W^2] = 4(0.40)+0(0.30)+9(0.20)+64(0.10)
+= 1.6+0+1.8+6.4 = 9.8
+\]
+\[
+\text{Var}(W) = E[W^2] - (E[W])^2 = 9.8 - 0.36 = \mathbf{9.44}
+\]
+
+\textbf{(c)} $E[W] = \$0.60 > 0$, so the game \textbf{favours the player} (expected gain of 60 cents per game).
+\end{solution}
+
+\question A multiple-choice quiz has 10 questions, each with 4 choices (exactly one correct).
+A student guesses randomly on every question. Let $X$ = number of correct answers.
+\begin{parts}
+    \part[1] State the distribution of $X$ with its parameters.
+    \part[2] Find $P(X = 4)$.
+    \part[2] Find $P(X \geq 2)$.
+    \part[2] Find the mean and standard deviation of $X$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $X \sim B\!\left(10,\,\dfrac{1}{4}\right)$
+
+\textbf{(b)}
+\[
+P(X=4) = \binom{10}{4}\!\left(\tfrac{1}{4}\right)^4\!\left(\tfrac{3}{4}\right)^6
+= 210 \times \frac{1}{256} \times \frac{729}{4096}
+= \frac{210 \times 729}{1\,048\,576} \approx \mathbf{0.1460}
+\]
+
+\textbf{(c)} Use complement:
+\[
+P(X \geq 2) = 1 - P(X=0) - P(X=1)
+\]
+\[
+P(X=0) = \left(\tfrac{3}{4}\right)^{10} \approx 0.0563;\quad
+P(X=1) = 10\left(\tfrac{1}{4}\right)\!\left(\tfrac{3}{4}\right)^9 \approx 0.1877
+\]
+\[
+P(X \geq 2) \approx 1 - 0.0563 - 0.1877 = \mathbf{0.7560}
+\]
+
+\textbf{(d)} $\mu = np = 10 \times 0.25 = \mathbf{2.5}$;
+$\sigma = \sqrt{np(1-p)} = \sqrt{10 \times 0.25 \times 0.75} = \sqrt{1.875} \approx \mathbf{1.369}$
+\end{solution}
+
+\question A committee of 4 is chosen at random from a group of 6 economists and 4 engineers.
+Let $X$ = the number of engineers on the committee.
+\begin{parts}
+    \part[1] State the distribution of $X$ with all parameters.
+    \part[3] Find $P(X = 2)$.
+    \part[2] Find $P(X \geq 3)$.
+    \part[2] Find $E[X]$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Hypergeometric: $N=10$, $K=4$ engineers, $n=4$ drawn.
+\[
+P(X=k) = \frac{\dbinom{4}{k}\dbinom{6}{4-k}}{\dbinom{10}{4}}
+\]
+
+\textbf{(b)}
+\[
+P(X=2) = \frac{\dbinom{4}{2}\dbinom{6}{2}}{\dbinom{10}{4}}
+= \frac{6 \times 15}{210} = \frac{90}{210} = \mathbf{\frac{3}{7} \approx 0.4286}
+\]
+
+\textbf{(c)}
+\[
+P(X=3) = \frac{\dbinom{4}{3}\dbinom{6}{1}}{\dbinom{10}{4}} = \frac{4 \times 6}{210} = \frac{24}{210}
+\]
+\[
+P(X=4) = \frac{\dbinom{4}{4}\dbinom{6}{0}}{\dbinom{10}{4}} = \frac{1}{210}
+\]
+\[
+P(X \geq 3) = \frac{24+1}{210} = \frac{25}{210} = \mathbf{\frac{5}{42} \approx 0.1190}
+\]
+
+\textbf{(d)} $E[X] = n \cdot \dfrac{K}{N} = 4 \times \dfrac{4}{10} = \mathbf{1.6}$
+\end{solution}
+
+\question A basketball player makes free throws with probability 0.70. She shoots until
+she makes her first basket.
+\begin{parts}
+    \part[1] State the distribution of $X$ (number of shots until first basket) with its
+    parameter.
+    \part[2] Find the probability she makes her first basket on the 3rd shot.
+    \part[2] Find the probability she needs \textbf{more than 3} shots.
+    \part[2] Find the expected number of shots needed.
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $X \sim \text{Geometric}(p = 0.70)$
+
+\textbf{(b)}
+\[
+P(X=3) = (0.30)^2(0.70) = 0.09 \times 0.70 = \mathbf{0.063}
+\]
+
+\textbf{(c)}
+\[
+P(X > 3) = (1-p)^3 = (0.30)^3 = \mathbf{0.027}
+\]
+
+\textbf{(d)} $E[X] = \dfrac{1}{p} = \dfrac{1}{0.70} \approx \mathbf{1.43 \text{ shots}}$
+\end{solution}
+
+\end{questions}
+\end{document}

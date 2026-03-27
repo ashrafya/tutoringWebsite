@@ -1,0 +1,270 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Chemical Reactions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Chemistry \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work. Include state symbols and balance all equations fully.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] The balanced equation for the complete combustion of propane (\ce{C3H8}) is:
+\begin{choices}
+    \choice \ce{C3H8 + 3O2 -> 3CO2 + 4H2O}
+    \correctchoice \ce{C3H8 + 5O2 -> 3CO2 + 4H2O}
+    \choice \ce{C3H8 + 4O2 -> 3CO2 + 4H2O}
+    \choice \ce{C3H8 + 5O2 -> 3CO + 4H2O}
+\end{choices}
+
+\question[1] The type of reaction \ce{2H2O ->[\Delta] 2H2 + O2} is:
+\begin{choices}
+    \choice Synthesis
+    \correctchoice Decomposition
+    \choice Single displacement
+    \choice Double displacement
+\end{choices}
+
+\question[1] The type of reaction \ce{Fe + CuSO4 -> FeSO4 + Cu} is:
+\begin{choices}
+    \choice Synthesis
+    \choice Decomposition
+    \correctchoice Single displacement
+    \choice Double displacement
+\end{choices}
+
+\question[1] The reaction \ce{AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq)} is classified as:
+\begin{choices}
+    \choice Synthesis
+    \choice Single displacement
+    \correctchoice Double displacement (precipitation)
+    \choice Combustion
+\end{choices}
+
+\question[1] According to the activity series, which of the following reactions
+\textbf{will occur}?
+\begin{choices}
+    \choice \ce{Cu + ZnSO4(aq) -> CuSO4(aq) + Zn}
+    \correctchoice \ce{Zn + CuSO4(aq) -> ZnSO4(aq) + Cu}
+    \choice \ce{Au + HCl(aq) -> AuCl(aq) + H2}
+    \choice \ce{Ag + FeSO4(aq) -> AgSO4(aq) + Fe}
+\end{choices}
+
+\question[1] Which compound is insoluble in water according to solubility rules?
+\begin{choices}
+    \choice \ce{NaCl}
+    \choice \ce{KNO3}
+    \correctchoice \ce{PbSO4}
+    \choice \ce{(NH4)2SO4}
+\end{choices}
+
+\question[1] In the reaction \ce{2Al + 3Cl2 -> 2AlCl3}, aluminum is:
+\begin{choices}
+    \choice Reduced (gains electrons)
+    \correctchoice Oxidized (loses electrons)
+    \choice Neither oxidized nor reduced
+    \choice Acting as the oxidizing agent
+\end{choices}
+
+\question[1] The net ionic equation for mixing \ce{NaCl(aq)} and \ce{AgNO3(aq)} is:
+\begin{choices}
+    \choice \ce{Na+(aq) + NO3-(aq) -> NaNO3(aq)}
+    \correctchoice \ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}
+    \choice \ce{NaCl(aq) + AgNO3(aq) -> AgCl(s) + NaNO3(aq)}
+    \choice \ce{Na+(aq) + Cl-(aq) -> NaCl(s)}
+\end{choices}
+
+\question[1] The product of the complete combustion of any hydrocarbon always includes:
+\begin{choices}
+    \choice CO and \ce{H2}
+    \correctchoice \ce{CO2} and \ce{H2O}
+    \choice CO and \ce{H2O}
+    \choice \ce{CO2} and \ce{H2}
+\end{choices}
+
+\question[1] Which of the following is a synthesis (combination) reaction?
+\begin{choices}
+    \choice \ce{CaCO3 -> CaO + CO2}
+    \correctchoice \ce{2Na + Cl2 -> 2NaCl}
+    \choice \ce{Mg + 2HCl -> MgCl2 + H2}
+    \choice \ce{Fe2O3 + 3CO -> 2Fe + 3CO2}
+\end{choices}
+
+\question[1] In a neutralization reaction, an acid and a base react to form:
+\begin{choices}
+    \choice Only water
+    \choice Only a salt
+    \correctchoice A salt and water
+    \choice An oxide and hydrogen gas
+\end{choices}
+
+\question[1] The balanced equation for the neutralization of \ce{H2SO4} with \ce{NaOH} is:
+\begin{choices}
+    \choice \ce{H2SO4 + NaOH -> NaSO4 + H2O}
+    \correctchoice \ce{H2SO4 + 2NaOH -> Na2SO4 + 2H2O}
+    \choice \ce{H2SO4 + 2NaOH -> 2NaSO4 + H2O}
+    \choice \ce{2H2SO4 + NaOH -> Na2SO4 + 2H2O}
+\end{choices}
+
+\question[1] Magnesium reacts with hydrochloric acid. The products are:
+\begin{choices}
+    \choice \ce{MgO} and \ce{H2}
+    \correctchoice \ce{MgCl2} and \ce{H2}
+    \choice \ce{MgCl2} and \ce{H2O}
+    \choice \ce{Mg(OH)2} and \ce{HCl}
+\end{choices}
+
+\question[1] The spectator ions in the reaction of \ce{KOH(aq)} and \ce{HNO3(aq)} are:
+\begin{choices}
+    \choice \ce{H+} and \ce{OH-}
+    \correctchoice \ce{K+} and \ce{NO3-}
+    \choice \ce{K+} and \ce{OH-}
+    \choice \ce{H+} and \ce{NO3-}
+\end{choices}
+
+\question[1] Iron(III) oxide reacts with carbon monoxide to produce iron metal and carbon
+dioxide. This is an example of:
+\begin{choices}
+    \choice Synthesis
+    \choice Decomposition
+    \choice Double displacement
+    \correctchoice Single displacement (redox)
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Balance each equation and identify its reaction type.
+\begin{parts}
+    \part[3] \ce{Al + O2 -> Al2O3}
+    \part[3] \ce{C2H6 + O2 -> CO2 + H2O}
+    \part[2] \ce{Ba(OH)2 + H3PO4 -> Ba3(PO4)2 + H2O}
+    \part[2] \ce{Fe2O3 + CO -> Fe + CO2}
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} \ce{4Al + 3O2 -> 2Al2O3}\quad \textit{Synthesis}
+
+\textbf{(b)} \ce{2C2H6 + 7O2 -> 4CO2 + 6H2O}\quad \textit{Combustion}
+
+\textbf{(c)} \ce{3Ba(OH)2 + 2H3PO4 -> Ba3(PO4)2 + 6H2O}\quad \textit{Double displacement / Neutralization}
+
+\textbf{(d)} \ce{Fe2O3 + 3CO -> 2Fe + 3CO2}\quad \textit{Single displacement (redox)}
+\end{solution}
+
+\question Predict the products and write balanced molecular equations for each reaction.
+Include state symbols. If no reaction occurs, write ``NR'' and explain why.
+\begin{parts}
+    \part[3] Zinc metal is added to copper(II) sulfate solution.
+    \part[3] Copper metal is added to silver nitrate solution.
+    \part[2] Gold metal is added to hydrochloric acid.
+    \part[2] Aqueous solutions of potassium chloride and sodium nitrate are mixed.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Zinc is above copper in the activity series; reaction occurs:
+\[\ce{Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)}\]
+
+\textbf{(b)} Copper is above silver in the activity series; reaction occurs:
+\[\ce{Cu(s) + 2AgNO3(aq) -> Cu(NO3)2(aq) + 2Ag(s)}\]
+
+\textbf{(c)} Gold is below hydrogen in the activity series; \textbf{NR}. Gold is too
+unreactive to displace hydrogen from an acid.
+
+\textbf{(d)} Both possible products (\ce{KNO3} and \ce{NaCl}) are soluble; \textbf{NR}.
+No precipitate, gas, or water forms to drive the reaction.
+\end{solution}
+
+\question For each pair of aqueous solutions, write the (i) balanced molecular equation,
+(ii) complete ionic equation, and (iii) net ionic equation.
+\begin{parts}
+    \part[4] \ce{Pb(NO3)2(aq)} and \ce{NaI(aq)}
+    \part[4] \ce{HCl(aq)} and \ce{Ca(OH)2(aq)}
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} \ce{PbI2} is insoluble (lead iodide).
+\begin{enumerate}[(i)]
+\item \ce{Pb(NO3)2(aq) + 2NaI(aq) -> PbI2(s) + 2NaNO3(aq)}
+\item \ce{Pb^{2+}(aq) + 2NO3^{-}(aq) + 2Na+(aq) + 2I^{-}(aq) -> PbI2(s) + 2Na+(aq) + 2NO3^{-}(aq)}
+\item \textbf{Net ionic:} \ce{Pb^{2+}(aq) + 2I^{-}(aq) -> PbI2(s)}
+\end{enumerate}
+
+\textbf{(b)} Neutralization; water is the driving force.
+\begin{enumerate}[(i)]
+\item \ce{2HCl(aq) + Ca(OH)2(aq) -> CaCl2(aq) + 2H2O(l)}
+\item \ce{2H+(aq) + 2Cl^{-}(aq) + Ca^{2+}(aq) + 2OH^{-}(aq) -> Ca^{2+}(aq) + 2Cl^{-}(aq) + 2H2O(l)}
+\item \textbf{Net ionic:} \ce{H+(aq) + OH^{-}(aq) -> H2O(l)}
+\end{enumerate}
+\end{solution}
+
+\question Oxidation and reduction.
+\begin{parts}
+    \part[2] Define oxidation and reduction in terms of electron transfer.
+    \part[3] For the reaction \ce{2Mg(s) + O2(g) -> 2MgO(s)}, identify:
+    (i) what is oxidized and what is reduced;
+    (ii) the oxidizing agent and reducing agent;
+    (iii) the change in oxidation number for each element.
+\end{parts}
+\begin{solution}[7cm]
+\textbf{(a)} \textbf{Oxidation} is the loss of electrons (increase in oxidation number).
+\textbf{Reduction} is the gain of electrons (decrease in oxidation number).
+(Mnemonic: OIL RIG)
+
+\textbf{(b)}
+(i) Mg is \textbf{oxidized} ($0 \to +2$); O$_2$ is \textbf{reduced} ($0 \to -2$).
+
+(ii) \textbf{Oxidizing agent}: \ce{O2} (accepts electrons from Mg).
+\textbf{Reducing agent}: Mg (donates electrons to O$_2$).
+
+(iii) Mg: $0 \to +2$ (change of $+2$);\quad O: $0 \to -2$ (change of $-2$).
+\end{solution}
+
+\end{questions}
+\end{document}

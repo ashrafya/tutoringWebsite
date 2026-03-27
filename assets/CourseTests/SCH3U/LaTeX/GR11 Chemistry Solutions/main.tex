@@ -1,0 +1,288 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Solutions \& Solubility}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Chemistry \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units. Use $N_A = 6.022 \times 10^{23}$ mol$^{-1}$.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] In a solution, the substance present in the largest amount is called the:
+\begin{choices}
+    \choice Solute
+    \correctchoice Solvent
+    \choice Electrolyte
+    \choice Precipitate
+\end{choices}
+
+\question[1] The molar concentration of a solution is defined as:
+\begin{choices}
+    \choice grams of solute per litre of solution
+    \correctchoice moles of solute per litre of solution
+    \choice moles of solute per kilogram of solvent
+    \choice grams of solute per 100 mL of solution
+\end{choices}
+
+\question[1] What is the concentration of a solution prepared by dissolving $\SI{4.0}{mol}$
+of \ce{NaCl} in enough water to make $\SI{2.0}{L}$ of solution?
+\begin{choices}
+    \choice \SI{0.50}{mol/L}
+    \correctchoice \SI{2.0}{mol/L}
+    \choice \SI{8.0}{mol/L}
+    \choice \SI{4.0}{mol/L}
+\end{choices}
+
+\question[1] How many moles of solute are in $\SI{250}{mL}$ of a $\SI{0.400}{mol/L}$
+solution?
+\begin{choices}
+    \choice $0.400$ mol
+    \choice $0.160$ mol
+    \correctchoice $0.100$ mol
+    \choice $1.60$ mol
+\end{choices}
+
+\question[1] A saturated solution is one that:
+\begin{choices}
+    \choice Contains the maximum possible amount of solvent
+    \correctchoice Contains the maximum amount of dissolved solute at a given temperature
+    \choice Has a concentration of exactly \SI{1.0}{mol/L}
+    \choice Contains no undissolved solute
+\end{choices}
+
+\question[1] Which of the following \textbf{increases} the solubility of a gas in water?
+\begin{choices}
+    \choice Increasing temperature
+    \correctchoice Increasing pressure
+    \choice Decreasing pressure
+    \choice Stirring
+\end{choices}
+
+\question[1] The dilution formula $C_1V_1 = C_2V_2$ is valid because:
+\begin{choices}
+    \choice Volume is conserved during dilution
+    \correctchoice The number of moles of solute is conserved during dilution
+    \choice Concentration doubles when volume halves
+    \choice Mass is always conserved
+\end{choices}
+
+\question[1] A $\SI{500}{mL}$ solution of \SI{2.0}{mol/L} \ce{HCl} is diluted to
+\SI{1000}{mL}. The new concentration is:
+\begin{choices}
+    \choice \SI{4.0}{mol/L}
+    \correctchoice \SI{1.0}{mol/L}
+    \choice \SI{0.50}{mol/L}
+    \choice \SI{2.0}{mol/L}
+\end{choices}
+
+\question[1] Which of the following compounds is a strong electrolyte when dissolved in water?
+\begin{choices}
+    \choice \ce{C6H12O6} (glucose)
+    \choice \ce{CH3COOH} (acetic acid)
+    \correctchoice \ce{KNO3}
+    \choice \ce{C2H5OH} (ethanol)
+\end{choices}
+
+\question[1] The process by which water molecules surround and separate ions from an ionic
+crystal is called:
+\begin{choices}
+    \choice Precipitation
+    \correctchoice Hydration (solvation)
+    \choice Ionization
+    \choice Electrolysis
+\end{choices}
+
+\question[1] The solubility of most solid solutes in water:
+\begin{choices}
+    \choice Decreases with increasing temperature
+    \correctchoice Increases with increasing temperature
+    \choice Is unaffected by temperature
+    \choice Depends only on pressure
+\end{choices}
+
+\question[1] Which ion concentration is highest in a solution of $\SI{0.10}{mol/L}$
+\ce{MgCl2}?
+\begin{choices}
+    \choice $[\ce{Mg^{2+}}] = \SI{0.20}{mol/L}$
+    \correctchoice $[\ce{Cl-}] = \SI{0.20}{mol/L}$
+    \choice $[\ce{Mg^{2+}}] = \SI{0.10}{mol/L}$
+    \choice $[\ce{Cl-}] = \SI{0.10}{mol/L}$
+\end{choices}
+
+\question[1] To prepare $\SI{100.0}{mL}$ of $\SI{0.500}{mol/L}$ \ce{NaOH} from a
+$\SI{2.00}{mol/L}$ stock solution, you need:
+\begin{choices}
+    \choice $\SI{10.0}{mL}$ of stock
+    \correctchoice $\SI{25.0}{mL}$ of stock
+    \choice $\SI{40.0}{mL}$ of stock
+    \choice $\SI{50.0}{mL}$ of stock
+\end{choices}
+
+\question[1] An aqueous solution of \ce{NaCl} conducts electricity because:
+\begin{choices}
+    \choice NaCl molecules carry charge
+    \correctchoice \ce{Na+} and \ce{Cl-} ions are free to move
+    \choice Water molecules are polar
+    \choice Electrons flow through the solution
+\end{choices}
+
+\question[1] The number of moles of \ce{Na+} ions in $\SI{150}{mL}$ of
+$\SI{0.60}{mol/L}$ \ce{Na2SO4} is:
+\begin{choices}
+    \choice $0.090$ mol
+    \correctchoice $0.18$ mol
+    \choice $0.36$ mol
+    \choice $0.060$ mol
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Solution preparation and concentration.
+\begin{parts}
+    \part[2] Calculate the concentration (in mol/L) of a solution made by dissolving
+    $\SI{8.55}{g}$ of \ce{KNO3} ($M = \SI{101}{g/mol}$) in enough water to make
+    $\SI{500.0}{mL}$ of solution.
+    \part[2] What mass of \ce{NaOH} ($M = \SI{40.0}{g/mol}$) is needed to prepare
+    $\SI{250}{mL}$ of a $\SI{0.800}{mol/L}$ solution?
+    \part[3] What volume of $\SI{6.0}{mol/L}$ \ce{HCl} must be diluted to prepare
+    $\SI{300.0}{mL}$ of $\SI{0.50}{mol/L}$ \ce{HCl}? Describe the procedure.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $n = \dfrac{8.55}{101} = 0.0847$ mol;\quad
+$C = \dfrac{0.0847}{0.5000} = \mathbf{\SI{0.169}{mol/L}}$
+
+\textbf{(b)} $n = C \times V = 0.800 \times 0.250 = 0.200$ mol;\quad
+$m = 0.200 \times 40.0 = \mathbf{\SI{8.00}{g}}$
+
+\textbf{(c)} $C_1V_1 = C_2V_2$:\quad
+$V_1 = \dfrac{C_2V_2}{C_1} = \dfrac{0.50 \times 0.3000}{6.0} = \mathbf{\SI{25.0}{mL}}$
+
+Procedure: Measure \SI{25.0}{mL} of the \SI{6.0}{mol/L} \ce{HCl} stock. Add it to a
+\SI{300}{mL} volumetric flask containing some water. Dilute to the \SI{300}{mL} mark
+with distilled water and mix thoroughly.
+\end{solution}
+
+\question Ion concentrations.
+\begin{parts}
+    \part[3] A solution is prepared by dissolving $\SI{14.8}{g}$ of \ce{Ca(NO3)2}
+    ($M = \SI{164}{g/mol}$) in enough water to make $\SI{400.0}{mL}$ of solution.
+    Calculate the concentration of \ce{Ca^{2+}} ions and \ce{NO3^-} ions.
+    \part[2] Two solutions are mixed: $\SI{100.0}{mL}$ of $\SI{0.200}{mol/L}$
+    \ce{NaCl} and $\SI{150.0}{mL}$ of $\SI{0.300}{mol/L}$ \ce{NaCl}.
+    What is the concentration of \ce{NaCl} in the resulting mixture?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $n(\ce{Ca(NO3)2}) = \dfrac{14.8}{164} = 0.09024$ mol in \SI{0.4000}{L}
+
+$[\ce{Ca(NO3)2}] = \dfrac{0.09024}{0.4000} = \SI{0.2256}{mol/L}$
+
+\ce{Ca(NO3)2 -> Ca^{2+} + 2NO3^-}
+
+$[\ce{Ca^{2+}}] = \mathbf{\SI{0.226}{mol/L}}$;\quad
+$[\ce{NO3^-}] = 2 \times 0.226 = \mathbf{\SI{0.451}{mol/L}}$
+
+\textbf{(b)} Moles of NaCl: $n_1 = 0.100 \times 0.200 = 0.0200$ mol;\;
+$n_2 = 0.150 \times 0.300 = 0.0450$ mol
+
+Total: $n = 0.0650$ mol in $V = \SI{250.0}{mL} = \SI{0.2500}{L}$
+
+$C = \dfrac{0.0650}{0.2500} = \mathbf{\SI{0.260}{mol/L}}$
+\end{solution}
+
+\question Solution stoichiometry. Excess \ce{BaCl2(aq)} is added to $\SI{50.0}{mL}$
+of $\SI{0.200}{mol/L}$ \ce{Na2SO4(aq)}.
+\[\ce{BaCl2(aq) + Na2SO4(aq) -> BaSO4(s) + 2NaCl(aq)}\]
+\begin{parts}
+    \part[2] Calculate the moles of \ce{Na2SO4} present.
+    \part[3] Calculate the mass of \ce{BaSO4} precipitate formed. ($M(\ce{BaSO4}) = \SI{233}{g/mol}$)
+    \part[2] Write the net ionic equation for this reaction.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $n(\ce{Na2SO4}) = 0.200 \times 0.0500 = \mathbf{0.0100 \text{ mol}}$
+
+\textbf{(b)} From balanced equation, 1 mol \ce{Na2SO4} produces 1 mol \ce{BaSO4}:
+
+$n(\ce{BaSO4}) = 0.0100$ mol;\quad $m = 0.0100 \times 233 = \mathbf{\SI{2.33}{g}}$
+
+\textbf{(c)} Net ionic equation:
+\[\ce{Ba^{2+}(aq) + SO4^{2-}(aq) -> BaSO4(s)}\]
+\end{solution}
+
+\question Solubility and factors affecting it.
+\begin{parts}
+    \part[3] A saturated solution of \ce{KNO3} is prepared at $\SI{60}{\celsius}$ and then
+    cooled to $\SI{20}{\celsius}$. At $\SI{60}{\celsius}$, the solubility of \ce{KNO3} is
+    $\SI{110}{g}$ per $\SI{100}{g}$ water; at $\SI{20}{\celsius}$, it is $\SI{32}{g}$ per
+    $\SI{100}{g}$ water. How many grams of \ce{KNO3} crystallize out of $\SI{200}{g}$ of
+    water upon cooling?
+    \part[2] Explain why carbonated beverages go flat when left open.
+    \part[2] Explain why fish are stressed when water temperature rises.
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} In \SI{200}{g} water:
+At \SI{60}{\celsius}: $110 \times 2 = \SI{220}{g}$ dissolved.
+At \SI{20}{\celsius}: $32 \times 2 = \SI{64}{g}$ remains dissolved.
+Mass crystallized: $220 - 64 = \mathbf{\SI{156}{g}}$
+
+\textbf{(b)} \ce{CO2} gas is dissolved under high pressure during carbonation. When the cap
+is removed, the pressure above the liquid drops to atmospheric pressure. By Henry's Law,
+lower pressure means lower gas solubility, so \ce{CO2} escapes from solution.
+
+\textbf{(c)} The solubility of gases (like \ce{O2}) \textbf{decreases} with increasing
+temperature. Warmer water contains less dissolved oxygen, meaning fish cannot extract
+enough \ce{O2} through their gills to meet their metabolic needs.
+\end{solution}
+
+\end{questions}
+\end{document}

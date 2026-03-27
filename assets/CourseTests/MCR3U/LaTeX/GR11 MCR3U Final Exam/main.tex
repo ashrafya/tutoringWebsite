@@ -1,0 +1,374 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{MCR3U \event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Functions \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.20\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \item Show all work for full marks. Give exact values where possible.
+    \item Angles in radians unless stated. This exam covers all units of MCR3U.
+    Designed for 2 hours.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{2}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{3mm}
+\noindent\textit{Unit 1: Characteristics of Functions}
+\vspace{3mm}
+
+\question[1] If $f(x) = x^2 - 1$ and $g(x) = \sqrt{x}$, then $(g \circ f)(5) =$
+\begin{choices}
+    \choice $\sqrt{5} - 1$
+    \correctchoice $\sqrt{24}$
+    \choice $5$
+    \choice $24$
+\end{choices}
+
+\question[1] The inverse of $f(x) = \dfrac{x+3}{2}$ is:
+\begin{choices}
+    \choice $f^{-1}(x) = \dfrac{2}{x+3}$
+    \correctchoice $f^{-1}(x) = 2x - 3$
+    \choice $f^{-1}(x) = \dfrac{x-3}{2}$
+    \choice $f^{-1}(x) = 2x + 3$
+\end{choices}
+
+\question[1] The domain of $h(x) = \dfrac{\sqrt{x+2}}{x - 5}$ is:
+\begin{choices}
+    \choice $x \geq -2$
+    \correctchoice $x \geq -2,\; x \neq 5$
+    \choice $x > 5$
+    \choice All real numbers
+\end{choices}
+
+\question[1] The graph of $y = -f\!\left(\tfrac{1}{2}x\right) + 4$ compared to
+$y = f(x)$ is:
+\begin{choices}
+    \choice Reflected in $y$-axis, stretched horizontally by 2, up 4
+    \correctchoice Reflected in $x$-axis, stretched horizontally by 2, up 4
+    \choice Reflected in $x$-axis, compressed horizontally by 2, up 4
+    \choice Reflected in $y$-axis, compressed horizontally by 2, up 4
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 2: Exponential Functions}
+\vspace{3mm}
+
+\question[1] Simplify: $\dfrac{(8x^3)^{2/3}}{2x^{-1}}$
+\begin{choices}
+    \choice $2x^3$
+    \correctchoice $2x^3$
+    \choice $4x^3$
+    \choice $x^2$
+\end{choices}
+
+\question[1] Solve: $2^{3x+1} = 16^{x-1}$
+\begin{choices}
+    \choice $x = 5$
+    \correctchoice $x = -5$
+    \choice $x = 3$
+    \choice $x = -3$
+\end{choices}
+
+\question[1] A quantity decays to $\tfrac{1}{16}$ of its original value after 4
+half-lives. How many half-lives does it take to reach $\tfrac{1}{64}$ of its
+original value?
+\begin{choices}
+    \choice $4$
+    \choice $5$
+    \correctchoice $6$
+    \choice $8$
+\end{choices}
+
+\question[1] The horizontal asymptote of $y = 3 \cdot 2^{x+1} - 5$ is:
+\begin{choices}
+    \choice $y = 3$
+    \choice $y = 0$
+    \correctchoice $y = -5$
+    \choice $y = 1$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 3: Trigonometric Ratios}
+\vspace{3mm}
+
+\question[1] In $\triangle ABC$, $a = 10$, $b = 7$, $C = \ang{60}$. Then $c^2 =$
+\begin{choices}
+    \choice $149$
+    \choice $51$
+    \correctchoice $79$
+    \choice $100$
+\end{choices}
+
+\question[1] $\sin\ang{300}$ equals:
+\begin{choices}
+    \choice $\dfrac{\sqrt{3}}{2}$
+    \choice $\dfrac{1}{2}$
+    \correctchoice $-\dfrac{\sqrt{3}}{2}$
+    \choice $-\dfrac{1}{2}$
+\end{choices}
+
+\question[1] If $\tan\theta = -\dfrac{4}{3}$ and $\theta \in [\ang{90}, \ang{180}]$, then
+$\sin\theta =$
+\begin{choices}
+    \choice $-\dfrac{4}{5}$
+    \correctchoice $\dfrac{4}{5}$
+    \choice $\dfrac{3}{5}$
+    \choice $-\dfrac{3}{5}$
+\end{choices}
+
+\question[1] How many triangles are possible if $A = \ang{28}$, $a = 6$, $b = 10$?
+\begin{choices}
+    \choice $0$
+    \choice $1$
+    \correctchoice $2$
+    \choice Infinitely many
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 4: Trigonometric Functions}
+\vspace{3mm}
+
+\question[1] The period of $y = \sin\!\left(\dfrac{\pi}{3}x\right)$ is:
+\begin{choices}
+    \choice $\dfrac{\pi}{3}$
+    \choice $\pi$
+    \correctchoice $6$
+    \choice $\dfrac{2\pi}{3}$
+\end{choices}
+
+\question[1] A sinusoidal function has maximum value 9 and minimum value $-3$. Its
+amplitude and vertical shift are:
+\begin{choices}
+    \choice Amplitude 9, vertical shift 3
+    \correctchoice Amplitude 6, vertical shift 3
+    \choice Amplitude 12, vertical shift 0
+    \choice Amplitude 6, vertical shift $-3$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 5: Discrete Functions}
+\vspace{3mm}
+
+\question[1] A geometric sequence has $t_3 = 12$ and $t_6 = 96$. The common ratio is:
+\begin{choices}
+    \choice $4$
+    \correctchoice $2$
+    \choice $8$
+    \choice $3$
+\end{choices}
+
+\question[1] $\displaystyle\sum_{k=1}^{4} 3 \cdot 2^k =$
+\begin{choices}
+    \choice $45$
+    \choice $60$
+    \correctchoice $90$
+    \choice $96$
+\end{choices}
+
+\question[1] \$500 is deposited at the end of each year into an account earning
+5\% annual interest. This is an example of:
+\begin{choices}
+    \choice Simple interest
+    \correctchoice An annuity
+    \choice A geometric sequence with $r > 1$
+    \choice Compound interest with a single deposit
+\end{choices}
+
+\question[1] An arithmetic series has $a = 3$, $d = 5$, $n = 8$. Then $S_8 =$
+\begin{choices}
+    \choice $184$
+    \correctchoice $164$
+    \choice $140$
+    \choice $200$
+\end{choices}
+
+\question[1] $\sin\!\left(\dfrac{7\pi}{6}\right) =$
+\begin{choices}
+    \choice $\dfrac{\sqrt{3}}{2}$
+    \choice $\dfrac{1}{2}$
+    \correctchoice $-\dfrac{1}{2}$
+    \choice $-\dfrac{\sqrt{3}}{2}$
+\end{choices}
+
+\question[1] The graph of $y = f(x)$ has domain $[-2, 6]$ and range $[0, 4]$.
+The graph of $y = 2f(x+1)$ has range:
+\begin{choices}
+    \choice $[0, 4]$
+    \choice $[1, 5]$
+    \correctchoice $[0, 8]$
+    \choice $[-2, 6]$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+
+\question \textbf{(Functions)} Let $f(x) = \sqrt{2x - 6}$ and $g(x) = x^2 + 1$.
+\begin{parts}
+    \part[2] State the domain and range of $f$.
+    \part[2] Find $(f \circ g)(x)$ and state its domain.
+    \part[2] Find $f^{-1}(x)$ and verify that $f(f^{-1}(4)) = 4$.
+    \part[2] Describe the transformations from $y = \sqrt{x}$ to $y = f(x)$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Domain: $2x - 6 \geq 0 \Rightarrow x \geq 3$. Range: $y \geq 0$.
+
+\textbf{(b)} $(f \circ g)(x) = f(x^2+1) = \sqrt{2(x^2+1)-6} = \sqrt{2x^2-4}$
+
+Domain: $2x^2 - 4 \geq 0 \Rightarrow x^2 \geq 2 \Rightarrow x \leq -\sqrt{2}$ or $x \geq \sqrt{2}$
+
+\textbf{(c)} $y = \sqrt{2x-6}$. Swap: $x = \sqrt{2y-6} \Rightarrow x^2 = 2y-6
+\Rightarrow y = \dfrac{x^2+6}{2}$
+
+$f^{-1}(x) = \dfrac{x^2+6}{2}$, domain $x \geq 0$.
+
+$f^{-1}(4) = \dfrac{16+6}{2} = 11$;\quad $f(11) = \sqrt{22-6} = \sqrt{16} = 4$ \checkmark
+
+\textbf{(d)} From $y=\sqrt{x}$: horizontal compression by $\tfrac{1}{2}$ (replace $x$ by $2x$),
+then horizontal shift right 3 (since $2x - 6 = 2(x-3)$).
+\end{solution}
+
+\question \textbf{(Exponential Functions)} Solve each equation.
+\begin{parts}
+    \part[2] $9^{2x-1} = 3^{x+4}$
+    \part[3] $4^x - 5 \cdot 2^x + 4 = 0$
+    \part[3] A culture starts at 200 bacteria and triples every 4 hours.
+    After how many hours will there be 5400 bacteria?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $3^{2(2x-1)} = 3^{x+4} \Rightarrow 4x - 2 = x + 4 \Rightarrow 3x = 6
+\Rightarrow \mathbf{x = 2}$
+
+\textbf{(b)} Let $u = 2^x$: $u^2 - 5u + 4 = 0 \Rightarrow (u-1)(u-4) = 0$
+
+$u = 1 \Rightarrow 2^x = 1 \Rightarrow \mathbf{x = 0}$;\quad
+$u = 4 \Rightarrow 2^x = 4 \Rightarrow \mathbf{x = 2}$
+
+\textbf{(c)} $N(t) = 200 \cdot 3^{t/4} = 5400 \Rightarrow 3^{t/4} = 27 = 3^3
+\Rightarrow \dfrac{t}{4} = 3 \Rightarrow \mathbf{t = 12 \text{ hours}}$
+\end{solution}
+
+\question \textbf{(Trigonometric Ratios)} In $\triangle ABC$, $a = 12$ cm,
+$b = 9$ cm, $c = 15$ cm.
+\begin{parts}
+    \part[3] Find the largest angle using the Cosine Law.
+    \part[2] Find a second angle using the Sine Law.
+    \part[2] A surveyor uses the triangle to find a distance. The area of
+    $\triangle ABC$ is needed. Use $\text{Area} = \tfrac{1}{2}ab\sin C$, where
+    $C$ is the angle found in part (a). Calculate the area.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Largest angle is opposite the largest side ($c = 15$):
+\[
+\cos C = \frac{a^2+b^2-c^2}{2ab} = \frac{144+81-225}{2(12)(9)} = \frac{0}{216} = 0
+\]
+$C = \ang{90}$ (right triangle!)
+
+\textbf{(b)} Using Sine Law (or recognising right triangle):
+$\sin A = \dfrac{a}{c} = \dfrac{12}{15} = 0.8 \Rightarrow A \approx \ang{53.1}$
+
+\textbf{(c)} $\text{Area} = \tfrac{1}{2}(12)(9)\sin\ang{90} = \tfrac{1}{2}(108)(1)
+= \mathbf{54 \text{ cm}^2}$
+
+(Alternatively: $\tfrac{1}{2}ab = \tfrac{1}{2}(12)(9) = 54$ cm$^2$, confirming right triangle.)
+\end{solution}
+
+\question \textbf{(Trigonometric Functions)} A buoy bobs up and down in the ocean.
+Its height above the sea floor follows $h(t) = 4\sin\!\left(\dfrac{\pi}{6}t - \dfrac{\pi}{3}\right) + 10$,
+where $t$ is in seconds and $h$ is in metres.
+\begin{parts}
+    \part[2] State the amplitude, period, and phase shift.
+    \part[2] Find the maximum and minimum heights.
+    \part[2] Find the first positive time $t$ when the buoy is at its maximum height.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Amplitude $= \mathbf{4}$ m;\quad
+Period $= \dfrac{2\pi}{\pi/6} = \mathbf{12}$ s;\quad
+Phase shift: $\dfrac{\pi}{6}t - \dfrac{\pi}{3} = 0 \Rightarrow t = 2$ s to the right, so $\mathbf{2}$ s right.
+
+\textbf{(b)} Max $= 10 + 4 = \mathbf{14}$ m;\quad Min $= 10 - 4 = \mathbf{6}$ m
+
+\textbf{(c)} Maximum when $\sin(\cdots) = 1$, i.e.\ $\dfrac{\pi}{6}t - \dfrac{\pi}{3} = \dfrac{\pi}{2}$
+\[
+\frac{\pi}{6}t = \frac{\pi}{2} + \frac{\pi}{3} = \frac{5\pi}{6}
+\implies t = 5 \text{ s}
+\]
+First maximum at $\mathbf{t = 5}$ s.
+\end{solution}
+
+\question \textbf{(Discrete Functions)} Answer the following.
+\begin{parts}
+    \part[3] An arithmetic sequence has $t_5 = 23$ and $S_5 = 75$. Find $a$, $d$,
+    and $t_{15}$.
+    \part[3] A geometric series has first term 6 and common ratio $r = \tfrac{2}{3}$.
+    Find the sum to infinity, then find the smallest $n$ such that $S_n > 17.9$.
+    (Use $S_n = 18\!\left(1 - \left(\tfrac{2}{3}\right)^n\right)$.)
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $S_5 = \dfrac{5}{2}(t_1 + t_5) = \dfrac{5}{2}(a + 23) = 75$
+
+$a + 23 = 30 \Rightarrow a = 7$
+
+$t_5 = a + 4d = 23 \Rightarrow 7 + 4d = 23 \Rightarrow d = 4$
+
+$t_{15} = 7 + 14(4) = 7 + 56 = \mathbf{63}$
+
+\textbf{(b)} $S_\infty = \dfrac{6}{1-2/3} = \dfrac{6}{1/3} = \mathbf{18}$
+
+Find smallest $n$ with $S_n > 17.9$:
+$18\!\left(1 - \left(\tfrac{2}{3}\right)^n\right) > 17.9$
+
+$1 - \left(\tfrac{2}{3}\right)^n > \dfrac{17.9}{18} = 0.9944$
+
+$\left(\tfrac{2}{3}\right)^n < 0.0056$
+
+Check: $n=8$: $(2/3)^8 = 256/6561 \approx 0.039$. Not small enough.
+$n=12$: $(2/3)^{12} = 4096/531441 \approx 0.0077$. Still $> 0.0056$.
+$n=13$: $(2/3)^{13} \approx 0.0051 < 0.0056$. \checkmark
+
+Smallest $n = \mathbf{13}$.
+\end{solution}
+
+\end{questions}
+\end{document}

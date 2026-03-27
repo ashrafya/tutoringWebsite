@@ -1,0 +1,299 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Normal Distribution}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Data Management \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item A standard normal table is provided. Show all $z$-score work for full marks.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] A normal distribution is characterized by:
+\begin{choices}
+    \choice Being skewed to the right
+    \correctchoice Being symmetric and bell-shaped about its mean
+    \choice Having a fixed standard deviation of 1
+    \choice Having a mean of 0
+\end{choices}
+
+\question[1] According to the empirical rule, approximately what percentage of data falls
+within 2 standard deviations of the mean?
+\begin{choices}
+    \choice $68\%$
+    \correctchoice $95\%$
+    \choice $99.7\%$
+    \choice $75\%$
+\end{choices}
+
+\question[1] The $z$-score formula is:
+\begin{choices}
+    \choice $z = \dfrac{\sigma - \mu}{x}$
+    \correctchoice $z = \dfrac{x - \mu}{\sigma}$
+    \choice $z = \dfrac{\mu - x}{\sigma}$
+    \choice $z = x \cdot \sigma + \mu$
+\end{choices}
+
+\question[1] For $X \sim N(50, 10^2)$, the $z$-score for $x = 65$ is:
+\begin{choices}
+    \choice $0.65$
+    \choice $1.0$
+    \correctchoice $1.5$
+    \choice $2.5$
+\end{choices}
+
+\question[1] For the standard normal distribution, $P(Z < 0) =$
+\begin{choices}
+    \choice $0$
+    \choice $1$
+    \correctchoice $0.5$
+    \choice $0.6827$
+\end{choices}
+
+\question[1] If $P(Z < a) = 0.8413$, then $a =$
+\begin{choices}
+    \choice $-1$
+    \correctchoice $1$
+    \choice $0.84$
+    \choice $1.28$
+\end{choices}
+
+\question[1] $P(-1 < Z < 1) \approx$
+\begin{choices}
+    \choice $0.50$
+    \correctchoice $0.6827$
+    \choice $0.9544$
+    \choice $0.9974$
+\end{choices}
+
+\question[1] For $X \sim N(100, 15^2)$, $P(X > 115)$ equals (using the empirical rule):
+\begin{choices}
+    \choice $0.3413$
+    \correctchoice $0.1587$
+    \choice $0.8413$
+    \choice $0.0228$
+\end{choices}
+
+\question[1] A $z$-score of $-2.3$ means the data value is:
+\begin{choices}
+    \choice $2.3$ above the mean
+    \correctchoice $2.3$ standard deviations below the mean
+    \choice $-2.3\%$ of the maximum
+    \choice $2.3$ units from the median
+\end{choices}
+
+\question[1] To find $P(a < X < b)$ for a normal random variable $X$, you:
+\begin{choices}
+    \choice Add $P(X < a)$ and $P(X < b)$
+    \correctchoice Compute $P(Z < z_b) - P(Z < z_a)$ where $z_a, z_b$ are $z$-scores
+    \choice Subtract $P(Z < z_a)$ from $1$
+    \choice Multiply $P(Z < z_a)$ by $P(Z < z_b)$
+\end{choices}
+
+\question[1] The area to the right of $z = 1.645$ under the standard normal curve is
+approximately:
+\begin{choices}
+    \choice $0.9500$
+    \correctchoice $0.0500$
+    \choice $0.1645$
+    \choice $0.8355$
+\end{choices}
+
+\question[1] Exam scores are normally distributed with mean 72 and standard deviation 8.
+Approximately what percentage of students scored between 64 and 80?
+\begin{choices}
+    \choice $95\%$
+    \correctchoice $68\%$
+    \choice $99.7\%$
+    \choice $50\%$
+\end{choices}
+
+\question[1] The central limit theorem states that as sample size increases, the
+sampling distribution of $\bar{X}$ approaches:
+\begin{choices}
+    \choice A uniform distribution
+    \correctchoice A normal distribution
+    \choice A binomial distribution
+    \choice The original population distribution
+\end{choices}
+
+\question[1] If $X \sim N(\mu, \sigma^2)$ and a sample of size $n$ is taken, the standard
+error of $\bar{X}$ is:
+\begin{choices}
+    \choice $\sigma$
+    \choice $\sigma^2 / n$
+    \correctchoice $\sigma / \sqrt{n}$
+    \choice $\sigma \sqrt{n}$
+\end{choices}
+
+\question[1] The heights of adult males are normally distributed with mean 175 cm and
+standard deviation 7 cm. A man who is 189 cm has a $z$-score of:
+\begin{choices}
+    \choice $1.4$
+    \correctchoice $2.0$
+    \choice $2.5$
+    \choice $0.89$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question The lifespans of a certain brand of light bulb are normally distributed with
+mean $\mu = 1200$ hours and standard deviation $\sigma = 100$ hours.
+\begin{parts}
+    \part[2] What proportion of bulbs last between 1100 and 1350 hours?
+    \part[2] What proportion of bulbs last \textbf{less than} 1050 hours?
+    \part[2] What proportion of bulbs last \textbf{more than} 1420 hours?
+    \part[2] Between what two lifespans do the middle 90\% of bulbs fall?
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $z_1 = \dfrac{1100-1200}{100} = -1.0$;\quad $z_2 = \dfrac{1350-1200}{100} = 1.5$
+\[
+P(-1<Z<1.5) = P(Z<1.5) - P(Z<-1) = 0.9332 - 0.1587 = \mathbf{0.7745}
+\]
+
+\textbf{(b)} $z = \dfrac{1050-1200}{100} = -1.5$
+\[
+P(Z < -1.5) = \mathbf{0.0668}
+\]
+
+\textbf{(c)} $z = \dfrac{1420-1200}{100} = 2.2$
+\[
+P(Z > 2.2) = 1 - P(Z < 2.2) = 1 - 0.9861 = \mathbf{0.0139}
+\]
+
+\textbf{(d)} Middle 90\% $\Rightarrow$ 5\% in each tail $\Rightarrow z = \pm 1.645$.
+\[
+x = \mu \pm z\sigma = 1200 \pm 1.645(100) \implies \mathbf{[1035.5,\; 1364.5] \text{ hours}}
+\]
+\end{solution}
+
+\question A university entrance exam has scores normally distributed with $\mu = 500$ and
+$\sigma = 80$.
+\begin{parts}
+    \part[2] The top 10\% of students are offered scholarships. What is the minimum score
+    needed for a scholarship?
+    \part[2] A student scores 620. What percentile does this correspond to?
+    \part[3] If the university accepts students who score between 440 and 620, what
+    percentage of students are accepted?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Top 10\%: $P(Z > z) = 0.10 \Rightarrow P(Z < z) = 0.90 \Rightarrow z = 1.28$.
+\[
+x = 500 + 1.28(80) = 500 + 102.4 = \mathbf{602.4 \approx 602}
+\]
+
+\textbf{(b)} $z = \dfrac{620-500}{80} = 1.50$.
+\[
+P(Z < 1.50) = 0.9332 \implies \textbf{93rd percentile}
+\]
+
+\textbf{(c)} $z_1 = \dfrac{440-500}{80} = -0.75$;\quad $z_2 = \dfrac{620-500}{80} = 1.50$
+\[
+P(-0.75 < Z < 1.50) = P(Z<1.50) - P(Z<-0.75) = 0.9332 - 0.2266 = \mathbf{0.7066 \approx 70.7\%}
+\]
+\end{solution}
+
+\question The mass of apples from an orchard is normally distributed with mean 182 g and
+standard deviation 24 g.
+\begin{parts}
+    \part[2] A store rejects apples under 150 g or over 230 g. What proportion of the
+    harvest is rejected?
+    \part[2] Find the mass such that 75\% of apples are lighter.
+    \part[3] In a crate of 500 apples, how many are expected to weigh more than 200 g?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $z_1 = \dfrac{150-182}{24} = -1.33$;\quad $z_2 = \dfrac{230-182}{24} = 2.0$
+\[
+P(X<150) = P(Z<-1.33) = 0.0918;\quad P(X>230) = P(Z>2.0) = 0.0228
+\]
+\[
+P(\text{rejected}) = 0.0918 + 0.0228 = \mathbf{0.1146 \approx 11.5\%}
+\]
+
+\textbf{(b)} 75th percentile: $z = 0.674$.
+\[
+x = 182 + 0.674(24) = 182 + 16.18 \approx \mathbf{198.2 \text{ g}}
+\]
+
+\textbf{(c)} $z = \dfrac{200-182}{24} = 0.75$;\quad $P(X>200) = 1 - P(Z<0.75) = 1 - 0.7734 = 0.2266$
+\[
+\text{Expected count} = 500 \times 0.2266 \approx \mathbf{113 \text{ apples}}
+\]
+\end{solution}
+
+\question A factory produces bolts with mean diameter 12.00 mm and standard deviation
+0.08 mm. A sample of $n = 64$ bolts is taken.
+\begin{parts}
+    \part[2] State the distribution of the sample mean $\bar{X}$, giving the mean and
+    standard error.
+    \part[3] Find the probability that the sample mean diameter is between 11.98 mm
+    and 12.02 mm.
+    \part[2] How large a sample would be needed to reduce the standard error to 0.005 mm?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} By the Central Limit Theorem:
+$\bar{X} \sim N\!\left(12.00,\;\left(\dfrac{0.08}{\sqrt{64}}\right)^2\right)
+= N(12.00,\; 0.01^2)$
+
+Standard error $= \dfrac{0.08}{\sqrt{64}} = \dfrac{0.08}{8} = \mathbf{0.01}$ mm.
+
+\textbf{(b)} $z_1 = \dfrac{11.98 - 12.00}{0.01} = -2.0$;\quad
+$z_2 = \dfrac{12.02 - 12.00}{0.01} = 2.0$
+\[
+P(-2 < Z < 2) = 0.9544 - 0.0456 = \mathbf{0.9544}
+\]
+
+\textbf{(c)} SE $= \dfrac{\sigma}{\sqrt{n}} = 0.005 \Rightarrow \sqrt{n} = \dfrac{0.08}{0.005} = 16
+\Rightarrow n = \mathbf{256}$
+\end{solution}
+
+\end{questions}
+\end{document}

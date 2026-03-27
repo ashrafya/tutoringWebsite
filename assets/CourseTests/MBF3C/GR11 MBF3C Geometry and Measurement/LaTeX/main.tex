@@ -1,0 +1,350 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Geometry \& Measurement}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+% Q1
+\question[1]
+The formula for the surface area of a rectangular prism with length $l$, width $w$, and height $h$ is:
+\begin{choices}
+    \choice $SA = lwh$
+    \correctchoice $SA = 2(lw + lh + wh)$
+    \choice $SA = 2lw + 2lh$
+    \choice $SA = 6lwh$
+\end{choices}
+
+% Q2
+\question[1]
+The volume of a cylinder with radius $r$ and height $h$ is:
+\begin{choices}
+    \choice $V = \pi r h$
+    \choice $V = 2\pi r h$
+    \correctchoice $V = \pi r^2 h$
+    \choice $V = \dfrac{4}{3}\pi r^3$
+\end{choices}
+
+% Q3
+\question[1]
+The volume of a cone with radius $r$ and height $h$ is:
+\begin{choices}
+    \choice $V = \pi r^2 h$
+    \choice $V = \dfrac{1}{2}\pi r^2 h$
+    \correctchoice $V = \dfrac{1}{3}\pi r^2 h$
+    \choice $V = \dfrac{2}{3}\pi r^3$
+\end{choices}
+
+% Q4
+\question[1]
+The surface area of a sphere with radius $r$ is:
+\begin{choices}
+    \choice $SA = \pi r^2$
+    \choice $SA = 2\pi r^2$
+    \correctchoice $SA = 4\pi r^2$
+    \choice $SA = \dfrac{4}{3}\pi r^3$
+\end{choices}
+
+% Q5
+\question[1]
+A rectangular prism has dimensions $4 \times 5 \times 6$ cm. Its volume is:
+\begin{choices}
+    \choice \SI{74}{cm^3}
+    \choice \SI{148}{cm^3}
+    \correctchoice \SI{120}{cm^3}
+    \choice \SI{60}{cm^3}
+\end{choices}
+
+% Q6
+\question[1]
+Two similar triangles have a scale factor of $3:5$ (small to large). The ratio of their areas is:
+\begin{choices}
+    \choice $3:5$
+    \correctchoice $9:25$
+    \choice $27:125$
+    \choice $1:2$
+\end{choices}
+
+% Q7
+\question[1]
+Two similar solids have a linear scale factor of $1:4$. What is the ratio of their volumes?
+\begin{choices}
+    \choice $1:4$
+    \choice $1:16$
+    \correctchoice $1:64$
+    \choice $1:8$
+\end{choices}
+
+% Q8
+\question[1]
+In two similar triangles, corresponding sides are $6$ cm and $9$ cm. If the smaller triangle has a perimeter of \SI{21}{cm}, what is the perimeter of the larger triangle?
+\begin{choices}
+    \choice \SI{14}{cm}
+    \correctchoice \SI{31.5}{cm}
+    \choice \SI{42}{cm}
+    \choice \SI{28}{cm}
+\end{choices}
+
+% Q9
+\question[1]
+The slant height of a cone is needed to calculate its:
+\begin{choices}
+    \choice Volume only.
+    \correctchoice Lateral surface area.
+    \choice Base area only.
+    \choice Height.
+\end{choices}
+
+% Q10
+\question[1]
+A hemisphere has radius \SI{5}{cm}. Its volume is:
+\begin{choices}
+    \choice $\dfrac{4}{3}\pi(5)^3$ \si{cm^3}
+    \correctchoice $\dfrac{2}{3}\pi(5)^3$ \si{cm^3}
+    \choice $\pi(5)^3$ \si{cm^3}
+    \choice $2\pi(5)^3$ \si{cm^3}
+\end{choices}
+
+% Q11
+\question[1]
+For a fixed perimeter, which shape maximizes the enclosed area?
+\begin{choices}
+    \choice Rectangle
+    \choice Equilateral triangle
+    \correctchoice Circle
+    \choice Square
+\end{choices}
+
+% Q12
+\question[1]
+A square has a perimeter of \SI{40}{cm}. What is its area?
+\begin{choices}
+    \choice \SI{160}{cm^2}
+    \correctchoice \SI{100}{cm^2}
+    \choice \SI{80}{cm^2}
+    \choice \SI{400}{cm^2}
+\end{choices}
+
+% Q13
+\question[1]
+The total surface area of a cylinder (including both circular ends) with $r = 3$ cm and $h = 7$ cm is:
+\begin{choices}
+    \choice $42\pi$ \si{cm^2}
+    \correctchoice $60\pi$ \si{cm^2}
+    \choice $54\pi$ \si{cm^2}
+    \choice $30\pi$ \si{cm^2}
+\end{choices}
+
+% Q14
+\question[1]
+Two similar figures have a linear scale factor of $2:7$. The ratio of their surface areas is:
+\begin{choices}
+    \choice $2:7$
+    \correctchoice $4:49$
+    \choice $8:343$
+    \choice $1:3$
+\end{choices}
+
+% Q15
+\question[1]
+A pyramid has a square base with side length \SI{6}{cm} and a height of \SI{4}{cm}. Its volume is:
+\begin{choices}
+    \choice \SI{144}{cm^3}
+    \correctchoice \SI{48}{cm^3}
+    \choice \SI{72}{cm^3}
+    \choice \SI{96}{cm^3}
+\end{choices}
+
+\section*{Part B --- Short Answer (33 marks)}
+
+% Q16
+\question[6]
+\textbf{Surface Area and Volume.} Give exact answers in terms of $\pi$ where appropriate.
+
+\begin{parts}
+    \part[2] A rectangular prism has dimensions $l = 8$ cm, $w = 5$ cm, $h = 3$ cm. Find its surface area and volume.
+    \begin{solution}
+        $SA = 2(lw + lh + wh) = 2(8 \times 5 + 8 \times 3 + 5 \times 3)$\\
+        $= 2(40 + 24 + 15) = 2(79) = \SI{158}{cm^2}$\\
+        $V = lwh = 8 \times 5 \times 3 = \SI{120}{cm^3}$
+    \end{solution}
+
+    \part[2] A cylinder has radius \SI{4}{cm} and height \SI{10}{cm}. Find its total surface area and volume (exact, in terms of $\pi$).
+    \begin{solution}
+        $SA = 2\pi r^2 + 2\pi rh = 2\pi(4)^2 + 2\pi(4)(10) = 32\pi + 80\pi = 112\pi \approx \SI{351.9}{cm^2}$\\
+        $V = \pi r^2 h = \pi(4)^2(10) = 160\pi \approx \SI{502.7}{cm^3}$
+    \end{solution}
+
+    \part[2] A cone has radius \SI{3}{cm} and height \SI{4}{cm}. Find its volume and total surface area. (Slant height: $l = \sqrt{r^2 + h^2}$.)
+    \begin{solution}
+        Slant height: $l = \sqrt{3^2 + 4^2} = \sqrt{25} = 5$ cm\\
+        $V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi(9)(4) = 12\pi \approx \SI{37.7}{cm^3}$\\
+        $SA = \pi r^2 + \pi r l = \pi(9) + \pi(3)(5) = 9\pi + 15\pi = 24\pi \approx \SI{75.4}{cm^2}$
+    \end{solution}
+\end{parts}
+
+% Q17
+\question[6]
+\textbf{Composite Solid.} A composite solid consists of a cylinder topped with a hemisphere. The cylinder has radius $r = \SI{6}{cm}$ and height $h = \SI{14}{cm}$. The hemisphere sits on top of the cylinder (radius also \SI{6}{cm}).
+
+\begin{parts}
+    \part[3] Find the total surface area of the composite solid. Note: the top of the cylinder is covered by the hemisphere's flat face, so only include the cylinder's lateral surface and the hemisphere's curved surface and the cylinder's bottom circle.
+    \begin{solution}
+        Bottom circle of cylinder: $\pi r^2 = \pi(36) = 36\pi$\\
+        Lateral surface of cylinder: $2\pi rh = 2\pi(6)(14) = 168\pi$\\
+        Curved surface of hemisphere: $2\pi r^2 = 2\pi(36) = 72\pi$\\
+        (The flat circular face of the hemisphere and the top of the cylinder are joined --- not exposed.)\\
+        $SA = 36\pi + 168\pi + 72\pi = 276\pi \approx \SI{867.1}{cm^2}$
+    \end{solution}
+
+    \part[3] Find the total volume of the composite solid.
+    \begin{solution}
+        Volume of cylinder: $\pi r^2 h = \pi(36)(14) = 504\pi$\\
+        Volume of hemisphere: $\dfrac{2}{3}\pi r^3 = \dfrac{2}{3}\pi(216) = 144\pi$\\
+        Total: $V = 504\pi + 144\pi = 648\pi \approx \SI{2035.8}{cm^3}$
+    \end{solution}
+\end{parts}
+
+% Q18
+\question[5]
+\textbf{Similar Triangles.}
+
+\begin{parts}
+    \part[3] Triangle $ABC$ is similar to triangle $DEF$. The sides of $\triangle ABC$ are $AB = 5$ cm, $BC = 8$ cm, $CA = 6$ cm. Side $DE = 15$ cm corresponds to side $AB$. Find sides $EF$ and $FD$.
+    \begin{solution}
+        Scale factor: $k = \dfrac{DE}{AB} = \dfrac{15}{5} = 3$\\
+        $EF = k \times BC = 3 \times 8 = \SI{24}{cm}$\\
+        $FD = k \times CA = 3 \times 6 = \SI{18}{cm}$
+    \end{solution}
+
+    \part[2] A \SI{1.8}{m} tall person standing in sunlight casts a \SI{2.4}{m} shadow. At the same time, a nearby building casts a \SI{16}{m} shadow. How tall is the building?
+    \begin{solution}
+        The person and building form similar triangles with the sun rays.\\
+        $\dfrac{\text{person height}}{\text{person shadow}} = \dfrac{\text{building height}}{\text{building shadow}}$\\
+        $\dfrac{1.8}{2.4} = \dfrac{h}{16}$\\
+        $h = \dfrac{1.8 \times 16}{2.4} = \dfrac{28.8}{2.4} = \SI{12}{m}$
+    \end{solution}
+\end{parts}
+
+% Q19
+\question[8]
+\textbf{Optimization: Minimizing Surface Area.} A cylindrical tin can must hold exactly \SI{500}{mL} $= \SI{500}{cm^3}$.
+
+The formulas are:
+\[V = \pi r^2 h = 500, \quad SA = 2\pi r^2 + 2\pi rh\]
+
+\begin{parts}
+    \part[2] Express $h$ in terms of $r$ using the volume constraint.
+    \begin{solution}
+        $\pi r^2 h = 500 \Rightarrow h = \dfrac{500}{\pi r^2}$
+    \end{solution}
+
+    \part[3] Substitute into the SA formula to write SA as a function of $r$ alone.
+    \begin{solution}
+        $SA = 2\pi r^2 + 2\pi r \cdot \dfrac{500}{\pi r^2} = 2\pi r^2 + \dfrac{1000}{r}$
+    \end{solution}
+
+    \part[3] By testing values of $r$ (e.g.\ $r = 3, 4, 4.3, 5, 6$), estimate the value of $r$ that minimizes SA, and find the corresponding $h$. State the approximate minimum SA.
+    \begin{solution}
+        \begin{tabular}{ccc}
+        \hline
+        $r$ (cm) & $SA = 2\pi r^2 + 1000/r$ & Value (\si{cm^2})\\
+        \hline
+        3   & $2\pi(9) + 333.3 = 56.5 + 333.3$ & 389.9\\
+        4   & $2\pi(16) + 250 = 100.5 + 250$   & 350.5\\
+        4.3 & $2\pi(18.49) + 232.6 = 116.2 + 232.6$ & 348.7\\
+        5   & $2\pi(25) + 200 = 157.1 + 200$   & 357.1\\
+        6   & $2\pi(36) + 166.7 = 226.2 + 166.7$ & 392.9\\
+        \hline
+        \end{tabular}
+
+        Minimum is near $r \approx 4.3$ cm.\\
+        $h = \dfrac{500}{\pi (4.3)^2} = \dfrac{500}{\pi \times 18.49} \approx \dfrac{500}{58.09} \approx \SI{8.6}{cm}$\\
+        Note: the true minimum occurs at $r = \sqrt[3]{250/\pi} \approx \SI{4.30}{cm}$ and $h \approx \SI{8.60}{cm}$ (so $h = 2r$), giving $SA \approx \SI{348.7}{cm^2}$.
+    \end{solution}
+\end{parts}
+
+% Q20
+\question[8]
+\textbf{Scale Model.} A model car is built at a scale of $1:18$ (model : real car).
+
+\begin{parts}
+    \part[2] The real car is \SI{4.5}{m} long. How long is the model car in centimetres?
+    \begin{solution}
+        Real length $= \SI{450}{cm}$.\\
+        Model length $= \dfrac{450}{18} = \SI{25}{cm}$
+    \end{solution}
+
+    \part[2] If the real car has a surface area of \SI{12}{m^2}, what is the surface area of the model in \si{cm^2}? Use the scale factor squared rule.
+    \begin{solution}
+        Linear scale factor (model to real) $= 1:18$.\\
+        SA ratio $= 1^2 : 18^2 = 1 : 324$.\\
+        Real SA $= 12 \text{ m}^2 = 120000 \text{ cm}^2$.\\
+        Model SA $= \dfrac{120000}{324} \approx \SI{370.4}{cm^2}$
+    \end{solution}
+
+    \part[2] The real car's engine volume is \SI{2.0}{L} $= \SI{2000}{cm^3}$. What would the corresponding volume be in the model (in \si{cm^3})? Use the scale factor cubed rule.
+    \begin{solution}
+        Volume ratio $= 1^3 : 18^3 = 1 : 5832$.\\
+        Model volume $= \dfrac{2000}{5832} \approx \SI{0.343}{cm^3}$
+    \end{solution}
+
+    \part[2] Explain in 2--3 sentences why the volume of the model is so much smaller than the real volume, even though the linear scale is only 1:18.
+    \begin{solution}
+        Volume scales with the cube of the linear scale factor ($18^3 = 5832$), whereas length scales only linearly. A factor of 18 in each of three dimensions multiplies together to give a factor of 5832 in volume. This is why even a relatively modest linear scale produces an enormous reduction in volume.
+    \end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

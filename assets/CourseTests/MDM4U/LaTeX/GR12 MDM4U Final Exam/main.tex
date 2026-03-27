@@ -1,0 +1,380 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{MDM4U \event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Data Management \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.20\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \item Show all work for full marks. A standard normal table is provided.
+    \item This exam covers all units of MDM4U.
+    \item The exam is designed to be completed in 2 hours.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{2}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{3mm}
+\noindent\textit{Unit 1: Counting Techniques}
+\vspace{3mm}
+
+\question[1] The number of ways to arrange the letters in \textbf{PEPPER} is:
+\begin{choices}
+    \choice $720$
+    \choice $120$
+    \correctchoice $60$
+    \choice $30$
+\end{choices}
+
+\question[1] $\dbinom{9}{4}$ equals:
+\begin{choices}
+    \choice $36$
+    \correctchoice $126$
+    \choice $3024$
+    \choice $504$
+\end{choices}
+
+\question[1] A lock has 4 dials, each with digits 0--9. The number of possible codes is:
+\begin{choices}
+    \choice $40$
+    \choice $5040$
+    \correctchoice $10000$
+    \choice $9^4$
+\end{choices}
+
+\question[1] The coefficient of $x^2y^3$ in the expansion of $(x+y)^5$ is:
+\begin{choices}
+    \choice $5$
+    \choice $6$
+    \correctchoice $10$
+    \choice $20$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 2: Probability}
+\vspace{3mm}
+
+\question[1] If $P(A) = 0.5$ and $P(B) = 0.4$ and $A$ and $B$ are independent, then
+$P(A \cap B) =$
+\begin{choices}
+    \choice $0.9$
+    \choice $0.1$
+    \correctchoice $0.2$
+    \choice $0.45$
+\end{choices}
+
+\question[1] A bag has 3 red and 7 blue marbles. Two marbles are drawn without replacement.
+$P(\text{both blue}) =$
+\begin{choices}
+    \choice $\dfrac{49}{100}$
+    \correctchoice $\dfrac{42}{90}$
+    \choice $\dfrac{7}{10}$
+    \choice $\dfrac{21}{45}$
+\end{choices}
+
+\question[1] Events $A$ and $B$ satisfy $P(A) = 0.6$, $P(B) = 0.5$, $P(A \cup B) = 0.8$.
+Then $P(A \mid B) =$
+\begin{choices}
+    \choice $0.6$
+    \correctchoice $0.6$
+    \choice $0.3$
+    \choice $0.5$
+\end{choices}
+
+\question[1] The probability of rolling at least one 6 in two rolls of a fair die is:
+\begin{choices}
+    \choice $\dfrac{1}{3}$
+    \correctchoice $\dfrac{11}{36}$
+    \choice $\dfrac{2}{6}$
+    \choice $\dfrac{1}{36}$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 3: Discrete Probability Distributions}
+\vspace{3mm}
+
+\question[1] For $X \sim B(15, 0.2)$, the mean and variance are:
+\begin{choices}
+    \choice $\mu = 3$, $\sigma^2 = 3$
+    \correctchoice $\mu = 3$, $\sigma^2 = 2.4$
+    \choice $\mu = 2$, $\sigma^2 = 2.4$
+    \choice $\mu = 15$, $\sigma^2 = 0.2$
+\end{choices}
+
+\question[1] A discrete random variable $X$ has $E[X] = 2$ and $E[X^2] = 6$.
+Then $\text{Var}(X) =$
+\begin{choices}
+    \choice $4$
+    \correctchoice $2$
+    \choice $6$
+    \choice $8$
+\end{choices}
+
+\question[1] The geometric distribution with $p = 0.4$ gives $P(X = 4) =$
+\begin{choices}
+    \choice $(0.4)^4$
+    \correctchoice $(0.6)^3(0.4)$
+    \choice $(0.4)^3(0.6)$
+    \choice $\dbinom{4}{1}(0.4)(0.6)^3$
+\end{choices}
+
+\question[1] A hypergeometric situation: 4 are selected from 10 (5 defective, 5 good).
+$P(\text{exactly 2 defective}) =$
+\begin{choices}
+    \choice $\dbinom{5}{2}/\dbinom{10}{4}$
+    \correctchoice $\dbinom{5}{2}\dbinom{5}{2}/\dbinom{10}{4}$
+    \choice $\dbinom{5}{2}\dbinom{10}{2}/\dbinom{10}{4}$
+    \choice $(0.5)^4$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 4: One-Variable Statistics}
+\vspace{3mm}
+
+\question[1] The data set $\{2, 3, 3, 4, 18\}$ has which of the following?
+\begin{choices}
+    \choice Mean $<$ Median
+    \correctchoice Mean $>$ Median
+    \choice Mean $=$ Median
+    \choice No mode
+\end{choices}
+
+\question[1] For the data $\{10, 20, 30, 40, 50\}$, the population standard deviation is:
+\begin{choices}
+    \choice $10$
+    \correctchoice $\sqrt{200} \approx 14.14$
+    \choice $15$
+    \choice $200$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 5: Normal Distribution}
+\vspace{3mm}
+
+\question[1] For $X \sim N(80, 5^2)$, $P(70 < X < 90) \approx$
+\begin{choices}
+    \choice $0.50$
+    \choice $0.6827$
+    \correctchoice $0.9544$
+    \choice $0.9974$
+\end{choices}
+
+\question[1] A $z$-score of 2.33 corresponds approximately to the:
+\begin{choices}
+    \choice 50th percentile
+    \choice 84th percentile
+    \choice 95th percentile
+    \correctchoice 99th percentile
+\end{choices}
+
+\question[1] For samples of size 25 drawn from $N(50, 100)$, the standard error of
+$\bar{X}$ is:
+\begin{choices}
+    \choice $10$
+    \choice $4$
+    \correctchoice $2$
+    \choice $0.4$
+\end{choices}
+
+\question[1] $P(Z > 1.96) \approx$
+\begin{choices}
+    \choice $0.9750$
+    \correctchoice $0.0250$
+    \choice $0.0500$
+    \choice $0.1960$
+\end{choices}
+
+\question[1] A data value at the 35th percentile is:
+\begin{choices}
+    \choice Above 65\% of the data
+    \correctchoice Below 65\% of the data
+    \choice Equal to the 35th data value
+    \choice Equal to $\mu - 0.35\sigma$
+\end{choices}
+
+\question[1] The heights of 10-year-olds are $N(138,\; 6^2)$ cm. The probability a
+randomly selected 10-year-old is shorter than 132 cm is:
+\begin{choices}
+    \choice $0.8413$
+    \correctchoice $0.1587$
+    \choice $0.3413$
+    \choice $0.0228$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+
+\question \textbf{(Counting)} A student council of 5 is to be chosen from 8 boys and 6 girls.
+\begin{parts}
+    \part[2] How many councils are possible with no restrictions?
+    \part[3] How many councils have exactly 3 boys and 2 girls?
+    \part[3] How many councils have at least 4 girls?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\dbinom{14}{5} = \mathbf{2002}$
+
+\textbf{(b)} $\dbinom{8}{3}\dbinom{6}{2} = 56 \times 15 = \mathbf{840}$
+
+\textbf{(c)} (exactly 4 girls) + (exactly 5 girls):
+\[
+\binom{6}{4}\binom{8}{1} + \binom{6}{5}\binom{8}{0}
+= 15 \times 8 + 6 \times 1 = 120 + 6 = \mathbf{126}
+\]
+\end{solution}
+
+\question \textbf{(Probability)} A company finds that 3\% of their products are defective.
+A quality control inspector tests items one by one until finding a defective item.
+\begin{parts}
+    \part[2] Find the probability the first defective item is the 5th item tested.
+    \part[2] Find the probability the first defective item is found within the first
+    3 tests.
+    \part[2] Find the expected number of items tested until the first defect is found.
+\end{parts}
+\begin{solution}[8cm]
+Let $p = 0.03$, $q = 0.97$.
+
+\textbf{(a)} $P(X=5) = (0.97)^4(0.03) = 0.885^4 \times 0.03$.
+$(0.97)^4 = 0.8853$, so $P(X=5) = 0.8853 \times 0.03 \approx \mathbf{0.0266}$
+
+\textbf{(b)}
+\[
+P(X \leq 3) = P(X=1)+P(X=2)+P(X=3)
+= 0.03 + (0.97)(0.03) + (0.97)^2(0.03)
+= 0.03(1 + 0.97 + 0.9409) \approx \mathbf{0.0873}
+\]
+
+\textbf{(c)} $E[X] = \dfrac{1}{p} = \dfrac{1}{0.03} \approx \mathbf{33.3 \text{ items}}$
+\end{solution}
+
+\question \textbf{(Discrete Distributions)} A carnival game involves drawing 3 cards from
+a deck of 10 cards numbered 1--10. A player wins \$5 for each even-numbered card drawn.
+Let $X$ = number of even cards drawn.
+\begin{parts}
+    \part[1] Identify the distribution of $X$ and state its parameters.
+    \part[3] Construct the complete probability distribution table for $X$.
+    \part[3] Calculate $E[X]$ and interpret in context.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Hypergeometric: $N=10$, $K=5$ even cards $\{2,4,6,8,10\}$, $n=3$ drawn.
+
+\textbf{(b)} $\dbinom{10}{3} = 120$.
+\[
+P(X=0) = \frac{\binom{5}{0}\binom{5}{3}}{120} = \frac{10}{120} = \frac{1}{12}
+\]
+\[
+P(X=1) = \frac{\binom{5}{1}\binom{5}{2}}{120} = \frac{5\times10}{120} = \frac{50}{120} = \frac{5}{12}
+\]
+\[
+P(X=2) = \frac{\binom{5}{2}\binom{5}{1}}{120} = \frac{10\times5}{120} = \frac{50}{120} = \frac{5}{12}
+\]
+\[
+P(X=3) = \frac{\binom{5}{3}\binom{5}{0}}{120} = \frac{10}{120} = \frac{1}{12}
+\]
+
+\textbf{(c)}
+$E[X] = 0\cdot\dfrac{1}{12} + 1\cdot\dfrac{5}{12} + 2\cdot\dfrac{5}{12} + 3\cdot\dfrac{1}{12}
+= \dfrac{0+5+10+3}{12} = \dfrac{18}{12} = \mathbf{1.5}$
+
+On average, a player draws 1.5 even cards per game, winning $\$5 \times 1.5 = \$7.50$.
+\end{solution}
+
+\question \textbf{(Statistics)} The following data shows the monthly sales (in thousands of
+dollars) for a small business over 10 months:
+\[42,\; 47,\; 51,\; 55,\; 58,\; 62,\; 65,\; 70,\; 74,\; 96\]
+\begin{parts}
+    \part[3] Find the mean, median, and standard deviation.
+    \part[2] Find the five-number summary and identify any outliers using the $1.5 \times \text{IQR}$ rule.
+    \part[3] The owner projects that next year's monthly sales will each increase by 10\%
+    (multiply by 1.1). State the new mean and standard deviation without recalculating
+    from scratch.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $\bar{x} = \dfrac{42+47+51+55+58+62+65+70+74+96}{10} = \dfrac{620}{10} = \mathbf{62}$
+
+Median $= \dfrac{58+62}{2} = \mathbf{60}$
+
+Deviations from 62: $-20,-15,-11,-7,-4,0,3,8,12,34$.
+$\sum d^2 = 400+225+121+49+16+0+9+64+144+1156 = 2184$
+$\sigma = \sqrt{2184/10} = \sqrt{218.4} \approx \mathbf{14.78}$
+
+\textbf{(b)} $Q_1 = \dfrac{51+55}{2} = 53$;\; $Q_3 = \dfrac{70+74}{2} = 72$;\; IQR $= 19$\\
+Upper fence: $72 + 1.5(19) = 72 + 28.5 = 100.5$. All values $\leq 96 < 100.5$.\\
+\textbf{No outliers.} Five-number summary: $\{42,\; 53,\; 60,\; 72,\; 96\}$.
+
+\textbf{(c)} Multiplying all values by 1.1:
+New mean $= 62 \times 1.1 = \mathbf{\$68.2\text{k}}$;\quad
+New $\sigma = 14.78 \times 1.1 = \mathbf{\$16.26\text{k}}$.
+\end{solution}
+
+\question \textbf{(Normal Distribution)} The time it takes students to complete a
+standardized test is normally distributed with mean 95 minutes and standard deviation
+12 minutes.
+\begin{parts}
+    \part[2] What proportion of students finish in under 80 minutes?
+    \part[2] What proportion finish between 90 and 110 minutes?
+    \part[2] The fastest 15\% of students get a time bonus. What is the maximum time
+    a student can take and still receive the bonus?
+    \part[2] In a class of 30 students, how many are expected to take more than 115
+    minutes?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $z = \dfrac{80-95}{12} = -1.25$;\quad $P(Z<-1.25) = 1 - 0.8944 = \mathbf{0.1056}$
+
+\textbf{(b)} $z_1 = \dfrac{90-95}{12} = -0.42$;\quad $z_2 = \dfrac{110-95}{12} = 1.25$
+\[
+P(-0.42 < Z < 1.25) = 0.8944 - 0.3372 = \mathbf{0.5572}
+\]
+
+\textbf{(c)} Fastest 15\%: $P(Z < z) = 0.15 \Rightarrow z = -1.04$
+\[
+x = 95 + (-1.04)(12) = 95 - 12.48 = \mathbf{82.52 \text{ minutes}}
+\]
+
+\textbf{(d)} $z = \dfrac{115-95}{12} = 1.67$;\quad $P(Z>1.67) = 1 - 0.9525 = 0.0475$
+\[
+\text{Expected count} = 30 \times 0.0475 \approx \mathbf{1.4 \approx 1 \text{ student}}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

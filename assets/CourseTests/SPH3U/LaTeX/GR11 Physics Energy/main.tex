@@ -1,0 +1,288 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Energy}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Physics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units. Use $g = \SI{9.8}{m/s^2}$.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Work is done on an object when:
+\begin{choices}
+    \choice A force is applied to the object
+    \choice The object is in motion
+    \correctchoice A force causes displacement in the direction of the force
+    \choice The object has kinetic energy
+\end{choices}
+
+\question[1] A force of \SI{20}{N} is applied at \ang{60} to the horizontal to push a
+box \SI{5.0}{m}. The work done is:
+\begin{choices}
+    \choice \SI{100}{J}
+    \correctchoice \SI{50}{J}
+    \choice \SI{86.6}{J}
+    \choice \SI{173}{J}
+\end{choices}
+
+\question[1] The work done by friction is:
+\begin{choices}
+    \choice Always positive
+    \correctchoice Always negative (opposes displacement)
+    \choice Zero (friction does no work)
+    \choice Depends on the mass
+\end{choices}
+
+\question[1] A \SI{3.0}{kg} object moving at \SI{4.0}{m/s} has kinetic energy:
+\begin{choices}
+    \choice \SI{12}{J}
+    \correctchoice \SI{24}{J}
+    \choice \SI{6.0}{J}
+    \choice \SI{48}{J}
+\end{choices}
+
+\question[1] Gravitational potential energy depends on:
+\begin{choices}
+    \choice Speed only
+    \correctchoice Mass, gravitational field strength, and height
+    \choice Mass and speed only
+    \choice Height and speed only
+\end{choices}
+
+\question[1] A \SI{2.0}{kg} book is placed on a shelf \SI{1.5}{m} above the floor.
+Its gravitational PE relative to the floor is:
+\begin{choices}
+    \choice \SI{3.0}{J}
+    \choice \SI{9.8}{J}
+    \correctchoice \SI{29.4}{J}
+    \choice \SI{19.6}{J}
+\end{choices}
+
+\question[1] The work--energy theorem states:
+\begin{choices}
+    \choice $W = Fd$
+    \correctchoice The net work done on an object equals its change in kinetic energy
+    \choice Work equals the change in potential energy
+    \choice Power equals work divided by force
+\end{choices}
+
+\question[1] A ball is dropped from rest. Just before hitting the ground, if air
+resistance is ignored, all of its initial potential energy has been converted to:
+\begin{choices}
+    \choice Thermal energy
+    \choice Work
+    \correctchoice Kinetic energy
+    \choice Sound energy
+\end{choices}
+
+\question[1] Which of the following is conserved in a frictionless mechanical system?
+\begin{choices}
+    \choice Kinetic energy only
+    \choice Potential energy only
+    \correctchoice Total mechanical energy
+    \choice Velocity
+\end{choices}
+
+\question[1] A \SI{1000}{kg} car accelerates from \SI{0}{m/s} to \SI{20}{m/s}.
+The work done on the car is:
+\begin{choices}
+    \choice \SI{10\,000}{J}
+    \choice \SI{100\,000}{J}
+    \correctchoice \SI{200\,000}{J}
+    \choice \SI{400\,000}{J}
+\end{choices}
+
+\question[1] Power is defined as:
+\begin{choices}
+    \choice Force times displacement
+    \choice Energy times time
+    \correctchoice Work done per unit time
+    \choice Force times velocity squared
+\end{choices}
+
+\question[1] A motor lifts a \SI{500}{N} load \SI{4.0}{m} in \SI{10}{s}. Its power output is:
+\begin{choices}
+    \choice \SI{50}{W}
+    \correctchoice \SI{200}{W}
+    \choice \SI{2000}{W}
+    \choice \SI{20\,000}{W}
+\end{choices}
+
+\question[1] A machine has efficiency of 80\%. If \SI{400}{J} of energy is input, the
+useful output energy is:
+\begin{choices}
+    \choice \SI{80}{J}
+    \correctchoice \SI{320}{J}
+    \choice \SI{480}{J}
+    \choice \SI{500}{J}
+\end{choices}
+
+\question[1] A roller coaster car at the top of a \SI{30}{m} hill (at rest) converts all
+its PE to KE at the bottom. Its speed at the bottom is approximately:
+\begin{choices}
+    \choice \SI{17}{m/s}
+    \correctchoice \SI{24}{m/s}
+    \choice \SI{30}{m/s}
+    \choice \SI{294}{m/s}
+\end{choices}
+
+\question[1] If the speed of an object doubles, its kinetic energy:
+\begin{choices}
+    \choice Doubles
+    \choice Stays the same
+    \correctchoice Quadruples
+    \choice Halves
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question A \SI{70}{kg} person runs up a flight of stairs of vertical height \SI{5.0}{m}
+in \SI{4.0}{s}.
+\begin{parts}
+    \part[2] Calculate the work done against gravity.
+    \part[2] Calculate the power output of the person.
+    \part[2] If the person's body is only 25\% efficient, what is the total metabolic
+    power (energy input per second)?
+    \part[2] The person also has a horizontal velocity of \SI{2.0}{m/s} at the top.
+    Find the total mechanical energy gained (KE + PE gained).
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $W = mgh = 70 \times 9.8 \times 5.0 = \mathbf{\SI{3430}{J}}$
+
+\textbf{(b)} $P = \dfrac{W}{t} = \dfrac{3430}{4.0} = \mathbf{\SI{857.5}{W} \approx \SI{858}{W}}$
+
+\textbf{(c)} $P_\text{input} = \dfrac{P_\text{output}}{\text{efficiency}} = \dfrac{858}{0.25}
+= \mathbf{\SI{3430}{W}}$
+
+\textbf{(d)} $E_k = \tfrac{1}{2}mv^2 = \tfrac{1}{2}(70)(2.0)^2 = \SI{140}{J}$
+
+Total: $\Delta E_\text{mech} = 3430 + 140 = \mathbf{\SI{3570}{J}}$
+\end{solution}
+
+\question A \SI{0.50}{kg} ball is released from rest at the top of a ramp \SI{2.0}{m}
+above the ground. Ignore friction.
+\begin{parts}
+    \part[2] Calculate the total mechanical energy of the ball at the top.
+    \part[2] Using conservation of energy, find the speed at the bottom (height $= 0$).
+    \part[3] At a point halfway down (height $= \SI{1.0}{m}$), find the speed of the ball.
+    \part[2] In reality, the ball reaches a speed of only \SI{5.5}{m/s} at the bottom.
+    How much energy was lost to friction?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} At top: $v=0 \Rightarrow E_k = 0$.
+$E_p = mgh = 0.50 \times 9.8 \times 2.0 = \SI{9.8}{J}$
+$E_\text{total} = \mathbf{\SI{9.8}{J}}$
+
+\textbf{(b)} At bottom: $E_p = 0$, all energy is KE.
+\[
+\tfrac{1}{2}mv^2 = 9.8 \implies v = \sqrt{\frac{2(9.8)}{0.50}} = \sqrt{39.2}
+= \mathbf{\SI{6.26}{m/s}}
+\]
+
+\textbf{(c)} At $h = \SI{1.0}{m}$: $E_p = 0.50(9.8)(1.0) = \SI{4.9}{J}$;\quad $E_k = 9.8 - 4.9 = \SI{4.9}{J}$
+\[
+v = \sqrt{\frac{2(4.9)}{0.50}} = \sqrt{19.6} = \mathbf{\SI{4.43}{m/s}}
+\]
+
+\textbf{(d)} Actual KE at bottom: $\tfrac{1}{2}(0.50)(5.5)^2 = \SI{7.56}{J}$
+
+Energy lost: $9.8 - 7.56 = \mathbf{\SI{2.24}{J}}$
+\end{solution}
+
+\question A \SI{1200}{kg} car engine produces a constant force of \SI{3000}{N} and
+moves the car \SI{500}{m} along a flat road. A friction force of \SI{800}{N} acts
+throughout.
+\begin{parts}
+    \part[2] Calculate the work done by the engine.
+    \part[2] Calculate the work done by friction.
+    \part[2] Calculate the net work done on the car.
+    \part[2] Using the work--energy theorem, find the final speed of the car
+    (starting from rest).
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $W_\text{engine} = F \cdot d = 3000 \times 500 = \mathbf{\SI{1\,500\,000}{J} = \SI{1.5}{MJ}}$
+
+\textbf{(b)} $W_\text{friction} = -f_k \cdot d = -800 \times 500 = \mathbf{-\SI{400\,000}{J}}$
+
+\textbf{(c)} $W_\text{net} = 1\,500\,000 - 400\,000 = \mathbf{\SI{1\,100\,000}{J}}$
+
+\textbf{(d)} Work--energy theorem: $W_\text{net} = \Delta E_k = \tfrac{1}{2}mv^2 - 0$
+\[
+v = \sqrt{\frac{2 W_\text{net}}{m}} = \sqrt{\frac{2(1\,100\,000)}{1200}}
+= \sqrt{1833} \approx \mathbf{\SI{42.8}{m/s}}
+\]
+\end{solution}
+
+\question A hydroelectric dam generates power by dropping water \SI{80}{m}.
+\begin{parts}
+    \part[3] If $\SI{5000}{kg}$ of water flows through per second, calculate the
+    theoretical power output.
+    \part[2] The dam operates at 90\% efficiency. What is the actual power delivered
+    to the grid?
+    \part[2] A household uses \SI{1.5}{kW} on average. How many households can this
+    dam power?
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} Energy per second $= $ work done per second:
+\[
+P_\text{theoretical} = \frac{mgh}{t} = \frac{5000 \times 9.8 \times 80}{1}
+= \mathbf{\SI{3\,920\,000}{W} = \SI{3.92}{MW}}
+\]
+
+\textbf{(b)} $P_\text{actual} = 0.90 \times 3\,920\,000 = \mathbf{\SI{3.53}{MW}}$
+
+\textbf{(c)} $N = \dfrac{3\,528\,000}{1500} = \mathbf{2352 \text{ households}}$
+\end{solution}
+
+\end{questions}
+\end{document}

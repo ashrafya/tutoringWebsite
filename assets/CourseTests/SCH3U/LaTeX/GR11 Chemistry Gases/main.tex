@@ -1,0 +1,299 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Gases \& Gas Laws}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Chemistry \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units. Use $R = \SI{8.314}{kPa\cdot L/(mol\cdot K)}$.
+    STP: $T = \SI{273.15}{K}$, $P = \SI{101.325}{kPa}$.
+    \item Convert all temperatures to Kelvin: $T(\text{K}) = T(\si{\celsius}) + 273$.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] According to Boyle's Law, at constant temperature, the pressure and volume
+of a gas are:
+\begin{choices}
+    \choice Directly proportional
+    \correctchoice Inversely proportional
+    \choice Independent of each other
+    \choice Equal
+\end{choices}
+
+\question[1] A gas occupies $\SI{4.0}{L}$ at $\SI{200}{kPa}$. At constant temperature,
+what volume does it occupy at $\SI{100}{kPa}$?
+\begin{choices}
+    \choice \SI{2.0}{L}
+    \correctchoice \SI{8.0}{L}
+    \choice \SI{1.0}{L}
+    \choice \SI{400}{L}
+\end{choices}
+
+\question[1] Charles's Law states that at constant pressure, the volume of a gas is:
+\begin{choices}
+    \choice Inversely proportional to temperature in Celsius
+    \correctchoice Directly proportional to temperature in Kelvin
+    \choice Independent of temperature
+    \choice Inversely proportional to temperature in Kelvin
+\end{choices}
+
+\question[1] A gas at $\SI{27}{\celsius}$ occupies $\SI{3.0}{L}$. At constant pressure, what
+volume does it occupy at $\SI{127}{\celsius}$?
+\begin{choices}
+    \choice \SI{2.25}{L}
+    \correctchoice \SI{4.0}{L}
+    \choice \SI{3.0}{L}
+    \choice \SI{14.1}{L}
+\end{choices}
+
+\question[1] Gay-Lussac's Law relates, at constant volume:
+\begin{choices}
+    \choice Pressure and volume
+    \choice Volume and temperature
+    \correctchoice Pressure and temperature (in Kelvin)
+    \choice Pressure and moles
+\end{choices}
+
+\question[1] The combined gas law is:
+\begin{choices}
+    \choice $PV = nRT$
+    \choice $\dfrac{P_1V_1}{T_1} = P_2V_2T_2$
+    \correctchoice $\dfrac{P_1V_1}{T_1} = \dfrac{P_2V_2}{T_2}$
+    \choice $P_1V_1 = P_2T_2$
+\end{choices}
+
+\question[1] The ideal gas law is $PV = nRT$. If $P$ is in kPa, $V$ is in L, and $T$
+is in K, then $R =$
+\begin{choices}
+    \choice \SI{0.08206}{L\cdot atm/(mol\cdot K)}
+    \correctchoice \SI{8.314}{kPa\cdot L/(mol\cdot K)}
+    \choice \SI{8.314}{J/(g\cdot K)}
+    \choice \SI{22.4}{L/mol}
+\end{choices}
+
+\question[1] At STP, $\SI{2.0}{mol}$ of any ideal gas occupies:
+\begin{choices}
+    \choice \SI{22.4}{L}
+    \correctchoice \SI{44.8}{L}
+    \choice \SI{11.2}{L}
+    \choice \SI{24.0}{L}
+\end{choices}
+
+\question[1] A gas exerts a pressure of $\SI{80}{kPa}$ at $\SI{27}{\celsius}$.
+At constant volume, what pressure does it exert at $\SI{127}{\celsius}$?
+\begin{choices}
+    \choice \SI{320}{kPa}
+    \correctchoice \SI{\approx 106.7}{kPa}
+    \choice \SI{60}{kPa}
+    \choice \SI{160}{kPa}
+\end{choices}
+
+\question[1] Dalton's Law of Partial Pressures states that:
+\begin{choices}
+    \choice Each gas in a mixture obeys a different gas law
+    \correctchoice The total pressure of a gas mixture equals the sum of the partial pressures
+    \choice Partial pressures must all be equal
+    \choice Lighter gases exert greater pressure
+\end{choices}
+
+\question[1] A container holds \ce{N2} at \SI{40}{kPa} and \ce{O2} at \SI{60}{kPa}.
+The total pressure is:
+\begin{choices}
+    \choice \SI{40}{kPa}
+    \choice \SI{60}{kPa}
+    \correctchoice \SI{100}{kPa}
+    \choice \SI{20}{kPa}
+\end{choices}
+
+\question[1] Absolute zero ($\SI{0}{K}$) is significant because:
+\begin{choices}
+    \choice All gases condense to solids
+    \correctchoice Theoretically, gas particles have no kinetic energy and volume approaches zero
+    \choice Pressure becomes infinite
+    \choice It equals $-100\si{\celsius}$
+\end{choices}
+
+\question[1] Which variable is held constant in Boyle's Law?
+\begin{choices}
+    \choice Pressure
+    \choice Volume
+    \correctchoice Temperature and amount of gas
+    \choice Amount of gas only
+\end{choices}
+
+\question[1] What is the molar mass of a gas if $\SI{1.50}{g}$ occupies $\SI{0.800}{L}$
+at $\SI{101.3}{kPa}$ and $\SI{273}{K}$?
+\begin{choices}
+    \choice \SI{28.0}{g/mol}
+    \correctchoice \SI{42.0}{g/mol}
+    \choice \SI{22.4}{g/mol}
+    \choice \SI{56.0}{g/mol}
+\end{choices}
+
+\question[1] A sealed syringe contains $\SI{20.0}{mL}$ of gas at $\SI{100}{kPa}$.
+The plunger is pushed until the pressure is $\SI{250}{kPa}$. The new volume is:
+\begin{choices}
+    \choice \SI{50.0}{mL}
+    \correctchoice \SI{8.00}{mL}
+    \choice \SI{25.0}{mL}
+    \choice \SI{10.0}{mL}
+\end{choices}
+
+
+\section*{Part B --- Short Answer (35 marks)}
+
+\question Apply the appropriate gas law to each problem.
+\begin{parts}
+    \part[3] \textbf{(Boyle's Law)} A scuba diver's lungs hold $\SI{6.0}{L}$ of air at a
+    depth where the pressure is $\SI{300}{kPa}$. If she ascends to the surface where the
+    pressure is $\SI{101.3}{kPa}$ without exhaling, what volume would her lungs reach?
+    (This is why divers must exhale while ascending.)
+    \part[3] \textbf{(Charles's Law)} A balloon has a volume of $\SI{2.50}{L}$ at
+    $\SI{20.0}{\celsius}$. It is placed in a freezer at $\SI{-15.0}{\celsius}$.
+    What is the new volume at constant pressure?
+    \part[3] \textbf{(Gay-Lussac's Law)} A car tire contains air at $\SI{220}{kPa}$ and
+    $\SI{15}{\celsius}$. After driving, the tire temperature rises to $\SI{50}{\celsius}$.
+    What is the new pressure? (Assume constant volume.)
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $T$ constant. $P_1V_1 = P_2V_2$:
+\[
+V_2 = \frac{P_1V_1}{P_2} = \frac{300 \times 6.0}{101.3} = \mathbf{\SI{17.8}{L}}
+\]
+This dangerously exceeds lung capacity, illustrating why divers must exhale while ascending.
+
+\textbf{(b)} $T_1 = 293\,\text{K}$,\; $T_2 = 258\,\text{K}$.
+\[
+V_2 = V_1 \cdot \frac{T_2}{T_1} = 2.50 \times \frac{258}{293} = \mathbf{\SI{2.20}{L}}
+\]
+
+\textbf{(c)} $T_1 = 288\,\text{K}$,\; $T_2 = 323\,\text{K}$.
+\[
+P_2 = P_1 \cdot \frac{T_2}{T_1} = 220 \times \frac{323}{288} = \mathbf{\SI{247}{kPa}}
+\]
+\end{solution}
+
+\question A sample of gas occupies $\SI{1.50}{L}$ at $\SI{25}{\celsius}$ and
+$\SI{150}{kPa}$.
+\begin{parts}
+    \part[3] Use the combined gas law to find the volume at $\SI{0}{\celsius}$ and
+    $\SI{100}{kPa}$.
+    \part[3] Use the ideal gas law to find the number of moles of gas in the original
+    sample ($T = \SI{25}{\celsius}$, $P = \SI{150}{kPa}$, $V = \SI{1.50}{L}$).
+    \part[2] Calculate the molar mass if the sample has a mass of $\SI{4.80}{g}$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $T_1 = 298\,\text{K}$,\; $T_2 = 273\,\text{K}$.
+\[
+V_2 = V_1 \cdot \frac{P_1}{P_2} \cdot \frac{T_2}{T_1}
+= 1.50 \times \frac{150}{100} \times \frac{273}{298} = \mathbf{\SI{2.06}{L}}
+\]
+
+\textbf{(b)}
+\[
+n = \frac{PV}{RT} = \frac{150 \times 1.50}{8.314 \times 298} = \frac{225}{2477.6}
+= \mathbf{0.0908 \text{ mol}}
+\]
+
+\textbf{(c)}
+\[
+M = \frac{m}{n} = \frac{4.80}{0.0908} = \mathbf{\SI{52.9}{g/mol}}
+\]
+\end{solution}
+
+\question \textbf{Gas stoichiometry.} Zinc reacts with hydrochloric acid:
+\[\ce{Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g)}\]
+\begin{parts}
+    \part[3] What volume of \ce{H2} gas is produced at STP when $\SI{6.54}{g}$ of Zn
+    ($M = \SI{65.4}{g/mol}$) reacts completely?
+    \part[3] At what temperature (in \si{\celsius}) would this volume of \ce{H2} occupy
+    $\SI{3.00}{L}$ at $\SI{101.3}{kPa}$?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $n(\ce{Zn}) = \dfrac{6.54}{65.4} = 0.100$ mol;\quad
+$n(\ce{H2}) = 0.100$ mol (1:1 ratio)
+
+At STP: $V = n \times \SI{22.4}{L/mol} = 0.100 \times 22.4 = \mathbf{\SI{2.24}{L}}$
+
+\textbf{(b)} Using ideal gas law with $n = 0.100$ mol:
+\[
+T = \frac{PV}{nR} = \frac{101.3 \times 3.00}{0.100 \times 8.314}
+= \frac{303.9}{0.8314} = \SI{365.5}{K}
+\]
+\[
+T = 365.5 - 273 = \mathbf{\SI{92.5}{\celsius}}
+\]
+\end{solution}
+
+\question \textbf{Dalton's Law and moist gas.} A gas is collected over water at
+$\SI{25}{\celsius}$ and a total pressure of $\SI{101.3}{kPa}$. The vapour pressure of
+water at $\SI{25}{\celsius}$ is $\SI{3.17}{kPa}$.
+\begin{parts}
+    \part[2] Calculate the partial pressure of the dry gas collected.
+    \part[3] If $\SI{0.450}{L}$ of the moist gas is collected, calculate the moles of
+    \textbf{dry gas} present ($T = \SI{25}{\celsius} = \SI{298}{K}$).
+\end{parts}
+\begin{solution}[7cm]
+\textbf{(a)} By Dalton's Law:
+\[
+P_\text{gas} = P_\text{total} - P_{\ce{H2O}} = 101.3 - 3.17 = \mathbf{\SI{98.1}{kPa}}
+\]
+
+\textbf{(b)}
+\[
+n = \frac{P_\text{gas} \cdot V}{RT} = \frac{98.1 \times 0.450}{8.314 \times 298}
+= \frac{44.15}{2477.6} = \mathbf{0.01782 \text{ mol}}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

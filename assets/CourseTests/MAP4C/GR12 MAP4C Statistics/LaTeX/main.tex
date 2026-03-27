@@ -1,0 +1,316 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Statistics}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Use the standard normal table provided where needed.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] The $z$-score formula is:
+\begin{choices}
+    \choice $z = \dfrac{\mu - x}{\sigma}$
+    \correctchoice $z = \dfrac{x - \mu}{\sigma}$
+    \choice $z = \dfrac{\sigma}{x - \mu}$
+    \choice $z = (x - \mu)\sigma$
+\end{choices}
+
+\question[1] A data value with $z = 0$ is:
+\begin{choices}
+    \choice Below the mean
+    \correctchoice Equal to the mean
+    \choice One standard deviation above the mean
+    \choice At the median
+\end{choices}
+
+\question[1] For a normal distribution with $\mu = 50$ and $\sigma = 10$, the $z$-score for $x = 65$ is:
+\begin{choices}
+    \choice $0.5$
+    \choice $1.0$
+    \correctchoice $1.5$
+    \choice $2.0$
+\end{choices}
+
+\question[1] Approximately what percent of data in a normal distribution falls within 2 standard
+deviations of the mean?
+\begin{choices}
+    \choice $68\%$
+    \correctchoice $95\%$
+    \choice $99.7\%$
+    \choice $50\%$
+\end{choices}
+
+\question[1] A normal distribution has $\mu = 100$ and $\sigma = 15$. The range containing
+the middle 68\% of data is:
+\begin{choices}
+    \choice $[70, 130]$
+    \correctchoice $[85, 115]$
+    \choice $[55, 145]$
+    \choice $[90, 110]$
+\end{choices}
+
+\question[1] If $z = -1.5$, the area to the \textbf{left} of this $z$-score (from standard normal
+table) is approximately:
+\begin{choices}
+    \choice $0.9332$
+    \correctchoice $0.0668$
+    \choice $0.5000$
+    \choice $0.1587$
+\end{choices}
+
+\question[1] Exam scores are normally distributed with $\mu = 72$ and $\sigma = 9$. The percent
+of students scoring above 81 is approximately:
+\begin{choices}
+    \choice $2.5\%$
+    \choice $5\%$
+    \correctchoice $16\%$
+    \choice $34\%$
+\end{choices}
+
+\question[1] The 90th percentile of a standard normal distribution has $z \approx$:
+\begin{choices}
+    \choice $0.90$
+    \choice $1.04$
+    \correctchoice $1.28$
+    \choice $1.65$
+\end{choices}
+
+\question[1] A margin of error of $\pm 3\%$ at 95\% confidence means:
+\begin{choices}
+    \choice The true value is exactly 3\% from the estimate
+    \correctchoice We are 95\% confident the true value is within 3\% of the sample estimate
+    \choice 3\% of the sample was wrong
+    \choice The sample size is 3\%
+\end{choices}
+
+\question[1] To halve the margin of error, the sample size must be:
+\begin{choices}
+    \choice Doubled
+    \choice Tripled
+    \correctchoice Quadrupled
+    \choice Halved
+\end{choices}
+
+\question[1] Which sampling method is \textbf{most} likely to produce a representative sample?
+\begin{choices}
+    \choice Surveying only volunteers
+    \correctchoice Simple random sampling
+    \choice Asking friends
+    \choice Convenience sampling
+\end{choices}
+
+\question[1] A study finds that people who carry umbrellas get rained on more often. This means:
+\begin{choices}
+    \correctchoice Correlation does not imply causation
+    \choice Umbrellas cause rain
+    \choice The study has no value
+    \choice Rain causes people to buy umbrellas
+\end{choices}
+
+\question[1] The standard deviation of a sampling distribution of means (standard error) is:
+\begin{choices}
+    \choice $\sigma$
+    \correctchoice $\dfrac{\sigma}{\sqrt{n}}$
+    \choice $\dfrac{\sigma}{n}$
+    \choice $\sigma \cdot n$
+\end{choices}
+
+\question[1] A dataset has $\mu = 40$ and $\sigma = 5$. A value of 28 has $z =$:
+\begin{choices}
+    \choice $-1.6$
+    \correctchoice $-2.4$
+    \choice $2.4$
+    \choice $1.6$
+\end{choices}
+
+\question[1] Response bias in a survey occurs when:
+\begin{choices}
+    \choice The sample is too large
+    \correctchoice The wording of questions influences answers
+    \choice Random sampling is used
+    \choice The population is well-defined
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question[6] The heights (cm) of 10 adults are:
+\[162,\; 165,\; 168,\; 170,\; 172,\; 174,\; 176,\; 178,\; 181,\; 184\]
+\begin{parts}
+    \part[2] Calculate the mean $\mu$ and population standard deviation $\sigma$ (you may use
+    $\sigma = 6.56$ cm).
+    \part[2] Calculate the $z$-score for heights of 162 cm and 181 cm.
+    \part[2] Which values fall more than 1.5 standard deviations from the mean? Identify them.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\mu = \dfrac{162+165+168+170+172+174+176+178+181+184}{10} = \dfrac{1730}{10} = \mathbf{173 \text{ cm}}$
+
+$\sigma = \mathbf{6.56}$ cm (given)
+
+\textbf{(b)} $z_{162} = \dfrac{162-173}{6.56} = \dfrac{-11}{6.56} \approx \mathbf{-1.68}$
+
+$z_{181} = \dfrac{181-173}{6.56} = \dfrac{8}{6.56} \approx \mathbf{1.22}$
+
+\textbf{(c)} $1.5\sigma = 1.5 \times 6.56 = 9.84$; range: $[173-9.84,\; 173+9.84] = [163.16,\; 182.84]$
+
+Outside this range: $\mathbf{162}$ cm ($z = -1.68$) and $\mathbf{184}$ cm ($z = \frac{11}{6.56} \approx 1.68$).
+\end{solution}
+
+\question[6] The scores on a provincial math test are normally distributed with mean $\mu = 68$
+and standard deviation $\sigma = 12$.
+\begin{parts}
+    \part[3] Using the 68-95-99.7 rule, find the percentage of students scoring:
+    (i) between 56 and 80;\quad (ii) above 92;\quad (iii) below 44.
+    \part[3] Using the $z$-table, find the percentage of students scoring between 60 and 85.
+    ($z$-table values: $P(Z < -0.67) = 0.2514$; $P(Z < 1.42) = 0.9222$)
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)}
+(i) $56 = 68 - 12 = \mu - \sigma$ and $80 = 68 + 12 = \mu + \sigma$. Within 1 std dev: $\mathbf{68\%}$
+
+(ii) $92 = 68 + 2(12) = \mu + 2\sigma$. Above $\mu + 2\sigma$: $\dfrac{100-95}{2} = \mathbf{2.5\%}$
+
+(iii) $44 = 68 - 2(12) = \mu - 2\sigma$. Below $\mu - 2\sigma$: $\mathbf{2.5\%}$
+
+\textbf{(b)} $z_{60} = \dfrac{60-68}{12} = -0.67$;\quad $z_{85} = \dfrac{85-68}{12} = 1.42$
+
+$P(60 < X < 85) = P(-0.67 < Z < 1.42) = 0.9222 - 0.2514 = \mathbf{0.6708 \approx 67.1\%}$
+\end{solution}
+
+\question[5] Exam scores are normally distributed with $\mu = 72$ and $\sigma = 8$.
+\begin{parts}
+    \part[3] Find the score at the 90th percentile. ($z_{0.90} = 1.28$)
+    \part[2] What percentage of students scored below 60?
+    ($P(Z < -1.5) = 0.0668$)
+\end{parts}
+\begin{solution}[7cm]
+\textbf{(a)} $x = \mu + z\sigma = 72 + 1.28(8) = 72 + 10.24 = \mathbf{82.24}$
+
+The 90th percentile score is approximately \textbf{82}.
+
+\textbf{(b)} $z_{60} = \dfrac{60-72}{8} = -1.5$
+
+$P(X < 60) = P(Z < -1.5) = \mathbf{0.0668 \approx 6.7\%}$
+\end{solution}
+
+\question[8] A survey of 400 students at a college found that 62\% support extending the library's
+opening hours. The margin of error is $\pm 4.9\%$ at 95\% confidence.
+\begin{parts}
+    \part[2] Write the confidence interval and interpret it in context.
+    \part[2] The college president claims the true support is below 55\%. Is this consistent with
+    the survey results? Explain.
+    \part[4] The researcher wants to reduce the margin of error to $\pm 2.45\%$ (half as large).
+    How many students must be surveyed? The margin of error formula is
+    $E = \dfrac{z^*}{\sqrt{n}}$ where $z^* = 1.96$ for 95\% confidence.
+    Show your calculation.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Confidence interval: $62\% \pm 4.9\% = (57.1\%,\; 66.9\%)$
+
+We are 95\% confident that the true proportion of students who support extended hours is between
+57.1\% and 66.9\%.
+
+\textbf{(b)} The president's claim of below 55\% is \textbf{not consistent} with the survey. 55\% falls
+below the lower bound of the confidence interval (57.1\%), so it is unlikely (less than 5\% chance)
+that the true value is below 55\%.
+
+\textbf{(c)} To halve the margin of error, quadruple the sample size:
+\[E = \frac{z^*}{\sqrt{n}} \Rightarrow 0.0245 = \frac{1.96}{\sqrt{n}} \Rightarrow \sqrt{n} = \frac{1.96}{0.0245} = 80 \Rightarrow n = 80^2 = \mathbf{1\,600}\]
+
+The researcher must survey \textbf{1,600 students}.
+
+(Alternatively: $n = 4 \times 400 = 1\,600$ since halving $E$ requires quadrupling $n$.)
+\end{solution}
+
+\question[8] Read the following summary of a study and answer the questions below.
+
+\textit{``A magazine surveyed 250 of its readers online and found that 78\% of respondents prefer
+shopping in-store over online. The study concludes that the majority of Canadians prefer
+in-store shopping.''}
+\begin{parts}
+    \part[2] Identify the sampling method used. Is this sample likely representative of all
+    Canadians? Explain.
+    \part[2] Identify \textbf{two} sources of bias in this study.
+    \part[2] The headline reads: ``Shopping in stores causes higher customer satisfaction.''
+    What statistical error does this headline make?
+    \part[2] Suggest how the study design could be improved to produce more reliable results.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} This is \textbf{voluntary response sampling} (or convenience sampling — online survey of
+magazine readers). It is \textbf{not representative} of all Canadians because only the magazine's
+readers responded, and they likely share similar demographics, interests, and shopping preferences
+that may not reflect the broader population.
+
+\textbf{(b)} Two sources of bias:
+\begin{enumerate}
+\item \textbf{Voluntary response bias} — only motivated readers chose to respond, likely skewing results.
+\item \textbf{Undercoverage bias} — the sample only includes magazine subscribers; people who do not
+read this magazine are excluded.
+(Also acceptable: question wording bias, self-selection bias.)
+\end{enumerate}
+
+\textbf{(c)} The headline confuses \textbf{correlation with causation}. The survey shows a preference for
+in-store shopping; it does not establish that in-store shopping \textit{causes} higher satisfaction —
+other factors may explain the preference.
+
+\textbf{(d)} Improvements:
+\begin{itemize}
+\item Use simple random sampling from a broad, representative population (not just magazine readers).
+\item Increase sample size significantly.
+\item Use neutral, unbiased question wording.
+\item Ensure all population groups (ages, locations, incomes) are represented (stratified sampling).
+\end{itemize}
+\end{solution}
+
+\end{questions}
+\end{document}

@@ -1,0 +1,364 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Exponential Functions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+% Q1
+\question[1]
+Evaluate $2^{-3}$.
+\begin{choices}
+    \choice $-8$
+    \choice $-6$
+    \correctchoice $\dfrac{1}{8}$
+    \choice $\dfrac{1}{6}$
+\end{choices}
+
+% Q2
+\question[1]
+Which expression equals $27^{2/3}$?
+\begin{choices}
+    \choice $9$
+    \correctchoice $9$
+    \choice $3$
+    \choice $81$
+\end{choices}
+
+% Q3 — rewrite to avoid duplicate answer issue
+\question[1]
+Simplify $27^{1/3}$.
+\begin{choices}
+    \choice $9$
+    \correctchoice $3$
+    \choice $27$
+    \choice $81$
+\end{choices}
+
+% Q4
+\question[1]
+The function $y = 3(2)^x$ represents:
+\begin{choices}
+    \choice Exponential decay, because the base is 2.
+    \correctchoice Exponential growth, because the base $2 > 1$.
+    \choice A linear function.
+    \choice Exponential decay, because the coefficient is 3.
+\end{choices}
+
+% Q5
+\question[1]
+Which of the following is an exponential decay function?
+\begin{choices}
+    \choice $y = 4(1.1)^x$
+    \choice $y = 2(3)^x$
+    \correctchoice $y = 5(0.6)^x$
+    \choice $y = (1)^x$
+\end{choices}
+
+% Q6
+\question[1]
+For the function $y = a(b)^x$, the $y$-intercept is:
+\begin{choices}
+    \choice $b$
+    \choice $0$
+    \correctchoice $a$
+    \choice $ab$
+\end{choices}
+
+% Q7
+\question[1]
+What is the horizontal asymptote of $y = 4(2)^x$?
+\begin{choices}
+    \choice $y = 4$
+    \correctchoice $y = 0$
+    \choice $y = 2$
+    \choice $y = 1$
+\end{choices}
+
+% Q8
+\question[1]
+A city has 50{,}000 people and grows at 3\% per year. After 1 year the population is:
+\begin{choices}
+    \choice 51{,}500
+    \correctchoice 51{,}500
+    \choice 53{,}000
+    \choice 50{,}300
+\end{choices}
+
+% Q8 — fix duplicate
+\question[1]
+A city of 50{,}000 grows at 3\% per year. Which equation models the population $P$ after $t$ years?
+\begin{choices}
+    \choice $P = 50000 + 0.03t$
+    \correctchoice $P = 50000(1.03)^t$
+    \choice $P = 50000(0.03)^t$
+    \choice $P = 50000(1.3)^t$
+\end{choices}
+
+% Q9
+\question[1]
+A substance has a half-life of 10 years. Starting with 80 g, how much remains after 20 years?
+\begin{choices}
+    \choice 40 g
+    \correctchoice 20 g
+    \choice 10 g
+    \choice 5 g
+\end{choices}
+
+% Q10
+\question[1]
+Solve for $x$: $2^x = 32$.
+\begin{choices}
+    \choice $x = 4$
+    \correctchoice $x = 5$
+    \choice $x = 6$
+    \choice $x = 16$
+\end{choices}
+
+% Q11
+\question[1]
+Solve for $x$: $3^{2x} = 81$.
+\begin{choices}
+    \choice $x = 4$
+    \choice $x = 3$
+    \correctchoice $x = 2$
+    \choice $x = 1$
+\end{choices}
+
+% Q12
+\question[1]
+The graph of $y = 2^x$ is shifted 3 units to the right. The new equation is:
+\begin{choices}
+    \choice $y = 2^x + 3$
+    \choice $y = 2^{x+3}$
+    \correctchoice $y = 2^{x-3}$
+    \choice $y = 2^x - 3$
+\end{choices}
+
+% Q13
+\question[1]
+What is the effect of changing $a$ in $y = a(b)^x$ from 1 to 4 (with $b > 1$)?
+\begin{choices}
+    \choice The asymptote moves to $y = 4$.
+    \correctchoice The $y$-intercept shifts from 1 to 4 and the graph is vertically stretched.
+    \choice The base changes.
+    \choice The function becomes a decay function.
+\end{choices}
+
+% Q14
+\question[1]
+A bacteria culture doubles every 3 hours. Which expression gives the number after $n$ doubling periods starting from 500?
+\begin{choices}
+    \choice $500 + 2n$
+    \correctchoice $500 \cdot 2^n$
+    \choice $500 \cdot 3^n$
+    \choice $2 \cdot 500^n$
+\end{choices}
+
+% Q15
+\question[1]
+An exponential function passes through $(0, 6)$ and $(1, 18)$. What is the equation?
+\begin{choices}
+    \choice $y = 18(6)^x$
+    \correctchoice $y = 6(3)^x$
+    \choice $y = 3(6)^x$
+    \choice $y = 6(18)^x$
+\end{choices}
+
+\section*{Part B --- Short Answer (33 marks)}
+
+% Q16
+\question[6]
+\textbf{Evaluating Exponential Expressions.} Evaluate each expression. Show all steps.
+
+\begin{parts}
+    \part[2] $4^{-2} + 8^{0}$
+    \begin{solution}
+        $4^{-2} = \dfrac{1}{4^2} = \dfrac{1}{16}$\\
+        $8^{0} = 1$\\
+        $4^{-2} + 8^{0} = \dfrac{1}{16} + 1 = \dfrac{17}{16}$ or $1.0625$
+    \end{solution}
+
+    \part[2] $16^{3/4}$
+    \begin{solution}
+        $16^{3/4} = \left(16^{1/4}\right)^3 = 2^3 = 8$
+    \end{solution}
+
+    \part[2] Simplify: $\dfrac{3^5 \cdot 3^{-2}}{3^2}$
+    \begin{solution}
+        $\dfrac{3^5 \cdot 3^{-2}}{3^2} = \dfrac{3^{5+(-2)}}{3^2} = \dfrac{3^3}{3^2} = 3^{3-2} = 3^1 = 3$
+    \end{solution}
+\end{parts}
+
+% Q17
+\question[6]
+\textbf{Identifying Growth and Decay.} For each function below, state whether it represents growth or decay, identify the values of $a$ and $b$, and state the $y$-intercept and horizontal asymptote.
+
+\begin{parts}
+    \part[3] $y = 7(1.4)^x$
+    \begin{solution}
+        \textbf{Growth} (base $b = 1.4 > 1$).\\
+        $a = 7$, $b = 1.4$.\\
+        $y$-intercept: $(0, 7)$ (substitute $x = 0$: $y = 7(1.4)^0 = 7$).\\
+        Horizontal asymptote: $y = 0$.
+    \end{solution}
+
+    \part[3] $y = 12(0.75)^x$
+    \begin{solution}
+        \textbf{Decay} (base $b = 0.75$, and $0 < 0.75 < 1$).\\
+        $a = 12$, $b = 0.75$.\\
+        $y$-intercept: $(0, 12)$.\\
+        Horizontal asymptote: $y = 0$.
+    \end{solution}
+\end{parts}
+
+% Q18
+\question[6]
+\textbf{Population Growth.} A city has a current population of 80{,}000 and is growing at a rate of 2.5\% per year.
+
+\begin{parts}
+    \part[2] Write an equation to model the population $P$ after $t$ years.
+    \begin{solution}
+        $P = 80000(1.025)^t$
+    \end{solution}
+
+    \part[2] Find the population after 10 years. Round to the nearest person.
+    \begin{solution}
+        $P = 80000(1.025)^{10}$\\
+        $(1.025)^{10} \approx 1.28008$\\
+        $P \approx 80000 \times 1.28008 \approx 102{,}406$ people
+    \end{solution}
+
+    \part[2] Estimate when the population will reach 120{,}000 by testing values of $t$ in your equation. Show at least two test values.
+    \begin{solution}
+        We need $80000(1.025)^t = 120000$, i.e.\ $(1.025)^t = 1.5$.\\
+        Test $t = 16$: $(1.025)^{16} \approx 1.4845$ (too low)\\
+        Test $t = 17$: $(1.025)^{17} \approx 1.5216$ (too high)\\
+        The population reaches 120{,}000 between year 16 and year 17, so approximately \textbf{17 years} from now.
+    \end{solution}
+\end{parts}
+
+% Q19
+\question[7]
+\textbf{Radioactive Decay.} A radioactive substance has a half-life of 12 years. You start with 200 g.
+
+\begin{parts}
+    \part[2] Write an equation for the mass $M$ (in grams) remaining after $t$ years.
+    \begin{solution}
+        Each 12 years, the amount is multiplied by $\tfrac{1}{2}$. The number of half-lives in $t$ years is $\dfrac{t}{12}$.
+        \[M = 200\!\left(\tfrac{1}{2}\right)^{t/12}\]
+    \end{solution}
+
+    \part[2] Find the amount remaining after 36 years.
+    \begin{solution}
+        $t = 36$: number of half-lives $= \dfrac{36}{12} = 3$.
+        \[M = 200\!\left(\tfrac{1}{2}\right)^{3} = 200 \times \tfrac{1}{8} = 25 \text{ g}\]
+    \end{solution}
+
+    \part[3] Sketch the graph of $M$ vs.\ $t$ for $0 \le t \le 48$ years. Label the points at $t = 0, 12, 24, 36, 48$ with their coordinates, and draw the asymptote.
+    \begin{solution}
+        Key points:
+        \begin{itemize}
+            \item $(0,\; 200)$
+            \item $(12,\; 100)$
+            \item $(24,\; 50)$
+            \item $(36,\; 25)$
+            \item $(48,\; 12.5)$
+        \end{itemize}
+        The curve decreases steeply at first then levels off, approaching the horizontal asymptote $M = 0$ (but never reaching it). Students should draw a smooth decreasing curve through all five labeled points.
+    \end{solution}
+\end{parts}
+
+% Q20
+\question[8]
+\textbf{Comparing Two Investment Models.} Two investment options are modelled as follows:
+\begin{itemize}
+    \item \textbf{Option A:} $V_A = 1000(1.08)^t$ (8\% annual growth)
+    \item \textbf{Option B:} $V_B = 1500(1.05)^t$ (5\% annual growth, higher start)
+\end{itemize}
+where $t$ is time in years.
+
+\begin{parts}
+    \part[2] What is the initial value (at $t = 0$) of each option?
+    \begin{solution}
+        Option A: $V_A(0) = 1000(1.08)^0 = \$1{,}000$\\
+        Option B: $V_B(0) = 1500(1.05)^0 = \$1{,}500$
+    \end{solution}
+
+    \part[3] Find the value of each option at $t = 5$, $t = 10$, and $t = 20$ years. Record results in a table.
+    \begin{solution}
+        \begin{tabular}{ccc}
+        \hline
+        $t$ & Option A & Option B\\
+        \hline
+        5  & $1000(1.08)^5 \approx \$1{,}469.33$  & $1500(1.05)^5 \approx \$1{,}914.42$ \\
+        10 & $1000(1.08)^{10} \approx \$2{,}158.92$ & $1500(1.05)^{10} \approx \$2{,}443.74$ \\
+        20 & $1000(1.08)^{20} \approx \$4{,}660.96$ & $1500(1.05)^{20} \approx \$3{,}979.95$ \\
+        \hline
+        \end{tabular}
+    \end{solution}
+
+    \part[3] Between which two years do the values become equal? Estimate by testing integer values of $t$. What does this tell us about which option is better?
+    \begin{solution}
+        We need $1000(1.08)^t = 1500(1.05)^t$.
+
+        Test $t = 15$: $A \approx 1000(1.08)^{15} \approx 3172$, \; $B \approx 1500(1.05)^{15} \approx 3118$ $\Rightarrow A > B$.\\
+        Test $t = 14$: $A \approx 1000(1.08)^{14} \approx 2937$, \; $B \approx 1500(1.05)^{14} \approx 2969$ $\Rightarrow A < B$.\\
+
+        The values are equal between $t = 14$ and $t = 15$ years.\\
+        \textbf{Interpretation:} Option B is better for the first $\approx 14$ years because it starts higher. After about 14--15 years, Option A overtakes B because its higher growth rate (8\%) compounds more aggressively over time.
+    \end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

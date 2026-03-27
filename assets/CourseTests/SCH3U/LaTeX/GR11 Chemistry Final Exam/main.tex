@@ -1,0 +1,360 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{SCH3U \event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Chemistry \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.20\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \item Show all work with units. A periodic table is provided.
+    \item Use $N_A = 6.022\times10^{23}$\,mol$^{-1}$;\;
+    $R = \SI{8.314}{kPa\cdot L/(mol\cdot K)}$;\;
+    Molar volume at STP $= \SI{22.4}{L/mol}$.
+    \item This exam covers all units of SCH3U. Designed for 2 hours.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{2}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{3mm}
+\noindent\textit{Unit 1: Matter, Bonding \& Trends}
+\vspace{3mm}
+
+\question[1] Which set correctly ranks \textbf{atomic radius} from largest to smallest?
+\begin{choices}
+    \choice $\text{F} > \text{Cl} > \text{Br}$
+    \correctchoice $\text{K} > \text{Na} > \text{Li}$
+    \choice $\text{O} > \text{S} > \text{Se}$
+    \choice $\text{Na} > \text{Mg} > \text{Al}$ and $\text{Al} > \text{Na}$
+\end{choices}
+
+\question[1] The molecular geometry of \ce{NH3} is:
+\begin{choices}
+    \choice Tetrahedral
+    \correctchoice Trigonal pyramidal
+    \choice Trigonal planar
+    \choice Bent
+\end{choices}
+
+\question[1] Which species has the \textbf{same} electron configuration as \ce{Ne}?
+\begin{choices}
+    \choice \ce{Na+} only
+    \choice \ce{F-} only
+    \correctchoice Both \ce{Na+} and \ce{F-}
+    \choice \ce{Mg^{2+}} only
+\end{choices}
+
+\question[1] Which molecule has a \textbf{net dipole moment}?
+\begin{choices}
+    \choice \ce{CCl4}
+    \choice \ce{CO2}
+    \correctchoice \ce{H2O}
+    \choice \ce{BF3}
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 2: Chemical Reactions}
+\vspace{3mm}
+
+\question[1] In the single displacement reaction \ce{Mg + 2HCl -> MgCl2 + H2},
+the oxidizing agent is:
+\begin{choices}
+    \choice Mg
+    \correctchoice \ce{HCl} (specifically \ce{H+})
+    \choice \ce{MgCl2}
+    \choice \ce{H2}
+\end{choices}
+
+\question[1] Which product forms when solutions of \ce{Pb(NO3)2} and \ce{KI} are mixed?
+\begin{choices}
+    \choice \ce{KNO3} precipitate
+    \correctchoice \ce{PbI2} precipitate
+    \choice \ce{Pb(OH)2} precipitate
+    \choice No precipitate forms
+\end{choices}
+
+\question[1] The balanced equation for complete combustion of \ce{C4H10} is:
+\begin{choices}
+    \choice \ce{C4H10 + 5O2 -> 4CO2 + 5H2O}
+    \correctchoice \ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}
+    \choice \ce{C4H10 + 6O2 -> 4CO2 + 5H2O}
+    \choice \ce{C4H10 + 13O2 -> 4CO2 + 5H2O}
+\end{choices}
+
+\question[1] The net ionic equation for any strong acid--strong base neutralization is:
+\begin{choices}
+    \choice \ce{H2O -> H+ + OH-}
+    \correctchoice \ce{H+(aq) + OH-(aq) -> H2O(l)}
+    \choice \ce{HA + BOH -> BA + H2O}
+    \choice \ce{H+ + B+ -> HB+}
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 3: Stoichiometry}
+\vspace{3mm}
+
+\question[1] How many grams of \ce{H2O} are produced when $1.00$ mol of \ce{C3H8}
+undergoes complete combustion? (\ce{C3H8 + 5O2 -> 3CO2 + 4H2O})
+\begin{choices}
+    \choice \SI{18.0}{g}
+    \correctchoice \SI{72.0}{g}
+    \choice \SI{36.0}{g}
+    \choice \SI{54.0}{g}
+\end{choices}
+
+\question[1] A compound is 75.0\% C and 25.0\% H by mass. Its empirical formula is:
+\begin{choices}
+    \choice \ce{CH}
+    \correctchoice \ce{CH4}
+    \choice \ce{C2H6}
+    \choice \ce{CH3}
+\end{choices}
+
+\question[1] The limiting reagent in a reaction is:
+\begin{choices}
+    \choice The reagent with the greatest mass
+    \correctchoice The reagent that produces the least product
+    \choice The reagent with the smallest molar mass
+    \choice The reagent present in the smallest number of moles
+\end{choices}
+
+\question[1] The percent yield of a reaction is 85\%. If the actual yield is $\SI{34}{g}$,
+the theoretical yield is:
+\begin{choices}
+    \choice \SI{29}{g}
+    \correctchoice \SI{40}{g}
+    \choice \SI{39}{g}
+    \choice \SI{34}{g}
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 4: Solutions}
+\vspace{3mm}
+
+\question[1] What volume of $\SI{0.500}{mol/L}$ \ce{KOH} contains $0.125$ mol of \ce{KOH}?
+\begin{choices}
+    \choice \SI{62.5}{mL}
+    \correctchoice \SI{250}{mL}
+    \choice \SI{400}{mL}
+    \choice \SI{500}{mL}
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Unit 5: Gases}
+\vspace{3mm}
+
+\question[1] A gas at $\SI{300}{K}$ and $\SI{200}{kPa}$ occupies $\SI{5.0}{L}$.
+At $\SI{600}{K}$ and $\SI{100}{kPa}$, its volume is:
+\begin{choices}
+    \choice \SI{5.0}{L}
+    \choice \SI{10.0}{L}
+    \correctchoice \SI{20.0}{L}
+    \choice \SI{2.5}{L}
+\end{choices}
+
+\question[1] At STP, the density of \ce{O2} gas ($M = \SI{32.0}{g/mol}$) is:
+\begin{choices}
+    \choice \SI{1.00}{g/L}
+    \correctchoice \SI{1.43}{g/L}
+    \choice \SI{2.00}{g/L}
+    \choice \SI{22.4}{g/L}
+\end{choices}
+
+\question[1] In a mixture of gases, each gas exerts a pressure as if it were the only
+gas present. This is:
+\begin{choices}
+    \choice Boyle's Law
+    \choice Charles's Law
+    \correctchoice Dalton's Law of Partial Pressures
+    \choice The Ideal Gas Law
+\end{choices}
+
+\question[1] How many moles of gas are in \SI{5.60}{L} at STP?
+\begin{choices}
+    \choice $0.100$ mol
+    \correctchoice $0.250$ mol
+    \choice $0.500$ mol
+    \choice $1.00$ mol
+\end{choices}
+
+\question[1] A gas occupies $\SI{3.0}{L}$ at $\SI{27}{\celsius}$. At what temperature
+(in \si{\celsius}) will it occupy $\SI{4.5}{L}$ at constant pressure?
+\begin{choices}
+    \choice $\SI{40.5}{\celsius}$
+    \correctchoice $\SI{177}{\celsius}$
+    \choice $\SI{450}{\celsius}$
+    \choice $\SI{150}{\celsius}$
+\end{choices}
+
+\question[1] The ideal gas law assumes:
+\begin{choices}
+    \choice Gas particles have significant volume
+    \correctchoice No intermolecular forces between gas particles
+    \choice Gas particles move slowly at high temperatures
+    \choice Collisions between particles are inelastic
+\end{choices}
+
+\question[1] A container holds \ce{N2} at \SI{50}{kPa}, \ce{O2} at \SI{30}{kPa}, and
+\ce{CO2} at \SI{20}{kPa}. The mole fraction of \ce{N2} is:
+\begin{choices}
+    \choice $0.3$
+    \correctchoice $0.5$
+    \choice $0.6$
+    \choice $1.0$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+
+\question \textbf{(Bonding \& Trends)} Answer the following.
+\begin{parts}
+    \part[2] Draw the Lewis structure of \ce{SO2}. Include all lone pairs, indicate
+    bond type, and predict the molecular geometry.
+    \part[3] Arrange \ce{HF}, \ce{HCl}, \ce{HBr}, \ce{HI} in order of increasing
+    boiling point. Explain the trend, accounting for the anomalously high boiling
+    point of \ce{HF}.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} \ce{SO2}: S is central with one double bond to O and one single bond with a
+formal charge, plus 1 lone pair on S. Total electron geometry: bent (trigonal planar electron
+geometry). \textbf{Molecular geometry: bent}. Bond angle $\approx 119^\circ$.
+(\ce{SO2} has resonance structures; both S--O bonds are equivalent.)
+
+\textbf{(b)} Order of increasing boiling point: \ce{HCl} $<$ \ce{HBr} $<$ \ce{HI} $<$ \ce{HF}.
+
+For \ce{HCl} through \ce{HI}: boiling point increases with molar mass due to stronger London
+dispersion forces. \ce{HF} has an anomalously \textit{high} boiling point despite its low molar
+mass because \ce{HF} molecules form strong \textbf{hydrogen bonds} (F is the most
+electronegative element, making the H--F bond highly polar).
+\end{solution}
+
+\question \textbf{(Reactions)} For each, write a balanced molecular equation, identify
+the reaction type, and (where applicable) write the net ionic equation.
+\begin{parts}
+    \part[3] Aqueous solutions of iron(III) chloride and sodium hydroxide are mixed.
+    \part[3] Solid calcium carbonate is heated strongly.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} \ce{Fe(OH)3} is insoluble (precipitate forms). Type: \textbf{double displacement}.
+\[
+\ce{FeCl3(aq) + 3NaOH(aq) -> Fe(OH)3(s) + 3NaCl(aq)}
+\]
+Net ionic: \ce{Fe^{3+}(aq) + 3OH^{-}(aq) -> Fe(OH)3(s)}
+
+\textbf{(b)} Type: \textbf{decomposition}.
+\[
+\ce{CaCO3(s) ->[\Delta] CaO(s) + CO2(g)}
+\]
+(No net ionic equation — no aqueous ions involved.)
+\end{solution}
+
+\question \textbf{(Stoichiometry)} Aluminum reacts with oxygen:
+\[\ce{4Al(s) + 3O2(g) -> 2Al2O3(s)}\]
+$M(\ce{Al}) = \SI{27.0}{g/mol}$;\quad $M(\ce{Al2O3}) = \SI{102}{g/mol}$
+\begin{parts}
+    \part[2] How many grams of \ce{Al2O3} are produced from $\SI{13.5}{g}$ of Al
+    with excess \ce{O2}?
+    \part[3] If $\SI{13.5}{g}$ of Al and $\SI{12.0}{g}$ of \ce{O2} are used, identify
+    the limiting reagent and find the theoretical yield of \ce{Al2O3}.
+    \part[2] A student obtains $\SI{22.0}{g}$ of \ce{Al2O3}. Calculate the percent yield.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $n(\ce{Al}) = \dfrac{13.5}{27.0} = 0.500$ mol;\quad
+$n(\ce{Al2O3}) = 0.500 \times \dfrac{2}{4} = 0.250$ mol;\quad
+$m = 0.250 \times 102 = \mathbf{\SI{25.5}{g}}$
+
+\textbf{(b)} $n(\ce{O2}) = \dfrac{12.0}{32.0} = 0.375$ mol
+
+\ce{Al2O3} from Al: $0.250$ mol;\quad \ce{Al2O3} from \ce{O2}: $0.375 \times \dfrac{2}{3} = 0.250$ mol
+
+Both give $0.250$ mol — they are in \textbf{exact stoichiometric ratio} (neither is limiting).
+Theoretical yield $= \mathbf{\SI{25.5}{g}}$
+
+\textbf{(c)} $\%\text{ yield} = \dfrac{22.0}{25.5}\times100 = \mathbf{86.3\%}$
+\end{solution}
+
+\question \textbf{(Solutions)} A student dissolves $\SI{5.85}{g}$ of \ce{NaCl}
+($M = \SI{58.5}{g/mol}$) to make $\SI{500.0}{mL}$ of solution.
+\begin{parts}
+    \part[2] Calculate the concentration of the \ce{NaCl} solution.
+    \part[2] Calculate $[\ce{Na+}]$ and $[\ce{Cl-}]$ in the solution.
+    \part[3] This solution is then diluted: $\SI{75.0}{mL}$ is taken and diluted to
+    $\SI{300.0}{mL}$. Calculate the concentration of \ce{NaCl} in the diluted solution.
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $n = \dfrac{5.85}{58.5} = 0.100$ mol;\quad
+$C = \dfrac{0.100}{0.5000} = \mathbf{\SI{0.200}{mol/L}}$
+
+\textbf{(b)} \ce{NaCl -> Na+ + Cl-};\quad $[\ce{Na+}] = [\ce{Cl-}] = \mathbf{\SI{0.200}{mol/L}}$
+
+\textbf{(c)} $C_1V_1 = C_2V_2$:\quad
+$C_2 = \dfrac{0.200 \times 75.0}{300.0} = \mathbf{\SI{0.0500}{mol/L}}$
+\end{solution}
+
+\question \textbf{(Gases)} A \SI{2.50}{L} cylinder contains a gas at $\SI{25}{\celsius}$
+and $\SI{500}{kPa}$.
+\begin{parts}
+    \part[3] Calculate the number of moles of gas in the cylinder.
+    \part[3] The cylinder is heated to $\SI{100}{\celsius}$ at constant volume. What is the
+    new pressure?
+    \part[2] The gas is identified as \ce{CO2} ($M = \SI{44.0}{g/mol}$). What mass of
+    gas is in the cylinder?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)}
+\[
+n = \frac{PV}{RT} = \frac{500 \times 2.50}{8.314 \times 298} = \frac{1250}{2477.6}
+= \mathbf{0.5046 \text{ mol}}
+\]
+
+\textbf{(b)} $T_1 = 298\,\text{K}$,\; $T_2 = 373\,\text{K}$.
+\[
+P_2 = P_1 \cdot \frac{T_2}{T_1} = 500 \times \frac{373}{298} = \mathbf{\SI{625.8}{kPa}}
+\]
+
+\textbf{(c)} $m = n \times M = 0.5046 \times 44.0 = \mathbf{\SI{22.2}{g}}$
+\end{solution}
+
+\end{questions}
+\end{document}

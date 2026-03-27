@@ -1,0 +1,452 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Trigonometry \& Geometry}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+% Q1
+\question[1]
+The Sine Law states that in any triangle $ABC$:
+\begin{choices}
+    \correctchoice $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$
+    \choice $a^2 = b^2 + c^2 - 2bc\cos A$
+    \choice $\dfrac{\sin A}{a} = \dfrac{\cos B}{b}$
+    \choice $a + b + c = 180°$
+\end{choices}
+\vspace{3mm}
+
+% Q2
+\question[1]
+The Cosine Law for side $c$ in triangle $ABC$ is:
+\begin{choices}
+    \choice $c = a\cos B + b\cos A$
+    \choice $c^2 = a^2 + b^2$
+    \correctchoice $c^2 = a^2 + b^2 - 2ab\cos C$
+    \choice $c^2 = a^2 - b^2 + 2ab\cos C$
+\end{choices}
+\vspace{3mm}
+
+% Q3
+\question[1]
+An angle of elevation is measured:
+\begin{choices}
+    \correctchoice Upward from the horizontal to the line of sight
+    \choice Downward from the horizontal to the line of sight
+    \choice From the vertical to the line of sight
+    \choice From true north, clockwise
+\end{choices}
+\vspace{3mm}
+
+% Q4
+\question[1]
+A surveyor at point $A$ observes the top of a tower at an angle of elevation of \ang{30}. The tower is \SI{50}{m} tall. The horizontal distance from $A$ to the base of the tower is:
+\begin{choices}
+    \choice \SI{25}{m}
+    \choice \SI{43.3}{m}
+    \correctchoice \SI{86.6}{m}
+    \choice \SI{100}{m}
+\end{choices}
+\vspace{3mm}
+
+% Q5
+\question[1]
+A ship travels on a bearing of N\ang{40}E. This means the ship heads:
+\begin{choices}
+    \choice Due East, then turns North \ang{40}
+    \correctchoice \ang{40} east of due north
+    \choice \ang{40} north of due east
+    \choice In the direction \ang{40} measured counterclockwise from East
+\end{choices}
+\vspace{3mm}
+
+% Q6
+\question[1]
+The volume of a cone with radius $r$ and height $h$ is:
+\begin{choices}
+    \choice $\pi r^2 h$
+    \choice $\dfrac{2}{3}\pi r^2 h$
+    \correctchoice $\dfrac{1}{3}\pi r^2 h$
+    \choice $\dfrac{4}{3}\pi r^3$
+\end{choices}
+\vspace{3mm}
+
+% Q7
+\question[1]
+The total surface area of a closed cylinder with radius $r$ and height $h$ is:
+\begin{choices}
+    \choice $2\pi r h$
+    \correctchoice $2\pi r^2 + 2\pi r h$
+    \choice $\pi r^2 + 2\pi r h$
+    \choice $2\pi r^2 h$
+\end{choices}
+\vspace{3mm}
+
+% Q8
+\question[1]
+Two similar solids have a linear scale factor of $2:5$. The ratio of their surface areas is:
+\begin{choices}
+    \choice $2:5$
+    \choice $8:125$
+    \correctchoice $4:25$
+    \choice $1:10$
+\end{choices}
+\vspace{3mm}
+
+% Q9
+\question[1]
+Two similar solids have a linear scale factor of $2:5$. The ratio of their volumes is:
+\begin{choices}
+    \choice $2:5$
+    \choice $4:25$
+    \correctchoice $8:125$
+    \choice $1:10$
+\end{choices}
+\vspace{3mm}
+
+% Q10
+\question[1]
+Euler's formula for a polyhedron relates vertices $V$, edges $E$, and faces $F$ by:
+\begin{choices}
+    \choice $V + E + F = 1$
+    \choice $V - E + F = 0$
+    \correctchoice $V - E + F = 2$
+    \choice $V + E - F = 2$
+\end{choices}
+\vspace{3mm}
+
+% Q11
+\question[1]
+A scale model of a building uses a scale of 1:200. If the model is \SI{15}{cm} tall, the actual building is:
+\begin{choices}
+    \choice \SI{15}{m}
+    \choice \SI{200}{m}
+    \correctchoice \SI{30}{m}
+    \choice \SI{3000}{m}
+\end{choices}
+\vspace{3mm}
+
+% Q12
+\question[1]
+In a triangle with sides $a = 7$, $b = 9$, $c = 5$, which law should you use first to find angle $A$?
+\begin{choices}
+    \choice Sine Law, because all sides are given
+    \correctchoice Cosine Law, because all three sides are known
+    \choice Pythagorean Theorem
+    \choice Neither; a triangle with these sides has no solution
+\end{choices}
+\vspace{3mm}
+
+% Q13
+\question[1]
+The lateral surface area (curved side only) of a cone with base radius $r$ and slant height $\ell$ is:
+\begin{choices}
+    \choice $\pi r^2$
+    \correctchoice $\pi r \ell$
+    \choice $2\pi r \ell$
+    \choice $\dfrac{1}{3}\pi r^2 \ell$
+\end{choices}
+\vspace{3mm}
+
+% Q14
+\question[1]
+A cube has 8 vertices, 12 edges, and 6 faces. Euler's formula gives $V - E + F = $:
+\begin{choices}
+    \choice 0
+    \choice 1
+    \correctchoice 2
+    \choice 4
+\end{choices}
+\vspace{3mm}
+
+% Q15
+\question[1]
+To minimize the surface area of a cylinder of fixed volume, the optimal relationship between radius $r$ and height $h$ is:
+\begin{choices}
+    \choice $h = r$
+    \choice $h = 2r$
+    \correctchoice $h = 2r$
+    \choice $h = 4r$
+\end{choices}
+\vspace{3mm}
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\vspace{5mm}
+
+%% Q16 --- 3D trigonometry / mountain height
+\question[6]
+\textbf{3D Trigonometry --- Mountain Height.}
+From point $A$, the angle of elevation to the top of a mountain is \ang{28}. From point $B$, which is \SI{500}{m} closer to the mountain (along the same horizontal line), the angle of elevation to the top is \ang{40}. Points $A$, $B$, and the base of the mountain are all on level ground.
+
+\begin{parts}
+\part[3] Use the two angles and the distance $AB = \SI{500}{m}$ to set up a system of equations involving the horizontal distance $x$ from $B$ to the base of the mountain and the mountain height $h$.
+\part[3] Solve for $h$, the height of the mountain. Round to the nearest metre.
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} Let $x$ = horizontal distance from $B$ to the base of the mountain, and $h$ = height of the mountain.
+
+From point $B$: $\tan(\ang{40}) = \dfrac{h}{x}$, so $h = x\tan(\ang{40})$.
+
+From point $A$ (which is $500$ m farther from the mountain): $\tan(\ang{28}) = \dfrac{h}{x + 500}$, so $h = (x+500)\tan(\ang{28})$.
+
+\textbf{(b)} Set the two expressions equal:
+\[
+x\tan(\ang{40}) = (x+500)\tan(\ang{28})
+\]
+\[
+x(0.8391) = (x+500)(0.5317)
+\]
+\[
+0.8391x = 0.5317x + 265.85
+\]
+\[
+0.3074x = 265.85 \implies x = \frac{265.85}{0.3074} \approx 864.9\ \text{m}
+\]
+\[
+h = 864.9 \times \tan(\ang{40}) \approx 864.9 \times 0.8391 \approx \SI{725.6}{m}
+\]
+The mountain is approximately \textbf{\SI{726}{m}} tall.
+\end{solution}
+
+\vspace{5mm}
+
+%% Q17 --- Navigation / bearings
+\question[6]
+\textbf{Navigation.}
+A ship leaves port at $O$. It sails on a bearing of N\ang{35}E for \SI{50}{km} to point $A$. It then turns and sails on a bearing of S\ang{60}E for \SI{80}{km} to point $B$.
+
+\begin{parts}
+\part[3] Find the straight-line distance $OB$ from port to the ship's final position.
+\part[3] Find the bearing from $B$ back to $O$ (i.e., the direction the ship must sail to return to port).
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} Set up a coordinate system with $O$ at the origin, east as positive $x$, and north as positive $y$.
+
+Leg $OA$: bearing N\ang{35}E means \ang{35} east of north.
+\[
+A_x = 50\sin(\ang{35}) \approx 50(0.5736) = 28.68\ \text{km}
+\]
+\[
+A_y = 50\cos(\ang{35}) \approx 50(0.8192) = 40.96\ \text{km}
+\]
+
+Leg $AB$: bearing S\ang{60}E means \ang{60} east of south.
+\[
+B_x = A_x + 80\sin(\ang{60}) \approx 28.68 + 80(0.8660) = 28.68 + 69.28 = 97.96\ \text{km}
+\]
+\[
+B_y = A_y - 80\cos(\ang{60}) \approx 40.96 - 80(0.5000) = 40.96 - 40.00 = 0.96\ \text{km}
+\]
+
+Distance $OB$:
+\[
+OB = \sqrt{(97.96)^2 + (0.96)^2} \approx \sqrt{9596.2 + 0.9} \approx \sqrt{9597.1} \approx \SI{97.97}{km}
+\]
+
+\textbf{(b)} The vector from $B$ to $O$ is $(-97.96,\ -0.96)$ (pointing west and slightly south).
+
+The angle south of west:
+\[
+\theta = \arctan\!\left(\frac{0.96}{97.96}\right) \approx \arctan(0.0098) \approx \ang{0.56}
+\]
+The bearing from $B$ to $O$ is approximately \textbf{S\ang{89.4}W} (essentially due west, very slightly south of west).
+\end{solution}
+
+\vspace{5mm}
+
+%% Q18 --- Composite solid (cone + cylinder)
+\question[5]
+\textbf{Composite Solid.}
+A storage container consists of a cylinder topped with a cone. The cylinder has radius \SI{3}{m} and height \SI{8}{m}. The cone has the same base radius and a height of \SI{4}{m}.
+
+\begin{parts}
+\part[1] Find the slant height of the cone.
+\part[2] Find the total surface area of the composite solid (bottom of cylinder + lateral cylinder + lateral cone; the shared base between cone and cylinder is internal and not counted).
+\part[2] Find the total volume of the composite solid.
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} Slant height of cone:
+\[
+\ell = \sqrt{r^2 + h_{\text{cone}}^2} = \sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25} = \SI{5}{m}
+\]
+
+\textbf{(b)} Total surface area = (circular bottom of cylinder) + (lateral surface of cylinder) + (lateral surface of cone):
+\[
+SA = \pi r^2 + 2\pi r h_{\text{cyl}} + \pi r \ell
+   = \pi(3)^2 + 2\pi(3)(8) + \pi(3)(5)
+   = 9\pi + 48\pi + 15\pi
+   = 72\pi \approx \SI{226.2}{m^2}
+\]
+
+\textbf{(c)} Total volume:
+\[
+V = \pi r^2 h_{\text{cyl}} + \tfrac{1}{3}\pi r^2 h_{\text{cone}}
+  = \pi(9)(8) + \tfrac{1}{3}\pi(9)(4)
+  = 72\pi + 12\pi
+  = 84\pi \approx \SI{263.9}{m^3}
+\]
+\end{solution}
+
+\vspace{5mm}
+
+%% Q19 --- Optimization (cylindrical tank)
+\question[8]
+\textbf{Volume Optimization.}
+A cylindrical storage tank (closed top and bottom) must hold exactly \SI{10}{m^3}. The goal is to find the dimensions (radius $r$ and height $h$) that minimize the total surface area.
+
+\begin{parts}
+\part[2] Write $h$ as a function of $r$ using the volume constraint $V = \pi r^2 h = 10$.
+\part[2] Write the total surface area $SA$ as a function of $r$ alone (substitute the expression for $h$).
+\part[4] Complete the table of values below and identify which radius gives the minimum surface area. Round to two decimal places.
+
+\begin{center}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+$r$ (m) & $h$ (m) & $SA$ (\si{m^2}) \\
+\midrule
+0.5 & & \\
+1.0 & & \\
+1.2 & & \\
+1.5 & & \\
+2.0 & & \\
+2.5 & & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} From $\pi r^2 h = 10$:
+\[
+h = \frac{10}{\pi r^2}
+\]
+
+\textbf{(b)}
+\[
+SA = 2\pi r^2 + 2\pi r h = 2\pi r^2 + 2\pi r \cdot \frac{10}{\pi r^2} = 2\pi r^2 + \frac{20}{r}
+\]
+
+\textbf{(c)} Calculated values ($SA = 2\pi r^2 + 20/r$):
+
+\begin{center}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+$r$ (m) & $h$ (m) & $SA$ (\si{m^2}) \\
+\midrule
+0.5 & 12.73 & 41.57 \\
+1.0 & 3.18  & 26.28 \\
+1.2 & 2.21  & 25.62 \\
+1.5 & 1.41  & 27.51 \\
+2.0 & 0.80  & 35.13 \\
+2.5 & 0.51  & 47.31 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The minimum occurs near $r \approx \SI{1.17}{m}$ (testing $r = 1.17$: $h = 10/(\pi \times 1.17^2) \approx 2.33\ \text{m}$, $SA \approx 25.60\ \text{m}^2$). From the table, $r = \SI{1.2}{m}$ gives the smallest value at $SA \approx \SI{25.62}{m^2}$ with $h \approx \SI{2.21}{m} \approx 2r$.
+
+\textit{Note:} The theoretical optimum (from calculus) is $h = 2r$. At $r \approx 1.17\ \text{m}$, $h \approx 2.34\ \text{m} = 2r$, confirming the pattern.
+\end{solution}
+
+\vspace{5mm}
+
+%% Q20 --- Similar solids
+\question[8]
+\textbf{Similar Solids.}
+Two similar cones, Cone A (small) and Cone B (large), have a linear scale factor of $3:5$.
+
+\begin{parts}
+\part[2] State the ratio of their surface areas (Cone A : Cone B) and the ratio of their volumes (Cone A : Cone B).
+\part[2] The total surface area of Cone A is $200\pi\ \si{cm^2}$. Find the total surface area of Cone B.
+\part[2] The volume of Cone A is $540\pi\ \si{cm^3}$. Find the volume of Cone B.
+\part[2] If Cone A has a base radius of \SI{6}{cm}, find the base radius of Cone B. Then find the height of each cone using the surface area formula (note: total surface area of a cone $= \pi r^2 + \pi r \ell$, where slant height $\ell = \sqrt{r^2+h^2}$).
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} Linear scale factor $k = 3:5$.\\
+Ratio of surface areas $= k^2 = 3^2:5^2 = \mathbf{9:25}$.\\
+Ratio of volumes $= k^3 = 3^3:5^3 = \mathbf{27:125}$.
+
+\textbf{(b)}
+\[
+\frac{SA_A}{SA_B} = \frac{9}{25} \implies SA_B = SA_A \times \frac{25}{9} = 200\pi \times \frac{25}{9} = \frac{5000\pi}{9} \approx 1{,}745.3\ \si{cm^2}
+\]
+
+\textbf{(c)}
+\[
+\frac{V_A}{V_B} = \frac{27}{125} \implies V_B = 540\pi \times \frac{125}{27} = \frac{540 \times 125\pi}{27} = 2{,}500\pi \approx 7{,}854\ \si{cm^3}
+\]
+
+\textbf{(d)} Scale factor $3:5$, so if $r_A = 6\ \text{cm}$:
+\[
+\frac{r_A}{r_B} = \frac{3}{5} \implies r_B = 6 \times \frac{5}{3} = 10\ \text{cm}
+\]
+
+For Cone A: $SA_A = \pi r_A^2 + \pi r_A \ell_A = 200\pi$.
+\[
+\pi(36) + \pi(6)\ell_A = 200\pi \implies 36 + 6\ell_A = 200 \implies \ell_A = \frac{164}{6} \approx 27.33\ \text{cm}
+\]
+\[
+h_A = \sqrt{\ell_A^2 - r_A^2} = \sqrt{27.33^2 - 36} \approx \sqrt{746.9 - 36} \approx \sqrt{710.9} \approx 26.66\ \text{cm}
+\]
+
+For Cone B: by the scale factor, $h_B = h_A \times \dfrac{5}{3} \approx 26.66 \times \dfrac{5}{3} \approx \SI{44.4}{cm}$.
+\end{solution}
+
+\end{questions}
+\end{document}

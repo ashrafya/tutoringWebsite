@@ -1,0 +1,302 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Probability}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Data Management \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Express probabilities as fractions or decimals (3 d.p.).
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] If $P(A) = 0.4$, then $P(A^c)$ equals:
+\begin{choices}
+    \choice $0.4$
+    \choice $0.16$
+    \correctchoice $0.6$
+    \choice $1.4$
+\end{choices}
+
+\question[1] Two events are mutually exclusive if:
+\begin{choices}
+    \choice $P(A \cap B) = P(A) \cdot P(B)$
+    \correctchoice $P(A \cap B) = 0$
+    \choice $P(A \cup B) = 1$
+    \choice $P(A) = P(B)$
+\end{choices}
+
+\question[1] For any two events $A$ and $B$, the addition rule states:
+\begin{choices}
+    \choice $P(A \cup B) = P(A) + P(B)$
+    \choice $P(A \cup B) = P(A) \cdot P(B)$
+    \correctchoice $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+    \choice $P(A \cup B) = P(A) - P(B)$
+\end{choices}
+
+\question[1] A card is drawn from a standard 52-card deck. The probability of drawing a
+heart or a face card is:
+\begin{choices}
+    \choice $\dfrac{16}{52}$
+    \choice $\dfrac{25}{52}$
+    \correctchoice $\dfrac{22}{52}$
+    \choice $\dfrac{3}{52}$
+\end{choices}
+
+\question[1] Events $A$ and $B$ are independent if and only if:
+\begin{choices}
+    \choice $P(A \cup B) = 1$
+    \choice $P(A \cap B) = 0$
+    \correctchoice $P(A \cap B) = P(A) \cdot P(B)$
+    \choice $P(A) = P(B)$
+\end{choices}
+
+\question[1] The conditional probability $P(A \mid B)$ is defined as:
+\begin{choices}
+    \correctchoice $\dfrac{P(A \cap B)}{P(B)}$
+    \choice $\dfrac{P(A)}{P(B)}$
+    \choice $P(A) \cdot P(B)$
+    \choice $P(A) + P(B) - 1$
+\end{choices}
+
+\question[1] A bag contains 3 red and 5 blue marbles. Two are drawn without replacement.
+The probability both are red is:
+\begin{choices}
+    \choice $\dfrac{9}{64}$
+    \correctchoice $\dfrac{3}{28}$
+    \choice $\dfrac{6}{56}$
+    \choice $\dfrac{1}{8}$
+\end{choices}
+
+\question[1] A fair die is rolled twice. The probability of getting a 6 on both rolls is:
+\begin{choices}
+    \choice $\dfrac{1}{6}$
+    \choice $\dfrac{2}{6}$
+    \correctchoice $\dfrac{1}{36}$
+    \choice $\dfrac{11}{36}$
+\end{choices}
+
+\question[1] In a class, 60\% of students passed math, 70\% passed science, and 45\% passed
+both. The probability a student passed math \textbf{given} they passed science is:
+\begin{choices}
+    \choice $0.45$
+    \correctchoice $\dfrac{45}{70} \approx 0.643$
+    \choice $\dfrac{45}{60} = 0.75$
+    \choice $0.85$
+\end{choices}
+
+\question[1] The odds \textbf{in favour} of an event with probability $\dfrac{3}{8}$ are:
+\begin{choices}
+    \choice $3:8$
+    \correctchoice $3:5$
+    \choice $5:3$
+    \choice $8:3$
+\end{choices}
+
+\question[1] A fair coin is flipped 3 times. The probability of getting \textbf{at least one head} is:
+\begin{choices}
+    \choice $\dfrac{1}{2}$
+    \choice $\dfrac{3}{8}$
+    \choice $\dfrac{4}{8}$
+    \correctchoice $\dfrac{7}{8}$
+\end{choices}
+
+\question[1] $P(A \mid B) = P(A)$ is the condition for:
+\begin{choices}
+    \choice Mutual exclusivity
+    \correctchoice Independence of $A$ and $B$
+    \choice $A$ and $B$ being complementary
+    \choice $P(B) = 0$
+\end{choices}
+
+\question[1] A committee of 2 is chosen at random from 4 men and 3 women. The probability
+the committee has exactly 1 man is:
+\begin{choices}
+    \choice $\dfrac{4}{7}$
+    \correctchoice $\dfrac{12}{21}$
+    \choice $\dfrac{6}{21}$
+    \choice $\dfrac{3}{7}$
+\end{choices}
+
+\question[1] A point is chosen at random inside a square of side 4. A circle of radius 1 is
+inscribed at the centre. The probability the point lands inside the circle is:
+\begin{choices}
+    \choice $\dfrac{1}{4}$
+    \correctchoice $\dfrac{\pi}{16}$
+    \choice $\dfrac{\pi}{4}$
+    \choice $\dfrac{1}{16}$
+\end{choices}
+
+\question[1] Suppose $P(B \mid A) = 0.8$ and $P(A) = 0.3$. Then $P(A \cap B) =$
+\begin{choices}
+    \choice $0.8$
+    \choice $0.3$
+    \correctchoice $0.24$
+    \choice $0.38$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question A standard 52-card deck is shuffled and one card is drawn.
+\begin{parts}
+    \part[1] What is the probability of drawing a king?
+    \part[1] What is the probability of drawing a red card?
+    \part[2] What is the probability of drawing a king \textbf{or} a red card?
+    \part[2] A card is drawn and \textbf{not} replaced; a second card is drawn. What is the
+    probability both cards are aces?
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $P(\text{King}) = \dfrac{4}{52} = \dfrac{1}{13}$
+
+\textbf{(b)} $P(\text{Red}) = \dfrac{26}{52} = \dfrac{1}{2}$
+
+\textbf{(c)} $P(\text{King} \cup \text{Red}) = P(\text{King}) + P(\text{Red}) - P(\text{Red King})$
+\[
+= \frac{4}{52} + \frac{26}{52} - \frac{2}{52} = \frac{28}{52} = \mathbf{\frac{7}{13}}
+\]
+
+\textbf{(d)} Without replacement:
+\[
+P = \frac{4}{52} \times \frac{3}{51} = \frac{12}{2652} = \mathbf{\frac{1}{221}}
+\]
+\end{solution}
+
+\question The table below shows the results of a survey of 200 students:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+ & \textbf{Studies daily} & \textbf{Does not study daily} & \textbf{Total} \\
+\midrule
+\textbf{Passed} & 90 & 30 & 120 \\
+\textbf{Failed} & 20 & 60 & 80 \\
+\midrule
+\textbf{Total} & 110 & 90 & 200 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+    \part[1] What is the probability a randomly selected student passed?
+    \part[2] What is the probability a student studies daily \textbf{given} they passed?
+    \part[2] What is the probability a student passed \textbf{given} they do not study daily?
+    \part[3] Are the events ``passed'' and ``studies daily'' independent? Justify using
+    probabilities.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $P(\text{Pass}) = \dfrac{120}{200} = \mathbf{0.6}$
+
+\textbf{(b)} $P(\text{Studies} \mid \text{Pass}) = \dfrac{90}{120} = \mathbf{0.75}$
+
+\textbf{(c)} $P(\text{Pass} \mid \text{No Study}) = \dfrac{30}{90} = \mathbf{0.333}$
+
+\textbf{(d)} Check: $P(\text{Pass}) \times P(\text{Studies}) = 0.6 \times \dfrac{110}{200}
+= 0.6 \times 0.55 = 0.33$.\\
+$P(\text{Pass} \cap \text{Studies}) = \dfrac{90}{200} = 0.45 \neq 0.33$.\\
+Since $P(A \cap B) \neq P(A) \cdot P(B)$, the events are \textbf{not independent}.
+\end{solution}
+
+\question A box contains 4 defective and 6 good light bulbs. Two bulbs are drawn one at a time
+\textbf{without replacement}.
+\begin{parts}
+    \part[3] Draw a tree diagram showing all possible outcomes and their probabilities.
+    \part[2] Find the probability that exactly one bulb is defective.
+    \part[2] Find the probability that at least one bulb is good.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Let D = defective, G = good.
+\[
+P(DD) = \tfrac{4}{10}\cdot\tfrac{3}{9} = \tfrac{12}{90};\quad
+P(DG) = \tfrac{4}{10}\cdot\tfrac{6}{9} = \tfrac{24}{90};\quad
+P(GD) = \tfrac{6}{10}\cdot\tfrac{4}{9} = \tfrac{24}{90};\quad
+P(GG) = \tfrac{6}{10}\cdot\tfrac{5}{9} = \tfrac{30}{90}
+\]
+(Total $= 90/90 = 1$\checkmark)
+
+\textbf{(b)} $P(\text{exactly 1 defective}) = P(DG) + P(GD)
+= \dfrac{24}{90} + \dfrac{24}{90} = \dfrac{48}{90} = \mathbf{\dfrac{8}{15}}$
+
+\textbf{(c)} $P(\text{at least 1 good}) = 1 - P(DD) = 1 - \dfrac{12}{90}
+= \dfrac{78}{90} = \mathbf{\dfrac{13}{15}}$
+\end{solution}
+
+\question In a certain town, 1\% of the population has a rare disease. A diagnostic test is
+99\% accurate: it correctly identifies a positive case 99\% of the time, and correctly
+identifies a negative case 99\% of the time.
+\begin{parts}
+    \part[2] Define events $D$ (has disease) and $T^+$ (tests positive). Write
+    all given probabilities.
+    \part[4] Using Bayes' Theorem, find the probability that a person \textbf{actually has
+    the disease} given they \textbf{tested positive}. Show full working.
+    \part[2] Comment on whether the test is reliable.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $P(D) = 0.01$;\ $P(D^c) = 0.99$;\ $P(T^+\mid D) = 0.99$;\
+$P(T^+\mid D^c) = 0.01$ (false positive rate).
+
+\textbf{(b)} By the law of total probability:
+\[
+P(T^+) = P(T^+\mid D)P(D) + P(T^+\mid D^c)P(D^c)
+= (0.99)(0.01) + (0.01)(0.99) = 0.0099 + 0.0099 = 0.0198
+\]
+By Bayes' Theorem:
+\[
+P(D \mid T^+) = \frac{P(T^+\mid D)\,P(D)}{P(T^+)}
+= \frac{0.0099}{0.0198} = \mathbf{0.5}
+\]
+
+\textbf{(c)} Despite being 99\% accurate, a positive test result only means a 50\% chance of
+actually having the disease. This is because the disease is so rare (base rate of 1\%) that
+false positives are equally common as true positives.
+\end{solution}
+
+\end{questions}
+\end{document}

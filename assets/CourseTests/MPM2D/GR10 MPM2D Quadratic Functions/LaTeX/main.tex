@@ -1,0 +1,387 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% \printanswers
+
+\newcommand{\event}{Quadratic Functions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 10 Principles of Mathematics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Leave answers in exact form where appropriate.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] What is the vertex of $y = (x - 3)^2 + 5$?
+\begin{choices}
+    \choice $(-3, 5)$
+    \correctchoice $(3, 5)$
+    \choice $(3, -5)$
+    \choice $(5, 3)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] The parabola $y = -2(x + 1)^2 - 3$ opens:
+\begin{choices}
+    \correctchoice Downward, and the vertex is $(-1, -3)$
+    \choice Upward, and the vertex is $(-1, -3)$
+    \choice Downward, and the vertex is $(1, -3)$
+    \choice Upward, and the vertex is $(1, 3)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which transformation maps $y = x^2$ onto $y = x^2 - 4$?
+\begin{choices}
+    \choice Shift 4 units left
+    \choice Shift 4 units right
+    \correctchoice Shift 4 units down
+    \choice Stretch by factor 4
+\end{choices}
+\vspace{3mm}
+
+\question[1] What is the axis of symmetry of $y = 2x^2 - 8x + 3$?
+\begin{choices}
+    \choice $x = -2$
+    \correctchoice $x = 2$
+    \choice $x = 3$
+    \choice $x = 8$
+\end{choices}
+\vspace{3mm}
+
+\question[1] The vertex of $y = x^2 + 6x + 5$ is:
+\begin{choices}
+    \choice $(-3, -5)$
+    \choice $(3, -4)$
+    \correctchoice $(-3, -4)$
+    \choice $(-6, 5)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] A parabola opens upward. Its vertex is a:
+\begin{choices}
+    \choice Maximum point
+    \correctchoice Minimum point
+    \choice Point of inflection
+    \choice $y$-intercept
+\end{choices}
+\vspace{3mm}
+
+\question[1] What are the $x$-intercepts of $y = (x - 2)(x + 5)$?
+\begin{choices}
+    \choice $x = 2$ and $x = 5$
+    \choice $x = -2$ and $x = -5$
+    \correctchoice $x = 2$ and $x = -5$
+    \choice $x = -2$ and $x = 5$
+\end{choices}
+\vspace{3mm}
+
+\question[1] The $y$-intercept of $y = 3x^2 - 7x + 4$ is:
+\begin{choices}
+    \choice $-7$
+    \choice $3$
+    \correctchoice $4$
+    \choice $-4$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which vertex form represents a parabola with vertex $(2, -1)$ that opens upward?
+\begin{choices}
+    \choice $y = -(x - 2)^2 - 1$
+    \correctchoice $y = (x - 2)^2 - 1$
+    \choice $y = (x + 2)^2 - 1$
+    \choice $y = (x - 2)^2 + 1$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which equation is in vertex form?
+\begin{choices}
+    \choice $y = 2x^2 + 4x - 3$
+    \correctchoice $y = 2(x + 1)^2 - 5$
+    \choice $y = 2x(x + 4) - 3$
+    \choice $y = 2x^2 - 8$
+\end{choices}
+\vspace{3mm}
+
+\question[1] A ball is thrown upward. Its height is given by $h = -5t^2 + 20t$. What is the maximum height?
+\begin{choices}
+    \choice $10$ m
+    \choice $15$ m
+    \correctchoice $20$ m
+    \choice $25$ m
+\end{choices}
+\vspace{3mm}
+
+\question[1] For $y = a(x - h)^2 + k$, which value of $a$ gives the \textbf{narrowest} parabola?
+\begin{choices}
+    \choice $a = \dfrac{1}{3}$
+    \choice $a = 1$
+    \choice $a = 2$
+    \correctchoice $a = 5$
+\end{choices}
+\vspace{3mm}
+
+\question[1] The number of $x$-intercepts of a parabola $y = a(x-h)^2 + k$ when $a > 0$ and $k > 0$ is:
+\begin{choices}
+    \choice $2$
+    \choice $1$
+    \correctchoice $0$
+    \choice Impossible to determine
+\end{choices}
+\vspace{3mm}
+
+\question[1] Completing the square: $y = x^2 + 4x + 7$ in vertex form is:
+\begin{choices}
+    \choice $y = (x + 4)^2 + 3$
+    \correctchoice $y = (x + 2)^2 + 3$
+    \choice $y = (x + 2)^2 + 7$
+    \choice $y = (x + 4)^2 - 9$
+\end{choices}
+\vspace{3mm}
+
+\question[1] A company's profit is $P = -2x^2 + 24x - 54$ (thousands of dollars), where $x$ is thousands of units sold. The maximum profit occurs when:
+\begin{choices}
+    \choice $x = 3$
+    \choice $x = 9$
+    \correctchoice $x = 6$
+    \choice $x = 12$
+\end{choices}
+\vspace{5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Part B --- Short Answer (33 marks)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\question \textbf{Standard Form and Vertex Form. (6 marks)}
+
+\begin{parts}
+\part[3] Convert $y = x^2 - 10x + 18$ to vertex form by completing the square. State the vertex and axis of symmetry.
+
+\begin{solution}[7cm]
+\[
+y = x^2 - 10x + 18
+\]
+\[
+= (x^2 - 10x + 25 - 25) + 18
+\]
+\[
+= (x - 5)^2 - 25 + 18
+\]
+\[
+= (x - 5)^2 - 7
+\]
+Vertex: $(5, -7)$. Axis of symmetry: $x = 5$.
+\end{solution}
+
+\part[3] Convert $y = 3(x + 2)^2 - 12$ to standard form. Identify the $y$-intercept.
+
+\begin{solution}[6cm]
+\[
+y = 3(x + 2)^2 - 12 = 3(x^2 + 4x + 4) - 12 = 3x^2 + 12x + 12 - 12 = 3x^2 + 12x
+\]
+$y$-intercept: set $x = 0$: $y = 0$.
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Sketching a Parabola. (6 marks)}\\
+Consider the function $y = -x^2 + 2x + 8$.
+
+\begin{parts}
+\part[2] Find the vertex using the formula $x = -\dfrac{b}{2a}$.
+
+\begin{solution}[4cm]
+$a = -1,\ b = 2$.
+\[
+x = -\frac{2}{2(-1)} = 1
+\]
+\[
+y = -(1)^2 + 2(1) + 8 = -1 + 2 + 8 = 9
+\]
+Vertex: $(1, 9)$.
+\end{solution}
+
+\part[2] Find the $x$-intercepts by factoring.
+
+\begin{solution}[4cm]
+\[
+-x^2 + 2x + 8 = 0 \implies x^2 - 2x - 8 = 0 \implies (x-4)(x+2) = 0
+\]
+$x$-intercepts: $x = 4$ and $x = -2$.
+\end{solution}
+
+\part[1] State the $y$-intercept.
+
+\begin{solution}[2cm]
+Set $x = 0$: $y = 8$. The $y$-intercept is $(0, 8)$.
+\end{solution}
+
+\part[1] Sketch the parabola on the axes below, labelling the vertex, $x$-intercepts, and $y$-intercept.
+
+\begin{solution}[5cm]
+The parabola opens downward (since $a = -1 < 0$), vertex at $(1, 9)$, $x$-intercepts at $(-2, 0)$ and $(4, 0)$, $y$-intercept at $(0, 8)$. The axis of symmetry is $x = 1$.
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Maximum/Minimum Application. (5 marks)}\\
+A ball is thrown upward from a platform. Its height in metres above the ground after $t$ seconds is given by $h(t) = -5t^2 + 20t + 2$.
+
+\begin{parts}
+\part[2] Find the maximum height of the ball and the time at which it occurs.
+
+\begin{solution}[5cm]
+$a = -5,\ b = 20$.
+\[
+t = -\frac{20}{2(-5)} = \frac{20}{10} = 2 \text{ s}
+\]
+\[
+h(2) = -5(4) + 20(2) + 2 = -20 + 40 + 2 = 22 \text{ m}
+\]
+Maximum height: \textbf{22 m} at $t = 2$ s.
+\end{solution}
+
+\part[1] What is the height of the platform (initial height)?
+
+\begin{solution}[2cm]
+$h(0) = -5(0)^2 + 20(0) + 2 = 2$ m.
+\end{solution}
+
+\part[2] After how many seconds does the ball reach a height of 17 m on its way down?
+
+\begin{solution}[5cm]
+Set $h(t) = 17$:
+\[
+-5t^2 + 20t + 2 = 17 \implies -5t^2 + 20t - 15 = 0 \implies t^2 - 4t + 3 = 0
+\]
+\[
+(t-1)(t-3) = 0 \implies t = 1 \text{ or } t = 3
+\]
+The ball reaches 17 m at $t = 1$ s (going up) and at $t = 3$ s (coming down). On the way \textbf{down}: $t = 3$ s.
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Revenue Optimization. (8 marks)}\\
+A movie theatre currently charges \$12 per ticket and sells 400 tickets per show. Research shows that for every \$1 increase in price, 20 fewer tickets are sold.
+
+\begin{parts}
+\part[2] Let $x$ represent the number of \$1 price increases. Write expressions for the ticket price and the number of tickets sold.
+
+\begin{solution}[3cm]
+Ticket price: $(12 + x)$ dollars.\\
+Number of tickets: $(400 - 20x)$.
+\end{solution}
+
+\part[2] Write the revenue function $R(x)$ as a product, then expand to standard form.
+
+\begin{solution}[5cm]
+\[
+R(x) = (12 + x)(400 - 20x) = 4800 - 240x + 400x - 20x^2 = -20x^2 + 160x + 4800
+\]
+\end{solution}
+
+\part[2] Find the value of $x$ that maximizes revenue using the vertex formula.
+
+\begin{solution}[4cm]
+$a = -20,\ b = 160$.
+\[
+x = -\frac{160}{2(-20)} = \frac{160}{40} = 4
+\]
+Optimal price increase: \$4.
+\end{solution}
+
+\part[2] What is the maximum revenue, the optimal ticket price, and the number of tickets sold?
+
+\begin{solution}[4cm]
+$R(4) = -20(16) + 160(4) + 4800 = -320 + 640 + 4800 = \$5120$\\
+Ticket price: $12 + 4 = \$16$\\
+Tickets sold: $400 - 20(4) = 320$
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Determining the Equation of a Parabola. (8 marks)}
+
+\begin{parts}
+\part[3] A parabola has vertex $(3, -5)$ and passes through the point $(5, 3)$. Find the equation in vertex form.
+
+\begin{solution}[5cm]
+Vertex form: $y = a(x - 3)^2 - 5$.\\
+Substitute $(5, 3)$:
+\[
+3 = a(5 - 3)^2 - 5 = 4a - 5 \implies 4a = 8 \implies a = 2
+\]
+Equation: $y = 2(x - 3)^2 - 5$.
+\end{solution}
+
+\part[5] A parabola passes through the points $A(0, -3)$, $B(2, 1)$, and $C(4, -3)$.
+
+\begin{enumerate}[(i)]
+    \item[(i)] Use the symmetry of the points to determine the axis of symmetry and hence the vertex.
+    \item[(ii)] Use a point to find $a$ and write the equation in vertex form.
+\end{enumerate}
+
+\begin{solution}[8cm]
+\textbf{(i)} Notice that $A(0, -3)$ and $C(4, -3)$ have the same $y$-value, so the axis of symmetry is halfway between $x = 0$ and $x = 4$:
+\[
+x = \frac{0 + 4}{2} = 2
+\]
+At $x = 2$: $y = 1$ (from point $B$). Vertex: $(2, 1)$.
+
+\textbf{(ii)} Vertex form: $y = a(x - 2)^2 + 1$.\\
+Substitute $A(0, -3)$:
+\[
+-3 = a(0-2)^2 + 1 = 4a + 1 \implies 4a = -4 \implies a = -1
+\]
+Equation: $y = -(x - 2)^2 + 1$.
+\end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

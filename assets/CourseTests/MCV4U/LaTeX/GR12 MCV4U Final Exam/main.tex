@@ -1,0 +1,439 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Final Exam}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Calculus \& Vectors \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item This exam covers all six units of MCV4U.
+    \item Show all work for full marks. Justify all calculus conclusions.
+    \item Distance formula: $d = \dfrac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}$.
+    \item The exam is designed to be completed in 120 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{2}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (20 marks)}
+\vspace{3mm}
+\noindent\textit{Questions 1--3: Limits and Rates of Change}
+\vspace{3mm}
+
+\question[1] $\displaystyle\lim_{x \to 5} \frac{x^2 - 25}{x - 5}$ equals:
+\begin{choices}
+    \choice 0
+    \choice 5
+    \correctchoice 10
+    \choice Does not exist
+\end{choices}
+
+\question[1] A function $f$ is \textbf{not} differentiable at $x = c$ if:
+\begin{choices}
+    \choice $f(c)$ is defined
+    \choice $f'(c) = 0$
+    \correctchoice The graph of $f$ has a sharp corner at $x = c$
+    \choice $f$ is increasing at $x = c$
+\end{choices}
+
+\question[1] Using first principles, $\dfrac{d}{dx}\!\left[x^2\right] = $
+\begin{choices}
+    \choice $\displaystyle\lim_{h \to 0}\frac{(x+h)^2}{h}$
+    \correctchoice $\displaystyle\lim_{h \to 0}\frac{(x+h)^2 - x^2}{h}$
+    \choice $\displaystyle\lim_{h \to 0}\frac{x^2 - (x-h)^2}{x}$
+    \choice $\displaystyle\lim_{x \to 0}\frac{(x+h)^2 - x^2}{h}$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 4--6: Derivative Rules}
+\vspace{3mm}
+
+\question[1] $\dfrac{d}{dx}\!\left[\dfrac{x^2-1}{x+1}\right]$ simplifies to:
+\begin{choices}
+    \correctchoice 1
+    \choice $2x$
+    \choice $\dfrac{2x(x+1)-(x^2-1)}{(x+1)^2}$
+    \choice $x-1$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[\left(\sqrt{x}+1\right)^4\right] = $
+\begin{choices}
+    \choice $4\left(\sqrt{x}+1\right)^3$
+    \correctchoice $\dfrac{2\left(\sqrt{x}+1\right)^3}{\sqrt{x}}$
+    \choice $4\sqrt{x}\left(\sqrt{x}+1\right)^3$
+    \choice $\dfrac{4}{\sqrt{x}}\left(\sqrt{x}+1\right)^3$
+\end{choices}
+
+\question[1] Given $xy^2 + x^2y = 6$, $\dfrac{dy}{dx}$ equals:
+\begin{choices}
+    \choice $\dfrac{-y^2-2xy}{2xy+x^2}$
+    \correctchoice $\dfrac{-(y^2+2xy)}{2xy+x^2}$
+    \choice $\dfrac{y^2+2xy}{2xy+x^2}$
+    \choice $\dfrac{2xy+x^2}{y^2+2xy}$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 7--9: Derivatives of Trig, Exp \& Log}
+\vspace{3mm}
+
+\question[1] $\dfrac{d}{dx}\!\left[x^2\sin x\right] = $
+\begin{choices}
+    \choice $2x\cos x$
+    \choice $x^2\cos x$
+    \correctchoice $2x\sin x + x^2\cos x$
+    \choice $2x\sin x - x^2\cos x$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[e^{\sin x}\right] = $
+\begin{choices}
+    \choice $e^{\cos x}$
+    \choice $\cos x$
+    \correctchoice $\cos x \cdot e^{\sin x}$
+    \choice $e^{\sin x}$
+\end{choices}
+
+\question[1] A spherical snowball melts so that its radius decreases at 0.2 cm/min.
+How fast is the volume decreasing when $r = 5$ cm? ($V = \tfrac{4}{3}\pi r^3$)
+\begin{choices}
+    \choice $4\pi$ cm$^3$/min
+    \correctchoice $20\pi$ cm$^3$/min
+    \choice $100\pi$ cm$^3$/min
+    \choice $200\pi$ cm$^3$/min
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 10--13: Applications of Derivatives}
+\vspace{3mm}
+
+\question[1] The function $f(x) = x^3 - 12x$ has local extrema at:
+\begin{choices}
+    \choice $x = 0$ only
+    \choice $x = 2$ only
+    \correctchoice $x = -2$ (local max) and $x = 2$ (local min)
+    \choice $x = 2$ (local max) and $x = -2$ (local min)
+\end{choices}
+
+\question[1] The graph of $f(x) = x^4 - 2x^2$ has inflection points at:
+\begin{choices}
+    \choice $x = 0$ only
+    \correctchoice $x = \pm\dfrac{1}{\sqrt{3}}$
+    \choice $x = \pm 1$
+    \choice $x = \pm\sqrt{2}$
+\end{choices}
+
+\question[1] To minimize the surface area of a closed cylinder with fixed volume, the
+optimal ratio of height to radius is:
+\begin{choices}
+    \choice $h : r = 1 : 1$
+    \correctchoice $h : r = 2 : 1$
+    \choice $h : r = 4 : 1$
+    \choice $h : r = \pi : 1$
+\end{choices}
+
+\question[1] The Mean Value Theorem applies to $f(x) = \sqrt{x}$ on:
+\begin{choices}
+    \choice $[-1, 1]$ because it's symmetric
+    \correctchoice $[0, 4]$ because $f$ is continuous on $[0,4]$ and differentiable on $(0,4)$
+    \choice $[-4, 4]$ because it's a standard interval
+    \choice It never applies to $\sqrt{x}$
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 14--17: Vectors}
+\vspace{3mm}
+
+\question[1] For $\vec{a} = (2,1,-2)$ and $\vec{b} = (1,-2,2)$, $\vec{a}\cdot\vec{b}$ equals:
+\begin{choices}
+    \choice 9
+    \correctchoice $-6$
+    \choice 6
+    \choice 0
+\end{choices}
+
+\question[1] If $|\vec{a}| = 3$, $|\vec{b}| = 4$, and $\theta = 60^\circ$, then
+$|\vec{a}\times\vec{b}|$ equals:
+\begin{choices}
+    \choice 6
+    \correctchoice $6\sqrt{3}$
+    \choice 12
+    \choice $12\sqrt{3}$
+\end{choices}
+
+\question[1] The vector projection of $\vec{a}$ onto $\vec{b}$ is:
+\begin{choices}
+    \choice $(\vec{a}\cdot\vec{b})\vec{b}$
+    \correctchoice $\dfrac{\vec{a}\cdot\vec{b}}{|\vec{b}|^2}\vec{b}$
+    \choice $\dfrac{\vec{a}\cdot\vec{b}}{|\vec{b}|}\hat{a}$
+    \choice $|\vec{a}|\cos\theta$
+\end{choices}
+
+\question[1] $\vec{a} = (1,2,k)$ and $\vec{b} = (2,-1,1)$ are perpendicular when $k = $
+\begin{choices}
+    \choice 1
+    \choice $-1$
+    \correctchoice 0
+    \choice 2
+\end{choices}
+
+\vspace{3mm}
+\noindent\textit{Questions 18--20: Lines and Planes}
+\vspace{3mm}
+
+\question[1] Which of the following is a point on the line $\dfrac{x-1}{2}=\dfrac{y+2}{3}
+=\dfrac{z}{-1}$?
+\begin{choices}
+    \choice $(2,3,-1)$
+    \correctchoice $(3,1,-1)$
+    \choice $(1,-2,0)$ only at $t=0$, not others
+    \choice $(0,0,0)$
+\end{choices}
+
+\question[1] The planes $x + 2y - z = 5$ and $2x + 4y - 2z = 7$ are:
+\begin{choices}
+    \choice Identical
+    \correctchoice Parallel and distinct
+    \choice Perpendicular
+    \choice Intersecting at a line
+\end{choices}
+
+\question[1] The distance from the point $(3,0,0)$ to the plane $x+y+z = 6$ is:
+\begin{choices}
+    \choice 1
+    \correctchoice $\sqrt{3}$
+    \choice 3
+    \choice $3\sqrt{3}$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (40 marks)}
+\vspace{3mm}
+\noindent\textit{Answer all five questions.}
+\vspace{5mm}
+
+\question \textbf{(Limits and Derivatives)}
+\begin{parts}
+    \part[3] Using the definition of the derivative (first principles), prove that
+    $\dfrac{d}{dx}\!\left[x^3\right] = 3x^2$.
+    \part[3] Find $\dfrac{d}{dx}$ for each of the following (no simplification needed):
+    \begin{itemize}
+        \item[(i)] $f(x) = \dfrac{x^2+1}{\sqrt{x}}$
+        \item[(ii)] $g(x) = (2x-1)^3(x^2+x)$
+    \end{itemize}
+    \part[2] A function $f$ satisfies $f(2) = 5$ and $f'(2) = -3$. Write the equation of
+    the tangent line to $f$ at $x = 2$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+\begin{align*}
+\frac{d}{dx}[x^3] &= \lim_{h\to 0}\frac{(x+h)^3 - x^3}{h}
+= \lim_{h\to 0}\frac{x^3+3x^2h+3xh^2+h^3-x^3}{h} \\
+&= \lim_{h\to 0}(3x^2+3xh+h^2) = \boxed{3x^2}
+\end{align*}
+
+\textbf{(b)}
+\begin{itemize}
+    \item[(i)] Rewrite as $x^{3/2}+x^{-1/2}$:\quad
+    $f'(x) = \tfrac{3}{2}x^{1/2} - \tfrac{1}{2}x^{-3/2}$
+    \item[(ii)] Product + chain rule:
+    $g'(x) = 3(2x-1)^2(2)(x^2+x) + (2x-1)^3(2x+1)$
+    $= 6(2x-1)^2(x^2+x) + (2x-1)^3(2x+1)$
+\end{itemize}
+
+\textbf{(c)} $y - 5 = -3(x-2) \implies \boxed{y = -3x + 11}$
+\end{solution}
+
+\question \textbf{(Derivatives of Trig, Exp \& Log and Related Rates)}
+\begin{parts}
+    \part[4] Differentiate fully:
+    \begin{itemize}
+        \item[(i)] $f(x) = \ln(\sin^2 x)$
+        \item[(ii)] $g(x) = e^{2x}\tan x$
+    \end{itemize}
+    \part[4] Two cars start from the same intersection at the same time. Car A travels
+    north at 60 km/h and Car B travels east at 80 km/h. How fast is the distance between
+    them increasing after 1 hour?
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+\begin{itemize}
+    \item[(i)] $\ln(\sin^2 x) = 2\ln|\sin x|$:\quad
+    $f'(x) = \dfrac{2\cos x}{\sin x} = \mathbf{2\cot x}$
+    \item[(ii)] Product rule:
+    $g'(x) = 2e^{2x}\tan x + e^{2x}\sec^2 x = \mathbf{e^{2x}(2\tan x + \sec^2 x)}$
+\end{itemize}
+
+\textbf{(b)} Let $a$ = Car A distance north, $b$ = Car B distance east, $D$ = distance apart.
+$D^2 = a^2 + b^2$.\quad $\dfrac{da}{dt} = 60$, $\dfrac{db}{dt} = 80$.
+
+After 1 h: $a = 60$ km, $b = 80$ km, $D = \sqrt{3600+6400} = 100$ km.
+
+$2D\dfrac{dD}{dt} = 2a\dfrac{da}{dt} + 2b\dfrac{db}{dt}$
+
+$100\dfrac{dD}{dt} = 60(60) + 80(80) = 3600 + 6400 = 10000$
+
+$\dfrac{dD}{dt} = \mathbf{100 \text{ km/h}}$
+\end{solution}
+
+\question \textbf{(Applications of Derivatives)}
+
+A 1 m $\times$ 1 m square sheet of metal has a semicircular notch of radius $r$ cut from
+the centre of one side. A rectangle of width $w$ and height $h$ is to be inscribed in the
+remaining region such that its base lies on the bottom edge and its top corners touch the
+semicircle. The semicircle has equation $x^2 + y^2 = r^2$, $y \geq 0$, centred at the midpoint
+of the top edge, with $r = 1/2$.
+\begin{parts}
+    \part[3] Express the height $h$ of the rectangle in terms of its half-width $x$.
+    ($x^2 + h^2 = r^2$ from the semicircle, $0 < x < r$.)
+    \part[4] Write a function $A(x)$ for the area of the inscribed rectangle. Find the
+    value of $x$ that maximizes $A$.
+    \part[3] Identify all local and absolute maxima and minima of $f(x) = 2x^3 - 9x^2 + 12x - 4$
+    on $[0, 3]$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} Top corners at $(\pm x, h)$ touch the semicircle: $x^2 + h^2 = (1/2)^2 = 1/4$.
+\[
+h = \sqrt{\frac{1}{4} - x^2}
+\]
+
+\textbf{(b)} Width of rectangle $= 2x$, height $= h = \sqrt{1/4-x^2}$.
+$A(x) = 2x\sqrt{1/4-x^2}$, domain $0 < x < 1/2$.
+
+$A'(x) = 2\sqrt{1/4-x^2} + 2x \cdot \dfrac{-2x}{2\sqrt{1/4-x^2}}
+= 2\sqrt{1/4-x^2} - \dfrac{2x^2}{\sqrt{1/4-x^2}}
+= \dfrac{2(1/4-x^2)-2x^2}{\sqrt{1/4-x^2}} = \dfrac{1/2 - 4x^2}{\sqrt{1/4-x^2}}$
+
+$A'(x) = 0$: $4x^2 = 1/2 \implies x^2 = 1/8 \implies x = \dfrac{1}{2\sqrt{2}}$.
+
+$A\!\left(\tfrac{1}{2\sqrt{2}}\right) = 2 \cdot \tfrac{1}{2\sqrt{2}} \cdot \sqrt{1/4-1/8}
+= \tfrac{1}{\sqrt{2}}\cdot\sqrt{1/8} = \tfrac{1}{\sqrt{2}}\cdot\tfrac{1}{2\sqrt{2}} = \mathbf{\tfrac{1}{4}}$ m$^2$.
+
+\textbf{(c)} $f'(x) = 6x^2-18x+12 = 6(x-1)(x-2) = 0 \implies x=1,\,x=2$.
+\begin{center}
+\begin{tabular}{lll}
+$f(0)=-4$,&$f(1)=2-9+12-4=1$,&$f(2)=16-36+24-4=0$,\quad $f(3)=54-81+36-4=5$.
+\end{tabular}
+\end{center}
+\textbf{Absolute max}: $f(3)=5$.\quad \textbf{Absolute min}: $f(0)=-4$.\\
+\textbf{Local max}: $(1,1)$.\quad \textbf{Local min}: $(2,0)$.
+\end{solution}
+
+\question \textbf{(Vectors)}
+
+Let $\vec{a} = (3, -1, 2)$, $\vec{b} = (1, 4, -1)$, $\vec{c} = (2, 0, 3)$.
+\begin{parts}
+    \part[2] Find the angle between $\vec{a}$ and $\vec{b}$, to the nearest degree.
+    \part[3] Calculate $\vec{a} \times \vec{b}$. Use the result to find the area of the
+    triangle with $\vec{a}$ and $\vec{b}$ as two sides.
+    \part[3] Find the scalar and vector projection of $\vec{c}$ onto $\vec{a}$.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $\vec{a}\cdot\vec{b} = 3-4-2 = -3$;\quad
+$|\vec{a}| = \sqrt{9+1+4}=\sqrt{14}$;\quad $|\vec{b}|=\sqrt{1+16+1}=\sqrt{18}=3\sqrt{2}$.
+\[
+\cos\theta = \frac{-3}{\sqrt{14}\cdot3\sqrt{2}} = \frac{-3}{3\sqrt{28}} = \frac{-1}{\sqrt{28}}
+\approx -0.1890 \implies \theta \approx \mathbf{101^\circ}
+\]
+
+\textbf{(b)}
+\[
+\vec{a}\times\vec{b} = \begin{vmatrix}\vec{i}&\vec{j}&\vec{k}\\3&-1&2\\1&4&-1\end{vmatrix}
+= \vec{i}(1-8)-\vec{j}(-3-2)+\vec{k}(12+1) = \mathbf{(-7,\,5,\,13)}
+\]
+$|\vec{a}\times\vec{b}| = \sqrt{49+25+169} = \sqrt{243} = 9\sqrt{3}$.
+Area of triangle $= \tfrac{1}{2} \cdot 9\sqrt{3} = \mathbf{\dfrac{9\sqrt{3}}{2}} \approx 7.79$ units$^2$.
+
+\textbf{(c)} $\vec{c}\cdot\vec{a} = 6+0+6=12$;\quad $|\vec{a}|^2=14$.
+
+Scalar projection $= \dfrac{12}{\sqrt{14}} = \dfrac{12\sqrt{14}}{14} = \mathbf{\dfrac{6\sqrt{14}}{7}}$
+
+Vector projection $= \dfrac{12}{14}(3,-1,2) = \dfrac{6}{7}(3,-1,2)
+= \mathbf{\left(\dfrac{18}{7},\,-\dfrac{6}{7},\,\dfrac{12}{7}\right)}$
+\end{solution}
+
+\question \textbf{(Lines and Planes)}
+\begin{parts}
+    \part[4] Find the equation of the plane through $A(2,\,0,\,-1)$, $B(1,\,3,\,2)$,
+    and $C(0,\,-1,\,1)$ in scalar form.
+    \part[2] Find the parametric equations of the line of intersection of the planes
+    $x + y - z = 2$ and $2x - y + z = 1$. \textit{(Hint: find the direction vector using
+    the cross product of the normals, then find a point on both planes.)}
+    \part[2] Find the distance from the point $Q(1,\,1,\,1)$ to the plane found in part~(a).
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} $\overrightarrow{AB} = (-1,3,3)$;\quad $\overrightarrow{AC} = (-2,-1,2)$.
+\[
+\vec{n} = \overrightarrow{AB}\times\overrightarrow{AC} =
+\begin{vmatrix}\vec{i}&\vec{j}&\vec{k}\\-1&3&3\\-2&-1&2\end{vmatrix}
+= \vec{i}(6+3)-\vec{j}(-2+6)+\vec{k}(1+6) = (9,\,-4,\,7)
+\]
+Using $A(2,0,-1)$:
+$9(x-2)-4y+7(z+1)=0 \implies \mathbf{9x-4y+7z=-11}$.
+
+Verify $B$: $9-12+14=11$. Wait: $9(1)-4(3)+7(2)=9-12+14=11\neq -11$.
+
+Recheck: $9(2)-4(0)+7(-1)=18-0-7=11$. So using $A$ gives $9x-4y+7z=11$. \\
+Using $A$: $9(2)+(-4)(0)+7(-1)=18-7=11$. Plane: $\mathbf{9x-4y+7z=11}$.
+
+Check $B(1,3,2)$: $9-12+14=11$\checkmark.\quad Check $C(0,-1,1)$: $0+4+7=11$\checkmark.
+
+\textbf{(b)} $\vec{n}_1=(1,1,-1)$, $\vec{n}_2=(2,-1,1)$.
+\[
+\vec{d} = \vec{n}_1\times\vec{n}_2 =
+\begin{vmatrix}\vec{i}&\vec{j}&\vec{k}\\1&1&-1\\2&-1&1\end{vmatrix}
+= (1-1)-\vec{j}(1+2)+\vec{k}(-1-2) = (0,\,-3,\,-3)
+\]
+Set $z=0$: $x+y=2$, $2x-y=1 \Rightarrow 3x=3 \Rightarrow x=1,\,y=1$.
+Point $(1,1,0)$ lies on both planes.
+\[
+\text{Line:}\quad x=1,\quad y=1-3t,\quad z=-3t
+\]
+
+\textbf{(c)} $\vec{n} = (9,-4,7)$, $|\vec{n}|=\sqrt{81+16+49}=\sqrt{146}$.
+\[
+d = \frac{|9(1)-4(1)+7(1)-11|}{\sqrt{146}} = \frac{|9-4+7-11|}{\sqrt{146}}
+= \frac{1}{\sqrt{146}} = \mathbf{\frac{\sqrt{146}}{146} \approx 0.083 \text{ units}}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

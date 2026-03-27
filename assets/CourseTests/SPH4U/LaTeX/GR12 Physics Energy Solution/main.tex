@@ -1,0 +1,440 @@
+
+\documentclass[addpoints]{exam}
+% Used to insert images
+\usepackage{graphicx}
+\usepackage{color}
+
+\printanswers
+
+\newcommand{\event}{Energy}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+% Adds a line to the top of the page
+\runningheadrule
+% The three braces correspond to the different parts of the header: the left is the top left text, middle is top middle, and right is top right.
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi }
+% Adds a line to the bottom of the page
+\runningfootrule
+% The three braces correspond to the different parts of the footer: the left is the bottom left text, middle is bottom middle, and right is bottom right.
+% Doesn't include the title page in the page count 
+% \runningfooter{}{Page \the\numexpr\thepage-1\   of \the\numexpr\numpages-1}{}
+% Uncomment the line below if you want to include the title page in the page count 
+\runningfooter{}{Page \thepage\   of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Physics \\ \event
+    % Writes key if the answers are shown, otherwise writes test
+    \ifprintanswers 
+     \space Key
+    \else 
+     \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+% Change to any picture or just some \vspace{.3\textheight} to leave it blank. [h] ensures that the image is placed in the same place in the document as in the code
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=.3\textheight, width=.6\textwidth, keepaspectratio]{}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{eenrgy-dwight.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{figure}
+
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else
+        \underline{\hspace{10cm}}\\ \vspace{5mm}
+    \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+
+\end{center}
+
+% Change the list below to reflect the instructions for your test
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    % If the test is a class set, an instruction will appear to not write on the test paper.
+    \ifnum\type=1 \item \textbf{This test is a class set.} Please do not write any answers on this paper. \fi
+    % Adds an instruction 
+    \item Please answer to 2 decimal points
+    \item The test is designed to be completed in 75 minutes
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+% The gradetable has a number of rows that automatically updates. This is not very accurate because of the variance in question size, but it can serve as a starting point. You will probably need to manually update the number of rows of the gradetable (change '\the\numexpr\numpages/13+1' to the desired number of rows).
+\multirowgradetable{1}[pages]   
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+\section*{Multiple Choice (10 marks)}
+\vspace{5mm}
+
+\question[1] What is the kinetic energy of a 2 kg object moving at 5 m/s?
+\begin{choices}
+    \choice 5 J
+    \correctchoice 25 J
+    \choice 50 J
+    \choice 10 J
+\end{choices}
+\vspace{8mm}
+
+\question[1] How much gravitational potential energy does a 5 kg object have at 10 m height?
+\begin{choices}
+    \choice 50 J
+    \correctchoice 490 J
+    \choice 980 J
+    \choice 245 J
+\end{choices}
+\vspace{8mm}
+
+\question[1] Which energy transformation occurs in a photovoltaic cell?
+\begin{choices}
+    \choice Thermal to electrical
+    \correctchoice Light to electrical
+    \choice Chemical to electrical
+    \choice Mechanical to electrical
+\end{choices}
+\vspace{8mm}
+
+\question[1] What is the work done by a 20 N force pushing an object 5 m?
+\begin{choices}
+    \choice 4 J
+    \correctchoice 100 J
+    \choice 25 J
+    \choice 200 J
+\end{choices}
+\vspace{8mm}
+
+\question[1] What power is developed by doing 600 J of work in 10 seconds?
+\begin{choices}
+    \choice 6 W
+    \correctchoice 60 W
+    \choice 6000 W
+    \choice 10 W
+\end{choices}
+\vspace{8mm}
+
+\question[1] Which statement best describes energy conservation?
+\begin{choices}
+    \choice Energy can be destroyed
+    \correctchoice Energy changes form but total remains constant
+    \choice Energy becomes less useful over time
+    \choice Energy creation is possible in closed systems
+\end{choices}
+\vspace{8mm}
+
+\question[1] What is the efficiency of a device that outputs 150 J from 200 J input?
+\begin{choices}
+    \choice 133\%
+    \choice 50\%
+    \correctchoice 75\%
+    \choice 25\%
+\end{choices}
+\vspace{8mm}
+
+\question[1] How much energy is stored in a spring (k=400 N/m) compressed 0.2 m?
+\begin{choices}
+    \choice 8 J
+    \correctchoice 8 J
+    \choice 16 J
+    \choice 80 J
+\end{choices}
+\vspace{8mm}
+
+
+\question[1] A 5 kg object has a kinetic energy of 50 J. What is its speed?
+\begin{choices}
+    \choice 2 m/s
+    \correctchoice 4.47 m/s
+    \choice 10 m/s
+    \choice 20 m/s
+\end{choices}
+
+
+\question[1] A spring with a spring constant of 150 N/m is stretched by 0.2 m. What is the elastic potential energy stored in the spring?
+\begin{choices}
+    \choice 1 J
+    \choice 3 J
+    \correctchoice 3 J
+    \choice 6 J
+\end{choices}
+
+\question[1] A 2 kg block slides down a frictionless ramp from a height of 10 m. What is its speed at the bottom?
+\begin{choices}
+    \choice 10 m/s
+    \correctchoice 14.14 m/s
+    \choice 20 m/s
+    \choice 30 m/s
+\end{choices}
+
+\question[1] A car of mass 800 kg is moving at 20 m/s. What is its kinetic energy?
+\begin{choices}
+    \choice 80,000 J
+    \correctchoice 160,000 J
+    \choice 240,000 J
+    \choice 320,000 J
+\end{choices}
+
+\question[1] Work is defined as:
+\begin{choices}
+    \choice Force divided by distance
+    \correctchoice Force times distance times the cosine of the angle between them
+    \choice Change in momentum
+    \choice Change in kinetic energy
+\end{choices}
+
+
+\question[1] A pendulum's potential energy is maximum at:
+\begin{choices}
+    \choice Its lowest point
+    \correctchoice Its highest point
+    \choice The midpoint of its swing
+    \choice None of the above
+\end{choices}
+
+
+\section*{Long Answer (40 marks)}
+
+\question A 50 kg roller coaster car starts from rest at 60 m height.
+\begin{parts}
+    \part[4] Calculate initial potential energy
+    \part[6] Find speed at 20 m height (no friction)
+    \part[6] Calculate actual speed at 20 m height if 10\% energy is lost to friction
+    \part[4] Determine average frictional force
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a) Initial potential energy:}  
+
+    The potential energy is given by:  
+    \[
+    PE = m g h
+    \]  
+    Substituting the values:  
+    \[
+    PE = 50 \cdot 9.8 \cdot 60 = 29,400 \, \text{J}
+    \]  
+
+    \textbf{(b) Speed at 20 m (no friction):}  
+
+    Using conservation of energy:  
+    \[
+    m g h_\text{initial} = m g h_\text{final} + \frac{1}{2} m v^2
+    \]  
+    Simplify:  
+    \[
+    g h_\text{initial} = g h_\text{final} + \frac{1}{2} v^2
+    \]  
+    Solve for \( v \):  
+    \[
+    v = \sqrt{2 g (h_\text{initial} - h_\text{final})}
+    \]  
+    Substituting:  
+    \[
+    v = \sqrt{2 \cdot 9.8 \cdot (60 - 20)} = \sqrt{784} = 28.0 \, \text{m/s}
+    \]  
+
+    \textbf{(c) Actual speed at 20 m height with 10\% energy loss:}  
+
+    If 10\% of energy is lost to friction, only 90\% of the initial energy is available.  
+    The remaining energy:  
+    \[
+    E_\text{remaining} = 0.9 \cdot (m g h_\text{initial})
+    \]  
+    Substitute:  
+    \[
+    E_\text{remaining} = 0.9 \cdot 29,400 = 26,460 \, \text{J}
+    \]  
+    At a height of 20 m, the remaining energy is the sum of potential and kinetic energy:  
+    \[
+    E_\text{remaining} = m g h_\text{final} + \frac{1}{2} m v^2
+    \]  
+    Solve for \( v \):  
+    \[
+    \frac{1}{2} m v^2 = E_\text{remaining} - m g h_\text{final}
+    \]  
+    \[
+    v = \sqrt{\frac{2 (E_\text{remaining} - m g h_\text{final})}{m}}
+    \]  
+    Substituting:  
+    \[
+    v = \sqrt{\frac{2 (26,460 - 50 \cdot 9.8 \cdot 20)}{50}}
+    \]  
+    \[
+    v = \sqrt{\frac{2 (26,460 - 9,800)}{50}} = \sqrt{\frac{33,320}{50}} = \sqrt{668.4} = 25.86 \, \text{m/s}
+    \]  
+
+    \textbf{(d) Average frictional force:}  
+
+    The work done by friction is the energy lost:  
+    \[
+    W_\text{friction} = E_\text{lost}
+    \]  
+    Substitute:  
+    \[
+    W_\text{friction} = 0.1 \cdot (m g h_\text{initial}) = 0.1 \cdot 29,400 = 2,940 \, \text{J}
+    \]  
+    Work done by friction is also given by:  
+    \[
+    W_\text{friction} = F_\text{friction} \cdot d
+    \]  
+    Where \( d = h_\text{initial} - h_\text{final} = 60 - 20 = 40 \, \text{m} \).  
+    Solve for \( F_\text{friction} \):  
+    \[
+    F_\text{friction} = \frac{W_\text{friction}}{d} = \frac{2,940}{40} = 73.5 \, \text{N}
+    \]
+\end{solution}
+\vspace{8mm}
+
+
+
+\question A spring with a spring constant of 200 N/m is compressed by 0.3 m and used to launch a 2 kg block horizontally on a frictionless surface.
+\begin{parts}
+    \part[5] Calculate the elastic potential energy stored in the spring.
+    \part[5] Determine the speed of the block as it leaves the spring.
+\end{parts}
+\begin{solution}[6cm]
+\textbf{(a) Elastic potential energy stored in the spring:}
+
+    The formula for elastic potential energy is:
+    \[
+    PE_\text{elastic} = \frac{1}{2} k x^2
+    \]
+    Substituting the given values:
+    \[
+    PE_\text{elastic} = \frac{1}{2} (200) (0.3)^2
+    \]
+    \[
+    PE_\text{elastic} = \frac{1}{2} (200) (0.09) = 9 \, \text{J}
+    \]
+
+    \textbf{(b) Speed of the block as it leaves the spring:}
+
+    On a frictionless surface, all the elastic potential energy is converted to kinetic energy:
+    \[
+    PE_\text{elastic} = KE = \frac{1}{2} m v^2
+    \]
+    Solving for \(v\):
+    \[
+    v = \sqrt{\frac{2 \cdot PE_\text{elastic}}{m}}
+    \]
+    Substituting the values:
+    \[
+    v = \sqrt{\frac{2 \cdot 9}{2}} = \sqrt{9} = 3 \, \text{m/s}
+    \]
+\end{solution}
+
+
+
+
+\question A 15.0 kg branch falls from a tree onto a trampoline 8.0 m below.
+\begin{parts}
+    \part[5] Calculate the total mechanical energy of the branch at the top of the tree just before it falls, assuming it starts from rest and air resistance is negligible.
+    \part[5] Determine the velocity of the branch just before it hits the trampoline.
+    \part[5] If the trampoline compresses by 0.25 m to bring the branch to a stop, calculate the spring constant of the trampoline.
+\end{parts}
+\begin{solution}[6cm]
+\textbf{(a) Total mechanical energy at the top of the tree:}
+
+    Total mechanical energy is given by:
+    \[
+    E = m g h
+    \]
+    Substituting the given values:
+    \[
+    E = (15.0)(9.8)(8.0) = 1176 \, \text{J}
+    \]
+
+    \textbf{(b) Velocity of the branch just before it hits the trampoline:}
+
+    Using the conservation of mechanical energy:
+    \[
+    m g h = \frac{1}{2} m v^2
+    \]
+    Solving for \(v\):
+    \[
+    v = \sqrt{2 g h}
+    \]
+    Substituting:
+    \[
+    v = \sqrt{2 (9.8)(8.0)} = \sqrt{156.8} \approx 12.52 \, \text{m/s}
+    \]
+
+    \textbf{(c) Spring constant of the trampoline:}
+
+    The potential energy of the trampoline is equal to the mechanical energy of the branch:
+    \[
+    \frac{1}{2} k x^2 = m g h
+    \]
+    Solving for \(k\):
+    \[
+    k = \frac{2 m g h}{x^2}
+    \]
+    Substituting:
+    \[
+    k = \frac{2 (15.0)(9.8)(8.0)}{(0.25)^2} = \frac{2352}{0.0625} = 37632 \, \text{N/m}
+    \]
+\end{solution}
+
+
+
+\question A 0.020 kg bullet is fired at a wooden target with an initial velocity of 250 m/s. Upon hitting the target, the bullet becomes embedded and stops after penetrating 0.12 m into the wood.
+\begin{parts}
+    \part[5] Calculate the initial kinetic energy of the bullet.
+    \part[5] Determine the average force exerted by the target to stop the bullet.
+    \part[5] If 20\% of the bullet's kinetic energy is converted into heat, how much energy is absorbed as heat?
+\end{parts}
+\begin{solution}[6cm]
+\textbf{(a) Initial kinetic energy of the bullet:}
+
+    Kinetic energy is given by:
+    \[
+    KE = \frac{1}{2} m v^2
+    \]
+    Substituting the values:
+    \[
+    KE = \frac{1}{2} (0.020) (250)^2 = 625 \, \text{J}
+    \]
+
+    \textbf{(b) Average force exerted by the target:}
+
+    The work-energy principle states that the work done by the force equals the kinetic energy:
+    \[
+    W = F d = KE
+    \]
+    Solving for \(F\):
+    \[
+    F = \frac{KE}{d}
+    \]
+    Substituting:
+    \[
+    F = \frac{625}{0.12} \approx 5208.33 \, \text{N}
+    \]
+
+    \textbf{(c) Energy absorbed as heat:}
+
+    If 20\% of the kinetic energy is converted to heat:
+    \[
+    E_\text{heat} = 0.20 \cdot KE
+    \]
+    Substituting:
+    \[
+    E_\text{heat} = 0.20 \cdot 625 = 125 \, \text{J}
+    \]
+
+\end{solution}
+
+\end{questions}
+
+\end{document}

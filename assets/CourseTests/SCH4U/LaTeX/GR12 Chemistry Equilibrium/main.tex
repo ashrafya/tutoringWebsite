@@ -1,0 +1,396 @@
+
+\documentclass[addpoints]{exam}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Chemical Systems and Equilibrium}
+\newcommand{\tournament}{}  % Replace with class name, date, or course code
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Chemistry \\ \event
+    \ifprintanswers
+     \space Key
+    \else
+     \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else
+        \underline{\hspace{10cm}}\\ \vspace{5mm}
+    \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Please do not write any answers on this paper. \fi
+    \item Show all work, including ICE tables where applicable, for full marks.
+    \item $K_w = 1.0 \times 10^{-14}$ at \SI{25}{\celsius} unless otherwise stated.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Which expression correctly represents $K_{eq}$ for the reaction
+\ce{aA(g) + bB(aq) <=> cC(aq) + dD(g)}?
+\begin{choices}
+    \correctchoice $K_{eq} = \dfrac{[\text{C}]^c[\text{D}]^d}{[\text{A}]^a[\text{B}]^b}$
+    \choice $K_{eq} = \dfrac{[\text{C}]^c[\text{D}]^d[\text{A}]^a}{[\text{B}]^b}$
+    \choice $K_{eq} = \dfrac{[\text{A}]^a[\text{B}]^b}{[\text{C}]^c[\text{D}]^d}$
+    \choice $K_{eq} = \dfrac{c \cdot d}{a \cdot b}$
+\end{choices}
+
+\question[1] For a reaction at a given temperature, if the reaction quotient $Q < K_{eq}$,
+the system will:
+\begin{choices}
+    \correctchoice Proceed in the forward direction to reach equilibrium.
+    \choice Proceed in the reverse direction to reach equilibrium.
+    \choice Already be at equilibrium.
+    \choice Stop reacting completely.
+\end{choices}
+
+\question[1] Consider \ce{N2(g) + 3H2(g) <=> 2NH3(g)}. According to Le Ch\^{a}telier's
+principle, adding more \ce{N2} will:
+\begin{choices}
+    \correctchoice Shift the equilibrium to the right, increasing \ce{[NH3]}.
+    \choice Shift the equilibrium to the left, decreasing \ce{[NH3]}.
+    \choice Have no effect on the equilibrium position.
+    \choice Increase the value of $K_{eq}$.
+\end{choices}
+
+\question[1] For the equilibrium \ce{2SO2(g) + O2(g) <=> 2SO3(g)}, decreasing the volume
+of the container at constant temperature will:
+\begin{choices}
+    \choice Shift equilibrium to the left.
+    \correctchoice Shift equilibrium to the right.
+    \choice Have no effect on the equilibrium position.
+    \choice Increase $K_{eq}$.
+\end{choices}
+
+\question[1] Consider the exothermic reaction \ce{A(g) <=> B(g)}. Increasing the temperature
+will:
+\begin{choices}
+    \choice Shift equilibrium right and increase $K_{eq}$.
+    \correctchoice Shift equilibrium left and decrease $K_{eq}$.
+    \choice Shift equilibrium right and decrease $K_{eq}$.
+    \choice Have no effect on equilibrium position.
+\end{choices}
+
+\question[1] Adding a catalyst to a system at equilibrium will:
+\begin{choices}
+    \choice Shift the equilibrium to the right.
+    \choice Increase the value of $K_{eq}$.
+    \choice Increase the equilibrium concentration of products.
+    \correctchoice Allow equilibrium to be reached more quickly without shifting the position.
+\end{choices}
+
+\question[1] Which expression correctly represents $K_{sp}$ for \ce{Ca3(PO4)2}?
+\begin{choices}
+    \choice $K_{sp} = [\ce{Ca^{2+}}][\ce{PO4^{3-}}]$
+    \choice $K_{sp} = [\ce{Ca^{2+}}]^2[\ce{PO4^{3-}}]^3$
+    \correctchoice $K_{sp} = [\ce{Ca^{2+}}]^3[\ce{PO4^{3-}}]^2$
+    \choice $K_{sp} = 3[\ce{Ca^{2+}}] \cdot 2[\ce{PO4^{3-}}]$
+\end{choices}
+
+\question[1] What is the pH of a \SI{0.010}{mol/L} \ce{HCl} solution?
+\begin{choices}
+    \choice 1
+    \correctchoice 2
+    \choice 3
+    \choice 12
+\end{choices}
+
+\question[1] At the same concentration, which of the following will have the highest pH?
+\begin{choices}
+    \choice \ce{HCl}
+    \choice \ce{HNO3}
+    \choice \ce{H2SO4}
+    \correctchoice \ce{CH3COOH} (acetic acid)
+\end{choices}
+
+\question[1] For the weak acid equilibrium \ce{HA(aq) <=> H+(aq) + A-(aq)}, the acid
+dissociation constant $K_a$ is expressed as:
+\begin{choices}
+    \correctchoice $K_a = \dfrac{[\ce{H+}][\ce{A-}]}{[\ce{HA}]}$
+    \choice $K_a = \dfrac{[\ce{HA}]}{[\ce{H+}][\ce{A-}]}$
+    \choice $K_a = [\ce{H+}][\ce{A-}]$
+    \choice $K_a = \dfrac{[\ce{H+}][\ce{A-}]}{[\ce{HA}][\ce{H2O}]}$
+\end{choices}
+
+\question[1] A buffer solution is best described as a solution that:
+\begin{choices}
+    \choice Has a pH of exactly 7.
+    \choice Contains only a weak acid.
+    \correctchoice Resists significant changes in pH upon addition of small amounts of acid or base.
+    \choice Contains a strong acid and its salt.
+\end{choices}
+
+\question[1] For a conjugate acid-base pair, which relationship is correct?
+\begin{choices}
+    \choice $K_a + K_b = K_w$
+    \correctchoice $K_a \times K_b = K_w$
+    \choice $K_a - K_b = K_w$
+    \choice $K_a / K_b = K_w$
+\end{choices}
+
+\question[1] What is the conjugate base of \ce{H2PO4-}?
+\begin{choices}
+    \choice \ce{H3PO4}
+    \choice \ce{H2PO4-}
+    \correctchoice \ce{HPO4^{2-}}
+    \choice \ce{PO4^{3-}}
+\end{choices}
+
+\question[1] Which ion is amphoteric (can act as both acid and base)?
+\begin{choices}
+    \choice \ce{Cl-}
+    \choice \ce{Na+}
+    \correctchoice \ce{HCO3-}
+    \choice \ce{SO4^{2-}}
+\end{choices}
+
+\question[1] Adding \ce{NaCl} to a saturated solution of \ce{AgCl} will:
+\begin{choices}
+    \choice Increase the solubility of \ce{AgCl}.
+    \correctchoice Decrease the solubility of \ce{AgCl}.
+    \choice Have no effect on the solubility of \ce{AgCl}.
+    \choice Increase $K_{sp}$ of \ce{AgCl}.
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question At \SI{500}{\celsius}, \SI{1.00}{mol} of \ce{H2} and \SI{1.00}{mol} of \ce{I2} are
+placed in a \SI{1.00}{L} container. At equilibrium, \SI{1.56}{mol} of \ce{HI} is present.
+\[
+\ce{H2(g) + I2(g) <=> 2HI(g)}
+\]
+\begin{parts}
+    \part[4] Construct a complete ICE table and calculate the equilibrium concentrations of all
+    species.
+    \part[2] Calculate $K_{eq}$ for this reaction at \SI{500}{\celsius}.
+    \part[2] If the volume is suddenly halved at constant temperature, predict and explain
+    what happens to the equilibrium position. Will $K_{eq}$ change?
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} ICE table (concentrations in mol/L, volume = 1.00 L so mol = mol/L):
+
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+ & \ce{H2} & \ce{I2} & \ce{2HI} \\
+\midrule
+I & 1.00 & 1.00 & 0 \\
+C & $-x$ & $-x$ & $+2x$ \\
+E & $1.00-x$ & $1.00-x$ & $2x$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+At equilibrium: $[\ce{HI}] = 2x = 1.56\ \text{mol/L}$, so $x = 0.78$.
+\[
+[\ce{H2}] = 1.00 - 0.78 = \mathbf{0.22\ mol/L}
+\quad [\ce{I2}] = \mathbf{0.22\ mol/L}
+\quad [\ce{HI}] = \mathbf{1.56\ mol/L}
+\]
+
+\textbf{(b)}
+\[
+K_{eq} = \frac{[\ce{HI}]^2}{[\ce{H2}][\ce{I2}]} = \frac{(1.56)^2}{(0.22)(0.22)}
+= \frac{2.434}{0.0484} \approx \mathbf{50.3}
+\]
+
+\textbf{(c)} This reaction has equal moles of gas on both sides ($1 + 1 = 2$). Halving the
+volume doubles all concentrations, but $Q = K_{eq}$ is maintained because the numerator and
+denominator are both affected equally. Therefore, \textbf{the equilibrium position does not
+shift} and $K_{eq}$ \textbf{does not change} (it depends only on temperature).
+\end{solution}
+
+\question The molar solubility of silver chromate \ce{Ag2CrO4} in pure water is
+$\SI{6.5e-5}{mol/L}$ at \SI{25}{\celsius}.
+\begin{parts}
+    \part[3] Write the dissolution equation and $K_{sp}$ expression for \ce{Ag2CrO4}.
+    Calculate $K_{sp}$.
+    \part[3] Predict and calculate the molar solubility of \ce{Ag2CrO4} in a
+    \SI{0.10}{mol/L} \ce{AgNO3} solution. Explain the common ion effect.
+    \part[2] A student mixes \SI{50.0}{mL} of \SI{1.0e-4}{mol/L} \ce{AgNO3} with
+    \SI{50.0}{mL} of \SI{1.0e-4}{mol/L} \ce{K2CrO4}. Will a precipitate form?
+    Show your calculation.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+\[
+\ce{Ag2CrO4(s) <=> 2Ag+(aq) + CrO4^{2-}(aq)}
+\]
+\[
+K_{sp} = [\ce{Ag+}]^2[\ce{CrO4^{2-}}]
+\]
+Let $s = \SI{6.5e-5}{mol/L}$. Then $[\ce{Ag+}] = 2s$ and $[\ce{CrO4^{2-}}] = s$.
+\[
+K_{sp} = (2s)^2(s) = 4s^3 = 4(6.5\times10^{-5})^3 = 4(2.746\times10^{-13})
+= \mathbf{1.10\times10^{-12}}
+\]
+
+\textbf{(b)} The common ion \ce{Ag+} from \ce{AgNO3} suppresses the dissolution of \ce{Ag2CrO4},
+shifting the equilibrium left and decreasing solubility.
+
+Let $s'$ = new molar solubility. $[\ce{Ag+}] \approx 0.10 + 2s' \approx 0.10$ (since $s' \ll 0.10$).
+\[
+K_{sp} = (0.10)^2(s') = 1.10\times10^{-12}
+\]
+\[
+s' = \frac{1.10\times10^{-12}}{(0.10)^2} = \frac{1.10\times10^{-12}}{0.010}
+= \mathbf{1.1\times10^{-10}\ mol/L}
+\]
+This is far less than $6.5\times10^{-5}$ mol/L in pure water --- the common ion dramatically
+reduces solubility.
+
+\textbf{(c)} After mixing equal volumes, concentrations are halved:
+$[\ce{Ag+}] = 5.0\times10^{-5}$ mol/L; $[\ce{CrO4^{2-}}] = 5.0\times10^{-5}$ mol/L.
+\[
+Q = [\ce{Ag+}]^2[\ce{CrO4^{2-}}] = (5.0\times10^{-5})^2(5.0\times10^{-5})
+= (2.5\times10^{-9})(5.0\times10^{-5}) = 1.25\times10^{-13}
+\]
+Since $Q = 1.25\times10^{-13} < K_{sp} = 1.10\times10^{-12}$, \textbf{no precipitate forms}.
+\end{solution}
+
+\question Acetic acid (\ce{CH3COOH}) has $K_a = 1.8\times10^{-5}$ at \SI{25}{\celsius}.
+\begin{parts}
+    \part[4] Calculate the pH and percent dissociation of a \SI{0.150}{mol/L} solution of
+    acetic acid. Use an ICE table.
+    \part[3] Calculate the pH of a \SI{0.150}{mol/L} solution of sodium acetate (\ce{CH3COONa}).
+    ($K_w = 1.0\times10^{-14}$)
+    \part[1] Without doing a full calculation, predict whether a solution containing
+    \SI{0.150}{mol/L} \ce{CH3COOH} and \SI{0.150}{mol/L} \ce{CH3COONa} would have a pH
+    above or below 4.74. Justify briefly.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} ICE table for \ce{CH3COOH(aq) <=> H+(aq) + CH3COO-(aq)}:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+ & \ce{CH3COOH} & \ce{H+} & \ce{CH3COO-} \\
+\midrule
+I & 0.150 & 0 & 0 \\
+C & $-x$ & $+x$ & $+x$ \\
+E & $0.150-x$ & $x$ & $x$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\[
+K_a = \frac{x^2}{0.150 - x} = 1.8\times10^{-5}
+\]
+Since $K_a \ll 0.150$, assume $x \ll 0.150$:
+\[
+x^2 \approx (1.8\times10^{-5})(0.150) = 2.70\times10^{-6}
+\implies x = [\ce{H+}] = 1.64\times10^{-3}\ \text{mol/L}
+\]
+\[
+\text{pH} = -\log(1.64\times10^{-3}) = \mathbf{2.78}
+\]
+\[
+\text{\% dissociation} = \frac{1.64\times10^{-3}}{0.150}\times100\% \approx \mathbf{1.09\%}
+\]
+(Assumption valid since $1.09\% < 5\%$.)
+
+\textbf{(b)} \ce{CH3COONa} fully dissociates; \ce{CH3COO-} is a weak base:
+\ce{CH3COO-(aq) + H2O(l) <=> CH3COOH(aq) + OH-(aq)}
+\[
+K_b = \frac{K_w}{K_a} = \frac{1.0\times10^{-14}}{1.8\times10^{-5}} = 5.56\times10^{-10}
+\]
+\[
+K_b = \frac{x^2}{0.150 - x} \approx \frac{x^2}{0.150} \implies x = [\ce{OH-}] = \sqrt{(5.56\times10^{-10})(0.150)} = 9.13\times10^{-6}\ \text{mol/L}
+\]
+\[
+\text{pOH} = -\log(9.13\times10^{-6}) = 5.04 \implies \text{pH} = 14 - 5.04 = \mathbf{8.96}
+\]
+
+\textbf{(c)} When $[\ce{CH3COOH}] = [\ce{CH3COO-}]$, the Henderson--Hasselbalch equation gives:
+$\text{pH} = pK_a + \log(1) = pK_a = -\log(1.8\times10^{-5}) = 4.74$. The pH will be exactly
+\textbf{4.74}.
+\end{solution}
+
+\question The Haber process uses the following equilibrium:
+\[
+\ce{N2(g) + 3H2(g) <=> 2NH3(g)} \qquad \Delta H = -\SI{92}{kJ}
+\]
+\begin{parts}
+    \part[4] For each of the following changes, predict (i) which direction the equilibrium
+    shifts, (ii) the effect on $[\ce{NH3}]$ at the new equilibrium, and (iii) the effect on
+    $K_{eq}$:
+    \begin{itemize}
+        \item[(a)] Adding more \ce{H2} at constant volume and temperature.
+        \item[(b)] Removing \ce{NH3} continuously as it is formed.
+        \item[(c)] Increasing the total pressure by decreasing volume (temperature constant).
+        \item[(d)] Increasing the temperature.
+    \end{itemize}
+    \part[3] Industrial production of \ce{NH3} is carried out at moderately high temperatures
+    (\SI{400}{\celsius}--\SI{500}{\celsius}) rather than at low temperatures, even though
+    lower temperatures favour higher $K_{eq}$ and greater \ce{NH3} yield. Explain this
+    apparent contradiction in terms of kinetics and equilibrium.
+    \part[1] A reaction vessel initially contains only \ce{NH3}. Describe qualitatively what
+    will happen as the system moves toward equilibrium.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Change & Shift direction & Effect on $[\ce{NH3}]$ & Effect on $K_{eq}$ \\
+\midrule
+(a) Add \ce{H2} & Right (forward) & Increases & No change \\
+(b) Remove \ce{NH3} & Right (forward) & Lower than before change & No change \\
+(c) Decrease volume & Right (fewer moles of gas) & Increases & No change \\
+(d) Increase temperature & Left (reverse, endothermic) & Decreases & Decreases \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{(b)} Although thermodynamics favours higher \ce{NH3} yield at lower temperatures
+(larger $K_{eq}$), the reaction rate becomes prohibitively slow at low temperatures --- the
+activation energy barrier is too large for most collisions to be effective. At \SI{400}{\celsius}
+--\SI{500}{\celsius}, the rate is fast enough for economical production, even though the
+equilibrium yield is lower. An iron catalyst is also used to further increase the rate without
+affecting $K_{eq}$. This is an example of kinetic versus thermodynamic control.
+
+\textbf{(c)} Starting with only \ce{NH3}, $Q > K_{eq}$, so the reverse reaction (decomposition
+of \ce{NH3}) is favoured. \ce{N2} and \ce{H2} will form until $Q = K_{eq}$ is reached. At
+equilibrium all three species coexist.
+\end{solution}
+
+\end{questions}
+\end{document}

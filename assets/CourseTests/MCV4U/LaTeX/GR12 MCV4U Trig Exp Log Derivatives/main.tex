@@ -1,0 +1,292 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Derivatives of Trig, Exponential \& Log Functions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Calculus \& Vectors \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Angles are in radians unless stated.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] $\dfrac{d}{dx}\!\left[\sin x\right] = $
+\begin{choices}
+    \correctchoice $\cos x$
+    \choice $-\cos x$
+    \choice $-\sin x$
+    \choice $\sec^2 x$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[\cos(3x)\right] = $
+\begin{choices}
+    \choice $\sin(3x)$
+    \choice $3\sin(3x)$
+    \correctchoice $-3\sin(3x)$
+    \choice $-\sin(3x)$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[\tan x\right] = $
+\begin{choices}
+    \choice $\sec x$
+    \choice $\cot x$
+    \choice $-\sec^2 x$
+    \correctchoice $\sec^2 x$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[e^x\right] = $
+\begin{choices}
+    \choice $xe^{x-1}$
+    \correctchoice $e^x$
+    \choice $e^{x-1}$
+    \choice $x \cdot e^x$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[e^{4x}\right] = $
+\begin{choices}
+    \choice $e^{4x}$
+    \choice $4xe^{4x}$
+    \correctchoice $4e^{4x}$
+    \choice $e^{4x-1}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[\ln x\right] = $
+\begin{choices}
+    \choice $\ln x$
+    \correctchoice $\dfrac{1}{x}$
+    \choice $x \ln x$
+    \choice $e^x$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[\ln(2x + 1)\right] = $
+\begin{choices}
+    \choice $\dfrac{1}{2x+1}$
+    \correctchoice $\dfrac{2}{2x+1}$
+    \choice $2\ln(2x+1)$
+    \choice $\dfrac{2x}{2x+1}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[x e^x\right] = $
+\begin{choices}
+    \choice $e^x$
+    \choice $xe^x$
+    \choice $e^x(x - 1)$
+    \correctchoice $e^x(x + 1)$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[\sin^2 x\right] = $
+\begin{choices}
+    \choice $2\sin x$
+    \choice $-\sin(2x)$
+    \correctchoice $\sin(2x)$
+    \choice $2\cos x$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[e^{x^2}\right] = $
+\begin{choices}
+    \choice $e^{x^2}$
+    \choice $x^2 e^{x^2}$
+    \correctchoice $2x e^{x^2}$
+    \choice $2xe^{2x}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[\ln(x^2)\right] = $
+\begin{choices}
+    \choice $\dfrac{1}{x^2}$
+    \correctchoice $\dfrac{2}{x}$
+    \choice $2x\ln x$
+    \choice $\dfrac{2x}{x^2+1}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[5^x\right] = $
+\begin{choices}
+    \choice $x \cdot 5^{x-1}$
+    \choice $5^x$
+    \correctchoice $5^x \ln 5$
+    \choice $5 \ln x$
+\end{choices}
+
+\question[1] For $f(x) = xe^{-x}$, $f'(x) = $
+\begin{choices}
+    \choice $-xe^{-x}$
+    \choice $e^{-x}(1 + x)$
+    \correctchoice $e^{-x}(1 - x)$
+    \choice $-e^{-x}$
+\end{choices}
+
+\question[1] The area of a circle is increasing at \SI{10}{\cm^2/s}. When the radius is
+5 cm, how fast is the radius increasing? ($A = \pi r^2$)
+\begin{choices}
+    \choice $\dfrac{1}{\pi}$ cm/s
+    \correctchoice $\dfrac{1}{\pi}$ cm/s
+    \choice $\dfrac{2}{\pi}$ cm/s
+    \choice $\dfrac{10}{\pi}$ cm/s
+\end{choices}
+
+\question[1] If $y = \ln(\cos x)$, then $\dfrac{dy}{dx} = $
+\begin{choices}
+    \choice $\dfrac{1}{\cos x}$
+    \choice $\sin x \cdot \ln(\cos x)$
+    \correctchoice $-\tan x$
+    \choice $\tan x$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Differentiate the following functions fully. Simplify where possible.
+\begin{parts}
+    \part[2] $f(x) = \sin(x^2)$
+    \part[3] $g(x) = e^{3x} \cos x$
+    \part[3] $h(x) = \ln(x^2 + 2x)$
+    \part[3] $k(x) = \dfrac{\sin x}{e^x + 1}$
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $f'(x) = \cos(x^2) \cdot 2x = \mathbf{2x\cos(x^2)}$
+
+\textbf{(b)} Product rule:
+$g'(x) = 3e^{3x}\cos x + e^{3x}(-\sin x) = \mathbf{e^{3x}(3\cos x - \sin x)}$
+
+\textbf{(c)}
+$h'(x) = \dfrac{2x + 2}{x^2 + 2x} = \dfrac{2(x+1)}{x(x+2)}$
+
+\textbf{(d)} Quotient rule:
+\[
+k'(x) = \frac{\cos x(e^x + 1) - \sin x \cdot e^x}{(e^x + 1)^2}
+\]
+\end{solution}
+
+\question Air is being pumped into a spherical balloon. At the moment when the radius is
+$r = 10$ cm, the radius is increasing at $\dfrac{dr}{dt} = 0.5$ cm/s.
+\begin{parts}
+    \part[3] Find the rate at which the \textbf{volume} is increasing at this instant.
+    ($V = \tfrac{4}{3}\pi r^3$)
+    \part[2] Find the rate at which the \textbf{surface area} is increasing at this instant.
+    ($S = 4\pi r^2$)
+    \part[3] If the balloon bursts when its volume reaches $4000\pi$ cm$^3$, how many seconds
+    remain at the current rate of volume increase? (Use the instantaneous rate from part (a).)
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\dfrac{dV}{dt} = 4\pi r^2 \dfrac{dr}{dt} = 4\pi(100)(0.5) = \mathbf{200\pi \approx 628 \text{ cm}^3/\text{s}}$
+
+\textbf{(b)} $\dfrac{dS}{dt} = 8\pi r \dfrac{dr}{dt} = 8\pi(10)(0.5) = \mathbf{40\pi \approx 126 \text{ cm}^2/\text{s}}$
+
+\textbf{(c)} Current volume: $V = \tfrac{4}{3}\pi(10)^3 = \dfrac{4000\pi}{3}$ cm$^3$.
+Remaining: $4000\pi - \dfrac{4000\pi}{3} = \dfrac{8000\pi}{3}$ cm$^3$.
+\[
+t = \frac{8000\pi/3}{200\pi} = \frac{8000}{600} = \mathbf{\frac{40}{3} \approx 13.3 \text{ s}}
+\]
+\end{solution}
+
+\question A 5 m ladder leans against a vertical wall. The base slides away from the wall
+at a constant rate of 0.3 m/s.
+\begin{parts}
+    \part[3] How fast is the top of the ladder sliding \textbf{down} the wall at the instant
+    the base is 3 m from the wall?
+    \part[2] At that same instant, find the rate at which the angle $\theta$ between the ladder
+    and the ground is decreasing. (Give your answer in rad/s.)
+    \part[3] At what distance from the wall is the base when the top slides down at the
+    \textbf{same speed} as the base slides outward?
+\end{parts}
+\begin{solution}[9cm]
+Let $x$ = base distance, $y$ = height. $x^2 + y^2 = 25$.\quad
+When $x = 3$: $y = 4$.
+
+\textbf{(a)} Differentiate: $2x\dfrac{dx}{dt} + 2y\dfrac{dy}{dt} = 0$
+\[
+\frac{dy}{dt} = -\frac{x}{y}\frac{dx}{dt} = -\frac{3}{4}(0.3) = \mathbf{-0.225 \text{ m/s}}
+\]
+The top slides down at 0.225 m/s.
+
+\textbf{(b)} $\sin\theta = \dfrac{y}{5}$, so $\cos\theta\dfrac{d\theta}{dt} =
+\dfrac{1}{5}\dfrac{dy}{dt}$.
+At $x = 3$: $\cos\theta = \dfrac{3}{5}$.
+\[
+\frac{d\theta}{dt} = \frac{1}{5} \cdot \frac{dy/dt}{\cos\theta}
+= \frac{1}{5} \cdot \frac{-0.225}{3/5} = \mathbf{-0.075 \text{ rad/s}}
+\]
+
+\textbf{(c)} $\left|\dfrac{dy}{dt}\right| = \left|\dfrac{dx}{dt}\right| = 0.3$:
+\[
+\frac{x}{y}(0.3) = 0.3 \implies y = x
+\]
+Substituting $y = x$ into $x^2 + y^2 = 25$: $2x^2 = 25 \implies x = \dfrac{5}{\sqrt{2}}
+\approx \mathbf{3.54 \text{ m}}$
+\end{solution}
+
+\question Use \textbf{logarithmic differentiation} to find $\dfrac{dy}{dx}$.
+\begin{parts}
+    \part[4] $y = x^x$
+    \part[4] $y = (x^2 + 1)^{3x}$
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Take $\ln$ of both sides: $\ln y = x \ln x$
+
+Differentiate:
+$\dfrac{1}{y}\dfrac{dy}{dx} = \ln x + x \cdot \dfrac{1}{x} = \ln x + 1$
+
+\[
+\boxed{\frac{dy}{dx} = x^x(\ln x + 1)}
+\]
+
+\textbf{(b)} Take $\ln$ of both sides: $\ln y = 3x \ln(x^2 + 1)$
+
+Differentiate (product rule on the right):
+\[
+\frac{1}{y}\frac{dy}{dx} = 3\ln(x^2+1) + 3x \cdot \frac{2x}{x^2+1}
+= 3\ln(x^2+1) + \frac{6x^2}{x^2+1}
+\]
+
+\[
+\boxed{\frac{dy}{dx} = (x^2+1)^{3x}\!\left[3\ln(x^2+1) + \frac{6x^2}{x^2+1}\right]}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

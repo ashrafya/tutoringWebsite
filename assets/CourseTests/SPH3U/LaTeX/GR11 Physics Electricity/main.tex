@@ -1,0 +1,290 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Electricity \& Magnetism}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Physics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units. Use $k = \SI{8.99e9}{N\cdot m^2/C^2}$,
+    $e = \SI{1.60e-19}{C}$.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] The SI unit of electric charge is the:
+\begin{choices}
+    \choice Volt
+    \choice Ampere
+    \correctchoice Coulomb
+    \choice Joule
+\end{choices}
+
+\question[1] Two positive charges repel. If the distance between them is halved, the
+electrostatic force:
+\begin{choices}
+    \choice Doubles
+    \choice Halves
+    \correctchoice Quadruples
+    \choice Stays the same
+\end{choices}
+
+\question[1] The electric field direction at a point is defined as the direction of the
+force on a:
+\begin{choices}
+    \choice Negative test charge
+    \correctchoice Positive test charge
+    \choice Neutral particle
+    \choice Large test charge
+\end{choices}
+
+\question[1] Ohm's Law states:
+\begin{choices}
+    \choice $V = IR^2$
+    \correctchoice $V = IR$
+    \choice $I = VR$
+    \choice $R = VI$
+\end{choices}
+
+\question[1] A \SI{12}{V} battery drives current through a \SI{4}{\ohm} resistor. The
+current is:
+\begin{choices}
+    \choice \SI{0.33}{A}
+    \choice \SI{48}{A}
+    \correctchoice \SI{3.0}{A}
+    \choice \SI{8.0}{A}
+\end{choices}
+
+\question[1] In a series circuit with two resistors:
+\begin{choices}
+    \choice Voltage is the same across each resistor
+    \correctchoice Current is the same through each resistor
+    \choice Total resistance equals the smaller resistance
+    \choice Resistors share the current
+\end{choices}
+
+\question[1] Two resistors of \SI{6}{\ohm} and \SI{3}{\ohm} are connected in parallel.
+The equivalent resistance is:
+\begin{choices}
+    \choice \SI{9}{\ohm}
+    \choice \SI{4.5}{\ohm}
+    \correctchoice \SI{2}{\ohm}
+    \choice \SI{18}{\ohm}
+\end{choices}
+
+\question[1] In a parallel circuit with two branches, the voltage across each branch is:
+\begin{choices}
+    \choice Divided equally
+    \correctchoice The same as the source voltage
+    \choice Zero
+    \choice Inversely proportional to resistance
+\end{choices}
+
+\question[1] The power dissipated by a \SI{5}{\ohm} resistor carrying \SI{2}{A} is:
+\begin{choices}
+    \choice \SI{10}{W}
+    \correctchoice \SI{20}{W}
+    \choice \SI{2.5}{W}
+    \choice \SI{0.4}{W}
+\end{choices}
+
+\question[1] A \SI{60}{W} light bulb operates on \SI{120}{V}. Its resistance is:
+\begin{choices}
+    \choice \SI{60}{\ohm}
+    \choice \SI{120}{\ohm}
+    \correctchoice \SI{240}{\ohm}
+    \choice \SI{2}{\ohm}
+\end{choices}
+
+\question[1] The total current drawn from a \SI{12}{V} battery by three \SI{6}{\ohm}
+resistors in parallel is:
+\begin{choices}
+    \choice \SI{2}{A}
+    \choice \SI{4}{A}
+    \correctchoice \SI{6}{A}
+    \choice \SI{0.67}{A}
+\end{choices}
+
+\question[1] The energy consumed by a \SI{1000}{W} appliance in \SI{2}{h} is:
+\begin{choices}
+    \choice \SI{2000}{J}
+    \choice \SI{500}{J}
+    \correctchoice \SI{7200\,000}{J}
+    \choice \SI{2}{kWh}
+\end{choices}
+
+\question[1] The direction of the magnetic force on a positive charge moving to the
+right in a magnetic field pointing out of the page is:
+\begin{choices}
+    \choice To the right
+    \choice Out of the page
+    \correctchoice Downward
+    \choice Upward
+\end{choices}
+
+\question[1] Magnetic field lines around a straight current-carrying wire are:
+\begin{choices}
+    \choice Straight lines parallel to the wire
+    \correctchoice Concentric circles around the wire
+    \choice Straight lines perpendicular to the wire
+    \choice Radial lines from the wire
+\end{choices}
+
+\question[1] An electron ($q = -e$) is at rest in an electric field. The electric force
+on it is:
+\begin{choices}
+    \choice In the direction of the field
+    \correctchoice Opposite to the direction of the field
+    \choice Zero
+    \choice Perpendicular to the field
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Coulomb's Law and electric fields.
+\begin{parts}
+    \part[3] Two charges, $q_1 = +\SI{3.0e-6}{C}$ and $q_2 = -\SI{5.0e-6}{C}$,
+    are separated by \SI{0.20}{m}. Find the magnitude and direction of the force
+    on each charge.
+    \part[3] Calculate the electric field at a point \SI{0.30}{m} from a point charge
+    of $q = +\SI{8.0e-6}{C}$. State the direction of the field.
+    \part[2] An electron is placed at this point. What is the force on it?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $F = k\dfrac{|q_1||q_2|}{r^2}
+= \dfrac{8.99\times10^9 \times 3.0\times10^{-6} \times 5.0\times10^{-6}}{(0.20)^2}$
+\[
+= \frac{8.99\times10^9 \times 1.5\times10^{-11}}{0.040}
+= \frac{0.13485}{0.040} = \mathbf{\SI{3.37}{N}}
+\]
+The force is \textbf{attractive}: $q_1$ is pulled toward $q_2$, and $q_2$ is pulled
+toward $q_1$ (equal magnitudes, opposite directions — Newton's 3rd law).
+
+\textbf{(b)} $E = k\dfrac{|q|}{r^2}
+= \dfrac{8.99\times10^9 \times 8.0\times10^{-6}}{(0.30)^2}
+= \dfrac{7.192\times10^4}{0.090} = \mathbf{\SI{7.99e5}{N/C}}$
+
+Direction: \textbf{away from $q$} (radially outward, since $q$ is positive).
+
+\textbf{(c)} $F = qE = (1.60\times10^{-19})(7.99\times10^5)
+= \mathbf{\SI{1.28e-13}{N}}$ directed \textbf{toward} $q$ (electron is negative).
+\end{solution}
+
+\question A series circuit consists of a \SI{9.0}{V} battery and three resistors:
+$R_1 = \SI{1.0}{\ohm}$, $R_2 = \SI{2.0}{\ohm}$, $R_3 = \SI{3.0}{\ohm}$.
+\begin{parts}
+    \part[2] Find the total resistance and the current through the circuit.
+    \part[3] Find the voltage drop across each resistor. Verify they sum to \SI{9.0}{V}.
+    \part[2] Find the power dissipated by $R_2$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $R_T = 1.0 + 2.0 + 3.0 = \SI{6.0}{\ohm}$;\quad
+$I = \dfrac{V}{R_T} = \dfrac{9.0}{6.0} = \mathbf{\SI{1.5}{A}}$
+
+\textbf{(b)} $V_1 = IR_1 = 1.5 \times 1.0 = \SI{1.5}{V}$;\quad
+$V_2 = 1.5 \times 2.0 = \SI{3.0}{V}$;\quad $V_3 = 1.5 \times 3.0 = \SI{4.5}{V}$
+
+Check: $1.5 + 3.0 + 4.5 = \SI{9.0}{V}$ \checkmark
+
+\textbf{(c)} $P_2 = I^2 R_2 = (1.5)^2 \times 2.0 = 2.25 \times 2.0 = \mathbf{\SI{4.5}{W}}$
+\end{solution}
+
+\question A parallel circuit has a \SI{12}{V} source and three resistors in parallel:
+$R_1 = \SI{4.0}{\ohm}$, $R_2 = \SI{6.0}{\ohm}$, $R_3 = \SI{12}{\ohm}$.
+\begin{parts}
+    \part[3] Find the equivalent resistance of the parallel combination.
+    \part[2] Find the current through each resistor.
+    \part[2] Find the total current from the battery. Verify using $I_T = V/R_{eq}$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\dfrac{1}{R_{eq}} = \dfrac{1}{4.0} + \dfrac{1}{6.0} + \dfrac{1}{12}
+= \dfrac{3}{12} + \dfrac{2}{12} + \dfrac{1}{12} = \dfrac{6}{12} = \dfrac{1}{2}$
+\[
+R_{eq} = \mathbf{\SI{2.0}{\ohm}}
+\]
+
+\textbf{(b)} Voltage across each = \SI{12}{V}:
+$I_1 = \dfrac{12}{4.0} = \mathbf{\SI{3.0}{A}}$;\quad
+$I_2 = \dfrac{12}{6.0} = \mathbf{\SI{2.0}{A}}$;\quad
+$I_3 = \dfrac{12}{12} = \mathbf{\SI{1.0}{A}}$
+
+\textbf{(c)} $I_T = I_1+I_2+I_3 = 3.0+2.0+1.0 = \mathbf{\SI{6.0}{A}}$
+
+Check: $I_T = \dfrac{V}{R_{eq}} = \dfrac{12}{2.0} = \SI{6.0}{A}$ \checkmark
+\end{solution}
+
+\question Electric power and household electricity.
+\begin{parts}
+    \part[2] A kettle operates at \SI{120}{V} and draws \SI{10}{A}. Calculate its
+    power rating and its resistance.
+    \part[3] How much energy (in kWh and in joules) does the kettle use if left on for
+    \SI{5.0}{min}?
+    \part[2] Electricity costs \$0.12 per kWh. How much does it cost to run a
+    \SI{2400}{W} clothes dryer for 3 hours per week for a year (52 weeks)?
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $P = IV = 10 \times 120 = \mathbf{\SI{1200}{W}}$;\quad
+$R = \dfrac{V}{I} = \dfrac{120}{10} = \mathbf{\SI{12}{\ohm}}$
+
+\textbf{(b)} $t = \SI{5.0}{min} = \SI{300}{s}$
+
+$E = Pt = 1200 \times 300 = \mathbf{\SI{360\,000}{J} = \SI{3.6e5}{J}}$
+
+In kWh: $E = 1.2\,\text{kW} \times \dfrac{5}{60}\,\text{h} = \mathbf{\SI{0.10}{kWh}}$
+
+\textbf{(c)} Energy per week: $2.4\,\text{kW} \times 3\,\text{h} = \SI{7.2}{kWh}$
+
+Annual energy: $7.2 \times 52 = \SI{374.4}{kWh}$
+
+Cost: $374.4 \times \$0.12 = \mathbf{\$44.93}$
+\end{solution}
+
+\end{questions}
+\end{document}

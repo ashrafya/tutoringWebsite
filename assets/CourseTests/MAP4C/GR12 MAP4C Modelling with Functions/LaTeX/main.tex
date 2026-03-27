@@ -1,0 +1,479 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Modelling with Functions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Foundations for College Math \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Round dollar amounts to the nearest cent.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+% Q1
+\question[1]
+A scatter plot of data shows a curved shape that rises steeply, with no maximum. The best model is:
+\begin{choices}
+    \choice Linear
+    \choice Quadratic
+    \correctchoice Exponential
+    \choice Sinusoidal
+\end{choices}
+\vspace{3mm}
+
+% Q2
+\question[1]
+The correlation coefficient $r$ for a strong positive linear relationship is closest to:
+\begin{choices}
+    \choice $-0.95$
+    \choice $0.10$
+    \choice $0.50$
+    \correctchoice $0.97$
+\end{choices}
+\vspace{3mm}
+
+% Q3
+\question[1]
+The vertex form of a quadratic function is:
+\begin{choices}
+    \correctchoice $f(x) = a(x-h)^2 + k$
+    \choice $f(x) = ax^2 + bx + c$
+    \choice $f(x) = a \cdot b^x$
+    \choice $f(x) = a\sin(k(x-d)) + c$
+\end{choices}
+\vspace{3mm}
+
+% Q4
+\question[1]
+An exponential growth model has the form $A = A_0 b^t$ where $b > 1$. If the doubling time is 5 years, then $b$ satisfies:
+\begin{choices}
+    \choice $b^{10} = 2$
+    \correctchoice $b^5 = 2$
+    \choice $b = 2^5$
+    \choice $5b = 2$
+\end{choices}
+\vspace{3mm}
+
+% Q5
+\question[1]
+A sinusoidal function $f(x) = a\sin(k(x-d)) + c$ has amplitude 3 and vertical shift up 5. Its maximum value is:
+\begin{choices}
+    \choice 3
+    \choice 5
+    \correctchoice 8
+    \choice 2
+\end{choices}
+\vspace{3mm}
+
+% Q6
+\question[1]
+Which statement about extrapolation is correct?
+\begin{choices}
+    \choice Extrapolation is always reliable for exponential models
+    \correctchoice Extrapolation can be unreliable because the trend may not continue outside the data range
+    \choice Extrapolation only applies to linear models
+    \choice Extrapolation is the same as interpolation
+\end{choices}
+\vspace{3mm}
+
+% Q7
+\question[1]
+The period of $f(x) = \sin(3x)$ is:
+\begin{choices}
+    \choice $3\pi$
+    \choice $2\pi$
+    \correctchoice $\dfrac{2\pi}{3}$
+    \choice $\dfrac{\pi}{3}$
+\end{choices}
+\vspace{3mm}
+
+% Q8
+\question[1]
+A quadratic model $h(t) = -4.9t^2 + 20t + 1$ represents the height (m) of a projectile. The maximum height occurs at:
+\begin{choices}
+    \choice $t = 20$
+    \correctchoice $t \approx 2.04\ \text{s}$
+    \choice $t = 4.9\ \text{s}$
+    \choice $t = 1\ \text{s}$
+\end{choices}
+\vspace{3mm}
+
+% Q9
+\question[1]
+Data shows a population that triples every 10 years. Starting from 1{,}000, the population after 30 years is:
+\begin{choices}
+    \choice 9{,}000
+    \choice 27{,}000
+    \correctchoice 27{,}000
+    \choice 3{,}000
+\end{choices}
+\vspace{3mm}
+
+% Q10
+\question[1]
+The amplitude of a sinusoidal function is calculated as:
+\begin{choices}
+    \choice max $-$ min
+    \choice $\dfrac{\text{max} + \text{min}}{2}$
+    \correctchoice $\dfrac{\text{max} - \text{min}}{2}$
+    \choice max $+$ min
+\end{choices}
+\vspace{3mm}
+
+% Q11
+\question[1]
+A linear regression gives $y = 2.5x + 10$ with $r = 0.88$. Which statement is correct?
+\begin{choices}
+    \choice The model explains 88\% of the variance in $y$
+    \correctchoice There is a strong positive linear relationship between the variables
+    \choice The slope is 10
+    \choice The data must be quadratic
+\end{choices}
+\vspace{3mm}
+
+% Q12
+\question[1]
+An exponential decay function has the form $A = A_0(0.8)^t$. The percent decrease per time period is:
+\begin{choices}
+    \choice 80\%
+    \correctchoice 20\%
+    \choice 8\%
+    \choice 0.8\%
+\end{choices}
+\vspace{3mm}
+
+% Q13
+\question[1]
+The vertical shift $c$ in a sinusoidal model represents:
+\begin{choices}
+    \choice The amplitude
+    \correctchoice The midline (average value) of the function
+    \choice The period
+    \choice The phase shift
+\end{choices}
+\vspace{3mm}
+
+% Q14
+\question[1]
+Given the quadratic $f(x) = -2(x-3)^2 + 18$, the $x$-intercepts are found by setting $f(x) = 0$. They are:
+\begin{choices}
+    \choice $x = 3$ only
+    \choice $x = 0$ and $x = 6$
+    \correctchoice $x = 0$ and $x = 6$
+    \choice $x = 3 \pm 3$
+\end{choices}
+\vspace{3mm}
+
+% Q15
+\question[1]
+A model predicts that a city's population was 50{,}000 in 2000 and grows at 2.5\% per year. The equation is:
+\begin{choices}
+    \choice $P = 50{,}000 + 2.5t$
+    \choice $P = 50{,}000(2.5)^t$
+    \correctchoice $P = 50{,}000(1.025)^t$
+    \choice $P = 50{,}000(0.975)^t$
+\end{choices}
+\vspace{3mm}
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\vspace{5mm}
+
+%% Q16 --- Choosing a model
+\question[5]
+\textbf{Choosing a Model.}
+The table below shows the number of bacteria $N$ in a culture over time $t$ (hours).
+
+\begin{center}
+\begin{tabular}{@{}cc@{}}
+\toprule
+$t$ (h) & $N$ (bacteria) \\
+\midrule
+0 & 100 \\
+1 & 200 \\
+2 & 400 \\
+3 & 800 \\
+4 & 1600 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+\part[2] Determine which type of model (linear, quadratic, or exponential) best fits this data. Justify your choice with at least two observations from the table.
+\part[3] Write an equation for the model. Use it to predict the number of bacteria at $t = 6$ hours.
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} The data is best modelled by an \textbf{exponential} function. Justification:
+\begin{itemize}
+    \item The values are \textit{doubling} each hour (constant ratio of 2), not increasing by a constant amount (linear) or by a growing fixed amount (quadratic).
+    \item A second difference test for a quadratic would not be constant; the first ratio (200/100, 400/200, 800/400, 1600/800) is always 2.
+\end{itemize}
+
+\textbf{(b)} The initial value is $N_0 = 100$ and the base is $b = 2$:
+\[
+N(t) = 100 \cdot 2^t
+\]
+At $t = 6$:
+\[
+N(6) = 100 \cdot 2^6 = 100 \times 64 = 6{,}400\ \text{bacteria}
+\]
+\end{solution}
+
+\vspace{5mm}
+
+%% Q17 --- Linear regression
+\question[6]
+\textbf{Linear Regression.}
+A study records the number of hours studied ($x$) and the exam score ($y$) for 5 students:
+
+\begin{center}
+\begin{tabular}{@{}cc@{}}
+\toprule
+Hours studied ($x$) & Exam score ($y$) \\
+\midrule
+1 & 55 \\
+2 & 62 \\
+3 & 70 \\
+4 & 75 \\
+5 & 83 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The line of best fit is found to be $y = 7x + 47$ with $r = 0.996$.
+
+\begin{parts}
+\part[2] Interpret the slope and $y$-intercept in context.
+\part[2] Predict the exam score for a student who studies 7 hours. Comment on the reliability of this prediction.
+\part[2] A student scored 90. Estimate how many hours they studied. Is this interpolation or extrapolation?
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} \textit{Slope} $= 7$: For each additional hour studied, the exam score increases by approximately 7 marks.\\
+\textit{$y$-intercept} $= 47$: A student who studies 0 hours is predicted to score 47 (though this extrapolation may not be meaningful in practice).
+
+\textbf{(b)} At $x = 7$: $y = 7(7) + 47 = 49 + 47 = 96$.\\
+This is \textit{extrapolation} (beyond $x = 5$, the range of data). Since $r = 0.996$ the linear trend is very strong, but trends can change outside the observed range; the prediction should be treated with caution.
+
+\textbf{(c)} Set $y = 90$: $90 = 7x + 47 \implies 7x = 43 \implies x \approx 6.1\ \text{hours}$.\\
+This is \textit{extrapolation} (slightly beyond the data range of 1--5 hours).
+\end{solution}
+
+\vspace{5mm}
+
+%% Q18 --- Quadratic model (projectile)
+\question[6]
+\textbf{Quadratic Model --- Thrown Ball.}
+A ball is thrown upward from a platform. Its height $h$ (in metres) at time $t$ (in seconds) is given in the table:
+
+\begin{center}
+\begin{tabular}{@{}cc@{}}
+\toprule
+$t$ (s) & $h$ (m) \\
+\midrule
+0 & 5.0 \\
+1 & 20.1 \\
+2 & 25.4 \\
+3 & 20.9 \\
+4 & 6.6 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+A quadratic regression gives $h(t) = -5t^2 + 20t + 5$.
+
+\begin{parts}
+\part[2] Identify the vertex and state the maximum height and when it occurs.
+\part[2] Find when the ball hits the ground (i.e., when $h = 0$). Round to two decimal places.
+\part[2] What does the $h$-intercept represent in context?
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} The function is $h(t) = -5t^2 + 20t + 5 = -5(t^2 - 4t) + 5 = -5(t-2)^2 + 20 + 5 = -5(t-2)^2 + 25$.\\
+Vertex: $(2,\ 25)$. The \textbf{maximum height is 25 m}, occurring at $t = 2\ \text{s}$.
+
+\textbf{(b)} Set $h(t) = 0$:
+\[
+-5t^2 + 20t + 5 = 0 \implies t^2 - 4t - 1 = 0 \implies t = \frac{4 \pm \sqrt{16+4}}{2} = \frac{4 \pm \sqrt{20}}{2} = 2 \pm \sqrt{5}
+\]
+$t = 2 + \sqrt{5} \approx 2 + 2.236 = 4.24\ \text{s}$ (taking the positive root).\\
+The ball hits the ground at approximately $t \approx 4.24\ \text{s}$.
+
+\textbf{(c)} The $h$-intercept $(0,\ 5)$ represents the \textit{initial height} of the ball at $t = 0$, meaning the ball was released from a height of 5 m above the ground (on a platform).
+\end{solution}
+
+\vspace{5mm}
+
+%% Q19 --- Exponential model / population
+\question[8]
+\textbf{Exponential Model --- World Population.}
+World population data (approximate) is given below:
+
+\begin{center}
+\begin{tabular}{@{}cc@{}}
+\toprule
+Year & Population (billions) \\
+\midrule
+1960 & 3.0 \\
+1975 & 4.1 \\
+1990 & 5.3 \\
+2005 & 6.5 \\
+2020 & 7.8 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Let $t$ be the number of years after 1960.
+
+\begin{parts}
+\part[2] Explain why an exponential model $P(t) = P_0 \cdot b^t$ is reasonable for this data. Use the data to estimate $b$ (the annual growth factor) by using two well-separated data points.
+\part[2] Write a complete exponential equation for $P(t)$.
+\part[2] Estimate the doubling time: find $t$ such that $P(t) = 6.0$ billion (double the 1960 value) using your equation.
+\part[2] Use your model to predict the world population in 2040. Discuss one limitation of your prediction.
+\end{parts}
+
+\begin{solution}
+\textbf{(a)} The ratios of consecutive values are roughly constant (e.g.\ $4.1/3.0 \approx 1.367$ over 15 years, $5.3/4.1 \approx 1.293$ over 15 years), suggesting approximately proportional growth --- consistent with exponential growth.
+
+Using $t=0$ ($P=3.0$) and $t=60$ ($P=7.8$):
+\[
+7.8 = 3.0 \cdot b^{60} \implies b^{60} = 2.6 \implies b = 2.6^{1/60} = e^{\ln(2.6)/60} \approx e^{0.01596} \approx 1.01609
+\]
+Annual growth factor $b \approx 1.0161$ (about 1.61\% per year).
+
+\textbf{(b)}
+\[
+P(t) = 3.0 \times (1.0161)^t \quad \text{(billions, } t = \text{years after 1960)}
+\]
+
+\textbf{(c)} Solve $3.0(1.0161)^t = 6.0$:
+\[
+(1.0161)^t = 2 \implies t = \frac{\ln 2}{\ln 1.0161} \approx \frac{0.6931}{0.01597} \approx 43.4\ \text{years}
+\]
+The population doubles (reaches 6 billion) approximately 43 years after 1960, i.e., around \textbf{2003}.
+
+\textbf{(d)} $t = 2040 - 1960 = 80$:
+\[
+P(80) = 3.0 \times (1.0161)^{80} \approx 3.0 \times e^{80 \times 0.01596} \approx 3.0 \times e^{1.277} \approx 3.0 \times 3.586 \approx 10.8\ \text{billion}
+\]
+\textit{Limitation:} Growth rates can change due to factors such as falling birth rates, policy changes, or resource constraints. A constant growth-rate assumption may overestimate future populations.
+\end{solution}
+
+\vspace{5mm}
+
+%% Q20 --- Sinusoidal model
+\question[8]
+\textbf{Sinusoidal Model --- Monthly Temperatures.}
+The table shows the average monthly temperature (°C) in a Canadian city:
+
+\begin{center}
+\begin{tabular}{@{}lc@{}}
+\toprule
+Month & Avg Temp (°C) \\
+\midrule
+January   & $-15$ \\
+February  & $-12$ \\
+March     & $-3$ \\
+April     & $7$ \\
+May       & $14$ \\
+June      & $19$ \\
+July      & $22$ \\
+August    & $20$ \\
+September & $13$ \\
+October   & $5$ \\
+November  & $-5$ \\
+December  & $-13$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+\part[2] Find the amplitude $a$, the period, and the vertical shift (midline) $c$.
+\part[2] Determine the value of $k$ in $T(m) = a\sin(k(m - d)) + c$ where $m$ is the month number ($m = 1$ for January).
+\part[2] Estimate the phase shift $d$ and write the complete equation.
+\part[2] Use your equation to predict the temperature in month $m = 10$ (October). Compare with the table value.
+\end{parts}
+
+\begin{solution}
+\textbf{(a)}
+Max temperature $= 22$°C (July); Min temperature $= -15$°C (January).
+\[
+a = \frac{22-(-15)}{2} = \frac{37}{2} = 18.5\ \text{°C}
+\]
+\[
+c = \frac{22+(-15)}{2} = \frac{7}{2} = 3.5\ \text{°C}
+\]
+Period $= 12$ months (one year).
+
+\textbf{(b)}
+\[
+k = \frac{2\pi}{12} = \frac{\pi}{6}
+\]
+
+\textbf{(c)} The maximum occurs at $m = 7$ (July). For a sine function the maximum occurs when the argument equals $\pi/2$:
+\[
+\frac{\pi}{6}(7 - d) = \frac{\pi}{2} \implies 7 - d = 3 \implies d = 4
+\]
+Complete equation:
+\[
+\boxed{T(m) = 18.5\sin\!\left(\frac{\pi}{6}(m - 4)\right) + 3.5}
+\]
+
+\textbf{(d)} At $m = 10$:
+\[
+T(10) = 18.5\sin\!\left(\frac{\pi}{6}(10-4)\right) + 3.5
+       = 18.5\sin(\pi) + 3.5
+       = 18.5(0) + 3.5 = 3.5\ \text{°C}
+\]
+The table gives 5°C; the model predicts 3.5°C, which is reasonably close. The small difference is due to the data not being a perfect sinusoid.
+\end{solution}
+
+\end{questions}
+\end{document}

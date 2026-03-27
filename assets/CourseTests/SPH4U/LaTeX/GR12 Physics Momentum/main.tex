@@ -1,0 +1,451 @@
+
+\documentclass[addpoints]{exam}
+% Used to insert images
+\usepackage{graphicx}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Kinematics}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+% Adds a line to the top of the page
+\runningheadrule
+% The three braces correspond to the different parts of the header: the left is the top left text, middle is top middle, and right is top right.
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi }
+% Adds a line to the bottom of the page
+\runningfootrule
+% The three braces correspond to the different parts of the footer: the left is the bottom left text, middle is bottom middle, and right is bottom right.
+% Doesn't include the title page in the page count 
+% \runningfooter{}{Page \the\numexpr\thepage-1\   of \the\numexpr\numpages-1}{}
+% Uncomment the line below if you want to include the title page in the page count 
+\runningfooter{}{Page \thepage\   of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Physics \\ \event
+    % Writes key if the answers are shown, otherwise writes test
+    \ifprintanswers 
+     \space Key
+    \else 
+     \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+% Change to any picture or just some \vspace{.3\textheight} to leave it blank. [h] ensures that the image is placed in the same place in the document as in the code
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=.3\textheight, width=.6\textwidth, keepaspectratio]{}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{momentum-conservation.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{figure}
+
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else
+        \underline{\hspace{10cm}}\\ \vspace{5mm}
+    \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+
+\end{center}
+
+% Change the list below to reflect the instructions for your test
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    % If the test is a class set, an instruction will appear to not write on the test paper.
+    \ifnum\type=1 \item \textbf{This test is a class set.} Please do not write any answers on this paper. \fi
+    % Adds an instruction 
+    \item Please answer to 2 decimal points
+    \item The test is designed to be completed in 75 minutes
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+% The gradetable has a number of rows that automatically updates. This is not very accurate because of the variance in question size, but it can serve as a starting point. You will probably need to manually update the number of rows of the gradetable (change '\the\numexpr\numpages/13+1' to the desired number of rows).
+\multirowgradetable{1}[pages]   
+\end{center}
+
+\newpage
+\begin{questions}
+
+\begin{questions}
+
+\section*{Multiple Choice (10 marks)}
+\vspace{5mm}
+
+\question[1] What is the SI unit of momentum?
+\begin{choices}
+    \choice Joule (J)
+    \choice Newton (N)
+    \correctchoice kilogram·meter/second (kg·m/s)
+    \choice kilogram·meter/second² (kg·m/s²)
+\end{choices}
+
+\question[1] A 2 kg object moves at 3 m/s. What is its momentum?
+\begin{choices}
+    \correctchoice 6 kg·m/s
+    \choice 3 kg·m/s
+    \choice 2 kg·m/s
+    \choice 1.5 kg·m/s
+\end{choices}
+
+\question[1] A force of 10 N acts on an object for 5 seconds. What is the impulse imparted?
+\begin{choices}
+    \correctchoice 50 N·s
+    \choice 2 N·s
+    \choice 10 N·s
+    \choice 5 N·s
+\end{choices}
+
+\question[1] In an inelastic collision, which quantity is conserved?
+\begin{choices}
+    \choice Kinetic energy
+    \correctchoice Momentum
+    \choice Both momentum and kinetic energy
+    \choice Neither
+\end{choices}
+
+\question[1] Two ice skaters push off each other. Skater A (60 kg) moves at 2 m/s. What is Skater B's (80 kg) velocity?
+\begin{choices}
+    \correctchoice 1.5 m/s
+    \choice 2 m/s
+    \choice 0.5 m/s
+    \choice 1.0 m/s
+\end{choices}
+
+\question[1] A ball (0.5 kg) hits a wall at 10 m/s and rebounds at 8 m/s. What is the impulse?
+\begin{choices}
+    \choice 1 kg·m/s
+    \choice 9 kg·m/s
+    \correctchoice -9 kg·m/s
+    \choice -1 kg·m/s
+\end{choices}
+
+\question[1] Which has greater KE if both have same momentum?
+\begin{choices}
+    \correctchoice Car
+    \choice Truck
+    \choice Both same
+    \choice Cannot determine
+\end{choices}
+
+\question[1] A 1000 kg car accelerates from rest to 20 m/s in 5 s. Average force?
+\begin{choices}
+    \choice 2000 N
+    \correctchoice 4000 N
+    \choice 1000 N
+    \choice 500 N
+\end{choices}
+
+\question[1] Baseball (0.1 kg) thrown at 30 m/s and hit back at 35 m/s. Impulse magnitude?
+\begin{choices}
+    \choice 0.5 kg·m/s
+    \choice 3.0 kg·m/s
+    \correctchoice 6.5 kg·m/s
+    \choice 65 kg·m/s
+\end{choices}
+
+\question[1] Collision where objects stick together is:
+\begin{choices}
+    \choice Elastic
+    \correctchoice Inelastic
+    \choice Perfectly elastic
+    \choice Impossible
+\end{choices}
+
+
+\section*{Long Answer (40 marks)}
+
+\question A 0.50 kg cart moving at 2.0 m/s collides elastically with a stationary 0.75 kg cart.
+\begin{parts}
+    \part[4] Calculate the total momentum of the system before the collision.
+    \part[4] Determine the velocity of each cart after the collision.
+\end{parts}
+\begin{solution}[6cm]
+\textbf{(a) Total momentum before the collision:}  
+
+The total momentum of the system before the collision is the sum of the momenta of both carts. The second cart is stationary, so its momentum is zero. The momentum is given by:  
+\[
+p = m v
+\]  
+Substituting the values:  
+\[
+p_\text{total} = (0.50 \, \text{kg}) \cdot (2.0 \, \text{m/s}) + (0.75 \, \text{kg}) \cdot (0 \, \text{m/s})
+\]  
+\[
+p_\text{total} = 1.0 \, \text{kg} \cdot \text{m/s}
+\]  
+
+\textbf{(b) Velocity of each cart after the collision:}  
+
+Since the collision is elastic, both momentum and kinetic energy are conserved. The velocities after the collision can be calculated using the following formulas for elastic collisions:
+\[
+v_{1f} = \frac{m_1 - m_2}{m_1 + m_2} v_{1i} + \frac{2 m_2}{m_1 + m_2} v_{2i}
+\]
+\[
+v_{2f} = \frac{2 m_1}{m_1 + m_2} v_{1i} + \frac{m_2 - m_1}{m_1 + m_2} v_{2i}
+\]  
+
+Substituting the values:  
+\[
+v_{1f} = \frac{0.50 - 0.75}{0.50 + 0.75} \cdot 2.0 + \frac{2 \cdot 0.75}{0.50 + 0.75} \cdot 0
+\]  
+\[
+v_{1f} = \frac{-0.25}{1.25} \cdot 2.0 = -0.40 \, \text{m/s}
+\]  
+
+\[
+v_{2f} = \frac{2 \cdot 0.50}{0.50 + 0.75} \cdot 2.0 + \frac{0.75 - 0.50}{0.50 + 0.75} \cdot 0
+\]  
+\[
+v_{2f} = \frac{1.0}{1.25} \cdot 2.0 = 1.6 \, \text{m/s}
+\]  
+
+\textbf{Final velocities:}  
+\[
+v_{1f} = -0.40 \, \text{m/s} \quad (\text{The 0.50 kg cart moves in the opposite direction})
+\]  
+\[
+v_{2f} = 1.6 \, \text{m/s} \quad (\text{The 0.75 kg cart moves forward})
+\]  
+\end{solution}
+
+
+\question A rocket with a mass of 5000 kg expels 50 kg of fuel per second at a velocity of 400 m/s relative to the rocket.
+\begin{parts}
+    \part[4] Calculate the thrust produced by the rocket.
+    \part[4] Determine the rocket’s acceleration when its total mass is 4000 kg.
+\end{parts}
+\begin{solution}[6cm]
+\textbf{(a) Thrust produced by the rocket:}  
+
+The thrust produced by the rocket is the rate at which momentum is expelled. It can be calculated using the following equation:  
+\[
+F = \dot{m} v_{\text{ex}} 
+\]
+where:  
+\(\dot{m} = 50 \, \text{kg/s}\) (rate of fuel expelled)  
+\(v_{\text{ex}} = 400 \, \text{m/s}\) (velocity of fuel relative to the rocket)  
+
+Substituting the values:  
+\[
+F = 50 \cdot 400 = 20,000 \, \text{N}
+\]  
+Thus, the thrust produced by the rocket is \( 20,000 \, \text{N} \).
+
+\textbf{(b) Rocket’s acceleration when its total mass is 4000 kg:}  
+
+The acceleration of the rocket can be found using Newton's second law:  
+\[
+F = m a 
+\]
+where:  
+\( F = 20,000 \, \text{N} \) (thrust from part (a))  
+\( m = 4000 \, \text{kg} \) (mass of the rocket when fuel is expended)  
+
+Solving for \( a \):  
+\[
+a = \frac{F}{m} = \frac{20,000}{4000} = 5 \, \text{m/s}^2
+\]  
+Thus, the rocket’s acceleration is \( 5 \, \text{m/s}^2 \).
+\end{solution}
+
+
+
+\question Two curling stones collide on ice. Stone A (mass 18 kg) is moving at 4 m/s at 45° north of east, and Stone B (mass 22 kg) is moving at 3 m/s at 60° south of east. After the collision, Stone A moves at 2 m/s at an angle of 30° north of east. 
+\begin{parts}
+    \part[5] Determine the velocity (magnitude and direction) of Stone B after the collision.
+    \part[5] Verify if the collision is elastic.
+\end{parts}
+\begin{solution}[6cm]
+\textbf{(13a) Velocity of Stone B after the collision:}  
+
+To solve this, we use conservation of momentum in both the \( x \)- and \( y \)-directions. The initial and final velocities of the stones are given. Let’s resolve the velocity components for Stone A and Stone B before and after the collision.
+
+Initial velocity of Stone A:
+\[
+v_{A_x} = 4 \cos(45^\circ) = 4 \cdot \frac{\sqrt{2}}{2} = 2\sqrt{2} \, \text{m/s}, \quad v_{A_y} = 4 \sin(45^\circ) = 2\sqrt{2} \, \text{m/s}
+\]  
+Initial velocity of Stone B:
+\[
+v_{B_x} = 3 \cos(60^\circ) = 3 \cdot \frac{1}{2} = 1.5 \, \text{m/s}, \quad v_{B_y} = 3 \sin(60^\circ) = 3 \cdot \frac{\sqrt{3}}{2} = 2.598 \, \text{m/s}
+\]  
+Final velocity of Stone A:
+\[
+v'_{A_x} = 2 \cos(30^\circ) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \, \text{m/s}, \quad v'_{A_y} = 2 \sin(30^\circ) = 1 \, \text{m/s}
+\]  
+
+Now, using conservation of momentum in the \( x \)- and \( y \)-directions:
+
+\[
+\text{In the x-direction:} \quad m_A v_{A_x} + m_B v_{B_x} = m_A v'_{A_x} + m_B v'_{B_x}
+\]  
+\[
+18 \cdot 2\sqrt{2} + 22 \cdot 1.5 = 18 \cdot \sqrt{3} + 22 \cdot v'_{B_x}
+\]  
+Solving for \( v'_{B_x} \):
+
+\[
+v'_{B_x} = \frac{18 \cdot 2\sqrt{2} + 22 \cdot 1.5 - 18 \cdot \sqrt{3}}{22} \approx 2.18 \, \text{m/s}
+\]
+
+\[
+\text{In the y-direction:} \quad m_A v_{A_y} + m_B v_{B_y} = m_A v'_{A_y} + m_B v'_{B_y}
+\]  
+\[
+18 \cdot 2\sqrt{2} + 22 \cdot 2.598 = 18 \cdot 1 + 22 \cdot v'_{B_y}
+\]  
+Solving for \( v'_{B_y} \):
+
+\[
+v'_{B_y} = \frac{18 \cdot 2\sqrt{2} + 22 \cdot 2.598 - 18 \cdot 1}{22} \approx 2.75 \, \text{m/s}
+\]
+
+Thus, the magnitude and direction of Stone B’s final velocity are:
+\[
+v_B' = \sqrt{(v'_{B_x})^2 + (v'_{B_y})^2} = \sqrt{(2.18)^2 + (2.75)^2} \approx 3.47 \, \text{m/s}
+\]
+The direction is given by:
+\[
+\theta_B' = \tan^{-1}\left(\frac{v'_{B_y}}{v'_{B_x}}\right) \approx \tan^{-1}\left(\frac{2.75}{2.18}\right) \approx 52.5^\circ \, \text{north of east}
+\]
+
+\textbf{(13b) Verifying if the collision is elastic:}  
+
+To check if the collision is elastic, we compare the kinetic energy before and after the collision.  
+
+Initial kinetic energy:
+\[
+KE_{\text{initial}} = \frac{1}{2} m_A v_A^2 + \frac{1}{2} m_B v_B^2
+\]
+\[
+KE_{\text{initial}} = \frac{1}{2} \cdot 18 \cdot 4^2 + \frac{1}{2} \cdot 22 \cdot 3^2 = 144 + 99 = 243 \, \text{J}
+\]
+
+Final kinetic energy:
+\[
+KE_{\text{final}} = \frac{1}{2} m_A v'_A^2 + \frac{1}{2} m_B v'_B^2
+\]
+\[
+KE_{\text{final}} = \frac{1}{2} \cdot 18 \cdot 2^2 + \frac{1}{2} \cdot 22 \cdot 3.47^2 \approx 72 + 134.4 = 206.4 \, \text{J}
+\]
+
+Since the initial and final kinetic energies are not equal, the collision is inelastic.
+\end{solution}
+
+
+\question A grenade at rest explodes into three fragments. Fragment 1 (2.5 kg) moves at 6 m/s at 20° north of west, Fragment 2 (3.5 kg) moves at 5 m/s at 40° south of east, and Fragment 3 has a mass of 4 kg.
+\begin{parts}
+    \part[5] Determine the velocity (magnitude and direction) of Fragment 3 after the explosion.
+    \part[5] Calculate the total kinetic energy released in the explosion.
+\end{parts}
+\begin{solution}[6cm]
+\textbf{(a) Velocity of Fragment 3 after the explosion:}  
+
+Since the grenade was initially at rest, the total momentum before the explosion is zero. After the explosion, the momentum of the system is conserved. We can calculate the velocity of Fragment 3 by applying the conservation of momentum in both the \(x\)- and \(y\)-directions.
+
+Let the velocity of Fragment 3 be \( \mathbf{v}_3 = (v_{3x}, v_{3y}) \).
+
+\textbf{Momentum in the \(x\)-direction:}  
+The momentum of each fragment in the \(x\)-direction is:  
+\[
+m_1 v_{1x} + m_2 v_{2x} + m_3 v_{3x} = 0
+\]
+where:  
+- \( m_1 = 2.5 \, \text{kg} \), \( v_1 = 6 \, \text{m/s} \) at \( 20^\circ \) north of west, so \( v_{1x} = -6 \cos(20^\circ) \)
+- \( m_2 = 3.5 \, \text{kg} \), \( v_2 = 5 \, \text{m/s} \) at \( 40^\circ \) south of east, so \( v_{2x} = 5 \cos(40^\circ) \)
+
+Substitute into the momentum equation:
+\[
+2.5 \cdot (-6 \cos(20^\circ)) + 3.5 \cdot (5 \cos(40^\circ)) + 4 \cdot v_{3x} = 0
+\]
+
+Solving for \( v_{3x} \), we get:  
+\[
+v_{3x} = \frac{2.5 \cdot 6 \cos(20^\circ) - 3.5 \cdot 5 \cos(40^\circ)}{4}
+\]
+
+\[
+v_{3x} \approx \frac{-2.5 \cdot 5.64 + 3.5 \cdot 3.83}{4} \approx \frac{-14.1 + 13.405}{4} \approx \frac{-0.695}{4} \approx -0.17375 \, \text{m/s}
+\]
+
+\textbf{Momentum in the \(y\)-direction:}  
+Similarly, in the \(y\)-direction:
+\[
+m_1 v_{1y} + m_2 v_{2y} + m_3 v_{3y} = 0
+\]
+where:  
+- \( v_{1y} = 6 \sin(20^\circ) \)
+- \( v_{2y} = -5 \sin(40^\circ) \)
+
+Substitute into the momentum equation:
+\[
+2.5 \cdot (6 \sin(20^\circ)) + 3.5 \cdot (-5 \sin(40^\circ)) + 4 \cdot v_{3y} = 0
+\]
+
+Solving for \( v_{3y} \), we get:  
+\[
+v_{3y} = \frac{-2.5 \cdot 6 \sin(20^\circ) - 3.5 \cdot 5 \sin(40^\circ)}{4}
+\]
+
+\[
+v_{3y} \approx \frac{-2.5 \cdot 2.06 - 3.5 \cdot 3.21}{4} \approx \frac{-5.15 - 11.23}{4} \approx \frac{-16.38}{4} \approx -4.095 \, \text{m/s}
+\]
+
+Now that we have both components of the velocity of Fragment 3, we can calculate the magnitude and direction of the velocity.
+
+\textbf{Magnitude of \( \mathbf{v}_3 \):}  
+\[
+|\mathbf{v}_3| = \sqrt{v_{3x}^2 + v_{3y}^2} \approx \sqrt{(-0.17375)^2 + (-4.095)^2} \approx \sqrt{0.0302 + 16.77} \approx \sqrt{16.8002} \approx 4.10 \, \text{m/s}
+\]
+
+\textbf{Direction of \( \mathbf{v}_3 \):}  
+The direction is given by:
+\[
+\theta = \tan^{-1}\left(\frac{v_{3y}}{v_{3x}}\right) = \tan^{-1}\left(\frac{-4.095}{-0.17375}\right) \approx \tan^{-1}(23.56) \approx 87.5^\circ \, \text{south of west}
+\]
+
+Thus, the velocity of Fragment 3 is approximately \( 4.10 \, \text{m/s} \) at \( 87.5^\circ \) south of west.
+
+\textbf{(b) Total kinetic energy released in the explosion:}  
+
+The total kinetic energy is the sum of the kinetic energies of all three fragments. The kinetic energy of each fragment is given by:
+\[
+KE = \frac{1}{2} m v^2
+\]
+
+For Fragment 1:
+\[
+KE_1 = \frac{1}{2} \cdot 2.5 \cdot 6^2 = 45 \, \text{J}
+\]
+
+For Fragment 2:
+\[
+KE_2 = \frac{1}{2} \cdot 3.5 \cdot 5^2 = 43.75 \, \text{J}
+\]
+
+For Fragment 3:
+\[
+KE_3 = \frac{1}{2} \cdot 4 \cdot 4.10^2 = 33.56 \, \text{J}
+\]
+
+Thus, the total kinetic energy released is:
+\[
+KE_{\text{total}} = KE_1 + KE_2 + KE_3 = 45 + 43.75 + 33.56 = 122.31 \, \text{J}
+\]
+
+\end{solution}
+
+
+\end{questions}
+
+\end{document}

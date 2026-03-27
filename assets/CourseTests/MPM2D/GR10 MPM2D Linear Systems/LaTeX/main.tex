@@ -1,0 +1,409 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% \printanswers
+
+\newcommand{\event}{Linear Systems}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 10 Principles of Mathematics \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\ \vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Leave answers in exact form where appropriate.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Which ordered pair is the solution to the system $y = 2x - 1$ and $y = -x + 5$?
+\begin{choices}
+    \choice $(1, 1)$
+    \choice $(3, 5)$
+    \correctchoice $(2, 3)$
+    \choice $(0, -1)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] A system of two linear equations has \textbf{no solution}. Which statement best describes the lines?
+\begin{choices}
+    \choice They intersect at exactly one point.
+    \correctchoice They are parallel and distinct.
+    \choice They are the same line.
+    \choice They are perpendicular.
+\end{choices}
+\vspace{3mm}
+
+\question[1] A table of values for two linear relations is shown. At which $x$-value do the two relations have the same $y$-value?
+\[
+\begin{array}{c|c|c}
+x & y_1 = 3x + 1 & y_2 = x + 5 \\ \hline
+0 & 1 & 5 \\
+1 & 4 & 6 \\
+2 & 7 & 7 \\
+3 & 10 & 8 \\
+\end{array}
+\]
+\begin{choices}
+    \choice $x = 1$
+    \correctchoice $x = 2$
+    \choice $x = 3$
+    \choice $x = 0$
+\end{choices}
+\vspace{3mm}
+
+\question[1] What is the solution to the system $3x + y = 7$ and $x - y = 1$ solved by elimination?
+\begin{choices}
+    \choice $(1, 4)$
+    \choice $(3, 2)$
+    \correctchoice $(2, 1)$
+    \choice $(0, 7)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which system has \textbf{infinitely many solutions}?
+\begin{choices}
+    \choice $y = 2x + 1$ and $y = 2x - 3$
+    \correctchoice $2y = 4x + 6$ and $y = 2x + 3$
+    \choice $y = x + 2$ and $y = -x + 2$
+    \choice $3x + y = 5$ and $3x + y = 9$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Using substitution, what is the value of $y$ in the system $x = 2y - 4$ and $3x + y = 13$?
+\begin{choices}
+    \choice $y = 1$
+    \choice $y = 2$
+    \correctchoice $y = 3$
+    \choice $y = 5$
+\end{choices}
+\vspace{3mm}
+
+\question[1] Two friends are saving money. Ana has \$20 and saves \$5 per week. Ben has \$50 and saves \$2 per week. After how many weeks will they have the same amount?
+\begin{choices}
+    \choice 5 weeks
+    \choice 8 weeks
+    \correctchoice 10 weeks
+    \choice 15 weeks
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which point lies on both lines $2x - y = 4$ and $x + 2y = 7$?
+\begin{choices}
+    \choice $(1, -2)$
+    \choice $(4, 4)$
+    \correctchoice $(3, 2)$
+    \choice $(2, 0)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] A mixture problem requires combining a 20\% salt solution and a 50\% salt solution to make 600~mL of a 30\% solution. How much of the 20\% solution is needed?
+\begin{choices}
+    \choice 100~mL
+    \choice 300~mL
+    \correctchoice 400~mL
+    \choice 200~mL
+\end{choices}
+\vspace{3mm}
+
+\question[1] Two cars travel toward each other from cities 300~km apart. Car A travels at 80~km/h and Car B at 70~km/h. After how many hours do they meet?
+\begin{choices}
+    \choice 1.5 hours
+    \correctchoice 2 hours
+    \choice 2.5 hours
+    \choice 3 hours
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which method is most efficient for solving $y = 3x - 2$ and $4x + y = 12$?
+\begin{choices}
+    \correctchoice Substitution, since $y$ is already isolated.
+    \choice Elimination, since both equations are in standard form.
+    \choice Graphing, since the lines are easy to draw.
+    \choice Any method gives a different answer.
+\end{choices}
+\vspace{3mm}
+
+\question[1] The system $\dfrac{x}{2} + y = 5$ and $x + 2y = 10$ has:
+\begin{choices}
+    \choice No solution
+    \choice Exactly one solution: $(0, 5)$
+    \correctchoice Infinitely many solutions
+    \choice Exactly one solution: $(4, 3)$
+\end{choices}
+\vspace{3mm}
+
+\question[1] A school sells adult tickets for \$8 and student tickets for \$5. If 200 tickets were sold for \$1300 total, how many student tickets were sold?
+\begin{choices}
+    \choice 50
+    \choice 80
+    \correctchoice 100
+    \choice 120
+\end{choices}
+\vspace{3mm}
+
+\question[1] Which graph best represents a system with exactly one solution?
+\begin{choices}
+    \choice Two identical lines (overlapping)
+    \choice Two parallel lines
+    \correctchoice Two lines crossing at one point
+    \choice A curve and a line
+\end{choices}
+\vspace{3mm}
+
+\question[1] Solving the system $5x - 2y = 16$ and $3x + 2y = 8$ by elimination gives:
+\begin{choices}
+    \choice $x = 2,\ y = -3$
+    \correctchoice $x = 3,\ y = -\tfrac{1}{2}$
+    \choice $x = 4,\ y = 2$
+    \choice $x = 1,\ y = -6$
+\end{choices}
+\vspace{5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Part B --- Short Answer (33 marks)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\question Solve each system of equations. Show all work. \textbf{(6 marks)}
+
+\begin{parts}
+
+\part[3] Solve by \textbf{substitution}: \quad $\begin{cases} y = 3x - 4 \\ 2x + 5y = 6 \end{cases}$
+
+\begin{solution}[6cm]
+Substitute $y = 3x - 4$ into the second equation:
+\[
+2x + 5(3x - 4) = 6
+\]
+\[
+2x + 15x - 20 = 6
+\]
+\[
+17x = 26
+\]
+\[
+x = \frac{26}{17}
+\]
+\[
+y = 3\!\left(\frac{26}{17}\right) - 4 = \frac{78}{17} - \frac{68}{17} = \frac{10}{17}
+\]
+Solution: $\left(\dfrac{26}{17},\ \dfrac{10}{17}\right)$
+\end{solution}
+
+\part[3] Solve by \textbf{elimination}: \quad $\begin{cases} 3x + 2y = 14 \\ 5x - 2y = 10 \end{cases}$
+
+\begin{solution}[6cm]
+Add the two equations to eliminate $y$:
+\[
+(3x + 2y) + (5x - 2y) = 14 + 10
+\]
+\[
+8x = 24 \implies x = 3
+\]
+Substitute $x = 3$ into the first equation:
+\[
+3(3) + 2y = 14 \implies 9 + 2y = 14 \implies y = \frac{5}{2}
+\]
+Solution: $\left(3,\ \dfrac{5}{2}\right)$
+\end{solution}
+
+\end{parts}
+
+%---
+\question \textbf{Cell Phone Plans. (5 marks)}\\
+Plan A costs \$25 per month plus \$0.10 per text message.
+Plan B costs \$15 per month plus \$0.20 per text message.
+\begin{parts}
+\part[2] Write an equation for the monthly cost of each plan in terms of $n$, the number of text messages.
+\begin{solution}[3cm]
+Plan A: $C_A = 0.10n + 25$\\
+Plan B: $C_B = 0.20n + 15$
+\end{solution}
+
+\part[3] Find the number of text messages at which both plans cost the same. State which plan is cheaper for fewer messages.
+\begin{solution}[5cm]
+Set equal:
+\[
+0.10n + 25 = 0.20n + 15
+\]
+\[
+10 = 0.10n \implies n = 100 \text{ messages}
+\]
+At $n = 100$, both plans cost \$35.
+
+For fewer than 100 messages, Plan B is cheaper (lower fixed cost). For more than 100 messages, Plan A is cheaper.
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Applications. (6 marks)}
+\begin{parts}
+\part[3] A chemist needs 500~mL of a 40\% acid solution. She has a 25\% solution and a 70\% solution. How many millilitres of each should she mix?
+
+\begin{solution}[7cm]
+Let $x$ = mL of 25\% solution and $y$ = mL of 70\% solution.
+\[
+x + y = 500
+\]
+\[
+0.25x + 0.70y = 0.40(500) = 200
+\]
+From the first equation: $x = 500 - y$. Substitute:
+\[
+0.25(500 - y) + 0.70y = 200
+\]
+\[
+125 - 0.25y + 0.70y = 200
+\]
+\[
+0.45y = 75 \implies y = \frac{500}{3} \approx 166.7 \text{ mL of 70\% solution}
+\]
+\[
+x = 500 - \frac{500}{3} = \frac{1000}{3} \approx 333.3 \text{ mL of 25\% solution}
+\]
+\end{solution}
+
+\part[3] Two trains leave different stations 420~km apart and travel toward each other. Train A travels at 90~km/h and Train B at 60~km/h. How long until they meet, and how far has each train travelled?
+
+\begin{solution}[7cm]
+Let $t$ = time (hours) until meeting.
+\[
+90t + 60t = 420
+\]
+\[
+150t = 420 \implies t = 2.8 \text{ hours}
+\]
+Distance by Train A: $90 \times 2.8 = 252$ km\\
+Distance by Train B: $60 \times 2.8 = 168$ km\\
+Check: $252 + 168 = 420$. \checkmark
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{System Types and Graphing. (8 marks)}
+\begin{parts}
+\part[3] Without solving, identify whether each system has one solution, no solution, or infinitely many solutions. Justify your answer.
+\begin{enumerate}[(i)]
+    \item $\begin{cases} 4x - 2y = 6 \\ 2x - y = 3 \end{cases}$
+    \item $\begin{cases} 3x + y = 5 \\ 3x + y = 8 \end{cases}$
+    \item $\begin{cases} x + 2y = 4 \\ 3x - y = 5 \end{cases}$
+\end{enumerate}
+
+\begin{solution}[6cm]
+\begin{enumerate}[(i)]
+    \item The first equation is $2(2x - y) = 6$, i.e., $2x - y = 3$, which is the same as the second. \textbf{Infinitely many solutions} (same line).
+    \item Same left side but different right sides. Lines are parallel and distinct. \textbf{No solution.}
+    \item Different slopes: slope from (i) is $-\tfrac{1}{2}$, from (ii) is $3$. Lines intersect. \textbf{One solution.}
+\end{enumerate}
+\end{solution}
+
+\part[3] Graph the system from (iii) above ($x + 2y = 4$ and $3x - y = 5$) on the grid below and label the solution point.
+
+\begin{solution}[7cm]
+Line 1: $x + 2y = 4 \Rightarrow y = -\tfrac{1}{2}x + 2$. Passes through $(0, 2)$ and $(4, 0)$.\\
+Line 2: $3x - y = 5 \Rightarrow y = 3x - 5$. Passes through $(0, -5)$ and $(\tfrac{5}{3}, 0)$.\\
+Solve: $-\tfrac{1}{2}x + 2 = 3x - 5 \Rightarrow 7 = \tfrac{7}{2}x \Rightarrow x = 2,\ y = 1$.\\
+\textbf{Solution: $(2, 1)$}
+\end{solution}
+
+\part[2] Verify that your solution to part (iii) is correct by substituting into both original equations.
+
+\begin{solution}[3cm]
+$(2, 1)$:\\
+$x + 2y = 2 + 2(1) = 4$ \checkmark\\
+$3x - y = 3(2) - 1 = 5$ \checkmark
+\end{solution}
+\end{parts}
+
+%---
+\question \textbf{Geometry Context. (8 marks)}
+\begin{parts}
+\part[3] The perimeter of a rectangle is 56~cm. The length is 4~cm more than twice the width. Find the dimensions of the rectangle.
+
+\begin{solution}[6cm]
+Let $l$ = length and $w$ = width.
+\[
+2l + 2w = 56 \implies l + w = 28
+\]
+\[
+l = 2w + 4
+\]
+Substitute: $(2w + 4) + w = 28 \implies 3w = 24 \implies w = 8$ cm, $l = 20$ cm.
+
+Check: Perimeter $= 2(20) + 2(8) = 56$ cm. \checkmark
+\end{solution}
+
+\part[2] Two angles are supplementary. One angle is $15^\circ$ less than three times the other. Find both angles.
+
+\begin{solution}[5cm]
+Let the angles be $\alpha$ and $\beta$.
+\[
+\alpha + \beta = 180^\circ
+\]
+\[
+\alpha = 3\beta - 15^\circ
+\]
+Substitute: $(3\beta - 15) + \beta = 180 \implies 4\beta = 195 \implies \beta = 48.75^\circ$, $\alpha = 131.25^\circ$.
+\end{solution}
+
+\part[3] A triangle has a perimeter of 45~cm. The longest side is twice the shortest side. The third side is 9~cm more than the shortest side. Find all three side lengths.
+
+\begin{solution}[6cm]
+Let $s$ = shortest side.\\
+Longest side $= 2s$. Third side $= s + 9$.
+\[
+s + 2s + (s + 9) = 45
+\]
+\[
+4s + 9 = 45 \implies 4s = 36 \implies s = 9 \text{ cm}
+\]
+Sides: 9~cm, 18~cm, 18~cm. (The triangle is isosceles.)
+
+Check: $9 + 18 + 18 = 45$ cm. \checkmark
+\end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

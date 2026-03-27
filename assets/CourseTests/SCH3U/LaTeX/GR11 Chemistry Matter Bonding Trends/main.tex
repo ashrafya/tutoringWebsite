@@ -1,0 +1,280 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Matter, Bonding \& Periodic Trends}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Chemistry \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. A periodic table is provided.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] An atom of \ce{^{37}Cl} has:
+\begin{choices}
+    \choice 17 protons, 17 neutrons, 17 electrons
+    \correctchoice 17 protons, 20 neutrons, 17 electrons
+    \choice 17 protons, 20 neutrons, 20 electrons
+    \choice 20 protons, 17 neutrons, 17 electrons
+\end{choices}
+
+\question[1] Which of the following correctly lists atomic radius in \textbf{decreasing} order?
+\begin{choices}
+    \choice $\text{Li} < \text{Na} < \text{K}$
+    \correctchoice $\text{K} > \text{Na} > \text{Li}$
+    \choice $\text{F} > \text{Cl} > \text{Br}$
+    \choice $\text{Na} > \text{K} > \text{Rb}$
+\end{choices}
+
+\question[1] First ionization energy generally \textbf{increases} as you move:
+\begin{choices}
+    \choice Down a group
+    \choice Across a period from right to left
+    \correctchoice Across a period from left to right
+    \choice Down and to the right on the periodic table
+\end{choices}
+
+\question[1] The most electronegative element on the periodic table is:
+\begin{choices}
+    \choice Oxygen
+    \choice Chlorine
+    \correctchoice Fluorine
+    \choice Nitrogen
+\end{choices}
+
+\question[1] Which bond is most polar?
+\begin{choices}
+    \choice \ce{C-H}
+    \choice \ce{N-H}
+    \correctchoice \ce{O-H}
+    \choice \ce{C-C}
+\end{choices}
+
+\question[1] The formula for the ionic compound formed between calcium and phosphate is:
+\begin{choices}
+    \choice \ce{CaPO4}
+    \choice \ce{Ca2(PO4)3}
+    \correctchoice \ce{Ca3(PO4)2}
+    \choice \ce{Ca(PO4)2}
+\end{choices}
+
+\question[1] How many bonding pairs and lone pairs are in a molecule of \ce{NH3}?
+\begin{choices}
+    \choice 2 bonding pairs, 2 lone pairs
+    \correctchoice 3 bonding pairs, 1 lone pair
+    \choice 3 bonding pairs, 0 lone pairs
+    \choice 4 bonding pairs, 0 lone pairs
+\end{choices}
+
+\question[1] According to VSEPR theory, the molecular geometry of \ce{H2O} is:
+\begin{choices}
+    \choice Linear
+    \choice Trigonal planar
+    \correctchoice Bent (V-shaped)
+    \choice Tetrahedral
+\end{choices}
+
+\question[1] The molecular geometry of \ce{BF3} is:
+\begin{choices}
+    \choice Bent
+    \correctchoice Trigonal planar
+    \choice Trigonal pyramidal
+    \choice T-shaped
+\end{choices}
+
+\question[1] Which of the following molecules is \textbf{nonpolar} despite having polar bonds?
+\begin{choices}
+    \choice \ce{HCl}
+    \choice \ce{H2O}
+    \correctchoice \ce{CO2}
+    \choice \ce{NH3}
+\end{choices}
+
+\question[1] The strongest intermolecular force in liquid \ce{HF} is:
+\begin{choices}
+    \choice London dispersion forces
+    \choice Dipole-dipole forces
+    \correctchoice Hydrogen bonding
+    \choice Ionic bonding
+\end{choices}
+
+\question[1] London dispersion forces are present in:
+\begin{choices}
+    \choice Only polar molecules
+    \choice Only nonpolar molecules
+    \correctchoice All molecules
+    \choice Only ionic compounds
+\end{choices}
+
+\question[1] The ion \ce{S^{2-}} has:
+\begin{choices}
+    \choice 16 protons and 14 electrons
+    \correctchoice 16 protons and 18 electrons
+    \choice 14 protons and 16 electrons
+    \choice 18 protons and 16 electrons
+\end{choices}
+
+\question[1] Which of the following has the highest melting point?
+\begin{choices}
+    \choice \ce{CH4}
+    \choice \ce{HCl}
+    \correctchoice \ce{NaCl}
+    \choice \ce{H2O}
+\end{choices}
+
+\question[1] A double bond between two atoms consists of:
+\begin{choices}
+    \choice Two sigma bonds
+    \correctchoice One sigma bond and one pi bond
+    \choice Two pi bonds
+    \choice One sigma bond and two pi bonds
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Answer the following questions about atomic structure and periodic trends.
+\begin{parts}
+    \part[2] Write the full electron configuration for sulfur (\ce{S}, $Z=16$) and for
+    the sulfide ion (\ce{S^{2-}}).
+    \part[3] Arrange the following in order of \textbf{increasing} first ionization energy
+    and explain the trend: \ce{Na}, \ce{Mg}, \ce{Al}, \ce{Si}, \ce{P}.
+    \part[3] Explain why the second ionization energy of sodium is much greater than its
+    first ionization energy.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} \ce{S}: $1s^2\,2s^2\,2p^6\,3s^2\,3p^4$\quad
+\ce{S^{2-}}: $1s^2\,2s^2\,2p^6\,3s^2\,3p^6$ (gains 2 electrons, isoelectronic with Ar)
+
+\textbf{(b)} Increasing IE$_1$: \ce{Na} $<$ \ce{Mg} $<$ \ce{Al} $<$ \ce{Si} $<$ \ce{P}
+(note: Mg has slightly higher IE than Al because Al's 3p electron is easier to remove than
+Mg's filled 3s). General trend: IE increases across a period as nuclear charge increases
+and atomic radius decreases.
+
+\textbf{(c)} Sodium's first IE removes the single 3s electron, which is far from the nucleus
+and well-shielded. The second IE removes a 2p electron from a much more stable, fully-filled
+shell (noble gas configuration), requiring far more energy.
+\end{solution}
+
+\question Draw the Lewis structure for each of the following, then predict the molecular
+geometry using VSEPR theory.
+\begin{parts}
+    \part[3] \ce{PCl3}
+    \part[3] \ce{CO2}
+    \part[2] \ce{CH4}
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} \ce{PCl3}: P is the central atom with 3 bonding pairs to Cl and 1 lone pair on P.
+Electron geometry: tetrahedral. Molecular geometry: \textbf{trigonal pyramidal}. Bond angles
+$\approx 107^\circ$.
+
+\textbf{(b)} \ce{CO2}: C forms two double bonds with O (total 4 bonding pairs, 0 lone pairs
+on C). Electron geometry: linear. Molecular geometry: \textbf{linear}. Bond angle $180^\circ$.
+The molecule is nonpolar because the two C=O dipoles cancel.
+
+\textbf{(c)} \ce{CH4}: C forms 4 single bonds with H and has no lone pairs. Electron geometry:
+tetrahedral. Molecular geometry: \textbf{tetrahedral}. Bond angles $\approx 109.5^\circ$.
+\end{solution}
+
+\question Ionic compounds and bonding.
+\begin{parts}
+    \part[2] Write the formula and name for the ionic compound formed between aluminum
+    (\ce{Al^{3+}}) and sulfate (\ce{SO4^{2-}}).
+    \part[3] Explain why ionic compounds have high melting points but dissolve in water to
+    produce conducting solutions.
+    \part[3] Compare the boiling points of \ce{H2O}, \ce{H2S}, and \ce{H2Se}.
+    Explain the trend and account for the anomalously high boiling point of \ce{H2O}.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} \ce{Al2(SO4)3} — aluminum sulfate. (2 Al$^{3+}$ balanced by 3 SO$_4^{2-}$)
+
+\textbf{(b)} Ionic compounds are held together by strong electrostatic attractions between
+oppositely charged ions in a crystal lattice, requiring high temperatures to break these
+forces (high melting point). In water, polar water molecules surround and stabilize individual
+ions (solvation), breaking apart the lattice. The resulting ions are free to move and carry
+charge (conducting solution).
+
+\textbf{(c)} For the group 16 hydrides, boiling point generally increases with molar mass:
+\ce{H2S} $< $ \ce{H2Se} due to increasing London dispersion forces. However, \ce{H2O} has a
+far higher boiling point ($\SI{100}{\celsius}$) than expected because \ce{H2O} molecules form
+strong \textbf{hydrogen bonds} (due to the highly electronegative O and O--H bonds), which
+require much more energy to overcome.
+\end{solution}
+
+\question Polarity and intermolecular forces.
+\begin{parts}
+    \part[2] Identify the type(s) of intermolecular forces present in each: (i) \ce{Br2};\;
+    (ii) \ce{HCl};\; (iii) \ce{CH3OH}.
+    \part[3] Explain why ethanol (\ce{CH3CH2OH}) is miscible with water but hexane
+    (\ce{C6H14}) is not, using the principle ``like dissolves like.''
+    \part[3] Arrange the following in order of increasing boiling point and justify:
+    \ce{Ne}, \ce{Ar}, \ce{Kr}, \ce{Xe}.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)}
+(i) \ce{Br2}: London dispersion forces only (nonpolar molecule).
+(ii) \ce{HCl}: London dispersion + dipole-dipole forces (polar molecule).
+(iii) \ce{CH3OH}: London dispersion + dipole-dipole + \textbf{hydrogen bonding}
+(O--H group present).
+
+\textbf{(b)} Ethanol is polar and can form hydrogen bonds with water (both have O--H groups),
+so they are miscible. Hexane is a nonpolar hydrocarbon with only London dispersion forces.
+Since water is highly polar, the strong H-bonds between water molecules are not replaced by
+favorable interactions with nonpolar hexane, so hexane does not dissolve.
+
+\textbf{(c)} Increasing boiling point: \ce{Ne} $<$ \ce{Ar} $<$ \ce{Kr} $<$ \ce{Xe}.
+All noble gases have only London dispersion forces. As molar mass increases down the group,
+more electrons mean greater polarizability, stronger temporary dipoles, and stronger LDF,
+requiring more energy to vaporize.
+\end{solution}
+
+\end{questions}
+\end{document}

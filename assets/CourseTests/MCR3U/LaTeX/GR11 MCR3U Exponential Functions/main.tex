@@ -1,0 +1,266 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Exponential Functions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Functions \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Leave answers in exact form unless stated otherwise.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Simplify: $\dfrac{x^5 \cdot x^{-2}}{x^3}$
+\begin{choices}
+    \choice $x^6$
+    \choice $x^4$
+    \correctchoice $x^0 = 1$
+    \choice $x^{-6}$
+\end{choices}
+
+\question[1] Evaluate: $27^{2/3}$
+\begin{choices}
+    \choice $3$
+    \choice $6$
+    \correctchoice $9$
+    \choice $18$
+\end{choices}
+
+\question[1] Evaluate: $\left(\dfrac{4}{9}\right)^{-1/2}$
+\begin{choices}
+    \choice $\dfrac{2}{3}$
+    \correctchoice $\dfrac{3}{2}$
+    \choice $\dfrac{4}{9}$
+    \choice $-\dfrac{2}{3}$
+\end{choices}
+
+\question[1] The function $y = 2^x$ has:
+\begin{choices}
+    \choice Range $\mathbb{R}$ and horizontal asymptote $y = 0$
+    \correctchoice Domain $\mathbb{R}$, range $y > 0$, asymptote $y = 0$
+    \choice Domain $x > 0$ and range $\mathbb{R}$
+    \choice A vertical asymptote at $x = 0$
+\end{choices}
+
+\question[1] The graph of $y = 2^x - 3$ has a horizontal asymptote at:
+\begin{choices}
+    \choice $y = 2$
+    \choice $y = 0$
+    \correctchoice $y = -3$
+    \choice $y = 3$
+\end{choices}
+
+\question[1] Which function represents \textbf{exponential decay}?
+\begin{choices}
+    \choice $y = 3^x$
+    \correctchoice $y = \left(\dfrac{1}{2}\right)^x$
+    \choice $y = 2 \cdot 3^x$
+    \choice $y = x^{-2}$
+\end{choices}
+
+\question[1] The graph of $y = 3^{x+2}$ is obtained from $y = 3^x$ by:
+\begin{choices}
+    \choice Shifting right 2
+    \correctchoice Shifting left 2
+    \choice Stretching vertically by 2
+    \choice Shifting up 2
+\end{choices}
+
+\question[1] Solve for $x$: $2^x = 32$
+\begin{choices}
+    \choice $x = 4$
+    \correctchoice $x = 5$
+    \choice $x = 6$
+    \choice $x = 16$
+\end{choices}
+
+\question[1] Solve for $x$: $4^x = 8$
+\begin{choices}
+    \choice $x = 2$
+    \choice $x = 1$
+    \correctchoice $x = \dfrac{3}{2}$
+    \choice $x = \dfrac{2}{3}$
+\end{choices}
+
+\question[1] A population doubles every 5 years. Starting at 1000, after 20 years the
+population is:
+\begin{choices}
+    \choice $4000$
+    \choice $8000$
+    \correctchoice $16000$
+    \choice $32000$
+\end{choices}
+
+\question[1] Simplify: $(2x^{1/2})^4$
+\begin{choices}
+    \choice $8x^2$
+    \correctchoice $16x^2$
+    \choice $16x^4$
+    \choice $2x^2$
+\end{choices}
+
+\question[1] The half-life of a substance is 10 years. After 30 years, what fraction
+of the original amount remains?
+\begin{choices}
+    \choice $\dfrac{1}{2}$
+    \choice $\dfrac{1}{4}$
+    \correctchoice $\dfrac{1}{8}$
+    \choice $\dfrac{1}{6}$
+\end{choices}
+
+\question[1] Solve: $9^{x-1} = 27^x$
+\begin{choices}
+    \choice $x = 1$
+    \choice $x = -1$
+    \correctchoice $x = -2$
+    \choice $x = 2$
+\end{choices}
+
+\question[1] The $y$-intercept of $y = 5 \cdot 2^x - 3$ is:
+\begin{choices}
+    \choice $-3$
+    \choice $5$
+    \correctchoice $2$
+    \choice $0$
+\end{choices}
+
+\question[1] If $y = a \cdot b^x$ and the graph passes through $(0, 4)$ and $(1, 12)$,
+then $a$ and $b$ are:
+\begin{choices}
+    \choice $a = 12,\; b = 4$
+    \correctchoice $a = 4,\; b = 3$
+    \choice $a = 3,\; b = 4$
+    \choice $a = 4,\; b = 12$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Simplify each expression. Write answers with positive exponents only.
+\begin{parts}
+    \part[2] $\dfrac{(3a^2b^{-1})^3}{9a^{-1}b^2}$
+    \part[2] $\left(\dfrac{16x^4}{y^{-2}}\right)^{1/2} \cdot \dfrac{y}{2x}$
+    \part[2] $\dfrac{5^{n+2} - 5^n}{5^n}$
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Numerator: $27a^6 b^{-3}$
+\[
+\frac{27a^6 b^{-3}}{9a^{-1}b^2} = 3a^{6-(-1)}b^{-3-2} = 3a^7 b^{-5} = \mathbf{\frac{3a^7}{b^5}}
+\]
+
+\textbf{(b)} $\left(\dfrac{16x^4}{y^{-2}}\right)^{1/2} = \left(16x^4 y^2\right)^{1/2}
+= 4x^2 y$
+\[
+4x^2 y \cdot \frac{y}{2x} = \frac{4x^2 y^2}{2x} = \mathbf{2xy^2}
+\]
+
+\textbf{(c)} $\dfrac{5^n(5^2 - 1)}{5^n} = 5^2 - 1 = \mathbf{24}$
+\end{solution}
+
+\question Solve each exponential equation. Show all steps using equal bases.
+\begin{parts}
+    \part[2] $3^{2x-1} = 81$
+    \part[2] $4^{x+1} = 8^{2x-3}$
+    \part[3] $5^{2x} - 6 \cdot 5^x + 5 = 0$\quad (Hint: let $u = 5^x$)
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $3^{2x-1} = 3^4 \Rightarrow 2x - 1 = 4 \Rightarrow x = \mathbf{\dfrac{5}{2}}$
+
+\textbf{(b)} $2^{2(x+1)} = 2^{3(2x-3)} \Rightarrow 2x+2 = 6x-9 \Rightarrow 11 = 4x
+\Rightarrow x = \mathbf{\dfrac{11}{4}}$
+
+\textbf{(c)} Let $u = 5^x$: $u^2 - 6u + 5 = 0 \Rightarrow (u-1)(u-5) = 0$
+
+$u = 1 \Rightarrow 5^x = 5^0 \Rightarrow \mathbf{x = 0}$;\quad
+$u = 5 \Rightarrow 5^x = 5^1 \Rightarrow \mathbf{x = 1}$
+\end{solution}
+
+\question A bacterial culture starts with 500 bacteria and doubles every 3 hours.
+\begin{parts}
+    \part[2] Write an equation for the number of bacteria $N$ after $t$ hours.
+    \part[2] How many bacteria are present after 12 hours?
+    \part[3] After how many hours will there be 32\,000 bacteria?
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} Each 3 hours: multiply by 2. $N(t) = 500 \cdot 2^{t/3}$\quad
+$\mathbf{N(t) = 500 \cdot 2^{t/3}}$
+
+\textbf{(b)} $N(12) = 500 \cdot 2^{12/3} = 500 \cdot 2^4 = 500 \times 16 = \mathbf{8000}$
+
+\textbf{(c)} $500 \cdot 2^{t/3} = 32\,000 \Rightarrow 2^{t/3} = 64 = 2^6
+\Rightarrow \dfrac{t}{3} = 6 \Rightarrow \mathbf{t = 18 \text{ hours}}$
+\end{solution}
+
+\question A radioactive isotope has a half-life of 20 years. A sample currently has
+a mass of 80 g.
+\begin{parts}
+    \part[2] Write a function $M(t)$ for the mass remaining after $t$ years.
+    \part[2] What mass remains after 60 years?
+    \part[3] Sketch the graph of $M(t)$ for $0 \leq t \leq 100$. Label the asymptote,
+    $y$-intercept, and at least two points.
+    \part[2] Describe the transformations from $y = \left(\tfrac{1}{2}\right)^x$
+    to $y = M(t)$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $M(t) = 80 \cdot \left(\dfrac{1}{2}\right)^{t/20}$
+
+\textbf{(b)} $M(60) = 80 \cdot \left(\dfrac{1}{2}\right)^{3} = 80 \times \dfrac{1}{8}
+= \mathbf{\SI{10}{g}}$
+
+\textbf{(c)} Graph: decreasing exponential. $y$-intercept $(0, 80)$;
+point $(20, 40)$; point $(40, 20)$; point $(60, 10)$.
+Horizontal asymptote: $M = 0$.
+
+\textbf{(d)} From $y = \left(\tfrac{1}{2}\right)^x$ to $y = 80\cdot\left(\tfrac{1}{2}\right)^{t/20}$:
+horizontal stretch by factor 20 (period of halving changes from 1 to 20), then
+vertical stretch by factor 80 (initial mass).
+\end{solution}
+
+\end{questions}
+\end{document}

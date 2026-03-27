@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Navy background -->
+  <rect width="100" height="100" rx="22" fill="#0F172A"/>
+  <!-- Stem -->
+  <rect x="46" y="8" width="8" height="14" rx="4" fill="#F97316"/>
+  <!-- Acorn cap dome -->
+  <path d="M18 46 Q18 22 50 22 Q82 22 82 46 Z" fill="#C2590A"/>
+  <!-- Cap rim band -->
+  <rect x="15" y="44" width="70" height="12" rx="6" fill="#7C3A00"/>
+  <!-- Acorn body -->
+  <ellipse cx="50" cy="73" rx="26" ry="27" fill="#F97316"/>
+</svg>

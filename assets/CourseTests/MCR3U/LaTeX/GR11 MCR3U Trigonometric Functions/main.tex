@@ -1,0 +1,284 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Trigonometric Functions}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Functions \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Angles in radians unless stated.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Convert $\ang{270}$ to radians.
+\begin{choices}
+    \choice $\pi$
+    \choice $2\pi$
+    \correctchoice $\dfrac{3\pi}{2}$
+    \choice $\dfrac{\pi}{2}$
+\end{choices}
+
+\question[1] Convert $\dfrac{5\pi}{6}$ to degrees.
+\begin{choices}
+    \choice $\ang{30}$
+    \choice $\ang{120}$
+    \correctchoice $\ang{150}$
+    \choice $\ang{300}$
+\end{choices}
+
+\question[1] The period of $y = \sin x$ is:
+\begin{choices}
+    \choice $\pi$
+    \correctchoice $2\pi$
+    \choice $\dfrac{\pi}{2}$
+    \choice $4\pi$
+\end{choices}
+
+\question[1] The amplitude of $y = -3\sin x$ is:
+\begin{choices}
+    \choice $-3$
+    \correctchoice $3$
+    \choice $\dfrac{1}{3}$
+    \choice $6$
+\end{choices}
+
+\question[1] The period of $y = \cos(2x)$ is:
+\begin{choices}
+    \choice $4\pi$
+    \correctchoice $\pi$
+    \choice $2\pi$
+    \choice $\dfrac{\pi}{2}$
+\end{choices}
+
+\question[1] The graph of $y = \sin\!\left(x - \dfrac{\pi}{4}\right)$ is shifted from
+$y = \sin x$ by:
+\begin{choices}
+    \choice $\dfrac{\pi}{4}$ to the left
+    \correctchoice $\dfrac{\pi}{4}$ to the right
+    \choice $\dfrac{\pi}{4}$ upward
+    \choice $\dfrac{\pi}{4}$ downward
+\end{choices}
+
+\question[1] The equation $y = 2\sin(x) + 1$ has:
+\begin{choices}
+    \choice Amplitude 1, vertical shift 2
+    \correctchoice Amplitude 2, vertical shift up 1
+    \choice Amplitude 2, vertical shift down 1
+    \choice Period $\pi$, vertical shift 1
+\end{choices}
+
+\question[1] What is the range of $y = 4\cos x - 1$?
+\begin{choices}
+    \choice $[-4, 4]$
+    \choice $[-1, 1]$
+    \correctchoice $[-5, 3]$
+    \choice $[0, 4]$
+\end{choices}
+
+\question[1] The maximum value of $y = -2\sin(3x) + 5$ is:
+\begin{choices}
+    \choice $5$
+    \choice $-2$
+    \correctchoice $7$
+    \choice $3$
+\end{choices}
+
+\question[1] The period of $y = \sin\!\left(\dfrac{x}{3}\right)$ is:
+\begin{choices}
+    \choice $\dfrac{2\pi}{3}$
+    \choice $\pi$
+    \correctchoice $6\pi$
+    \choice $2\pi$
+\end{choices}
+
+\question[1] A sinusoidal function has amplitude 4 and period $\pi$. Which equation
+could represent it?
+\begin{choices}
+    \choice $y = 4\sin x$
+    \correctchoice $y = 4\sin(2x)$
+    \choice $y = 4\sin\!\left(\dfrac{x}{2}\right)$
+    \choice $y = 2\sin(4x)$
+\end{choices}
+
+\question[1] The arc length of a sector with radius 6 and central angle $\dfrac{2\pi}{3}$
+rad is:
+\begin{choices}
+    \choice $\dfrac{2\pi}{3}$
+    \choice $2\pi$
+    \correctchoice $4\pi$
+    \choice $8\pi$
+\end{choices}
+
+\question[1] $\cos\!\left(\dfrac{3\pi}{2}\right) =$
+\begin{choices}
+    \choice $1$
+    \choice $-1$
+    \correctchoice $0$
+    \choice $\dfrac{\sqrt{2}}{2}$
+\end{choices}
+
+\question[1] The graph of $y = \tan x$ has vertical asymptotes at:
+\begin{choices}
+    \choice $x = n\pi$, $n \in \mathbb{Z}$
+    \correctchoice $x = \dfrac{\pi}{2} + n\pi$, $n \in \mathbb{Z}$
+    \choice $x = 2n\pi$, $n \in \mathbb{Z}$
+    \choice $x = \dfrac{\pi}{4} + n\pi$, $n \in \mathbb{Z}$
+\end{choices}
+
+\question[1] An arc of length $9\pi$ cm on a circle of radius 6 cm subtends an angle of:
+\begin{choices}
+    \choice $\dfrac{3\pi}{2}$ rad
+    \correctchoice $\dfrac{3\pi}{2}$ rad
+    \choice $\pi$ rad
+    \choice $2\pi$ rad
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Radian measure and the unit circle.
+\begin{parts}
+    \part[2] Convert $\ang{225}$ to radians and $\dfrac{7\pi}{4}$ to degrees.
+    \part[2] Find the exact values of $\sin\!\left(\dfrac{5\pi}{6}\right)$ and
+    $\cos\!\left(\dfrac{5\pi}{6}\right)$.
+    \part[2] An arc on a circle of radius 10 cm subtends a central angle of
+    $\dfrac{3\pi}{4}$. Find the arc length.
+    \part[2] Find all values of $x \in [0, 2\pi]$ where $\sin x = -\dfrac{1}{2}$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\ang{225} \times \dfrac{\pi}{180} = \dfrac{5\pi}{4}$ rad;\quad
+$\dfrac{7\pi}{4} \times \dfrac{180}{\pi} = \ang{315}$
+
+\textbf{(b)} $\dfrac{5\pi}{6} = \ang{150}$. Reference angle $\ang{30}$, QII.
+$\sin\!\left(\dfrac{5\pi}{6}\right) = \dfrac{1}{2}$;\quad
+$\cos\!\left(\dfrac{5\pi}{6}\right) = -\dfrac{\sqrt{3}}{2}$
+
+\textbf{(c)} $a = r\theta = 10 \times \dfrac{3\pi}{4} = \dfrac{30\pi}{4} = \dfrac{15\pi}{2}$ cm
+
+\textbf{(d)} Reference angle: $\sin^{-1}\!\left(\dfrac{1}{2}\right) = \dfrac{\pi}{6}$.
+$\sin x < 0$ in QIII and QIV:
+$x = \pi + \dfrac{\pi}{6} = \dfrac{7\pi}{6}$ and $x = 2\pi - \dfrac{\pi}{6} = \dfrac{11\pi}{6}$
+\end{solution}
+
+\question For each function, state the amplitude, period, phase shift, and vertical
+shift. Then sketch one full cycle.
+\begin{parts}
+    \part[4] $y = 3\sin\!\left(2x - \dfrac{\pi}{2}\right) + 1$
+    \part[3] $y = -2\cos\!\left(\dfrac{x}{2} + \pi\right)$
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Rewrite: $y = 3\sin\!\left(2\!\left(x - \dfrac{\pi}{4}\right)\right) + 1$
+
+Amplitude: $|a| = \mathbf{3}$;\quad Period: $\dfrac{2\pi}{k} = \dfrac{2\pi}{2} = \mathbf{\pi}$
+
+Phase shift: $\mathbf{\dfrac{\pi}{4}}$ to the right;\quad Vertical shift: \textbf{1 up}
+
+Range: $[-2, 4]$.
+Cycle starts at $x = \dfrac{\pi}{4}$, max at $x = \dfrac{\pi}{4} + \dfrac{\pi}{4} = \dfrac{\pi}{2}$,
+ends at $x = \dfrac{\pi}{4} + \pi = \dfrac{5\pi}{4}$.
+
+\textbf{(b)} Rewrite: $y = -2\cos\!\left(\dfrac{1}{2}(x + 2\pi)\right)$
+
+Amplitude: $\mathbf{2}$;\quad Period: $\dfrac{2\pi}{1/2} = \mathbf{4\pi}$
+
+Phase shift: $\mathbf{2\pi}$ to the left;\quad Vertical shift: \textbf{none} (0)
+
+Reflected in $x$-axis. Range: $[-2, 2]$.
+\end{solution}
+
+\question Determine the equation of a sinusoidal function given each description.
+\begin{parts}
+    \part[3] A sine function with amplitude 5, period $4\pi$, phase shift $\dfrac{\pi}{3}$
+    to the right, and vertical shift 2 down.
+    \part[3] A cosine function whose maximum value is 7 and minimum value is $-1$,
+    with period $\pi$ and no phase shift.
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $a = 5$;\; $k = \dfrac{2\pi}{4\pi} = \dfrac{1}{2}$;\; $d = \dfrac{\pi}{3}$;\; $c = -2$
+\[
+y = 5\sin\!\left(\tfrac{1}{2}\!\left(x - \tfrac{\pi}{3}\right)\right) - 2
+\]
+
+\textbf{(b)} Amplitude $= \dfrac{7-(-1)}{2} = 4$;\quad Vertical shift $= \dfrac{7+(-1)}{2} = 3$
+
+$k = \dfrac{2\pi}{\pi} = 2$;\quad $d = 0$
+\[
+y = 4\cos(2x) + 3
+\]
+\end{solution}
+
+\question A Ferris wheel has a diameter of 20 m. The centre is 12 m above the ground.
+The wheel completes one full revolution every 40 seconds. A rider starts at the
+lowest point.
+\begin{parts}
+    \part[2] State the amplitude, period, and vertical shift of the height function.
+    \part[3] Write a sinusoidal equation $h(t)$ for the rider's height above the
+    ground as a function of time $t$ in seconds. (Use a cosine function, noting
+    the rider starts at the minimum.)
+    \part[2] Find the rider's height at $t = 10$ s and $t = 25$ s.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Amplitude $= 10$ m (radius); Period $= 40$ s;
+Vertical shift $= 12$ m (centre height); min height $= 2$ m, max $= 22$ m.
+
+\textbf{(b)} Rider starts at minimum $\Rightarrow$ use $-\cos$:
+\[
+h(t) = -10\cos\!\left(\frac{2\pi}{40}t\right) + 12 = -10\cos\!\left(\frac{\pi}{20}t\right) + 12
+\]
+
+\textbf{(c)} $h(10) = -10\cos\!\left(\dfrac{\pi}{2}\right) + 12 = -10(0) + 12 = \mathbf{12 \text{ m}}$
+(at centre height, moving up)
+
+$h(25) = -10\cos\!\left(\dfrac{25\pi}{20}\right) + 12 = -10\cos\!\left(\dfrac{5\pi}{4}\right) + 12$
+$= -10\!\left(-\dfrac{\sqrt{2}}{2}\right) + 12 = 5\sqrt{2} + 12 \approx \mathbf{19.1 \text{ m}}$
+\end{solution}
+
+\end{questions}
+\end{document}

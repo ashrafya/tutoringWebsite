@@ -1,0 +1,270 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Derivative Rules}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Calculus \& Vectors \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Do not simplify unless asked.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] $\dfrac{d}{dx}\!\left[7x^4\right] = $
+\begin{choices}
+    \choice $7x^3$
+    \choice $7x^5$
+    \correctchoice $28x^3$
+    \choice $28x^5$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[x^{-3}\right] = $
+\begin{choices}
+    \choice $3x^{-2}$
+    \correctchoice $-3x^{-4}$
+    \choice $-3x^{-2}$
+    \choice $3x^{-4}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[x^{3/2}\right] = $
+\begin{choices}
+    \choice $\dfrac{2}{3}x^{1/2}$
+    \correctchoice $\dfrac{3}{2}x^{1/2}$
+    \choice $\dfrac{3}{2}x^{-1/2}$
+    \choice $\dfrac{2}{3}x^{-1/2}$
+\end{choices}
+
+\question[1] Using the product rule, $\dfrac{d}{dx}\!\left[(x^2 + 3)(2x - 1)\right] = $
+\begin{choices}
+    \choice $2x(2)$
+    \choice $4x^2 - 2x$
+    \correctchoice $6x^2 - 2x + 6$
+    \choice $2x^2 + 3$
+\end{choices}
+
+\question[1] Using the quotient rule, $\dfrac{d}{dx}\!\left[\dfrac{x^2 + 1}{x - 1}\right] = $
+\begin{choices}
+    \choice $\dfrac{2x}{1}$
+    \choice $\dfrac{x^2 - 2x + 1}{(x-1)^2}$
+    \correctchoice $\dfrac{x^2 - 2x - 1}{(x-1)^2}$
+    \choice $\dfrac{2x(x-1)}{(x-1)^2}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[(2x + 3)^5\right] = $
+\begin{choices}
+    \choice $5(2x+3)^4$
+    \correctchoice $10(2x+3)^4$
+    \choice $5(2)^4$
+    \choice $10(2x+3)^5$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[(x^2 + 1)^3\right] = $
+\begin{choices}
+    \choice $3(x^2+1)^2$
+    \choice $3(2x)^2$
+    \correctchoice $6x(x^2+1)^2$
+    \choice $6x(x^2+1)^3$
+\end{choices}
+
+\question[1] If $f(x) = x^5$, then $f''(x) = $
+\begin{choices}
+    \choice $5x^4$
+    \correctchoice $20x^3$
+    \choice $60x^2$
+    \choice $120x$
+\end{choices}
+
+\question[1] The slope of the tangent to $y = x^3$ at $x = 2$ is:
+\begin{choices}
+    \choice 3
+    \choice 8
+    \correctchoice 12
+    \choice 24
+\end{choices}
+
+\question[1] The equation of the tangent to $y = x^2$ at $(1, 1)$ is:
+\begin{choices}
+    \choice $y = x$
+    \correctchoice $y = 2x - 1$
+    \choice $y = 2x + 1$
+    \choice $y = x - 1$
+\end{choices}
+
+\question[1] For $y = \dfrac{x+1}{x-1}$, $\dfrac{dy}{dx}$ at $x = 2$ is:
+\begin{choices}
+    \choice $2$
+    \correctchoice $-2$
+    \choice $0$
+    \choice $\dfrac{1}{2}$
+\end{choices}
+
+\question[1] Using implicit differentiation on $x^2 + y^2 = 25$, $\dfrac{dy}{dx} = $
+\begin{choices}
+    \choice $\dfrac{y}{x}$
+    \choice $\dfrac{x}{y}$
+    \correctchoice $-\dfrac{x}{y}$
+    \choice $-\dfrac{y}{x}$
+\end{choices}
+
+\question[1] The slope of the normal line to $y = x^2$ at $(1, 1)$ is:
+\begin{choices}
+    \choice $2$
+    \choice $-2$
+    \correctchoice $-\dfrac{1}{2}$
+    \choice $\dfrac{1}{2}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[x^{-1/2}\right] = $
+\begin{choices}
+    \choice $\dfrac{1}{2}x^{1/2}$
+    \choice $-\dfrac{1}{2}x^{1/2}$
+    \correctchoice $-\dfrac{1}{2}x^{-3/2}$
+    \choice $\dfrac{1}{2}x^{-3/2}$
+\end{choices}
+
+\question[1] $\dfrac{d}{dx}\!\left[(3x^2 - 1)^4\right]$ at $x = 1$ equals:
+\begin{choices}
+    \choice $4(2)^3$
+    \correctchoice $48$
+    \choice $4(3)^4$
+    \choice $24$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Differentiate each function. You do not need to simplify your answers.
+\begin{parts}
+    \part[2] $f(x) = 4x^5 - 3x^3 + 7x - 2$
+    \part[2] $g(x) = (x^2 + 3)(2x - 1)$
+    \part[3] $h(x) = \dfrac{3x^2 - 1}{x + 2}$
+    \part[3] $k(x) = (x^3 - 2x + 1)^4$
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $f'(x) = 20x^4 - 9x^2 + 7$
+
+\textbf{(b)} $g'(x) = 2x(2x-1) + (x^2+3)(2) = 4x^2 - 2x + 2x^2 + 6 = 6x^2 - 2x + 6$
+
+\textbf{(c)}
+\[
+h'(x) = \frac{6x(x+2) - (3x^2-1)(1)}{(x+2)^2} = \frac{6x^2+12x - 3x^2+1}{(x+2)^2}
+= \frac{3x^2 + 12x + 1}{(x+2)^2}
+\]
+
+\textbf{(d)} $k'(x) = 4(x^3 - 2x + 1)^3 \cdot (3x^2 - 2)$
+\end{solution}
+
+\question Consider the curve $y = x^3 - 3x^2 + 2$.
+\begin{parts}
+    \part[3] Find the equation of the tangent line at the point $(3,\, 2)$.
+    \part[2] Find the equation of the normal line at the same point.
+    \part[3] Find the $x$-coordinates of all points where the tangent line is horizontal.
+\end{parts}
+\begin{solution}[8cm]
+$y' = 3x^2 - 6x$. \quad At $x = 3$: $y'(3) = 27 - 18 = 9$.\quad
+Verify: $y(3) = 27 - 27 + 2 = 2$. \checkmark
+
+\textbf{(a)} $y - 2 = 9(x - 3) \implies \boxed{y = 9x - 25}$
+
+\textbf{(b)} Normal slope $= -\dfrac{1}{9}$.\quad
+$y - 2 = -\dfrac{1}{9}(x - 3) \implies \boxed{y = -\dfrac{x}{9} + \dfrac{7}{3}}$
+
+\textbf{(c)} Horizontal tangent when $y' = 0$:
+\[
+3x^2 - 6x = 0 \implies 3x(x - 2) = 0 \implies \boxed{x = 0 \text{ and } x = 2}
+\]
+\end{solution}
+
+\question Given $x^2 y + y^3 = 10$:
+\begin{parts}
+    \part[4] Use implicit differentiation to find $\dfrac{dy}{dx}$.
+    \part[2] Evaluate $\dfrac{dy}{dx}$ at the point $(1,\, 2)$.
+    Verify that $(1, 2)$ satisfies the original equation.
+    \part[2] Find the equation of the tangent line to the curve at $(1,\, 2)$.
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} Differentiate both sides with respect to $x$:
+\[
+2xy + x^2\frac{dy}{dx} + 3y^2\frac{dy}{dx} = 0
+\]
+\[
+\frac{dy}{dx}(x^2 + 3y^2) = -2xy \implies \boxed{\frac{dy}{dx} = \frac{-2xy}{x^2 + 3y^2}}
+\]
+
+\textbf{(b)} Verify: $1^2(2) + 2^3 = 2 + 8 = 10$. \checkmark
+\[
+\left.\frac{dy}{dx}\right|_{(1,2)} = \frac{-2(1)(2)}{1 + 12} = \boxed{-\frac{4}{13}}
+\]
+
+\textbf{(c)}
+$y - 2 = -\dfrac{4}{13}(x-1) \implies \boxed{y = -\dfrac{4}{13}x + \dfrac{30}{13}}$
+\end{solution}
+
+\question Let $f(x) = x^4 - 6x^2$.
+\begin{parts}
+    \part[2] Find $f'(x)$ and $f''(x)$.
+    \part[2] Find all $x$-values where $f'(x) = 0$.
+    \part[2] Find all $x$-values where $f''(x) = 0$.
+    \part[2] At $x = \sqrt{3}$, determine whether $f$ has a local maximum, local minimum, or
+    neither. Justify using the second derivative test.
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} $f'(x) = 4x^3 - 12x$;\quad $f''(x) = 12x^2 - 12$
+
+\textbf{(b)} $f'(x) = 0$: $4x(x^2 - 3) = 0 \implies x = 0,\ x = \pm\sqrt{3}$
+
+\textbf{(c)} $f''(x) = 0$: $12(x^2 - 1) = 0 \implies x = \pm 1$
+
+\textbf{(d)} $f'(\sqrt{3}) = 0$ (critical point). $f''(\sqrt{3}) = 12(3) - 12 = 24 > 0$.
+Since $f'' > 0$, the curve is concave up at $x = \sqrt{3}$, so $f$ has a \textbf{local minimum}
+there. $f(\sqrt{3}) = 9 - 18 = -9$.
+\end{solution}
+
+\end{questions}
+\end{document}

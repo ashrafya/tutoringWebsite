@@ -1,0 +1,294 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+% \printanswers
+
+\newcommand{\event}{Stoichiometry \& The Mole}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 11 Chemistry \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work with units. Use $N_A = 6.022 \times 10^{23}$ mol$^{-1}$.
+    Molar volume at STP $= \SI{22.4}{L/mol}$.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] One mole of any substance contains:
+\begin{choices}
+    \choice $6.022 \times 10^{23}$ grams
+    \correctchoice $6.022 \times 10^{23}$ particles
+    \choice $22.4$ L at all conditions
+    \choice $6.022 \times 10^{23}$ litres
+\end{choices}
+
+\question[1] The molar mass of \ce{Ca(NO3)2} is:
+\begin{choices}
+    \choice \SI{102}{g/mol}
+    \choice \SI{116}{g/mol}
+    \correctchoice \SI{164}{g/mol}
+    \choice \SI{188}{g/mol}
+\end{choices}
+
+\question[1] How many moles are in \SI{44}{g} of \ce{CO2} ($M = \SI{44}{g/mol}$)?
+\begin{choices}
+    \choice $0.5$ mol
+    \correctchoice $1$ mol
+    \choice $2$ mol
+    \choice $44$ mol
+\end{choices}
+
+\question[1] How many molecules are in $2.0$ mol of \ce{H2O}?
+\begin{choices}
+    \choice $3.011 \times 10^{23}$
+    \correctchoice $1.204 \times 10^{24}$
+    \choice $6.022 \times 10^{23}$
+    \choice $1.806 \times 10^{24}$
+\end{choices}
+
+\question[1] The percent composition by mass of hydrogen in \ce{H2O} is:
+\begin{choices}
+    \choice $5.6\%$
+    \choice $8.0\%$
+    \correctchoice $11.2\%$
+    \choice $22.2\%$
+\end{choices}
+
+\question[1] A compound contains 40.0\% C, 6.7\% H, and 53.3\% O by mass.
+The empirical formula is:
+\begin{choices}
+    \choice \ce{C2H4O2}
+    \correctchoice \ce{CH2O}
+    \choice \ce{C3H6O3}
+    \choice \ce{C2H2O}
+\end{choices}
+
+\question[1] If the empirical formula is \ce{CH2} and the molar mass is \SI{56}{g/mol},
+the molecular formula is:
+\begin{choices}
+    \choice \ce{CH2}
+    \choice \ce{C2H4}
+    \correctchoice \ce{C4H8}
+    \choice \ce{C3H6}
+\end{choices}
+
+\question[1] In the reaction \ce{N2 + 3H2 -> 2NH3}, how many moles of \ce{NH3}
+are produced from 3.0 mol of \ce{H2}?
+\begin{choices}
+    \choice $1.0$ mol
+    \correctchoice $2.0$ mol
+    \choice $3.0$ mol
+    \choice $6.0$ mol
+\end{choices}
+
+\question[1] In a reaction, 4.0 mol of \ce{O2} and 3.0 mol of \ce{H2} are mixed.
+The reaction is \ce{2H2 + O2 -> 2H2O}. The limiting reagent is:
+\begin{choices}
+    \choice \ce{O2}
+    \correctchoice \ce{H2}
+    \choice Neither; they are in stoichiometric ratio
+    \choice Water
+\end{choices}
+
+\question[1] Percent yield is defined as:
+\begin{choices}
+    \choice (theoretical yield $\div$ actual yield) $\times 100\%$
+    \correctchoice (actual yield $\div$ theoretical yield) $\times 100\%$
+    \choice (actual yield $-$ theoretical yield) $\times 100\%$
+    \choice (moles of product $\div$ moles of reactant) $\times 100\%$
+\end{choices}
+
+\question[1] At STP, 1.0 mol of any ideal gas occupies:
+\begin{choices}
+    \choice \SI{1.0}{L}
+    \choice \SI{10.0}{L}
+    \correctchoice \SI{22.4}{L}
+    \choice \SI{44.8}{L}
+\end{choices}
+
+\question[1] The mass of $3.01 \times 10^{23}$ atoms of carbon ($M = \SI{12}{g/mol}$) is:
+\begin{choices}
+    \choice \SI{6}{g}
+    \correctchoice \SI{6}{g}
+    \choice \SI{12}{g}
+    \choice \SI{24}{g}
+\end{choices}
+
+\question[1] In a stoichiometry problem, the \textbf{mole ratio} comes from:
+\begin{choices}
+    \choice The molar masses of the substances
+    \correctchoice The coefficients in the balanced chemical equation
+    \choice The percent composition
+    \choice Avogadro's number
+\end{choices}
+
+\question[1] A student performs a reaction and obtains \SI{8.4}{g} of product. The
+theoretical yield is \SI{12.0}{g}. The percent yield is:
+\begin{choices}
+    \choice $60.0\%$
+    \correctchoice $70.0\%$
+    \choice $80.0\%$
+    \choice $143\%$
+\end{choices}
+
+\question[1] The number of \textbf{oxygen atoms} in 2.0 mol of \ce{H2SO4} is:
+\begin{choices}
+    \choice $2.0 \times 6.022 \times 10^{23}$
+    \choice $6.022 \times 10^{23}$
+    \correctchoice $8.0 \times 6.022 \times 10^{23}$
+    \choice $4.0 \times 6.022 \times 10^{23}$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Mole conversions. Show all conversion factors.
+\begin{parts}
+    \part[2] How many grams are in $4.50$ mol of iron(III) oxide, \ce{Fe2O3}?
+    \part[2] How many moles are in $\SI{250}{g}$ of glucose, \ce{C6H12O6}?
+    \part[2] How many molecules are in $\SI{9.0}{g}$ of water?
+    \part[2] What volume (at STP) is occupied by $\SI{16.0}{g}$ of \ce{O2}?
+\end{parts}
+\begin{solution}[9cm]
+$M(\ce{Fe2O3}) = 2(56.0) + 3(16.0) = \SI{160}{g/mol}$
+
+\textbf{(a)} $4.50 \text{ mol} \times \dfrac{\SI{160}{g}}{\SI{1}{mol}} = \mathbf{\SI{720}{g}}$
+
+$M(\ce{C6H12O6}) = 6(12)+12(1)+6(16) = \SI{180}{g/mol}$
+
+\textbf{(b)} $\dfrac{250}{180} = \mathbf{1.39 \text{ mol}}$
+
+$M(\ce{H2O}) = \SI{18.0}{g/mol}$
+
+\textbf{(c)} $n = \dfrac{9.0}{18.0} = 0.50 \text{ mol}$;\quad
+$N = 0.50 \times 6.022\times10^{23} = \mathbf{3.01 \times 10^{23} \text{ molecules}}$
+
+$M(\ce{O2}) = \SI{32.0}{g/mol}$
+
+\textbf{(d)} $n = \dfrac{16.0}{32.0} = 0.500 \text{ mol}$;\quad
+$V = 0.500 \times 22.4 = \mathbf{\SI{11.2}{L}}$
+\end{solution}
+
+\question Empirical and molecular formulas.
+\begin{parts}
+    \part[4] A compound is found to contain $\SI{52.2}{\percent}$ C, $\SI{13.0}{\percent}$
+    H, and $\SI{34.8}{\percent}$ O by mass. Determine its empirical formula.
+    \part[2] The molar mass of the compound is \SI{46.0}{g/mol}. Determine the
+    molecular formula.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Assume 100 g:
+
+C: $\dfrac{52.2}{12.0} = 4.35$ mol;\quad
+H: $\dfrac{13.0}{1.0} = 13.0$ mol;\quad
+O: $\dfrac{34.8}{16.0} = 2.175$ mol
+
+Divide by smallest (2.175):
+C: $\dfrac{4.35}{2.175} = 2$;\quad H: $\dfrac{13.0}{2.175} \approx 6$;\quad O: $\dfrac{2.175}{2.175} = 1$
+
+\textbf{Empirical formula: \ce{C2H6O}}; $M_\text{EF} = 2(12)+6(1)+16 = \SI{46}{g/mol}$
+
+\textbf{(b)} $n = \dfrac{46.0}{46.0} = 1$\quad$\Rightarrow$\quad\textbf{Molecular formula: \ce{C2H6O}} (ethanol)
+\end{solution}
+
+\question Iron reacts with oxygen according to:
+\[\ce{4Fe(s) + 3O2(g) -> 2Fe2O3(s)}\]
+\begin{parts}
+    \part[3] How many grams of \ce{Fe2O3} are produced when $\SI{11.2}{g}$ of iron reacts
+    completely?
+    \part[4] If $\SI{11.2}{g}$ of Fe and $\SI{6.40}{g}$ of \ce{O2} are mixed, identify the
+    limiting reagent and calculate the theoretical yield of \ce{Fe2O3}.
+    \part[2] A student obtains $\SI{14.4}{g}$ of \ce{Fe2O3}. Calculate the percent yield
+    using the theoretical yield from part (b).
+\end{parts}
+\begin{solution}[10cm]
+$M(\ce{Fe}) = \SI{55.8}{g/mol}$;\quad $M(\ce{O2}) = \SI{32.0}{g/mol}$;\quad $M(\ce{Fe2O3}) = \SI{160}{g/mol}$
+
+\textbf{(a)} $n(\ce{Fe}) = \dfrac{11.2}{55.8} = 0.2007$ mol\quad
+$\times\dfrac{2\text{ mol \ce{Fe2O3}}}{4\text{ mol Fe}} = 0.1003$ mol \ce{Fe2O3}
+\[
+m = 0.1003 \times 160 = \mathbf{\SI{16.0}{g}}
+\]
+
+\textbf{(b)} $n(\ce{Fe}) = 0.2007$ mol;\quad $n(\ce{O2}) = \dfrac{6.40}{32.0} = 0.200$ mol
+
+Moles of \ce{Fe2O3} if Fe is limiting: $0.2007 \times \dfrac{2}{4} = 0.1003$ mol\\
+Moles of \ce{Fe2O3} if \ce{O2} is limiting: $0.200 \times \dfrac{2}{3} = 0.1333$ mol
+
+Fe produces less product $\Rightarrow$ \textbf{Fe is the limiting reagent}.
+Theoretical yield: $0.1003 \times 160 = \mathbf{\SI{16.0}{g}}$
+
+\textbf{(c)} $\%\text{ yield} = \dfrac{14.4}{16.0} \times 100 = \mathbf{90.0\%}$
+\end{solution}
+
+\question \textbf{Challenge.} A mixture of \ce{NaHCO3} and \ce{Na2CO3} has a total mass of
+\SI{10.00}{g}. When heated, only \ce{NaHCO3} decomposes:
+\[\ce{2NaHCO3(s) ->[\Delta] Na2CO3(s) + H2O(g) + CO2(g)}\]
+The mixture loses \SI{1.10}{g} of mass upon heating.
+\begin{parts}
+    \part[4] Determine the mass of \ce{NaHCO3} in the original mixture.
+    \part[2] Determine the percent by mass of \ce{Na2CO3} in the original mixture.
+\end{parts}
+\begin{solution}[9cm]
+$M(\ce{NaHCO3}) = 84.0$;\; $M(\ce{H2O}) = 18.0$;\; $M(\ce{CO2}) = 44.0$
+
+\textbf{(a)} Mass lost = \ce{H2O} + \ce{CO2} per 2 mol \ce{NaHCO3} = $18.0 + 44.0 = \SI{62.0}{g}$ per 2 mol.
+Let $n$ = mol of \ce{NaHCO3}:
+\[
+n \times \frac{62.0}{2} = 1.10 \implies n = \frac{2 \times 1.10}{62.0} = 0.03548 \text{ mol}
+\]
+\[
+m(\ce{NaHCO3}) = 0.03548 \times 84.0 = \mathbf{\SI{2.98}{g}}
+\]
+
+\textbf{(b)} $m(\ce{Na2CO3}) = 10.00 - 2.98 = \SI{7.02}{g}$;\quad
+$\% = \dfrac{7.02}{10.00}\times100 = \mathbf{70.2\%}$
+\end{solution}
+
+\end{questions}
+\end{document}

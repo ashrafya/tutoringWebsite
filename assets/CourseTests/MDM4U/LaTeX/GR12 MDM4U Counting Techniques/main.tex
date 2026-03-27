@@ -1,0 +1,279 @@
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+% \printanswers
+
+\newcommand{\event}{Counting Techniques}
+\newcommand{\tournament}{}
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Data Management \\ \event
+    \ifprintanswers \space Key
+    \else \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi
+          \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else \underline{\hspace{10cm}}\\ \vspace{5mm} \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Do not write on this paper. \fi
+    \item Show all work for full marks. Leave answers in exact form unless stated otherwise.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] The value of $0!$ is:
+\begin{choices}
+    \choice $0$
+    \correctchoice $1$
+    \choice Undefined
+    \choice $-1$
+\end{choices}
+
+\question[1] A restaurant offers 4 appetizers, 6 mains, and 3 desserts. The number of possible
+three-course meals is:
+\begin{choices}
+    \choice $13$
+    \choice $36$
+    \correctchoice $72$
+    \choice $216$
+\end{choices}
+
+\question[1] The number of ways to arrange 7 distinct books on a shelf is:
+\begin{choices}
+    \choice $7$
+    \choice $49$
+    \choice $128$
+    \correctchoice $5040$
+\end{choices}
+
+\question[1] $P(8, 3)$ equals:
+\begin{choices}
+    \choice $24$
+    \choice $56$
+    \correctchoice $336$
+    \choice $512$
+\end{choices}
+
+\question[1] The number of distinct arrangements of the letters in the word \textbf{LEVEL} is:
+\begin{choices}
+    \choice $120$
+    \correctchoice $30$
+    \choice $60$
+    \choice $20$
+\end{choices}
+
+\question[1] The number of ways to seat 6 people around a circular table is:
+\begin{choices}
+    \choice $720$
+    \choice $36$
+    \correctchoice $120$
+    \choice $24$
+\end{choices}
+
+\question[1] $\dbinom{10}{3}$ equals:
+\begin{choices}
+    \choice $30$
+    \choice $60$
+    \choice $90$
+    \correctchoice $120$
+\end{choices}
+
+\question[1] The number of ways to choose a committee of 4 from 9 people is:
+\begin{choices}
+    \choice $9$
+    \correctchoice $126$
+    \choice $3024$
+    \choice $6561$
+\end{choices}
+
+\question[1] Which row of Pascal's triangle gives the coefficients of $(a+b)^5$?
+\begin{choices}
+    \choice Row 4
+    \correctchoice Row 5
+    \choice Row 6
+    \choice Row 7
+\end{choices}
+
+\question[1] The coefficient of $x^3$ in the expansion of $(1+x)^7$ is:
+\begin{choices}
+    \choice $21$
+    \correctchoice $35$
+    \choice $42$
+    \choice $56$
+\end{choices}
+
+\question[1] $\dbinom{n}{r} = \dbinom{n}{n-r}$ is an example of:
+\begin{choices}
+    \choice The multiplication principle
+    \choice Pascal's identity
+    \correctchoice The symmetry property of combinations
+    \choice The binomial theorem
+\end{choices}
+
+\question[1] A hockey team has 15 players. The number of ways to choose a starting line-up
+of 6 (where order does not matter) is:
+\begin{choices}
+    \choice $P(15,6)$
+    \correctchoice $\dbinom{15}{6}$
+    \choice $15^6$
+    \choice $6!$
+\end{choices}
+
+\question[1] How many 3-digit numbers can be formed from $\{1,2,3,4,5\}$ if repetition is
+not allowed?
+\begin{choices}
+    \choice $15$
+    \correctchoice $60$
+    \choice $125$
+    \choice $120$
+\end{choices}
+
+\question[1] Pascal's identity states that $\dbinom{n}{r} + \dbinom{n}{r+1} =$
+\begin{choices}
+    \choice $\dbinom{n+1}{r}$
+    \correctchoice $\dbinom{n+1}{r+1}$
+    \choice $\dbinom{n}{r+1}$
+    \choice $2\dbinom{n}{r}$
+\end{choices}
+
+\question[1] The number of ways to distribute 5 distinct prizes among 3 students (each student
+can receive any number of prizes) is:
+\begin{choices}
+    \choice $15$
+    \choice $60$
+    \correctchoice $243$
+    \choice $120$
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question In how many ways can 8 people line up for a photograph?
+\begin{parts}
+    \part[1] With no restrictions.
+    \part[2] If two specific people, Alex and Beth, must stand next to each other.
+    \part[2] If Alex must stand at one end and Beth must stand at the other end.
+    \part[3] If Alex, Beth, and Cam must all stand together (as a block).
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $8! = \mathbf{40\,320}$
+
+\textbf{(b)} Treat Alex \& Beth as one unit: $7!$ arrangements of the 7 units, times $2!$ for
+internal arrangement of the pair:
+$7! \times 2 = 5040 \times 2 = \mathbf{10\,080}$
+
+\textbf{(c)} Alex at one end (2 choices: left or right), Beth at the other (1 remaining end),
+remaining 6 in $6!$ ways:
+$2 \times 6! = 2 \times 720 = \mathbf{1440}$
+
+\textbf{(d)} Treat the block of 3 as one unit: $6!$ arrangements $\times\, 3!$ internal
+arrangements:
+$6! \times 3! = 720 \times 6 = \mathbf{4320}$
+\end{solution}
+
+\question The letters of the word \textbf{STATISTICS} are arranged randomly.
+\begin{parts}
+    \part[1] How many letters are there, and how many of each type?
+    \part[3] How many distinct arrangements are there?
+    \part[2] How many arrangements begin and end with the letter S?
+\end{parts}
+\begin{solution}[8cm]
+\textbf{(a)} 10 letters: S appears 3 times, T appears 3 times, I appears 2 times,
+A and C each appear once.
+
+\textbf{(b)}
+\[
+\frac{10!}{3!\,3!\,2!\,1!\,1!} = \frac{3\,628\,800}{6 \cdot 6 \cdot 2} = \frac{3\,628\,800}{72}
+= \mathbf{50\,400}
+\]
+
+\textbf{(c)} Fix one S at each end. Remaining 8 letters: S(1), T(3), I(2), A(1), C(1).
+\[
+\frac{8!}{1!\,3!\,2!\,1!\,1!} = \frac{40\,320}{12} = \mathbf{3360}
+\]
+\end{solution}
+
+\question A student council has 7 boys and 5 girls.
+\begin{parts}
+    \part[2] In how many ways can a committee of 4 be chosen with no restrictions?
+    \part[3] In how many ways can a committee of 4 be chosen with exactly 2 boys and
+    2 girls?
+    \part[3] In how many ways can a committee of 4 be chosen with at least 1 girl?
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $\dbinom{12}{4} = \dfrac{12!}{4!\,8!} = \mathbf{495}$
+
+\textbf{(b)} $\dbinom{7}{2}\dbinom{5}{2} = 21 \times 10 = \mathbf{210}$
+
+\textbf{(c)} Use complement: (at least 1 girl) $=$ (all committees) $-$ (no girls):
+\[
+\binom{12}{4} - \binom{7}{4} = 495 - 35 = \mathbf{460}
+\]
+\end{solution}
+
+\question Use the Binomial Theorem to answer the following.
+\begin{parts}
+    \part[3] Expand $(2x - 3)^4$ completely.
+    \part[3] Find the term containing $x^2$ in the expansion of $(3x + 2)^5$.
+    \part[2] Find the middle term in the expansion of $\left(x + \dfrac{1}{x}\right)^6$.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} $(2x-3)^4 = \sum_{k=0}^{4}\binom{4}{k}(2x)^{4-k}(-3)^k$:
+\begin{align*}
+k=0&: (2x)^4 = 16x^4\\
+k=1&: 4(2x)^3(-3) = -96x^3\\
+k=2&: 6(2x)^2(9) = 216x^2\\
+k=3&: 4(2x)(−27) = -216x\\
+k=4&: 81
+\end{align*}
+$= \mathbf{16x^4 - 96x^3 + 216x^2 - 216x + 81}$
+
+\textbf{(b)} General term: $\dbinom{5}{k}(3x)^{5-k}(2)^k$.
+For $x^2$: $5-k=2 \Rightarrow k=3$.
+\[
+\binom{5}{3}(3x)^2(2)^3 = 10 \cdot 9x^2 \cdot 8 = \mathbf{720x^2}
+\]
+
+\textbf{(c)} $(x+x^{-1})^6$ has 7 terms; middle term is $k=3$:
+\[
+\binom{6}{3}x^3 \cdot x^{-3} = 20 \cdot 1 = \mathbf{20}
+\]
+\end{solution}
+
+\end{questions}
+\end{document}

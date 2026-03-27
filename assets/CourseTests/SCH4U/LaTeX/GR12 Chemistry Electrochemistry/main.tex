@@ -1,0 +1,369 @@
+
+\documentclass[addpoints]{exam}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+% \printanswers
+
+\newcommand{\event}{Electrochemistry}
+\newcommand{\tournament}{}  % Replace with class name, date, or course code
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Chemistry \\ \event
+    \ifprintanswers
+     \space Key
+    \else
+     \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else
+        \underline{\hspace{10cm}}\\ \vspace{5mm}
+    \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Please do not write any answers on this paper. \fi
+    \item Show all work for full marks. Include half-reactions where required.
+    \item Faraday's constant: $F = \SI{96485}{C/mol} \approx \SI{9.65e4}{C/mol}$.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] What is the oxidation state of sulfur in \ce{H2SO4}?
+\begin{choices}
+    \choice $+2$
+    \choice $+4$
+    \correctchoice $+6$
+    \choice $-2$
+\end{choices}
+
+\question[1] In a galvanic cell, oxidation occurs at the:
+\begin{choices}
+    \correctchoice Anode
+    \choice Cathode
+    \choice Salt bridge
+    \choice External wire
+\end{choices}
+
+\question[1] In the reaction \ce{Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)}, which species is
+the oxidizing agent?
+\begin{choices}
+    \choice \ce{Zn}
+    \choice \ce{ZnSO4}
+    \correctchoice \ce{Cu^{2+}}
+    \choice \ce{SO4^{2-}}
+\end{choices}
+
+\question[1] Standard reduction potentials: $E^\circ(\ce{Cu^{2+}/Cu}) = +\SI{0.34}{V}$ and
+$E^\circ(\ce{Zn^{2+}/Zn}) = -\SI{0.76}{V}$. The standard cell potential $E^\circ_{cell}$ for
+a Zn--Cu galvanic cell is:
+\begin{choices}
+    \choice $+\SI{0.42}{V}$
+    \correctchoice $+\SI{1.10}{V}$
+    \choice $-\SI{0.42}{V}$
+    \choice $-\SI{1.10}{V}$
+\end{choices}
+
+\question[1] A positive $E^\circ_{cell}$ indicates that the reaction is:
+\begin{choices}
+    \correctchoice Spontaneous under standard conditions.
+    \choice Non-spontaneous under standard conditions.
+    \choice At equilibrium.
+    \choice Endothermic.
+\end{choices}
+
+\question[1] In the electrolysis of molten \ce{NaCl}, sodium ions are:
+\begin{choices}
+    \choice Oxidized at the anode.
+    \correctchoice Reduced at the cathode.
+    \choice Reduced at the anode.
+    \choice Oxidized at the cathode.
+\end{choices}
+
+\question[1] According to Faraday's Law, the mass of metal deposited during electrolysis
+depends on:
+\begin{choices}
+    \choice Only the current applied.
+    \choice Only the time of electrolysis.
+    \correctchoice The total charge passed and the molar mass of the metal.
+    \choice The voltage applied only.
+\end{choices}
+
+\question[1] Which of the following is an example of a \textit{spontaneous} electrochemical
+process (galvanic cell)?
+\begin{choices}
+    \correctchoice A battery discharging to power a light bulb.
+    \choice Electroplating a metal object with chrome.
+    \choice Electrolysis of water to produce hydrogen and oxygen.
+    \choice Recharging a rechargeable battery.
+\end{choices}
+
+\question[1] One Faraday (1 F) is equal to approximately:
+\begin{choices}
+    \choice $\SI{9.65e3}{C/mol}$
+    \choice $\SI{6.02e23}{C/mol}$
+    \correctchoice $\SI{9.65e4}{C/mol}$
+    \choice $\SI{1.60e-19}{C/mol}$
+\end{choices}
+
+\question[1] In a galvanic cell, electrons flow through the external circuit from:
+\begin{choices}
+    \choice Cathode to anode.
+    \correctchoice Anode to cathode.
+    \choice Positive electrode to negative electrode.
+    \choice Salt bridge to anode.
+\end{choices}
+
+\question[1] The main purpose of a salt bridge in a galvanic cell is to:
+\begin{choices}
+    \choice Conduct electrons between the two half-cells.
+    \choice Prevent any ion movement between half-cells.
+    \correctchoice Maintain electrical neutrality by allowing ion flow between the two half-cells.
+    \choice Increase the cell voltage.
+\end{choices}
+
+\question[1] Which of the following provides cathodic protection to an iron pipeline?
+\begin{choices}
+    \choice Painting the iron surface.
+    \correctchoice Attaching a block of zinc to the pipeline.
+    \choice Attaching a block of copper to the pipeline.
+    \choice Coating with a plastic film only.
+\end{choices}
+
+\question[1] The standard reduction potential of an electrode measures its:
+\begin{choices}
+    \choice Tendency to be oxidized relative to SHE.
+    \correctchoice Tendency to be reduced relative to the standard hydrogen electrode (SHE).
+    \choice Actual voltage in a non-standard cell.
+    \choice Current produced under standard conditions.
+\end{choices}
+
+\question[1] In the half-reaction \ce{MnO4-(aq) + 8H+(aq) + 5e- -> Mn^{2+}(aq) + 4H2O(l)},
+how many electrons are transferred?
+\begin{choices}
+    \choice 2
+    \choice 3
+    \correctchoice 5
+    \choice 7
+\end{choices}
+
+\question[1] A secondary (rechargeable) cell differs from a primary cell in that it:
+\begin{choices}
+    \choice Produces a higher voltage.
+    \correctchoice Can be recharged by reversing the electrochemical reaction.
+    \choice Uses liquid electrolyte.
+    \choice Has two cathodes and no anode.
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Balance the following redox reaction in \textbf{acidic} solution using the
+half-reaction method:
+\[
+\ce{MnO4-(aq) + Fe^{2+}(aq) -> Mn^{2+}(aq) + Fe^{3+}(aq)}
+\]
+\begin{parts}
+    \part[5] Show all steps: write and balance both half-reactions (atoms, then charge using
+    \ce{H+} and \ce{H2O}), multiply to equalize electrons, and add to give the overall balanced
+    equation.
+    \part[2] Identify the oxidizing agent and reducing agent in the balanced equation.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+
+\textit{Reduction half-reaction (Mn):}
+\[
+\ce{MnO4- -> Mn^{2+}}
+\]
+Balance O with \ce{H2O}, then H with \ce{H+}, then charge with $e^-$:
+\[
+\ce{MnO4-(aq) + 8H+(aq) + 5e- -> Mn^{2+}(aq) + 4H2O(l)}
+\]
+
+\textit{Oxidation half-reaction (Fe):}
+\[
+\ce{Fe^{2+}(aq) -> Fe^{3+}(aq) + e-}
+\]
+
+\textit{Equalize electrons:} multiply oxidation half-reaction $\times 5$:
+\[
+\ce{5Fe^{2+}(aq) -> 5Fe^{3+}(aq) + 5e-}
+\]
+
+\textit{Overall balanced equation:}
+\[
+\boxed{\ce{MnO4-(aq) + 8H+(aq) + 5Fe^{2+}(aq) -> Mn^{2+}(aq) + 4H2O(l) + 5Fe^{3+}(aq)}}
+\]
+Check: Mn: $1=1$; Fe: $5=5$; O: $4=4$; H: $8=8$; charge: $(−1+8+10)=+17$ and $(+2+12)=+17$. \checkmark
+
+\textbf{(b)} Oxidizing agent (gains electrons, is reduced): \textbf{\ce{MnO4-}}.\\
+Reducing agent (loses electrons, is oxidized): \textbf{\ce{Fe^{2+}}}.
+\end{solution}
+
+\question A galvanic cell is constructed using the following half-cells:
+\[
+E^\circ(\ce{Ag+/Ag}) = +\SI{0.80}{V} \qquad E^\circ(\ce{Ni^{2+}/Ni}) = -\SI{0.25}{V}
+\]
+\begin{parts}
+    \part[2] Determine the anode and cathode. Write the overall spontaneous cell reaction.
+    \part[2] Calculate $E^\circ_{cell}$.
+    \part[3] Calculate $\Delta G^\circ$ for the cell reaction and confirm whether it is
+    spontaneous. ($F = \SI{9.65e4}{C/mol}$, $1\ \text{J} = 1\ \text{C\,V}$)
+    \part[1] Write the cell notation for this galvanic cell.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} The electrode with the \textit{lower} reduction potential is oxidized (anode):
+\textbf{Ni is the anode}; \textbf{Ag is the cathode}.
+
+Half-reactions:
+\begin{align*}
+\text{Anode (ox):}\ &\ce{Ni(s) -> Ni^{2+}(aq) + 2e-} \\
+\text{Cathode (red):}\ &\ce{2Ag+(aq) + 2e- -> 2Ag(s)}
+\end{align*}
+Overall: $\ce{Ni(s) + 2Ag+(aq) -> Ni^{2+}(aq) + 2Ag(s)}$
+
+\textbf{(b)}
+\[
+E^\circ_{cell} = E^\circ_{cathode} - E^\circ_{anode} = (+0.80) - (-0.25) = \mathbf{+1.05\ V}
+\]
+
+\textbf{(c)} $n = 2$ electrons transferred.
+\[
+\Delta G^\circ = -nFE^\circ_{cell} = -(2)(9.65\times10^4)(1.05) = -\mathbf{2.03\times10^5\ J
+= -203\ kJ}
+\]
+Since $\Delta G^\circ < 0$, the reaction is \textbf{spontaneous} under standard conditions,
+consistent with $E^\circ_{cell} > 0$.
+
+\textbf{(d)} Cell notation:
+\[
+\ce{Ni(s) | Ni^{2+}(aq) || Ag+(aq) | Ag(s)}
+\]
+(Anode on left, cathode on right, double line = salt bridge.)
+\end{solution}
+
+\question Copper metal is deposited on an electrode by electrolysis of \ce{CuSO4(aq)}.
+A constant current of \SI{2.50}{A} is applied for \SI{45.0}{min}.
+($M_{\ce{Cu}} = \SI{63.55}{g/mol}$; $F = \SI{9.65e4}{C/mol}$)
+\begin{parts}
+    \part[2] Write the half-reaction occurring at the cathode.
+    \part[2] Calculate the total charge passed during the electrolysis.
+    \part[3] Calculate the mass of copper deposited on the cathode.
+    \part[1] If silver (\ce{Ag+}) had been used instead of \ce{Cu^{2+}} under identical
+    conditions, would more or less mass be deposited? Explain briefly.
+    ($M_{\ce{Ag}} = \SI{107.87}{g/mol}$; \ce{Ag+} requires 1 electron per ion.)
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Cathode (reduction of \ce{Cu^{2+}}):
+\[
+\ce{Cu^{2+}(aq) + 2e- -> Cu(s)}
+\]
+
+\textbf{(b)}
+\[
+Q = I \times t = (2.50\ \text{A})(45.0\ \text{min} \times 60\ \text{s/min})
+= (2.50)(2700) = \mathbf{6750\ C}
+\]
+
+\textbf{(c)} Moles of electrons:
+\[
+n_{e^-} = \frac{Q}{F} = \frac{6750}{9.65\times10^4} = 6.995\times10^{-2}\ \text{mol}
+\]
+Since \ce{Cu^{2+}} requires 2 electrons per atom:
+\[
+n_{\ce{Cu}} = \frac{n_{e^-}}{2} = \frac{6.995\times10^{-2}}{2} = 3.498\times10^{-2}\ \text{mol}
+\]
+\[
+m_{\ce{Cu}} = n \times M = (3.498\times10^{-2})(63.55) = \mathbf{2.22\ g}
+\]
+
+\textbf{(d)} With \ce{Ag+} (1 electron per ion), the same charge gives twice as many moles
+of metal deposited ($n_{\ce{Ag}} = 6.995\times10^{-2}$ mol). With a much higher molar mass
+($107.87$ g/mol): $m_{\ce{Ag}} = (6.995\times10^{-2})(107.87) = 7.55\ \text{g}$.
+\textbf{More mass} would be deposited because Ag requires fewer electrons per mole and has a
+higher molar mass.
+\end{solution}
+
+\question Aqueous \ce{NaCl} solution is electrolysed in an industrial process (chlor-alkali
+process).
+\begin{parts}
+    \part[3] Write the half-reaction at each electrode and identify which is the anode and
+    which is the cathode. Use the standard reduction potentials below to identify what is
+    preferentially produced at each electrode:
+    \[
+    E^\circ(\ce{Cl2/Cl-}) = +\SI{1.36}{V}, \quad E^\circ(\ce{O2/H2O}) = +\SI{1.23}{V},
+    \quad E^\circ(\ce{H+/H2}) = \SI{0.00}{V}, \quad E^\circ(\ce{Na+/Na}) = -\SI{2.71}{V}
+    \]
+    \part[2] Write the overall cell equation for the electrolysis of aqueous \ce{NaCl}.
+    \part[3] Explain why the products at each electrode are the ones observed (rather than the
+    thermodynamically less favoured alternatives), considering overpotential and concentration
+    effects.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)} This is an \textbf{electrolytic cell} (non-spontaneous, requires external voltage).
+
+\textit{Cathode} (reduction --- lowest reduction potential species that is practical):
+\ce{Na+} has $E^\circ = -2.71\ \text{V}$, but in aqueous solution \ce{H2O/H+} is much easier
+to reduce ($E^\circ = 0.00\ \text{V}$). Product: \textbf{\ce{H2} gas}.
+\[
+\ce{2H2O(l) + 2e- -> H2(g) + 2OH-(aq)}
+\]
+
+\textit{Anode} (oxidation --- lowest overpotential/most favoured):
+Both \ce{Cl-} and \ce{H2O} could be oxidized. \ce{H2O} has $E^\circ = +1.23\ \text{V}$
+and \ce{Cl2/Cl-} has $E^\circ = +1.36\ \text{V}$ (slightly higher). Despite the thermodynamics
+slightly favouring water oxidation, in concentrated \ce{NaCl} solution, \ce{Cl-} is produced.
+Product: \textbf{\ce{Cl2} gas}.
+\[
+\ce{2Cl-(aq) -> Cl2(g) + 2e-}
+\]
+
+\textbf{(b)} Overall:
+\[
+\ce{2NaCl(aq) + 2H2O(l) -> Cl2(g) + H2(g) + 2NaOH(aq)}
+\]
+
+\textbf{(c)} At the cathode: \ce{Na+} is not reduced because it would require $-2.71\ \text{V}$;
+\ce{H2O} is much easier to reduce. At the anode: the high concentration of \ce{Cl-} ions
+at the electrode surface and a lower overpotential for chlorine evolution (compared to the
+overpotential required for \ce{O2} evolution) mean that \ce{Cl-} is preferentially oxidized
+despite the thermodynamic potential being slightly higher. At lower \ce{NaCl} concentrations,
+\ce{O2} would be produced instead.
+\end{solution}
+
+\end{questions}
+\end{document}

@@ -1,0 +1,307 @@
+
+\documentclass[addpoints]{exam}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage{amsmath}
+
+% \printanswers
+
+\newcommand{\event}{Structure and Properties of Matter}
+\newcommand{\tournament}{}  % Replace with class name, date, or course code
+\def\type{0}
+
+\setlength\fillinlinelength{\textwidth}
+\CorrectChoiceEmphasis{\color{red}\bfseries}
+\SolutionEmphasis{\color{red}\bfseries}
+
+\setlength\answerclearance{2pt}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\event}{\tournament}{\ifnum\type=1 Class Set Test \else Full Name:\hspace{1cm} \fi}
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+\begin{center}
+    {\huge Grade 12 Chemistry \\ \event
+    \ifprintanswers
+     \space Key
+    \else
+     \space \ifnum\type<2 Test \fi \ifnum\type=1 \textbf{(CLASS SET)} \fi \ifnum\type=2 Answer Sheet \fi
+    \fi \\ \vspace{3mm}\tournament\vspace{1mm}}
+\end{center}
+
+\vspace{.25\textheight}
+
+\begin{center}
+    First Name: \ifprintanswers
+    \underline{\hspace{3.5cm}}\textbf{KEY}\underline{\hspace{5.5cm}}\\\vspace{5mm}
+    \else
+        \underline{\hspace{10cm}}\\ \vspace{5mm}
+    \fi
+    Last Name: \underline{\hspace{10cm}}\\ \vspace{5mm}
+\end{center}
+
+\noindent\textbf{\underline{Directions:}}
+\begin{itemize}
+    \ifnum\type=1 \item \textbf{This test is a class set.} Please do not write any answers on this paper. \fi
+    \item Show all work for full marks on short answer questions.
+    \item Express answers to the appropriate number of significant figures.
+    \item The test is designed to be completed in 75 minutes.
+\end{itemize}
+\begin{center}
+\textit{For grading use only}\\
+\multirowgradetable{1}[pages]
+\end{center}
+
+\newpage
+\begin{questions}
+
+\section*{Part A --- Multiple Choice (15 marks)}
+\vspace{5mm}
+
+\question[1] Which set of quantum numbers is valid for an electron?
+\begin{choices}
+    \choice $n=2,\ l=2,\ m_l=0,\ m_s=+\tfrac{1}{2}$
+    \choice $n=3,\ l=1,\ m_l=-2,\ m_s=-\tfrac{1}{2}$
+    \correctchoice $n=3,\ l=2,\ m_l=1,\ m_s=+\tfrac{1}{2}$
+    \choice $n=1,\ l=1,\ m_l=0,\ m_s=-\tfrac{1}{2}$
+\end{choices}
+
+\question[1] How many electrons can occupy the 3d subshell?
+\begin{choices}
+    \choice 2
+    \choice 6
+    \choice 8
+    \correctchoice 10
+\end{choices}
+
+\question[1] What is the correct ground-state electron configuration of \ce{Fe^{2+}}?
+(\ce{Fe}: $[\text{Ar}]3d^6 4s^2$)
+\begin{choices}
+    \choice $[\text{Ar}]3d^4 4s^2$
+    \choice $[\text{Ar}]3d^5 4s^1$
+    \correctchoice $[\text{Ar}]3d^6$
+    \choice $[\text{Ar}]3d^6 4s^2$
+\end{choices}
+
+\question[1] Which of the following elements has the highest first ionization energy?
+\begin{choices}
+    \choice Na
+    \choice Mg
+    \choice Al
+    \correctchoice Ne
+\end{choices}
+
+\question[1] Which of the following atoms has the smallest atomic radius?
+\begin{choices}
+    \choice Na
+    \choice Mg
+    \choice Al
+    \correctchoice Cl
+\end{choices}
+
+\question[1] What is the molecular geometry of \ce{SF4}?
+\begin{choices}
+    \choice Tetrahedral
+    \correctchoice See-saw
+    \choice Square planar
+    \choice Trigonal pyramidal
+\end{choices}
+
+\question[1] Which of the following bonds is the most polar?
+\begin{choices}
+    \choice \ce{C-H}
+    \choice \ce{N-H}
+    \choice \ce{O-H}
+    \correctchoice \ce{F-H}
+\end{choices}
+
+\question[1] What is the hybridization of each carbon atom in ethene (\ce{C2H4})?
+\begin{choices}
+    \choice $sp$
+    \correctchoice $sp^2$
+    \choice $sp^3$
+    \choice $sp^3d$
+\end{choices}
+
+\question[1] Which type of intermolecular force is present in \textit{all} molecular substances?
+\begin{choices}
+    \choice Hydrogen bonding
+    \choice Dipole--dipole forces
+    \correctchoice London dispersion forces
+    \choice Ion--dipole forces
+\end{choices}
+
+\question[1] Which of the following molecules is capable of forming hydrogen bonds?
+\begin{choices}
+    \choice \ce{CH4}
+    \choice \ce{PH3}
+    \choice \ce{H2S}
+    \correctchoice \ce{HF}
+\end{choices}
+
+\question[1] Which of the following compounds has the highest boiling point primarily due to London dispersion forces?
+\begin{choices}
+    \choice \ce{CH4}
+    \choice \ce{C2H6}
+    \choice \ce{C3H8}
+    \correctchoice \ce{C4H10}
+\end{choices}
+
+\question[1] What is the formal charge on nitrogen in \ce{NH4+}?
+\begin{choices}
+    \choice $-1$
+    \choice $0$
+    \correctchoice $+1$
+    \choice $+2$
+\end{choices}
+
+\question[1] Which statement about resonance structures is correct?
+\begin{choices}
+    \choice Each resonance structure exists separately at different times.
+    \choice The molecule alternates rapidly between resonance structures.
+    \correctchoice The actual molecule is a hybrid of all resonance structures.
+    \choice Resonance structures always have different bond lengths.
+\end{choices}
+
+\question[1] Which type of solid generally has the highest melting point?
+\begin{choices}
+    \choice Molecular solid
+    \choice Metallic solid
+    \choice Ionic solid
+    \correctchoice Network covalent solid
+\end{choices}
+
+\question[1] Which of the following molecules is nonpolar despite containing polar bonds?
+\begin{choices}
+    \choice \ce{H2O}
+    \choice \ce{NH3}
+    \correctchoice \ce{CO2}
+    \choice \ce{HCl}
+\end{choices}
+
+
+\section*{Part B --- Short Answer (33 marks)}
+
+\question Chromium (Cr, $Z = 24$) has an anomalous electron configuration.
+\begin{parts}
+    \part[3] Write the full electron configuration of Cr and explain why it differs from the
+    expected $[\text{Ar}]3d^4 4s^2$ pattern.
+    \part[2] Write the electron configuration of \ce{Cr^{3+}} and state the number of unpaired
+    electrons.
+    \part[3] Compare the first ionization energies of Cr, Mn, and Fe across Period 4.
+    Predict which has the highest value and explain the trend, noting any anomalies.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} Actual: $[\text{Ar}]3d^5 4s^1$. A half-filled $3d^5$ subshell has extra stability due
+to maximized exchange energy and symmetric electron distribution. Promoting one $4s$ electron to
+$3d$ achieves this stability, lowering the overall energy of the atom.
+
+\textbf{(b)} \ce{Cr^{3+}} loses 3 electrons (4s first, then 3d): $[\text{Ar}]3d^3$.
+Number of unpaired electrons: \textbf{3}.
+
+\textbf{(c)} Across Period 4, first ionization energy generally increases. Mn ($3d^5 4s^2$) has a
+half-filled $3d$ subshell with extra stability, so its IE is slightly higher than expected --- higher
+than Fe. Approximate order: Fe $<$ Cr $<$ Mn. Mn has the highest IE among the three.
+\end{solution}
+
+\question Consider the molecule \ce{PCl5}.
+\begin{parts}
+    \part[2] Determine the electron geometry and molecular geometry of \ce{PCl5}.
+    \part[2] Identify the hybridization of the phosphorus atom and explain why phosphorus can
+    expand its octet but nitrogen cannot.
+    \part[2] Is \ce{PCl5} polar or nonpolar? Justify your answer using bond dipoles.
+    \part[2] \ce{PCl3} is also a known compound. Compare its molecular geometry and polarity
+    to \ce{PCl5}.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)} P has 5 bonding pairs and 0 lone pairs.
+Electron geometry: \textbf{trigonal bipyramidal}.
+Molecular geometry: \textbf{trigonal bipyramidal}.
+
+\textbf{(b)} $sp^3d$ hybridization. Phosphorus can expand its octet because it is in Period 3
+and has available, low-energy 3d orbitals. Nitrogen is in Period 2 and has no accessible $d$
+orbitals, so it is limited to an octet.
+
+\textbf{(c)} \textbf{Nonpolar.} The five P--Cl bond dipoles cancel: three equatorial bonds are
+symmetric at $120°$ and two axial bonds are opposite each other at $180°$. The net dipole moment
+is zero.
+
+\textbf{(d)} \ce{PCl3}: P has 3 bonding pairs + 1 lone pair. Electron geometry: tetrahedral;
+molecular geometry: \textbf{trigonal pyramidal}. The lone pair creates an asymmetric charge
+distribution, making \ce{PCl3} \textbf{polar}. Unlike \ce{PCl5}, its bond dipoles do not cancel.
+\end{solution}
+
+\question Compare the intermolecular forces and boiling points of the following substances.
+\begin{parts}
+    \part[4] Identify all types of intermolecular forces present in each of the following
+    molecules: \ce{CH4},\ \ce{NH3},\ \ce{H2O},\ \ce{HF}.
+    \part[3] Explain why \ce{H2O} has a much higher boiling point (\SI{100}{\celsius}) than
+    \ce{H2S} (\SI{-61}{\celsius}), despite \ce{H2O} having a significantly lower molar mass.
+    \part[2] Arrange Ne, Ar, Kr, Xe in order of increasing boiling point and justify your
+    answer.
+\end{parts}
+\begin{solution}[9cm]
+\textbf{(a)}
+\begin{itemize}
+    \item \ce{CH4}: London dispersion forces only (nonpolar, no H bonded to F, O, or N).
+    \item \ce{NH3}: London dispersion, dipole--dipole, and \textbf{hydrogen bonding}
+    (N--H$\cdots$N).
+    \item \ce{H2O}: London dispersion, dipole--dipole, and \textbf{hydrogen bonding}
+    (O--H$\cdots$O); strongest network because O has high electronegativity and two O--H bonds per
+    molecule.
+    \item \ce{HF}: London dispersion, dipole--dipole, and \textbf{hydrogen bonding}
+    (F--H$\cdots$F).
+\end{itemize}
+
+\textbf{(b)} Each \ce{H2O} molecule can donate 2 hydrogen bonds (two O--H bonds) and accept 2
+(two lone pairs on O), forming an extensive 3-D hydrogen-bonding network. Oxygen's high
+electronegativity ($\chi = 3.44$) makes O--H bonds very polar. Sulfur in \ce{H2S} has lower
+electronegativity and a larger atomic radius; S--H bonds are too weak and too long to form true
+hydrogen bonds. Only London dispersion and weak dipole--dipole forces act between \ce{H2S}
+molecules.
+
+\textbf{(c)} Ne $<$ Ar $<$ Kr $<$ Xe. Larger noble gas atoms have more electrons and greater
+polarizability, leading to stronger London dispersion forces and higher boiling points.
+\end{solution}
+
+\question Consider the following four species: \ce{BeCl2}, \ce{SO3}, \ce{XeF4}, \ce{IF5}.
+\begin{parts}
+    \part[4] For each species, state the (i) electron geometry, (ii) molecular geometry, and
+    (iii) whether it is polar or nonpolar.
+    \part[4] Draw all three resonance structures of \ce{SO3} and calculate the bond order of
+    each \ce{S-O} bond. Explain what the bond order tells you about bond length and strength
+    compared to a pure \ce{S-O} single bond or \ce{S=O} double bond.
+\end{parts}
+\begin{solution}[10cm]
+\textbf{(a)}
+\begin{itemize}
+    \item \ce{BeCl2}: 2 bonding pairs, 0 lone pairs on Be. Electron geo: \textbf{linear};
+    Molecular geo: \textbf{linear}; \textbf{Nonpolar} (symmetric, dipoles cancel).
+    \item \ce{SO3}: 3 bonding regions, 0 lone pairs on S. Electron geo: \textbf{trigonal
+    planar}; Molecular geo: \textbf{trigonal planar}; \textbf{Nonpolar} (symmetric arrangement).
+    \item \ce{XeF4}: 4 bonding pairs + 2 lone pairs on Xe. Electron geo: \textbf{octahedral};
+    Molecular geo: \textbf{square planar}; \textbf{Nonpolar} (lone pairs are trans to each other,
+    bond dipoles cancel).
+    \item \ce{IF5}: 5 bonding pairs + 1 lone pair on I. Electron geo: \textbf{octahedral};
+    Molecular geo: \textbf{square pyramidal}; \textbf{Polar} (lone pair breaks symmetry).
+\end{itemize}
+
+\textbf{(b)} \ce{SO3} has 3 equivalent resonance structures, each showing one \ce{S=O} double
+bond and two \ce{S-O} single bonds in different positions.
+
+\[
+\text{Bond order} = \frac{\text{(number of bonds in all structures for one S--O position)}}
+{\text{number of resonance structures}} = \frac{1\times2 + 1\times1 + 1\times1}{3} = \frac{4}{3}
+\approx 1.33
+\]
+
+A bond order of $4/3$ means each \ce{S-O} bond is intermediate between a single bond (order 1)
+and a double bond (order 2). All three bonds are equivalent: shorter and stronger than a pure
+single bond, longer and weaker than a pure double bond.
+\end{solution}
+
+\end{questions}
+\end{document}
