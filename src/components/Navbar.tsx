@@ -38,9 +38,9 @@ const Navbar = () => {
   ];
 
   const pageLinks = [
-    { to: '/courses',        label: 'Courses' },
-    { to: '/notes-and-tests', label: 'Notes' },
-    { to: '/blog',           label: 'Blog' },
+    { to: '/resources?type=notes', label: 'Notes' },
+    { to: '/resources?type=tests', label: 'Tests' },
+    { to: '/blog',                 label: 'Blog' },
   ];
 
   const handleLogoClick = () => {

@@ -1,5 +1,6 @@
 import './App.css'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import { Element } from 'react-scroll'
 import TutoringHero from './components/TutoringHero'
 import Navbar from './components/Navbar'
@@ -18,90 +19,76 @@ import NotesAndTests from './components/NotesTests'
 import BlogDetails from './components/BlogDetails';
 import CoursesPage from './components/CoursesPage';
 import CourseDetail from './components/CourseDetail';
+import FreeSample from './components/FreeSample';
 
 
 function App() {
 
   return (
+    <HelmetProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+            <>
+              <Element name="home" id='home'>
+              <TutoringHero />
+              </Element>
+              <Hbreak />
+              <Element name="about" id='about'>
+              <About />
+              </Element>
+              <Hbreak />
+              <Element name="me" id='me'>
+              <Me />
+              </Element>
+              <Hbreak />
+              <Element name="features" id='features'>
+              <Features />
+              </Element>
+              <Hbreak />
+              <Element name="how-it-works" id='how-it-works'>
+              <HowItWorks />
+              </Element>
+              <Hbreak />
+              <Element name="testimonials" id='testimonials'>
+              <Stats />
+              </Element>
+              <Hbreak />
+              <Element name="pricing" id='pricing'>
+              <Pricing />
+              </Element>
+              <Hbreak />
+              <Element name="faq" id='faq'>
+              <FAQ />
+              </Element>
+              <Hbreak />
+              <CTASection />
+            </>
+            }
+          />
 
-    <HashRouter>
-      <Navbar />
-      {/* Main content rendered via routes */}
-      <Routes>
-      <Route
-        path="/"
-        element={
-        <>
-          <Element name="home" id='home'>
-          <TutoringHero />
-          </Element>
-          <Hbreak />
-          <Element name="about" id='about'>
-          <About />
-          </Element>
-          <Hbreak />
-          <Element name="me" id='me'>
-          <Me />
-          </Element>
-          <Hbreak />
-          <Element name="features" id='features'>
-          <Features />
-          </Element>
-          <Hbreak />
-          <Element name="how-it-works" id='how-it-works'>
-          <HowItWorks />
-          </Element>
-          <Hbreak />
-          <Element name="testimonials" id='testimonials'>
-          <Stats />
-          </Element>
-          <Hbreak />
-          <Element name="pricing" id='pricing'>
-          <Pricing />
-          </Element>
-          <Hbreak />
-          <Element name="faq" id='faq'>
-          <FAQ />
-          </Element>
-          <Hbreak />
-          <CTASection />
-        </>
-        }
-      />
-      <Route
-        path="/notes-and-tests"
-        element={
-        <>
-          <NotesAndTests />
-        </>
-        }
-      />
-      <Route
-        path="/notes-and-tests/:id"
-        element={<CourseDetail />}
-      />
-      <Route
-        path="/courses"
-        element={
-        <>
-          <CoursesPage />
-        </>
-        }
-      />
-      <Route
-        path="/blog"
-        element={
-        <>
-          <Blog />
-        </>
-        }
-      />
-      <Route path="/blog/:id" 
-        element={<BlogDetails />} 
-      />
-      </Routes>
-      <Footer />
-    </HashRouter>
+          {/* Resources hub + individual resource pages (SEO-friendly slugs) */}
+          <Route path="/resources" element={<NotesAndTests />} />
+          <Route path="/resources/:slug" element={<CourseDetail />} />
+
+          {/* Legacy redirect support — old notes-and-tests URLs still work */}
+          <Route path="/notes-and-tests" element={<NotesAndTests />} />
+          <Route path="/notes-and-tests/:id" element={<CourseDetail />} />
+
+          {/* Lead gen funnel */}
+          <Route path="/free-sample" element={<FreeSample />} />
+
+          {/* Courses + Blog */}
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </HelmetProvider>
   )
 }
 
