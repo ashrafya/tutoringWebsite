@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import BlogDB from "../DB/BlogDB";
 
 const Blog: React.FC = () => (
+  <>
+  <Helmet>
+    <title>Blog | Tutor Oaks — Study Tips & Tutoring Insights</title>
+    <meta name="description" content="Study strategies, exam tips, and tutoring insights for Ontario high school students. Expert advice on Math, Physics, Chemistry, and more." />
+    <link rel="canonical" href="https://tutoroaks.ca/blog" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://tutoroaks.ca/blog" />
+    <meta property="og:title"       content="Blog | Tutor Oaks — Study Tips & Tutoring Insights" />
+    <meta property="og:description" content="Study strategies, exam tips, and tutoring insights for Ontario high school students." />
+    <meta property="og:image"       content="https://tutoroaks.ca/logo.png" />
+    <meta name="twitter:card"       content="summary_large_image" />
+  </Helmet>
   <section className="mx-auto py-16 px-4 bg-gray-50">
     <div className="text-center mb-10">
       <h4 className="text-blue-600 font-bold text-lg mb-2">Tutoring Insights</h4>
@@ -40,6 +53,7 @@ const Blog: React.FC = () => (
       ))}
     </div>
   </section>
+  </>
 );
 
 export default Blog;

@@ -20,6 +20,7 @@ import BlogDetails from './components/BlogDetails';
 import CoursesPage from './components/CoursesPage';
 import CourseDetail from './components/CourseDetail';
 import FreeSample from './components/FreeSample';
+import HomeSEO from './components/HomeSEO';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             path="/"
             element={
             <>
+              <HomeSEO />
               <Element name="home" id='home'>
               <TutoringHero />
               </Element>

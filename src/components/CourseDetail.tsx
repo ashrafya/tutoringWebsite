@@ -44,10 +44,50 @@ const CourseDetail: React.FC = () => {
       <Helmet>
         <title>{course.title} | Tutor Oaks</title>
         <meta name="description" content={course.metaDescription} />
-        <meta property="og:title" content={`${course.title} | Tutor Oaks`} />
-        <meta property="og:description" content={course.metaDescription} />
-        <meta property="og:type" content="product" />
         <link rel="canonical" href={`https://tutoroaks.ca/resources/${course.slug}`} />
+
+        {/* Open Graph */}
+        <meta property="og:type"        content="product" />
+        <meta property="og:url"         content={`https://tutoroaks.ca/resources/${course.slug}`} />
+        <meta property="og:title"       content={`${course.title} | Tutor Oaks`} />
+        <meta property="og:description" content={course.metaDescription} />
+        <meta property="og:image"       content="https://tutoroaks.ca/logo.png" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card"        content="summary_large_image" />
+        <meta name="twitter:title"       content={`${course.title} | Tutor Oaks`} />
+        <meta name="twitter:description" content={course.metaDescription} />
+        <meta name="twitter:image"       content="https://tutoroaks.ca/logo.png" />
+
+        {/* Product JSON-LD */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": course.title,
+          "description": course.metaDescription,
+          "url": `https://tutoroaks.ca/resources/${course.slug}`,
+          "brand": { "@type": "Brand", "name": "Tutor Oaks" },
+          "offers": {
+            "@type": "Offer",
+            "price": course.price,
+            "priceCurrency": "CAD",
+            "availability": "https://schema.org/InStock",
+            "url": `https://tutoroaks.ca/resources/${course.slug}`
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "65"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home",      "item": "https://tutoroaks.ca/" },
+              { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://tutoroaks.ca/resources" },
+              { "@type": "ListItem", "position": 3, "name": course.title }
+            ]
+          }
+        })}</script>
       </Helmet>
 
       <div className="min-h-screen bg-[#F8FAFC]">

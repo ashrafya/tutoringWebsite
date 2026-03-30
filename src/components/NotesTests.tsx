@@ -98,11 +98,15 @@ const NotesTests: React.FC = () => {
     <>
       <Helmet>
         <title>Ontario High School Study Resources | Tutor Oaks</title>
-        <meta
-          name="description"
-          content="Browse exam-focused notes and practice test bundles for Ontario Grade 10–12 Math, Chemistry, and Physics. Each package includes unit tests, full solutions, and notes."
-        />
+        <meta name="description" content="Browse exam-focused notes and practice test bundles for Ontario Grade 10–12 Math, Chemistry, and Physics. Each package includes unit tests, full solutions, and notes." />
+        {/* Canonical always points to /resources — prevents ?type= query params being indexed as duplicates */}
         <link rel="canonical" href="https://tutoroaks.ca/resources" />
+        <meta property="og:type"        content="website" />
+        <meta property="og:url"         content="https://tutoroaks.ca/resources" />
+        <meta property="og:title"       content="Ontario High School Study Resources | Tutor Oaks" />
+        <meta property="og:description" content="Exam-focused notes and practice test bundles for Ontario Grade 10–12 Math, Chemistry, and Physics." />
+        <meta property="og:image"       content="https://tutoroaks.ca/logo.png" />
+        <meta name="twitter:card"       content="summary_large_image" />
       </Helmet>
 
       <div>

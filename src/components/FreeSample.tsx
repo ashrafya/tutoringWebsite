@@ -2,54 +2,108 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { FORMSPREE_ENDPOINT } from './Constants';
 
-// ─── Replace YOUR_FORMSPREE_ID with your actual Formspree form ID ───────────
-// Sign up at https://formspree.io → New Form → copy the ID from the endpoint URL
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
-
-const FREE_SAMPLES: Record<string, { label: string; file: string; description: string }> = {
-  math10: {
-    label: 'GR10 Academic Math – Analytic Geometry Test',
-    file: '/free-samples/GR10_MPM2D_Analytic_Geometry.pdf',
-    description: 'MPM2D unit test on analytic geometry with full solutions',
+// ── Deterministic course → free sample mapping ───────────────────────────────
+// Each course always gives the same two PDFs (first unit test + solutions).
+const COURSE_SAMPLES: Record<string, {
+  label: string;
+  grade: string;
+  topic: string;
+  questions: string;
+  solutions: string;
+}> = {
+  MPM2D: {
+    label: 'MPM2D — Grade 10 Academic Math',
+    grade: 'Grade 10',
+    topic: 'Linear Systems',
+    questions: '/free-samples/GR10_MPM2D_Linear_Systems.pdf',
+    solutions: '/free-samples/GR10_MPM2D_Linear_Systems_Solutions.pdf',
   },
-  math11: {
-    label: 'GR11 Functions – Trigonometric Ratios Test',
-    file: '/free-samples/GR11_MCR3U_Trigonometric_Ratios.pdf',
-    description: 'MCR3U unit test on trig ratios with full solutions',
+  MBF3C: {
+    label: 'MBF3C — Grade 11 College Math',
+    grade: 'Grade 11',
+    topic: 'Exponential Functions',
+    questions: '/free-samples/GR11_MBF3C_Exponential_Functions.pdf',
+    solutions: '/free-samples/GR11_MBF3C_Exponential_Functions_Solutions.pdf',
   },
-  chem11: {
-    label: 'GR11 Chemistry – Stoichiometry Test',
-    file: '/free-samples/GR11_Chem_Stoichiometry.pdf',
-    description: 'SCH3U unit test on stoichiometry with full solutions',
+  MCR3U: {
+    label: 'MCR3U — Grade 11 Functions',
+    grade: 'Grade 11',
+    topic: 'Characteristics of Functions',
+    questions: '/free-samples/GR11_MCR3U_Characteristics_of_Functions.pdf',
+    solutions: '/free-samples/GR11_MCR3U_Characteristics_of_Functions_Solutions.pdf',
   },
-  calc12: {
-    label: 'GR12 Calculus & Vectors – Limits & Rates Test',
-    file: '/free-samples/GR12_MCV4U_Limits_and_Rates.pdf',
-    description: 'MCV4U unit test on limits with full solutions',
+  SCH3U: {
+    label: 'SCH3U — Grade 11 Chemistry',
+    grade: 'Grade 11',
+    topic: 'Matter, Bonding & Trends',
+    questions: '/free-samples/GR11_Chem_Matter_Bonding_Trends.pdf',
+    solutions: '/free-samples/GR11_Chem_Matter_Bonding_Trends_Solutions.pdf',
   },
-};
-
-const GRADE_TO_SAMPLE: Record<string, string> = {
-  '10': 'math10',
-  '11': 'math11',
-  '12': 'calc12',
+  SPH3U: {
+    label: 'SPH3U — Grade 11 Physics',
+    grade: 'Grade 11',
+    topic: 'Kinematics',
+    questions: '/free-samples/GR11_Phy_Kinematics.pdf',
+    solutions: '/free-samples/GR11_Phy_Kinematics_Solutions.pdf',
+  },
+  MAP4C: {
+    label: 'MAP4C — Grade 12 College Math',
+    grade: 'Grade 12',
+    topic: 'Modelling with Functions',
+    questions: '/free-samples/GR12_MAP4C_Modelling_with_Functions.pdf',
+    solutions: '/free-samples/GR12_MAP4C_Modelling_with_Functions_Solutions.pdf',
+  },
+  MDM4U: {
+    label: 'MDM4U — Grade 12 Data Management',
+    grade: 'Grade 12',
+    topic: 'One-Variable Statistics',
+    questions: '/free-samples/GR12_MDM4U_One-Variable_Statistics.pdf',
+    solutions: '/free-samples/GR12_MDM4U_One-Variable_Statistics_Solutions.pdf',
+  },
+  MHF4U: {
+    label: 'MHF4U — Grade 12 Advanced Functions',
+    grade: 'Grade 12',
+    topic: 'Polynomial Functions',
+    questions: '/free-samples/GR12_AF_Polynomial_Functions.pdf',
+    solutions: '/free-samples/GR12_AF_Polynomial_Functions_Solutions.pdf',
+  },
+  MCV4U: {
+    label: 'MCV4U — Grade 12 Calculus & Vectors',
+    grade: 'Grade 12',
+    topic: 'Limits & Rates of Change',
+    questions: '/free-samples/GR12_MCV4U_Limits_and_Rates.pdf',
+    solutions: '/free-samples/GR12_MCV4U_Limits_and_Rates_Solutions.pdf',
+  },
+  SCH4U: {
+    label: 'SCH4U — Grade 12 Chemistry',
+    grade: 'Grade 12',
+    topic: 'Structure & Properties of Matter',
+    questions: '/free-samples/GR12_Chem_Structure_and_Properties.pdf',
+    solutions: '/free-samples/GR12_Chem_Structure_and_Properties_Solutions.pdf',
+  },
+  SPH4U: {
+    label: 'SPH4U — Grade 12 Physics',
+    grade: 'Grade 12',
+    topic: 'Kinematics',
+    questions: '/free-samples/GR12_Physics_Kinematics.pdf',
+    solutions: '/free-samples/GR12_Physics_Kinematics_Solution.pdf',
+  },
 };
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 
 const FreeSample: React.FC = () => {
   const [formState, setFormState] = useState<FormState>('idle');
-  const [selectedGrade, setSelectedGrade] = useState('');
-  const [selectedSubject, setSelectedSubject] = useState('');
-  const [downloadKey, setDownloadKey] = useState<string | null>(null);
+  const [selectedCourse, setSelectedCourse] = useState('');
+  const [submittedCourse, setSubmittedCourse] = useState('');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormState('submitting');
 
-    const form = e.currentTarget;
-    const data = new FormData(form);
+    const data = new FormData(e.currentTarget);
 
     try {
       const res = await fetch(FORMSPREE_ENDPOINT, {
@@ -59,13 +113,7 @@ const FreeSample: React.FC = () => {
       });
 
       if (res.ok) {
-        // Pick the best matching free sample based on grade + subject
-        const grade = data.get('grade') as string;
-        const subject = data.get('subject') as string;
-        let key = GRADE_TO_SAMPLE[grade] ?? 'math11';
-        if (subject === 'chemistry' && grade === '11') key = 'chem11';
-        if (subject === 'chemistry' && grade === '12') key = 'calc12';
-        setDownloadKey(key);
+        setSubmittedCourse(selectedCourse);
         setFormState('success');
       } else {
         setFormState('error');
@@ -75,17 +123,24 @@ const FreeSample: React.FC = () => {
     }
   };
 
+  const sample = COURSE_SAMPLES[submittedCourse];
+
   return (
     <>
       <Helmet>
         <title>Free Practice Test | Tutor Oaks</title>
-        <meta
-          name="description"
-          content="Get a free Ontario high school practice test — math, chemistry, or physics. Enter your email and instantly download a unit test with full solutions."
-        />
+        <meta name="description" content="Get a free Ontario high school practice test — math, chemistry, or physics. Enter your email and instantly download a unit test with full solutions." />
+        <link rel="canonical" href="https://tutoroaks.ca/free-sample" />
+        <meta property="og:type"        content="website" />
+        <meta property="og:url"         content="https://tutoroaks.ca/free-sample" />
+        <meta property="og:title"       content="Free Practice Test | Tutor Oaks" />
+        <meta property="og:description" content="Get a free Ontario high school practice test — math, chemistry, or physics. Instant download, no credit card needed." />
+        <meta property="og:image"       content="https://tutoroaks.ca/logo.png" />
+        <meta name="twitter:card"       content="summary_large_image" />
       </Helmet>
 
       <div className="min-h-screen bg-[#F8FAFC]">
+
         {/* ── Hero ── */}
         <section className="bg-[#0F172A] relative overflow-hidden pt-16 pb-20 px-4">
           <div
@@ -111,7 +166,7 @@ const FreeSample: React.FC = () => {
                 Get a Free Practice Test
               </h1>
               <p className="text-lg text-gray-300 max-w-xl mx-auto leading-relaxed">
-                Enter your name and email below and we'll match you with a free unit test — complete with full solutions — for your grade and subject.
+                Pick your course, enter your email, and instantly download a unit test plus full solutions — no credit card needed.
               </p>
             </motion.div>
           </div>
@@ -131,18 +186,19 @@ const FreeSample: React.FC = () => {
                   className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-[0_4px_24px_rgba(0,0,0,0.07)]"
                 >
                   <form onSubmit={handleSubmit} className="space-y-5">
+
                     {/* Name */}
                     <div>
                       <label className="block text-sm font-semibold text-[#0F172A] mb-1.5" htmlFor="name">
-                        First Name <span className="text-[#F97316]">*</span>
+                        Full Name <span className="text-[#F97316]">*</span>
                       </label>
                       <input
                         id="name"
                         name="name"
                         type="text"
                         required
-                        placeholder="Your first name"
-                        className="w-full border border-[#CBD5E1] rounded-xl px-4 py-3 text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#F97316]/40 focus:border-[#F97316] transition-colors"
+                        placeholder="Your full name"
+                        className="w-full border border-[#CBD5E1] rounded-xl px-4 py-3 text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#F97316]/40 focus:border-[#F97316] transition-colors bg-white"
                       />
                     </div>
 
@@ -157,76 +213,69 @@ const FreeSample: React.FC = () => {
                         type="email"
                         required
                         placeholder="you@email.com"
-                        className="w-full border border-[#CBD5E1] rounded-xl px-4 py-3 text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#F97316]/40 focus:border-[#F97316] transition-colors"
+                        className="w-full border border-[#CBD5E1] rounded-xl px-4 py-3 text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#F97316]/40 focus:border-[#F97316] transition-colors bg-white"
                       />
                     </div>
 
-                    {/* Grade */}
+                    {/* Course dropdown */}
                     <div>
-                      <label className="block text-sm font-semibold text-[#0F172A] mb-1.5" htmlFor="grade">
-                        Grade <span className="text-[#F97316]">*</span>
+                      <label className="block text-sm font-semibold text-[#0F172A] mb-1.5" htmlFor="course">
+                        Course <span className="text-[#F97316]">*</span>
                       </label>
                       <select
-                        id="grade"
-                        name="grade"
+                        id="course"
+                        name="course"
                         required
-                        value={selectedGrade}
-                        onChange={e => setSelectedGrade(e.target.value)}
+                        value={selectedCourse}
+                        onChange={e => setSelectedCourse(e.target.value)}
                         className="w-full border border-[#CBD5E1] rounded-xl px-4 py-3 text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#F97316]/40 focus:border-[#F97316] transition-colors bg-white"
                       >
-                        <option value="" disabled>Select your grade</option>
-                        <option value="10">Grade 10</option>
-                        <option value="11">Grade 11</option>
-                        <option value="12">Grade 12</option>
+                        <option value="" disabled>Select your course</option>
+                        <optgroup label="Grade 10">
+                          {['MPM2D'].map(code => (
+                            <option key={code} value={code}>{COURSE_SAMPLES[code].label}</option>
+                          ))}
+                        </optgroup>
+                        <optgroup label="Grade 11">
+                          {['MBF3C', 'MCR3U', 'SCH3U', 'SPH3U'].map(code => (
+                            <option key={code} value={code}>{COURSE_SAMPLES[code].label}</option>
+                          ))}
+                        </optgroup>
+                        <optgroup label="Grade 12">
+                          {['MAP4C', 'MDM4U', 'MHF4U', 'MCV4U', 'SCH4U', 'SPH4U'].map(code => (
+                            <option key={code} value={code}>{COURSE_SAMPLES[code].label}</option>
+                          ))}
+                        </optgroup>
                       </select>
                     </div>
 
-                    {/* Subject */}
-                    <div>
-                      <label className="block text-sm font-semibold text-[#0F172A] mb-1.5" htmlFor="subject">
-                        Subject Interest <span className="text-[#F97316]">*</span>
-                      </label>
-                      <select
-                        id="subject"
-                        name="subject"
-                        required
-                        value={selectedSubject}
-                        onChange={e => setSelectedSubject(e.target.value)}
-                        className="w-full border border-[#CBD5E1] rounded-xl px-4 py-3 text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-[#F97316]/40 focus:border-[#F97316] transition-colors bg-white"
-                      >
-                        <option value="" disabled>Select a subject</option>
-                        <option value="math">Mathematics</option>
-                        <option value="chemistry">Chemistry</option>
-                        <option value="physics">Physics</option>
-                      </select>
-                    </div>
-
-                    {/* Preview of what they'll get */}
-                    {selectedGrade && (
+                    {/* Preview of what they'll receive */}
+                    {selectedCourse && COURSE_SAMPLES[selectedCourse] && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
-                        className="bg-[#FFF7ED] border border-[#F97316]/30 rounded-xl px-4 py-3 flex items-start gap-3"
+                        className="bg-[#FFF7ED] border border-[#F97316]/30 rounded-xl px-4 py-3"
                       >
-                        <svg className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                        <div>
-                          <p className="text-sm font-semibold text-[#0F172A]">You'll receive:</p>
-                          <p className="text-xs text-[#64748B] mt-0.5">
-                            {FREE_SAMPLES[
-                              selectedSubject === 'chemistry' && selectedGrade === '11'
-                                ? 'chem11'
-                                : GRADE_TO_SAMPLE[selectedGrade] ?? 'math11'
-                            ]?.description}
-                          </p>
+                        <p className="text-xs font-semibold text-[#0F172A] mb-2">You'll receive 2 PDFs:</p>
+                        <div className="space-y-1.5">
+                          {[
+                            { icon: '📄', label: `${COURSE_SAMPLES[selectedCourse].topic} — Questions` },
+                            { icon: '✅', label: `${COURSE_SAMPLES[selectedCourse].topic} — Full Solutions` },
+                          ].map(item => (
+                            <div key={item.label} className="flex items-center gap-2 text-xs text-[#64748B]">
+                              <svg className="w-3.5 h-3.5 text-[#F97316] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                              </svg>
+                              {item.label}
+                            </div>
+                          ))}
                         </div>
                       </motion.div>
                     )}
 
                     {formState === 'error' && (
                       <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
-                        Something went wrong. Please try again or email us directly.
+                        Something went wrong. Please try again.
                       </p>
                     )}
 
@@ -245,7 +294,7 @@ const FreeSample: React.FC = () => {
                         </>
                       ) : (
                         <>
-                          Get My Free Test
+                          Get My Free Tests
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                           </svg>
@@ -253,11 +302,10 @@ const FreeSample: React.FC = () => {
                       )}
                     </button>
 
-                    <p className="text-center text-xs text-[#94A3B8]">
-                      No spam, ever. Unsubscribe anytime.
-                    </p>
+                    <p className="text-center text-xs text-[#94A3B8]">No spam, ever. Unsubscribe anytime.</p>
                   </form>
                 </motion.div>
+
               ) : (
                 // ── Success state ──
                 <motion.div
@@ -265,55 +313,75 @@ const FreeSample: React.FC = () => {
                   initial={{ opacity: 0, scale: 0.96 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4 }}
-                  className="bg-white border border-[#E2E8F0] rounded-2xl p-10 shadow-[0_4px_24px_rgba(0,0,0,0.07)] text-center"
+                  className="bg-white border border-[#E2E8F0] rounded-2xl p-10 shadow-[0_4px_24px_rgba(0,0,0,0.07)]"
                 >
                   <div className="w-16 h-16 bg-[#FFF7ED] rounded-full flex items-center justify-center mx-auto mb-5">
                     <svg className="w-8 h-8 text-[#F97316]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
+
                   <h2
-                    className="text-3xl font-bold text-[#0F172A] mb-3"
+                    className="text-3xl font-bold text-[#0F172A] mb-2 text-center"
                     style={{ fontFamily: "'Crimson Pro', Georgia, serif" }}
                   >
-                    Here's your free test!
+                    Here are your free tests!
                   </h2>
-                  <p className="text-[#64748B] mb-8 leading-relaxed">
-                    Click the button below to download your practice test. Good luck!
+                  <p className="text-[#64748B] text-center mb-8 text-sm leading-relaxed">
+                    {sample?.grade} · {sample?.topic}
                   </p>
 
-                  {downloadKey && FREE_SAMPLES[downloadKey] && (
-                    <a
-                      href={FREE_SAMPLES[downloadKey].file}
-                      download
-                      className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C00] text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 text-base mb-4"
-                    >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                      </svg>
-                      Download: {FREE_SAMPLES[downloadKey].label}
-                    </a>
+                  {sample && (
+                    <div className="space-y-3 mb-8">
+                      <a
+                        href={sample.questions}
+                        download
+                        className="flex items-center gap-3 w-full bg-[#F97316] hover:bg-[#EA6C00] text-white font-semibold px-6 py-4 rounded-xl transition-colors duration-200"
+                      >
+                        <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        <div className="text-left">
+                          <p className="text-sm font-bold">Download Questions</p>
+                          <p className="text-xs text-white/70">{sample.topic} — {submittedCourse}</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href={sample.solutions}
+                        download
+                        className="flex items-center gap-3 w-full bg-[#0F172A] hover:bg-[#1E2D4E] text-white font-semibold px-6 py-4 rounded-xl transition-colors duration-200"
+                      >
+                        <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        <div className="text-left">
+                          <p className="text-sm font-bold">Download Solutions</p>
+                          <p className="text-xs text-white/70">{sample.topic} — {submittedCourse}</p>
+                        </div>
+                      </a>
+                    </div>
                   )}
 
-                  <p className="text-sm text-[#64748B] mb-6">
-                    Want more? Browse our complete notes & test bundles.
-                  </p>
-                  <Link
-                    to="/resources"
-                    className="inline-flex items-center gap-1.5 text-[#F97316] hover:text-[#EA6C00] font-semibold text-sm transition-colors"
-                  >
-                    View all resources
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+                  <div className="pt-6 border-t border-[#F1F5F9] text-center">
+                    <p className="text-sm text-[#64748B] mb-3">Want the full package for {submittedCourse}?</p>
+                    <Link
+                      to="/resources"
+                      className="inline-flex items-center gap-1.5 text-[#F97316] hover:text-[#EA6C00] font-semibold text-sm transition-colors"
+                    >
+                      Browse all resources
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
         </section>
 
-        {/* ── What's inside strip ── */}
+        {/* ── What's included strip ── */}
         {formState !== 'success' && (
           <section className="bg-[#0F172A] py-12 px-4">
             <div className="max-w-4xl mx-auto">
@@ -326,7 +394,7 @@ const FreeSample: React.FC = () => {
                 ].map(item => (
                   <div
                     key={item.title}
-                    className="bg-white/6 border border-white/10 rounded-xl px-5 py-4"
+                    className="border border-white/10 rounded-xl px-5 py-4"
                     style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}
                   >
                     <p className="text-white font-semibold text-sm mb-1">{item.title}</p>
