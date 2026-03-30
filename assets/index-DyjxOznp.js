@@ -1241,7 +1241,6 @@ Please change the parent <Route path="${E}"> to <Route path="${E==="/"?"*":`${E}
             "@type": "CollegeOrUniversity",
             "name": "University of Toronto"
           }
-        },
-        "sameAs": []
+        }
       }
     `})]});function W9(){return v.jsx(Ak,{children:v.jsxs(SL,{children:[v.jsx(QH,{}),v.jsxs(Qz,{children:[v.jsx(qn,{path:"/",element:v.jsxs(v.Fragment,{children:[v.jsx(G9,{}),v.jsx(or.Element,{name:"home",id:"home",children:v.jsx(KH,{})}),v.jsx(lr,{}),v.jsx(or.Element,{name:"about",id:"about",children:v.jsx(n9,{})}),v.jsx(lr,{}),v.jsx(or.Element,{name:"me",id:"me",children:v.jsx(b9,{})}),v.jsx(lr,{}),v.jsx(or.Element,{name:"features",id:"features",children:v.jsx(s9,{})}),v.jsx(lr,{}),v.jsx(or.Element,{name:"how-it-works",id:"how-it-works",children:v.jsx(c9,{})}),v.jsx(lr,{}),v.jsx(or.Element,{name:"testimonials",id:"testimonials",children:v.jsx(h9,{})}),v.jsx(lr,{}),v.jsx(or.Element,{name:"pricing",id:"pricing",children:v.jsx(l9,{})}),v.jsx(lr,{}),v.jsx(or.Element,{name:"faq",id:"faq",children:v.jsx(d9,{})}),v.jsx(lr,{}),v.jsx(p9,{})]})}),v.jsx(qn,{path:"/resources",element:v.jsx(R2,{})}),v.jsx(qn,{path:"/resources/:slug",element:v.jsx(N2,{})}),v.jsx(qn,{path:"/notes-and-tests",element:v.jsx(R2,{})}),v.jsx(qn,{path:"/notes-and-tests/:id",element:v.jsx(N2,{})}),v.jsx(qn,{path:"/free-sample",element:v.jsx(U9,{})}),v.jsx(qn,{path:"/courses",element:v.jsx(B9,{})}),v.jsx(qn,{path:"/blog",element:v.jsx(T9,{})}),v.jsx(qn,{path:"/blog/:id",element:v.jsx(z9,{})})]}),v.jsx(g9,{})]})})}oz.createRoot(document.getElementById("root")).render(v.jsx(De.StrictMode,{children:v.jsx(tz,{children:v.jsx(W9,{})})}));
